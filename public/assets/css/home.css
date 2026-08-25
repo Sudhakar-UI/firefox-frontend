@@ -28,10 +28,16 @@
 	width: 100%;
 }
 
+
 .homebannerbg .sitebannercontent {
 	padding-top: 105px;
 	padding-bottom: 96px;
 	position: relative;
+}
+.new-p2p-page .homebannerbg .sitebannercontent {
+    padding-top: 145px;
+    padding-bottom: 86px;
+
 }
 
 .sitebannercontent .heading-title {
@@ -226,6 +232,9 @@
 
 .chooseusflex {
 	padding-top: 120px;
+}
+.new-p2p-page .chooseusflex{
+	padding-top: 40px;
 }
 
 .chooseusbox>div {
@@ -1152,6 +1161,10 @@ ul.footcryptobg>li {
 	padding: 10px 16px;
 	font-size: 17px;
 }
+.new-p2p-page .markettablebg table tr td {
+	font-size: 15px;
+}
+
 
 
 .markettablebg {

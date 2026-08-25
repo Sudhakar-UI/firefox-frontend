@@ -4580,6 +4580,7 @@
 		background: linear-gradient(to bottom, #f6f6f6, #ffffff);
 	}
 
+
 	.nightmode .new-earn-page .what-earn {
 		background: linear-gradient(to bottom, #1D1D1D, #0f0f0f);
 
@@ -4602,6 +4603,22 @@
 		width: 200px;
 		text-align: left;
 	}
+
+	.new-p2p-page .earn-crypto .table tr td {
+		width: auto;
+
+	}
+
+	.new-p2p-page .buyboxpage .searchfrm.ser-frm-frm-y .form-group {
+		width: 300px;
+
+	}
+
+	.new-p2p-page .markettablebg .nav-tabs .nav-link:hover {
+		transform: translateY(0px);
+
+	}
+
 
 	.earn-crypto table tr td:last-child,
 	.earn-crypto table tr th:last-child {
@@ -6895,3 +6912,5 @@
 		width: 100%;
 		max-width: 46px !important;
 	}
+
+	

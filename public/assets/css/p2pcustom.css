@@ -944,7 +944,9 @@
 	width: 23px;
 	margin-right: 4px;
 }
-
+.new-p2p-page .earn-crypto {
+    background-color: #fafafa;
+}
 #card table tbody tr>td:last-child {
 	text-align: left;
 }

@@ -10853,6 +10853,10 @@ body.tradepagbg {
 	border-color: #363131;
 	color: #d6d6d6;
 }
+.nightmode .new-p2p-page .suces-y {
+	color: #fff;
+}
+
 
 .nightmode .adrescrol-y .dropdown-toggle:empty::after {
 	display: none;
