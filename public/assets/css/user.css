@@ -1,0 +1,10945 @@
+body.userpanelpage {
+	background-color: #f7f7f7;
+	padding-bottom: 50px;
+}
+
+.footerboxuser {
+	background: none;
+	height: 50px;
+}
+
+.userfooterbox {
+	padding-left: 285px;
+	padding-right: 30px;
+}
+
+.footerboxuser .ftxt {
+	color: #1a1a1a;
+}
+
+.pagecontent p {
+	font-size: 15px;
+	line-height: 26px;
+}
+
+.userfooterbox {
+	background: none;
+}
+
+.leftsidemenu {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 252px;
+	z-index: 99;
+	display: table;
+	background-image: url(../images/sidemenubg.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #fff;
+}
+
+.leftsidemenu ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.leftsidemenu li,
+.leftsidemenu .dropdown {
+	list-style: none;
+	width: 100%;
+	display: inline-block;
+	padding-bottom: 7px;
+}
+
+.leftsidemenu li a,
+.leftsidemenu .dropdown a,
+.leftsidemenu .logoutmenu {
+	color: #666666;
+	font-size: 15px;
+	position: relative;
+	text-decoration: none;
+	padding: 12px 14px;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 3px;
+	width: 100%;
+	display: inline-block;
+}
+
+
+
+.progrsbar-d .slider-tick.round {
+	display: none !important;
+}
+
+.progrsbar-d .slider-selection.tick-slider-selection {
+	background: #FFC632 !important;
+}
+
+.progrsbar-d .slider-handle {
+	top: -2px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #FFC632 !important;
+	background: #FFC632;
+}
+
+.leftsidemenu .dropdown-menu a:hover {
+	background-color: #ffffff0e;
+}
+
+.leftsidemenu li.active a,
+.leftsidemenu li.active a:hover,
+.leftsidemenu li.active a:focus,
+.leftsidemenu li.active a:active {
+	background: #1e202a;
+}
+
+
+.leftsidescroll a img,
+.leftsidescroll .logoutmenu img {
+	width: 100%;
+	max-width: 20px;
+	margin-right: 9px;
+	opacity: 0.5;
+}
+
+.leftsidemenu hr {
+	border-color: #bdbdbd;
+}
+
+.leftsidemenu a.active {
+	background: #f0f0f0;
+	color: #1e1e1e;
+	border-color: #323232;
+}
+
+.leftsidemenu a.active img {
+	opacity: 1;
+}
+
+.leftsidemenu li a>div,
+.leftsidemenu li>div>div {
+	display: inline-block;
+	text-align: left;
+}
+
+.leftsidemenu .dropdown-menu {
+	background: #ffffff;
+	position: relative !important;
+	box-shadow: 0px 0px 9px 4px #0000001f;
+	transform: inherit !important;
+}
+
+.leftsidemenu .dropdown-toggle::after {
+	position: absolute;
+	right: 0px;
+	top: 21px;
+	font-size: 18px;
+}
+
+.leftsidemenu .dropdown-menu a {
+	padding: 10px 12px;
+}
+
+.leftsidemenu .dropdown-menu img {
+	margin-right: 8px;
+}
+
+.pagewrapperbox .leftsidemenu {
+	display: none;
+	width: 240px;
+}
+
+.pagecontent .apiwhitelist-y {
+	border: 1px solid #e3e3e3;
+	border-radius: 15px;
+	padding: 25px 20px;
+	margin: 18px 0px;
+	position: relative;
+}
+
+.pagecontent .apiwhitelist-y img {
+	width: 100%;
+	max-width: 40px;
+}
+
+.apiwhlit-y .tabrightbox {
+	position: absolute;
+	right: 7px;
+	top: -8px;
+}
+
+.pagecontent .apiwhitelist-y p {
+	line-height: 24px !important;
+	font-size: 14px !important;
+	margin: 0;
+}
+
+.pagecontent .apiwhitelist-y h6 {
+	line-height: 26px;
+	margin: 0;
+}
+
+.pagecontent .adrescrol-y {
+	max-height: 500px !important;
+}
+
+/* .pagecontent .adrescrol-y {
+	max-height: 270px !important;
+} */
+
+.pagecontent .adrescrol-y h6 {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.apiwhitelist-y .tabrightbox {
+	right: 25px;
+	top: 16px;
+	position: absolute;
+}
+
+.alert-icon-y {
+	font-size: 33px;
+	color: #ff7f18;
+	display: flex;
+}
+
+.wallet-dropdown-container {
+	position: relative;
+}
+
+.wallet-toggle-icon {
+	cursor: pointer;
+}
+
+.wallet-dropdown {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 150px;
+	background: #fff;
+	border: 1px solid #f7f7f7;
+	border-radius: 5px;
+	box-shadow: 0 2px 8px rgba(200, 200, 200, 0.5);
+	z-index: 1000;
+}
+
+.wallet-dropdown-item {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.wallet-dropdown-item:hover {
+	background: #f5f5f5;
+}
+
+.spotcoy-five-y .tabrightbox {
+	top: -2px;
+
+}
+
+.apiwhitlit-y {
+	width: 141%
+}
+
+.apiwhlit-y {
+	width: 133%;
+	position: relative;
+}
+
+.pagecontent .addressscroll-y {
+	max-height: 380px;
+}
+
+.pagecontent .activesessions-y {
+	max-height: 370px;
+}
+
+.pagecontent .addadres {
+	position: relative
+}
+
+.pagecontent .addadres .tabrightbox {
+	position: relative;
+	text-align: right;
+	top: 4px;
+}
+
+.freqbtn-y span {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 4px 0;
+	border-radius: 20px;
+}
+
+.freqbtn-y .active {
+	background: linear-gradient(#FFC632, #FF6A00);
+	border: 1px solid #FFC632;
+	color: #000;
+}
+
+.freqbtn-y span:hover {
+	background: linear-gradient(#FFC632, #FF6A00);
+}
+
+.suborderbook .tabrightbox {
+	position: absolute;
+	right: 8px;
+	top: 0px;
+	margin-top: 1px;
+}
+
+.pagewrapperbox .leftsidemenu.active {
+	visibility: visible !important;
+}
+
+.pagewrapperbox .leftsidemenu.active .closeiconbtn {
+	display: block;
+}
+
+.pagewrapperbox .leftsidemenu.active li a>div {
+	display: inline-block;
+}
+
+.leftsidemenu li a i,
+.leftsidemenu .dropdown a i {
+	display: inline-block;
+	margin: 0px;
+	width: 20px;
+	height: auto;
+	padding: 0px;
+	margin-right: 10px;
+}
+
+.leftsidemenu.active li a:hover>div::after {
+	display: none;
+}
+
+.pagewrapperbox .leftsidemenu.active a {
+	width: 100%;
+	display: inline-block;
+}
+
+.pagecontent .pwdnotes p {
+	font-size: 14px !important;
+}
+
+.uheadbg {
+	padding-left: 0px;
+	background: none;
+}
+
+.uheadbg .container {
+	width: 100%;
+	max-width: 100%;
+}
+
+.gridparentbox {
+	padding-bottom: 50px;
+	padding-top: 0px;
+	position: relative;
+	padding-left: 274px;
+	padding-right: 15px;
+}
+
+.heading-box {
+	margin: 0px;
+	color: #141414;
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.btn-block {
+	width: 100%;
+}
+
+.supportbg .tabrightbox {
+	top: 0;
+}
+
+.innerpagecontent {
+	position: relative;
+	padding-top: 83px;
+	z-index: 9;
+	padding-right: 30px;
+	padding-bottom: 17px;
+	padding-left: 274px;
+}
+
+.sidelogoicon {
+	padding: 10px;
+	padding-top: 20px;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.sidelogoicon img {
+	width: 100% !important;
+	max-width: 165px !important;
+}
+
+.innerpagecontent .tabrightbox {
+	top: 0px;
+	right: 0px;
+}
+
+.innerpagecontent .h2 {
+	font-size: 27px;
+	margin: 0;
+	text-align: left;
+	font-weight: 600;
+	color: #141414;
+}
+
+.innerpagecontent .boxtabb .tabbanner .nav-item .nav-link {
+	min-width: 100px;
+	text-align: center;
+}
+
+.innerpagegrid .gridparentbox .sitecontainer {
+	position: relative;
+}
+
+.sitecontainer {
+	width: 100%;
+	max-width: 100%;
+}
+
+.innerpagegrid .centerbox .heading-box {
+	font-size: 16px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+textarea {
+	max-height: 250px;
+	resize: none;
+	height: auto !important;
+}
+
+.dashboardpage .profiletablebox {
+	width: 100%;
+}
+
+.dashboardpage .profiletablebox h4>span,
+.dashboardpage .profiletablebox h5>span {
+	padding-left: 10px;
+}
+
+.dashboardpage .profiletablebox>div:last-child {
+	float: right;
+	text-align: right;
+}
+
+.chartflexbox .profiletablebox>div:first-child {
+	width: 60px !important;
+}
+
+.profileshowbox .photopic {
+	width: 146px;
+	height: 146px;
+	margin: 0px auto;
+	display: block;
+	margin-bottom: 25px;
+	border-radius: 50%;
+}
+
+.profileshowbox h5 {
+	border-radius: 50px;
+	padding: 0px 42px;
+	font-size: 15px;
+	width: 100%;
+	display: inline-block;
+	line-height: 23px;
+	text-align: center;
+}
+
+.profileshowbox h5 .t-gray {
+	font-weight: 400;
+	color: #9b9b9b;
+	font-size: 16px;
+	padding-top: 3px;
+}
+
+.securitylink a:hover,
+.securitylink a:focus,
+.securitylink a:active {
+	text-decoration: underline;
+}
+
+.mobiletoggle {
+	display: none;
+}
+
+.mobiletoggle button {
+	padding: 2px 6px;
+	border: 0px;
+	background: none;
+	background: none;
+}
+
+.mobiletoggle button:hover,
+.mobiletoggle button:focus {
+	outline: none;
+	border: 0px !important;
+	box-shadow: none !important;
+	background: none;
+	outline-offset: 0px;
+}
+
+.mobiletoggle img {
+	width: 23px;
+}
+
+.securitylink a:hover,
+.securitylink a:focus,
+.securitylink a:active {
+	text-decoration: none;
+}
+
+.light-green {
+	color: #02c076 !important;
+}
+
+.bckbtn {
+	margin-top: 30px;
+}
+
+.bckbtn .btn,
+.bckbtn .btn:hover,
+.bckbtn .btn:focus,
+.bckbtn .btn:active {
+	font-size: 13px;
+	text-transform: inherit;
+}
+
+.copiedbtn .input-group-text {
+	border: 1px solid #fbeaed;
+	background: #fbeaed;
+	color: #d9304e;
+	text-transform: inherit;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.notessub h5 {
+	font-size: 14px;
+	color: #333;
+}
+
+.notessub p {
+	font-size: 13px;
+	padding-bottom: 3px;
+	margin: 0px;
+}
+
+.notestitle p {
+	font-size: 14px;
+	margin: 0px;
+	line-height: 25px;
+	display: flex;
+	margin-bottom: 7px;
+}
+
+.notestitle p>span {
+	width: 100%;
+}
+
+.authtblemdlbox .notesgray {
+	padding: 15px;
+	border-radius: 8px;
+	background-color: #fafafa;
+}
+
+.notestitle {
+	padding: 10px 0px;
+}
+
+.text-info {
+	color: #02c076 !important;
+	font-size: 14px;
+}
+
+.centerbox .contentpanel {
+	padding: 15px;
+}
+
+.prfbtn {
+	position: relative;
+}
+
+.centerbox {
+	width: 100%;
+	max-width: 542px;
+}
+
+.flexb {
+	display: flex;
+}
+
+.flexb>div {
+	margin: 5px 5px;
+	width: 100%;
+}
+
+.modal {
+	top: 0;
+}
+
+.chatboxtop {
+	width: 100%;
+	max-width: 690px;
+}
+
+.kyctablebox .bg-warning {
+	background-color: #1076ec !important;
+}
+
+.topboxparentbg {
+	position: relative;
+	padding: 11px 0px;
+}
+
+.kycproffbox {
+	padding: 21px 21px;
+	border-radius: 7px !important;
+	background: #fdfdfd;
+	border: 1px dashed #d7d7d7;
+	display: table;
+	width: 100%;
+}
+
+.kyc-prof-fbo {
+	padding: 21px 21px;
+	border-radius: 7px !important;
+	background: #fdfdfd;
+	border: 1px dashed #d7d7d7;
+	display: block;
+	width: 100%;
+}
+
+.kyc-prof-fbo img {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+}
+
+.kycproffbox>div {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+
+.kycproffbox>div:last-child {
+	width: 155px;
+}
+
+.kycproffbox p {
+	margin: 0;
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+
+.kycproffbox img {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+}
+
+.wizardform .kycproffbox img {
+	border: 1px solid #ccc;
+	border-radius: 50px;
+	background: #f6f6f6;
+}
+
+.dropdown-large .sitetable tbody tr td {
+	padding: 7px 12px;
+}
+
+.closeiconbtn .btn i {
+	top: inherit;
+	position: relative;
+	right: 0;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.flexboxuser {
+	display: flex;
+}
+
+.flexboxuser>div {
+	width: 100%;
+	margin: 8px 8px;
+}
+
+.flexboxuser>div:first-child {
+	margin-left: 0px;
+}
+
+.flexboxuser>div:last-child {
+	margin-right: 0px;
+}
+
+.bg-none {
+	background: none !important;
+}
+
+.usermenu hr {
+	border-color: #cbcbcb;
+	margin: 11px 10px;
+}
+
+.walletpagebg .flexboxuser>div:first-child {
+	width: 55%;
+}
+
+.transactioncht {
+	height: 267px;
+	margin-top: 23px;
+}
+
+.devicetable {
+	width: 100%;
+	gap: 10px;
+}
+
+
+.charttable>div {
+	padding: 0px 0px;
+}
+
+.charttable>div:first-child {
+	width: 60%;
+}
+
+.charttable>div:last-child {
+	width: 34%;
+	text-align: right;
+}
+
+.wt-end {
+	display: block;
+}
+
+.cry-wallet {
+	width: 100%;
+	max-width: 150px;
+	padding-top: 25px;
+}
+
+.wallet-table {
+	display: table;
+	width: 100%;
+}
+
+.wallet-table>div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.overview>div:last-child {
+	text-align: right;
+}
+
+.balanceshowt h5 {
+	margin: 0px;
+	line-height: 23px;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.balanceshowt .h4,
+.balancetableb .h4 {
+	font-size: 20px;
+	margin: 0px;
+	font-weight: 600;
+	padding-top: 4px;
+}
+
+.dashboardpage .balancetableb .h4 {
+	font-size: 18px;
+}
+
+.balancetableb hr {
+	margin: 20px 0px;
+	border-color: #00000029;
+}
+
+.balanceshowt .h4>span {
+	font-size: 15px;
+}
+
+.blancecbox .balanceshowt {
+	padding-bottom: 14px;
+}
+
+.notifyicon {
+	padding: 0px !important;
+}
+
+.balanceflexb .balanceshowt .h4 {
+	margin: 0px;
+	display: inline-block;
+	line-height: 39px;
+	font-size: 26px;
+	padding-top: 0;
+}
+
+.wlletpricebox {
+	display: table;
+	width: 100%;
+	padding: 0px;
+}
+
+.wlletprceborder {
+	padding: 14px 15px;
+	border: 1px solid #232323;
+	border-radius: 5px;
+	margin-bottom: 14px;
+}
+
+.wlletpricebox>div {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+
+.wlletpricebox>div:first-child {
+	width: 50px;
+}
+
+.wlletpricebox h3 {
+	font-size: 20px;
+}
+
+.wlletpricebox h5 {
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+.wlletpricebox p {
+	margin: 0px;
+}
+
+.borderbox {
+	background: none;
+	border: 1px dashed #5b5b5b;
+}
+
+.waletdepst {
+	position: relative;
+}
+
+.chartlineicon img {
+	width: 100%;
+	max-width: 150px;
+	margin-top: 15px;
+}
+
+.wlletrightbox .chartlineicon img {
+	margin-top: 10px;
+}
+
+.wlletrightbox>div {
+	width: 50%;
+}
+
+.chartlineicon {
+	min-height: 50px;
+}
+
+.coinflexb>span {
+	width: 100%;
+}
+
+.coinflexb>span:first-child {
+	width: 40px;
+}
+
+.webhide {
+	display: none !important;
+}
+
+.profiletablebox h4 {
+	font-size: 16px;
+	margin: 0px;
+	padding-bottom: 0px;
+	font-weight: 500;
+}
+
+.securityinnerbox hr {
+	margin: 19px 0px;
+}
+
+.profiletablebox h5 {
+	padding-bottom: 0;
+	line-height: 20px;
+	font-size: 13px;
+	padding-top: 7px;
+	margin: 0px;
+	font-weight: 400;
+}
+
+.faverifybox .panelcontentbox {
+	padding: 16px 10px;
+}
+
+.optverify {
+	padding: 18px 0px !important;
+	position: relative;
+	margin: 0px auto;
+	width: 10% !important;
+	background: none !important;
+	border: 0px !important;
+}
+
+.securityinnerbox .d-flex>div:first-child {
+	width: 30%;
+	padding-right: 30px;
+}
+
+.securityinnerbox .d-flex>div:last-child {
+	width: 70%;
+}
+
+.securityinnerbox .profiletablebox {
+	display: table;
+	width: 100%;
+}
+
+.securityinnerbox .profiletablebox>div {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.securityinnerbox .contentbox>div:first-child {
+	width: 43px;
+}
+
+.securityinnerbox .profiletablebox>div:nth-child(2) {
+	padding-right: 10px;
+}
+
+
+
+
+
+
+
+.securityinnerbox .profiletablebox>div:last-child {
+	text-align: right;
+	width: 125px;
+}
+
+.securityiconbox {
+	width: 100%;
+	max-width: 30px;
+	/* animation: securityFloat 2s ease-in-out infinite; */
+}
+
+@keyframes securityFloat {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-4px);
+	}
+}
+
+.boxtabb .tabbanner img {
+	width: 100%;
+	max-width: 30px;
+	display: inline-block;
+	margin: 0px auto;
+	margin-right: 6px;
+	filter: brightness(0.5);
+}
+
+.securitymdl .modal-dialog {
+	max-width: 750px;
+}
+
+.otpverifybg.d-flex {
+	gap: 5px;
+}
+
+.otpverifybg.d-flex>.form-control.code-input {
+	text-align: center;
+}
+
+.antiflexbox>div {
+	width: 100%;
+	margin: 19px;
+	text-align: center;
+	background: #f5f5f5;
+	padding: 40px 60px;
+	border: 1px solid #ededed;
+	border-radius: 10px;
+}
+
+
+
+.anticodebox h4 {
+	padding-bottom: 5px;
+	font-size: 17px;
+	margin: 0px;
+	line-height: 21px;
+}
+
+.notesh5 {
+	font-size: 15px;
+	line-height: 23px;
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+.alrt-y.red-btn p {
+	color: #fff;
+}
+
+.alrt-y.yellow-btn p {
+	color: #664d03;
+}
+
+.grn-btn,
+.grn-btn:hover,
+.grn-btn:focus,
+.grn-btn:active {
+	background: #39a957e8 !important;
+	color: #fff !important;
+	box-shadow: none;
+	border-color: #39a957e8;
+}
+
+.alrt-y.grn-btn p {
+	color: #fff;
+}
+
+.check-icon-y {
+	width: 100%;
+	max-width: 53px;
+	margin-bottom: 10px;
+}
+
+.sendcodebtn .btn {
+	padding: 5px 6px !important;
+	font-size: 14px !important;
+	background: none;
+	color: #2A64FB;
+	text-decoration: underline;
+}
+
+.flexbox.pf-box>div:first-child {
+	width: 30%;
+}
+
+.flexbox.pf-box>div:last-child {
+	width: 70%;
+}
+
+.profilebox .profilepic {
+	width: 110px !important;
+	height: 110px;
+	background-color: #e5e5e5;
+	border-radius: 50%;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 2px;
+	background-size: cover;
+	border: 3px solid #dadada;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+.profiledatainfo h4 {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.profilepic img {
+	width: 100%;
+	height: 100%;
+}
+
+.profilebox>div {
+	width: 100%;
+}
+
+.profilebox>div:first-child {
+	width: 137px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.profiledatainfo .h5 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+}
+
+.flexbox {
+	display: flex;
+	width: 100%;
+}
+
+.flexbox>div {
+	width: 100%;
+	margin: 7px 7px;
+}
+
+.flexbox>div:first-child {
+	margin-left: 0px;
+}
+
+.flexbox>div:last-child {
+	margin-right: 0px;
+}
+
+.supportlist .tabrightbox {
+	right: 20px;
+	top: 10px;
+}
+
+.supportbg .flexbox {
+	padding: 0px;
+	gap: 0;
+}
+
+.supportbg .flexbox>div {
+	margin: 0px;
+	padding: 0;
+}
+
+.supportsearch {
+	padding: 15px;
+}
+
+.supportbg .badge {
+	padding: 6px 10px;
+	min-width: 74px;
+	font-size: 12px;
+	color: #000;
+}
+
+.chat li {
+	display: table;
+	width: 100%;
+	padding: 4px 14px;
+}
+
+.chat li>div {
+	display: table-cell;
+	vertical-align: top;
+	float: none;
+}
+
+.chat li .chat-img {
+	width: 43px;
+}
+
+.chatbox .img-circle {
+	width: 40px;
+	height: 40px;
+	border: 0px;
+	border-radius: 50%;
+	margin-top: 0px;
+	background: #e0e0e0;
+	padding: 6px;
+}
+
+.chatbox li.right .img-circle {
+	background: #e6e6e6;
+}
+
+.chatbox .header {
+	margin: 0px 9px;
+	display: inline-block;
+}
+
+.chat li.right {
+	float: right;
+	text-align: right;
+}
+
+.supportbg .thead {
+	font-size: 16px !important;
+	font-weight: 500;
+	margin-bottom: 5px !important;
+}
+
+.chat .h4 {
+	margin: 0px;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+.chat .chat-body p {
+	word-break: break-word;
+	line-height: 22px;
+	font-size: 14px !important;
+	background: #ffecda;
+	padding: 7px 15px;
+	margin-bottom: 10px;
+	color: #252525;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+}
+
+.chat .right p {
+	background: #e7e7e7;
+	border-radius: 10px;
+	border-top-right-radius: 0px;
+}
+
+.chat {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.chat-foot {
+	background: #ffffff;
+	width: 100%;
+	padding: 15px 15px;
+	border-top: 1px solid #ececec;
+	position: relative;
+}
+
+.supportbg .tabrightbox.imguploadbg {
+	z-index: 9;
+	top: 5px !important;
+}
+
+.supportbg .flexbox>div:first-child {
+	width: 30%;
+	border-right: 1px solid #ececec;
+	padding-top: 0;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.supportbg .flexbox>div:last-child {
+	width: 70%;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.supportlistscroll {
+	max-height: 425px;
+}
+
+.chatboxscroll {
+	max-height: 298px;
+	min-height: 298px;
+	margin-bottom: 22px;
+}
+
+.totblance.ern-hts-y {
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+	color: #000;
+	padding: 25px;
+}
+
+.totblance {
+	width: 100%;
+	display: inline-block;
+	color: #000;
+}
+
+.walletbalancebox {
+	display: table;
+	width: 100%;
+}
+
+.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox>div {
+	margin: 0px !important;
+}
+
+.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox {
+	gap: 10px;
+}
+
+.balanceshowt img {
+	width: 100%;
+	max-width: 72px;
+}
+
+
+.walletoverviewbg .flexbox>div:first-child {
+	width: 65%;
+}
+
+.walletoverviewbg .flexbox>div:last-child {
+	width: 35%;
+}
+
+.spotbalancechart {
+	width: 100% !important;
+	height: 266px !important;
+}
+
+.charttransation {
+	width: 100% !important;
+	height: 280px !important;
+}
+
+.charttransation .highcharts-axis-line {
+	stroke: #e6e6e6;
+}
+
+.kycpage .lightgraybg th {
+	background: #f4f7f8;
+}
+
+.kycpage .lightgraybg {
+	background: #f4f7f8;
+}
+
+.wlletdroplist .dropdown-toggle {
+	background-color: #f5f5f5 !important;
+	border: 1px solid #ccc !important;
+	color: #000 !important;
+	padding: 2px 12px;
+	border-radius: 5px;
+}
+
+.wlletdroplist .dropdown-toggle::after {
+	display: none;
+}
+
+.wlletdroplist .dropdown-item {
+	color: #000;
+	font-size: 15px !important;
+	padding: 10px 18px !important;
+	position: relative;
+	margin: 0px !important;
+	font-weight: 500;
+	margin-bottom: 3px;
+	border-radius: 5px;
+}
+
+.wlletdroplist .dropdown-menu {
+	background: #ffffff;
+	padding: 5px;
+	border-radius: 7px;
+	border: 0px;
+	overflow: hidden;
+	box-shadow: 1px 5px 16px 9px #0000001c;
+}
+
+.highcharts-exporting-group {
+	display: none;
+}
+
+.highcharts-credits {
+	display: none;
+}
+
+.supportsearch .form-control,
+.supportsearch .input-group-text {
+	height: 39px;
+}
+
+.walletpagebg .notesgray {
+	width: 100%;
+	display: inline-block;
+}
+
+.notestitle p>.t-black {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.trendcoinlist .d-flex {
+	padding: 5px 10px;
+	border: 1px solid #f5f5f5;
+	border-radius: 8px;
+	cursor: pointer;
+	background: #f5f5f5;
+	align-items: center;
+}
+
+.selectedcoin .d-flex {
+	border-color: #ffb703;
+	background: #ffb703;
+}
+
+.trendcoinlist li {
+	float: left;
+	padding: 5px;
+	list-style: none;
+}
+
+.trendcoinlist li a {
+	text-decoration: none;
+}
+
+.trendcoinlist li a h5 {
+	color: #000;
+}
+
+.trendcoinlist h5 {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.trendcoinlist .d-flex>div {
+	width: 100%;
+	margin: 0px 4px;
+}
+
+.trendcoinlist .coinlisticon {
+	width: 20px !important;
+}
+
+.trendcoinlist .d-flex>div:first-child {
+	width: 15px;
+}
+
+.trendcoinlist p {
+	margin-bottom: 0px;
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.trendcoinlist {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	width: 100%;
+}
+
+.leftsidetabbg>div:first-child {
+	width: 60%;
+}
+
+.leftsidetabbg>div:last-child {
+	width: 40%;
+}
+
+.walletpagebg .coinlisticon {
+	width: 28px;
+}
+
+.link-div {
+	display: flex;
+	flex-wrap: inherit;
+	margin: 0px;
+}
+
+.stoplimtboxt .link-div>div:first-child {
+	margin-left: 0px;
+}
+
+.stoplimtboxt .link-div .activelimit {
+	color: #ffffff;
+	border-color: #ff840e;
+	background: #ff840e;
+}
+
+.stoplimtboxt .link-div>div {
+	border: 1px solid #e3e3e3;
+	text-align: center;
+	padding: 2px 7px;
+	background: #f1f1f1;
+	margin-left: 4px;
+	cursor: pointer;
+	font-size: 12px;
+	border-radius: 5px;
+	line-height: 20px;
+	width: 100%;
+}
+
+.stoplimtboxt .link-div>div:hover {
+	background: #d9d9d9;
+	color: #000;
+	border-color: #d9d9d9;
+}
+
+.wlltdpstbox .coinicon {
+	width: 24px;
+}
+
+.historypage .coinicon {
+	width: 25px;
+}
+
+.historypage .tabbanner {
+	margin-bottom: 0;
+}
+
+.devicebox .tabbanner {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.searchfrm {
+	margin: 0px;
+	position: relative;
+	display: flex;
+	border-bottom: 1px solid #e3e3e3;
+	flex-wrap: wrap;
+}
+
+.missingfunddetails-pages .searchfrm {
+	border-bottom: none;
+}
+
+.clearbtn .btn {
+	border-radius: 4px;
+	text-transform: capitalize;
+	font-size: 14px !important;
+	padding: 10px 21px !important;
+	width: 100%;
+}
+
+.searchfrm .form-group {
+	margin-bottom: 11px;
+}
+
+.clearbtn .form-group {
+	display: flex;
+}
+
+.searchfrm>div {
+	width: auto;
+	padding: 0px 5px;
+	display: inline-block;
+	min-width: 200px;
+}
+
+.searchfrm .form-control {
+	height: 40px;
+}
+
+.qrcode img {
+	width: 100%;
+	max-width: 152px;
+}
+
+.dateinput {
+	position: relative;
+}
+
+.dateinput .form-control {
+	background: none;
+}
+
+.react-datepicker-wrapper {
+	display: block !important;
+}
+
+.pf-box .dateinput::before {
+	top: 40px;
+}
+
+.dateinput::before {
+	content: "\f073";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #000;
+	font-size: 13px;
+	padding-left: 2px;
+	position: absolute;
+	top: 8px;
+	right: 15px;
+}
+
+.profileiconpic {
+	width: 45px;
+	height: 45px;
+	border-radius: 50px;
+	background-color: #ccc;
+	border: 2px solid #ccc;
+	padding: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profileiconpic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+}
+
+.chat .primary-font {
+	margin: 0px;
+	font-size: 15px;
+	padding-bottom: 7px;
+}
+
+.chat h5 {
+	margin: 0px;
+	font-size: 12px;
+	color: #979797;
+	font-style: italic;
+}
+
+.cardlist .btn {
+	background: #ebebeb !important;
+	padding: 7px 14px !important;
+	color: #000;
+}
+
+.profilcontent .contentbox {
+	padding: 0px 0px;
+	padding-bottom: 0px;
+}
+
+.cardlistbox table tr td {
+	padding: 8px 10px !important;
+	font-size: 14px;
+	white-space: inherit;
+}
+
+.cardlistbox table tr:hover {
+	background: none !important;
+}
+
+.cardlist .fa-bars {
+	transform: rotate(90deg);
+}
+
+.cardlistbox>div {
+	margin-bottom: 20px;
+}
+
+.livepricenavbg .dropdown-toggle .coinlisticon {
+	width: 23px;
+	position: relative;
+	top: -1px;
+}
+
+.flexboxtable.intertransfer>div:first-child {
+	width: 40%;
+}
+
+.refbox>div .table-content>div:last-child {
+	text-align: right;
+}
+
+.rf-img {
+	width: 100%;
+	max-width: 34px !important;
+}
+
+.refbox {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.refbox>div {
+	width: 50%;
+	padding: 5px 12px;
+	background: none;
+}
+
+.refbox>div:nth-child(odd) {
+	padding-left: 0px;
+}
+
+.refbox>div:nth-child(even) {
+	padding-right: 0px;
+}
+
+.reflex>div:first-child {
+	width: 75%;
+}
+
+.reflex>div:last-child {
+	width: 35%;
+}
+
+.reflex {
+	gap: 15px;
+	width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #000;
+	transition: background-color 5000s ease-in-out 0s;
+	box-shadow: inset 0 0 20px 20px #fff;
+}
+
+.noteshow {
+	display: none;
+}
+
+.infonotes .noteshow {
+	background: #181a20 !important;
+	position: absolute;
+	top: -2px;
+	right: 0px;
+}
+
+.prediticon {
+	position: absolute;
+	bottom: 0;
+	right: 11px;
+	font-size: 14px;
+	width: 27px;
+	line-height: 25px;
+	height: 27px;
+	border: 1px solid #ddd;
+	border-radius: 35px;
+	color: #000;
+	background: linear-gradient(#FFC632, #FF6A00);
+	box-shadow: 0px 1px 6px -6px #00000061;
+	cursor: pointer;
+	text-align: center;
+	margin: 0px;
+}
+
+.scicon {
+	width: 100%;
+	max-width: 30px;
+}
+
+.pficon {
+	width: 100%;
+	max-width: 55px;
+	margin-bottom: 15px;
+}
+
+.chatticketlist .nodata img {
+	max-width: 170px;
+	margin-bottom: 13px;
+}
+
+.chatticketlist {
+	min-height: 550px;
+	padding: 0 !important;
+}
+
+.bottommenulast {
+	padding: 0px 29px;
+}
+
+.menuicon {
+	width: 18px;
+	height: 18px;
+}
+
+.notifyicon {
+	padding: 0px !important;
+}
+
+.notifyicon .nodata img {
+	max-width: 50px;
+	filter: grayscale(1);
+	opacity: 0.5;
+}
+
+.notifyicon .userprofiledrop p {
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	padding-bottom: 7px;
+}
+
+.headbg .notifyicon .dropdown-menu>a:first-child {
+	background: #ffffff !important;
+	padding: 2px 16px !important;
+	color: #000000 !important;
+	text-align: center;
+}
+
+.notifyicon .righticon {
+	position: absolute;
+	top: 15px;
+	right: 14px;
+	font-size: 14px;
+}
+
+.notifyicon .righticon img {
+	width: 12px;
+	height: 12px;
+}
+
+.notifyicon .dropdown-menu .dropdown-item {
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.chat-notification {
+	max-height: 250px;
+}
+
+.langmenu .dropdown-menu a img {
+	width: 25px;
+	height: 25px;
+	border-radius: 50px;
+	background: #f5f5f5;
+	margin-right: 10px;
+}
+
+.drpqrimg {
+	width: 100%;
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+.downdrp .dropdown-menu {
+	text-align: center;
+}
+
+.usermenudrop .dropdown-toggle::after,
+.notifyicon .dropdown-toggle::after {
+	display: none;
+}
+
+.historypage .dateinput::before {
+	top: 10px;
+}
+
+.notslist {
+	padding: 0px;
+	padding-left: 20px;
+}
+
+/*new css start*/
+.totblance .table-content>div:last-child {
+	width: 150px;
+}
+
+.tb-img {
+	max-width: 97px !important;
+	margin: 0px !important;
+}
+
+.walletoverviewbg .innerpagecontent .tabrightbox {
+	top: -3px;
+}
+
+.walletoverviewbg .wllettable .tabrightbox {
+	top: 21px;
+}
+
+.leftsidetabbg .notestitle p {
+	display: flex;
+}
+
+.leftsidetabbg .notestitle p>span {
+	width: 100%;
+	display: inline-block;
+}
+
+.leftsidetabbg .notestitle p>span:last-child {
+	text-align: right;
+}
+
+.secttable {
+	padding-bottom: 65px;
+	position: relative;
+}
+
+.g-qr {
+	width: 100%;
+	max-width: 140px;
+	margin: 10px 0px;
+}
+
+.authbg .secttable::before {
+	content: "";
+	position: absolute;
+	left: 17px;
+	top: 19px;
+	border-left: 2px dashed #fac91b;
+	width: 20px;
+	height: 103%;
+}
+
+.authbg .secttable:last-child::before {
+	display: none;
+}
+
+.secttable>div {
+	vertical-align: top;
+}
+
+.secttable>div:first-child {
+	width: 50px;
+}
+
+.secttable h3 {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.numiconb {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	padding: 7px;
+	text-align: center;
+	background: #fac91b;
+	border-radius: 35px;
+	position: relative;
+	color: #000;
+}
+
+.innerpagecontent p {
+	font-size: 17px;
+	padding-top: 4px;
+	margin: 0px;
+	color: #000;
+}
+
+.authbg li {
+	font-size: 14px;
+	line-height: 28px;
+	padding-bottom: 4px;
+}
+
+.apimg {
+	width: 100%;
+	max-width: 149px;
+}
+
+.authbg .google_code .h5 {
+	font-size: 15px;
+	margin: 0;
+}
+
+.authbg h3 {
+	font-size: 16px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	font-weight: 600;
+}
+
+.authbg {
+	width: 100%;
+	max-width: 750px;
+}
+
+.securitycontentbox {
+	width: 100%;
+	max-width: 576px;
+}
+
+.authbg p,
+.secttable p {
+	font-size: 14px;
+}
+
+.lightgraybg {
+	background: #f5f5f5;
+}
+
+.nummodal .d-flex .btn,
+.emailpopup .d-flex .btn,
+.authmodal .d-flex .btn {
+	width: 49%;
+}
+
+.delteaccpage .notslist li,
+.frzzacpage .notslist li {
+	color: #404040;
+	font-size: 14px;
+	padding-bottom: 6px;
+}
+
+.notslist .form-check label {
+	font-size: 14px;
+	margin: 0px;
+	color: #404040;
+}
+
+.checkradiobox li {
+	list-style: none;
+}
+
+.checkradiobox {
+	padding-left: 4px !important;
+}
+
+.checkradiobox .form-check label {
+	position: relative;
+	top: -3px;
+}
+
+.delteaccpage .secttable h3,
+.frzzacpage .secttable h3 {
+	font-size: 18px;
+}
+
+/*new css end*/
+/* Dashboard-css */
+
+.prgrsbar-y.prgrsflx {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.introbox .table-content>div:first-child {
+	vertical-align: top;
+	width: 61px;
+}
+
+.introbox h4 {
+	font-size: 15px;
+	margin-bottom: 3px;
+}
+
+.introbox .h5 {
+	font-size: 14px;
+	padding-bottom: 0px;
+	display: inline-block;
+	margin: 0px;
+	line-height: 23px;
+}
+
+.introbox .h5 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.introbox .h5 a svg {
+	font-size: 13px;
+}
+
+.cryptdetbox>div {
+	padding-bottom: 15px;
+}
+
+.uheadbg .navbar-brand {
+	display: block;
+	text-align: left;
+	width: 210px;
+}
+
+.qcgo-dash {
+	flex-wrap: wrap;
+	gap: 13px;
+}
+
+.qcgo-dash>div {
+	margin: 0 !important;
+	padding: 20px 20px;
+	width: 100%;
+	background: #fff4e7;
+}
+
+.qcgo-dash .table-content>div:first-child {
+	width: 64px;
+}
+
+.qcgo-dash img {
+	padding: 10px;
+	width: 50px;
+	height: 47px;
+	background: #ffffff;
+	border-radius: 8px;
+}
+
+.qcgo-dash h5 {
+	font-size: 14px;
+	padding-bottom: 0;
+	font-weight: 500;
+	margin-bottom: 2px;
+}
+
+.qcgo-dash p {
+	margin-bottom: 0px;
+	color: #353535;
+}
+
+.quickgo h5 {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 600;
+}
+
+.recommendbox p {
+	font-size: 14px;
+	color: #4c4c4c;
+	line-height: 22px;
+}
+
+.quickgo .alink {
+	padding-right: 10px !important;
+	white-space: nowrap;
+}
+
+.devicebox>div {
+	width: 100%;
+	margin: 0px 0px;
+}
+
+.tablebox {
+	margin-bottom: 0;
+	display: flex;
+}
+
+.tablebox>div {
+	margin: 9px 7px;
+	width: 100%;
+	padding: 20px;
+	margin-top: 0;
+	border-radius: 12px;
+	background: linear-gradient(180deg, #ffc63270, #ff6a0036);
+
+}
+
+.nightmode .tablebox>div {
+	background: linear-gradient(#7a590170, #592501a6);
+}
+
+
+.tablebox>div:first-child {
+	margin-left: 0px;
+}
+
+.tablebox>div:last-child {
+	margin-right: 0px;
+}
+
+.walletbalancebox .tablebox>div:last-child {
+	border-right: 0px;
+}
+
+.walletbalancebox>div:last-child>div {
+	border-bottom: 0px;
+}
+
+.overviewbalancebox p {
+	margin-bottom: 5px;
+}
+
+.overviewbalancebox h3 {
+	font-size: 26px;
+	margin: 0px;
+	font-weight: 600;
+}
+
+.overviewbalancebox .table-content>div {
+	width: auto;
+}
+
+.overviewbalancebox .table-content>div:last-child {
+	width: 50px;
+}
+
+.devicetable .table-responsive {
+	max-height: 295px;
+}
+
+.formtabrightbox .tabrightbox {
+	top: -2px;
+}
+
+.transnotes {
+	font-size: 13px;
+	line-height: 19px;
+}
+
+.arrowhead {
+	position: absolute;
+	right: 0;
+	top: -5px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+.exchangeicon img {
+	width: 100%;
+	max-width: 22px;
+}
+
+.dashlangage .dshlang {
+	width: 100%;
+	margin-left: auto;
+}
+
+.dashlangage .form-control {
+	background: none;
+	width: 100%;
+	max-width: 121px;
+	margin-left: auto;
+	font-size: 14px;
+	padding-right: 5px !important;
+}
+
+.referbox .form-control {
+	font-size: 26px;
+	padding: 6px 0px !important;
+}
+
+.referbox .form-control,
+.referbox .input-group-text {
+	padding: 0px;
+	background: none;
+	border: 0px;
+	height: auto;
+}
+
+.quickgo .tabrightbox {
+	top: 20px;
+	right: 10px;
+}
+
+.securitypage p {
+	font-size: 16px !important;
+	line-height: 23px;
+}
+
+.notslist li {
+	font-size: 14px;
+	line-height: 26px;
+	padding-bottom: 5px;
+	color: #404040;
+}
+
+.delteaccpage .notslist li,
+.frzzacpage .notslist li {
+	color: #404040;
+	font-size: 14px;
+	padding-bottom: 6px;
+}
+
+.alertpara p {
+	margin-bottom: 5px;
+	color: #654f0a;
+	font-size: 14px !important;
+	font-weight: 400;
+}
+
+.borderbtn.green-btn {
+	background: none !important;
+	color: #00c68a !important;
+	border-color: #00c68a !important;
+}
+
+.borderbtn.red-btn {
+	background: none !important;
+	color: #f23645 !important;
+	border-color: #f23645 !important;
+}
+
+.devicetable .table-responsive {
+	max-height: 322px;
+}
+
+.bankpage .tabrightbox {
+	top: 0px;
+}
+
+.pf-boxlink h5 {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.secure-status {
+	font-size: 14px;
+}
+
+.refbox p {
+	margin: 0;
+	padding-bottom: 7px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+	padding-top: 0px;
+}
+
+.refbox .h4 {
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #fff;
+	margin: 0px;
+}
+
+.historypage .react-datepicker-popper {
+	z-index: 999;
+}
+
+.profilimg .closeicon {
+	position: absolute;
+	top: 0;
+	right: 17px;
+	background: #F44336;
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.vrflex hr {
+	margin: 0px;
+	margin-top: 21px;
+}
+
+.recommendbox .panelcontentbox {
+	padding: 19px;
+}
+
+.dpstnotes p>span {
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+}
+
+.walletassets table tbody tr:hover {
+	background: none;
+}
+
+.favicon {
+	margin: 0px 11px;
+	cursor: pointer;
+	font-size: 17px;
+	color: #2a64fb;
+	width: 10px;
+	display: inline-block;
+}
+
+.recentliveprice>div:first-child {
+	width: 60px;
+	float: left;
+}
+
+.form-check-input:checked {
+	background-color: #F39200 !important;
+}
+
+.react-multiple-carousel__arrow::before {
+	font-size: 14px !important;
+}
+
+.react-multiple-carousel__arrow {
+	min-width: 23px !important;
+	min-height: 12px !important;
+}
+
+.react-multiple-carousel__arrow--left {
+	left: calc(0% + 1px) !important;
+}
+
+.react-multiple-carousel__arrow--right {
+	right: calc(1% + 1px) !important;
+	z-index: 100 !important;
+}
+
+.topheadertabmenu {
+	padding: 0px;
+	padding-top: 79px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.topheadertabmenu .tabbanner {
+	border-bottom: 0px;
+}
+
+.topheadertabmenu hr {
+	border-top: 1px solid;
+	margin: 0px;
+}
+
+.topheadertabmenu .tabbanner .nav-item .nav-link {
+	padding: 14px 8px;
+}
+
+.topheadertabmenu .tabbanner .nav-item {
+	padding: 0px 20px;
+}
+
+.stpsfexbox>div {
+	width: 100%;
+}
+
+.stpsfexbox>div:first-child {
+	width: 50px;
+	position: relative;
+}
+
+.stpsfexbox>div:first-child::before {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 0px;
+	width: 1px;
+	height: 100%;
+	background-color: #ffb703;
+}
+
+.stpiconb {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #ffb703;
+	border-radius: 50px;
+	color: #ffb703;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	position: relative;
+}
+
+.stpsflowbox>div:last-child>div:first-child::before {
+	display: none;
+}
+
+.stpsfexbox.currentstep .stpiconb {
+	background-color: #ffb703;
+	color: #fff;
+}
+
+
+
+.uheadbg .totblance {
+	padding: 16px 13px;
+}
+
+.uheadbg .totblance.balanceshowt .h4 {
+	font-size: 17px;
+	line-height: 26px;
+	margin-top: 8px;
+}
+
+.gridtabtopbox {
+	padding-top: 50px;
+}
+
+.kyctablenotes>div {
+	display: flex;
+}
+
+.kyctablenotes p,
+.kyctablenotes h4 {
+	width: 100%;
+}
+
+.kyctablenotes h4 {
+	text-align: right;
+}
+
+.kycpage .flexbox>div:last-child {
+	width: 40%;
+}
+
+.kycpage .flexbox>div:first-child {
+	width: 220px;
+}
+
+.uheadbg .rightheadbg .viewbtn {
+	padding-top: 6px !important;
+	padding-bottom: 6px !important;
+	color: #fff !important;
+}
+
+.gradientdarkbg {
+	background: #fafafa;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	position: relative;
+}
+
+.nightmode .gradientdarkbg {
+	background: #232323;
+	border: 1px solid #313131;
+}
+
+.gradientdarkbg hr {
+	border-top-color: #2a64fb63;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year {
+	font-size: 16px !important;
+}
+
+.uheadbg .navbar-nav .nav-item .viewbtn.nav-link {
+	background: #2A64FB !important;
+	color: #fff !important;
+}
+
+.profilimg input[type="file"] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+}
+
+.closeiconbtn {
+	display: none;
+}
+
+.chartflexbox>div:first-child {
+	width: 30%;
+}
+
+.chartflexbox>div:last-child {
+	width: 70%;
+}
+
+.welcomebanner .table-content h5 {
+	font-size: 27px;
+	line-height: 36px;
+	font-weight: 600;
+	color: #141414;
+}
+
+.kycnotestable img {
+	width: 100%;
+	max-width: 160px;
+}
+
+
+.kycnotestable>div:first-child {
+	width: 70%;
+}
+
+.kycnotestable>div:last-child {
+	width: 30%;
+}
+
+.balancedirectbox .contentbox>div {
+	text-align: center;
+}
+
+.balancedirectbox img {
+	width: 100%;
+	max-width: 21px;
+}
+
+.balancedirectbox .contentbox>div:first-child {
+	margin: 0 auto 10px;
+}
+
+.balancedirectbox>div {
+	width: 100%;
+	margin: 0px 6px;
+	display: table;
+	padding: 30px 10px;
+}
+
+.balancedirectbox .contentbox {
+	padding: 0;
+	text-decoration: none;
+}
+
+.balancedirectbox>div:first-child {
+	margin-left: 0px;
+}
+
+.balancedirectbox>div:last-child {
+	margin-right: 0px;
+}
+
+.balancedirectbox h5 {
+	margin: 0px;
+	font-size: 15px;
+	color: #333;
+	font-weight: 400;
+}
+
+.purchasetable .sitescroll {
+	max-height: 439px;
+}
+
+.tokenflexbox>div:first-child {
+	width: 30%;
+}
+
+.tokenflexbox>div:last-child {
+	width: 70%;
+}
+
+.transaction .highcharts-plot-band {
+	fill: none;
+}
+
+.transaction .highcharts-series>path:first-child {
+	fill: #ffb7032f;
+}
+
+.transaction .highcharts-series>path:nth-child(2) {
+	stroke: #ffb703;
+}
+
+.transaction .highcharts-markers>path {
+	fill: #ffb703;
+}
+
+.transaction .highcharts-legend {
+	display: none;
+}
+
+.transaction .balancechart {
+	width: 100% !important;
+	height: 280px !important;
+}
+
+.transaction .highcharts-axis-line {
+	stroke: #e6e6e6;
+}
+
+.affiliatebg .table-content>div:last-child {
+	width: 500px;
+	text-align: right;
+}
+
+.affiliatebg img {
+	width: 100%;
+	max-width: 394px;
+}
+
+.sitetable tr td .coinlisticon {
+	width: 23px;
+}
+
+.welcomebanner .totblance h5 {
+	color: #000;
+}
+
+.welcomebanner .totblance h4 {
+	color: #000 !important;
+}
+
+.profiletabbg .table-content>div {
+	padding: 0px 40px;
+}
+
+.profiletabbg .table-content>div:first-child {
+	width: 25%;
+	padding-left: 0px;
+	border-right: 1px solid #e6e6e6;
+}
+
+.pwdnotes h5 {
+	font-size: 17px;
+}
+
+.profiletabbg .table-content>div:last-child {
+	width: 75%;
+	padding-right: 0px;
+}
+
+.profiledatainfo .btn {
+	width: 100%;
+	max-width: 192px;
+}
+
+.uploadprofileiconbox {
+	position: relative;
+	margin-top: 20px;
+}
+
+.uploadprofileiconbox input[type="file"] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.custom-file-upload {
+	padding: 6px 13px;
+	border: 0px;
+	background: none;
+	font-size: 13px !important;
+	border-radius: 50px;
+	cursor: pointer;
+	color: #818181 !important;
+	margin-top: 0;
+	text-transform: capitalize;
+	border: 1px solid #818181;
+	cursor: pointer;
+}
+
+.refbox>div {
+	border-right: 1px solid #ffffff42;
+	border-bottom: 1px solid #ffffff42;
+	border-radius: 0px;
+}
+
+.refbox>div:nth-child(even) {
+	border-right: 0px;
+}
+
+.refbox>div:nth-child(3),
+.refbox>div:last-child {
+	border-bottom: 0px;
+}
+
+.counttimerb>div {
+	width: auto;
+	padding: 0px 10px;
+	text-align: center;
+}
+
+.counttimerb>div:first-child {
+	padding-left: 0px;
+}
+
+.counttimerb>div:last-child {
+	padding-right: 0px;
+}
+
+.counttimerb span {
+	font-size: 13px;
+}
+
+.numicon {
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	color: #ffb703;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 4px;
+	border: 2px solid #ffb703;
+}
+
+.saletokenbg .badge {
+	padding: 5px 13px;
+	min-width: inherit;
+	border: 0px;
+	margin-left: 7px;
+}
+
+.saletokenbg {
+	padding: 8px;
+}
+
+.saletokenbg>div:last-child {
+	width: 240px;
+}
+
+.saletokenbg>div:first-child {
+	padding: 18px;
+}
+
+.saletokenbg img {
+	width: 100%;
+	max-width: 159px;
+}
+
+.innerpagecontent .container {
+	position: relative;
+}
+
+.welcomebanner .table-content>div:last-child {
+	width: 335px;
+}
+
+.welcomebanner .table-content img {
+	width: 100%;
+	max-width: 293px;
+}
+
+.modaltable .table-content {
+	width: 100%;
+	min-height: 429px;
+}
+
+.modaltable .table-content>div {
+	width: 50%;
+	padding: 30px;
+}
+
+.modaltable .modal-header {
+	border: 0px;
+	padding: 0px !important;
+}
+
+.modaltable .table-content>div:last-child {
+	background: #f5f5f5;
+}
+
+.modaltable .subhead {
+	font-size: 26px;
+}
+
+.modaltable .modal-body,
+.modaltable .modal-content {
+	border-radius: 0px;
+	padding: 0px !important;
+}
+
+.modaltable .modal-dialog {
+	max-width: 836px;
+}
+
+.ticketchat {
+	padding-top: 15px;
+}
+
+.chat .header h4>span {
+	font-style: italic;
+	font-size: 13px;
+}
+
+.supporticonc img {
+	width: 100%;
+	max-width: 615px;
+	margin-top: 22px;
+}
+
+.modaltable .table-content>div:first-child {
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+.innerpagetopimage {
+	padding-bottom: 17px;
+	padding-top: 101px;
+}
+
+.timerflexboxb {
+	text-align: center;
+	padding: 0px 0px;
+	width: 100%;
+	max-width: 257px;
+	padding-top: 10px;
+	margin: 0px auto;
+	justify-content: flex-end;
+	gap: 8px;
+}
+
+.timerflexboxb svg>path:first-child {
+	stroke: #e5e5e5;
+}
+
+.timeszeicon {
+	font-size: 12px;
+	font-weight: 600;
+	color: #777777;
+	line-height: normal;
+	line-height: 11px;
+}
+
+.datetxticon {
+	font-size: 9px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 13px;
+}
+
+.securitypage .btn {
+	min-width: 86px;
+}
+
+.recoveryboxt .anticodebox {
+	text-align: left;
+}
+
+.recoverlist {
+	width: 100%;
+	display: inline-block;
+	padding: 22px 18px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.recoverlist ul {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.recoverlist li {
+	list-style: none;
+	font-size: 14px;
+	line-height: 26px;
+	width: 33.3%;
+	font-weight: 400;
+	padding: 6px 5px;
+}
+
+.recoverlist .fa {
+	font-size: 14px;
+}
+
+.recoverlist svg path {
+	fill: #cfcfcf;
+}
+
+.recoverlist .tabrightbox {
+	top: 10px;
+	right: 10px;
+}
+
+.recoverlist .tabrightbox .btn {
+	padding: 3px 7px !important;
+	font-size: 11px !important;
+}
+
+.sflexfilter>div {
+	width: auto;
+}
+
+.sflexfilter {
+	justify-content: space-between;
+}
+
+.faqquesticon .accordion-button:not(.collapsed),
+.faqquesticon .accordion-button {
+	font-weight: 700;
+}
+
+.faqquesticon .accordion-button:not(.collapsed) {
+	background-color: transparent;
+	box-shadow: none !important;
+	color: #212529;
+}
+
+.faqquesticon .accordion-item {
+	padding: 10px 0px;
+}
+
+.faqquesticon .accordion-header button,
+.faqquesticon .accordion-body {
+	padding: 5px 0px;
+	line-height: 25px;
+}
+
+.faqquesticon .accordion-body {
+	font-size: 15px;
+}
+
+.clearbtn {
+	margin-top: 30px;
+}
+
+.affiliatebg .badge,
+.faverifybox .badge {
+	min-width: inherit;
+}
+
+.reftable .table tbody>tr:nth-child(even) {
+	background-color: #f6f6f6;
+}
+
+.reftable .contentbox {
+	padding: 20px 20px;
+}
+
+.reftable .table-responsive {
+	border: 1px solid #e3e3e3;
+	border-radius: 7px;
+}
+
+.kycupload .tabrightbox {
+	top: 0px;
+}
+
+.wizardform .form-check label {
+	font-size: 15px;
+}
+
+.wizardform {
+	width: 100%;
+	max-width: 900px;
+}
+
+.wizardform .form-check-input {
+	float: none;
+	margin-right: 7px;
+	position: relative;
+	top: 2px;
+}
+
+.wizardform .btn {
+	width: 20%;
+	max-width: 100%;
+}
+
+.wizardform h5 {
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 9px;
+}
+
+.wizardform #progressbar {
+	color: lightgrey;
+	position: relative;
+	width: 100%;
+	padding: 35px;
+	margin-bottom: 35px;
+	background: #f5f5f5;
+	border-radius: 8px;
+}
+
+.wizardform #progressbar li {
+	list-style-type: none;
+	font-size: 15px;
+	width: 100%;
+	float: none;
+	position: relative;
+	padding: 0px 5px;
+	color: #18181a;
+	font-weight: 500;
+	text-align: center;
+}
+
+.wizardform .flexbox>div:last-child {
+	padding-left: 40px;
+	border-left: 1px dashed #ccc;
+}
+
+.wizardform #progressbar li::before {
+	content: "";
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	left: 0px;
+	top: 19px;
+	border-radius: 0px;
+	background: #e9e9e9;
+}
+
+.wizardform #progressbar li>span {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.wizardform #progressbar li>strong {
+	line-height: 28px;
+	display: flex;
+	font-size: 15px;
+	color: #18181a;
+	background: #e9e9e9;
+	margin: 0 auto auto;
+	position: relative;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.wizardform #progressbar li.active>strong {
+	color: #fff;
+	border-color: #18181a;
+	background: #18181a;
+}
+
+.wizardform .alert {
+	font-size: 17px;
+}
+
+.progressbg img {
+	width: 100%;
+	max-width: 22px;
+}
+
+.amlcnt h4 {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.buttonflex {
+	justify-content: space-between;
+}
+
+.wizardform .flexbox>div:first-child {
+	width: 500px;
+}
+
+.amlverifypage .panelcontentbox {
+	padding: 40px;
+}
+
+.timetxtshow {
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+	font-style: italic;
+	position: relative;
+	top: -6px;
+	font-size: 12px;
+}
+
+.chat .right .timetxtshow {
+	text-align: left;
+}
+
+.banknotesinfo {
+	background: #f5f5f5;
+	border-radius: 5px;
+	padding: 3px 10px;
+}
+
+.banknotesinfo table tbody>tr>td {
+	padding: 6px 3px !important;
+	white-space: inherit;
+	word-wrap: break-word;
+}
+
+.tokenlistpage .heading-box {
+	border-bottom: 1px dashed #e7e7e7;
+}
+
+.banknotesinfo table tbody>tr:hover {
+	background-color: transparent;
+}
+
+.banknotesinfo table tbody>tr>td:first-child {
+	padding-left: 0px;
+	min-width: 133px;
+}
+
+.banknotesinfo table tbody>tr>td:last-child {
+	padding-right: 0px;
+}
+
+.leftsidetabbg .form-group {
+	margin-bottom: 15px;
+}
+
+.kycviewpage table tr td {
+	font-size: 15px;
+	padding: 10px 11px !important;
+}
+
+.kycviewpage img {
+	width: 100%;
+	max-width: 147px;
+	background: #f5f5f5;
+	padding: 20px 10px;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+
+.kycviewpage table tbody>tr:hover {
+	background: none !important;
+}
+
+.supporttable table.sitetable tbody tr td {
+	white-space: inherit !important;
+	padding: 4px 15px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.supporttable table.sitetable tbody>tr:first-child td,
+.supporttable table.sitetable tbody>tr:last-child td {
+	font-weight: 500;
+}
+
+.supporttable table.sitetable tbody>tr:first-child td {
+	color: #000;
+	font-size: 15px;
+}
+
+.supporttable .tabbanner .nav-item {
+	padding: 6px 16px;
+}
+
+.supporttable .tabbanner {
+	display: inline-block;
+	width: 100%;
+}
+
+.supportbg .tabbanner .nav-item .nav-link {
+	padding: 7px 0px;
+	text-align: left;
+	position: relative;
+	font-size: 13px;
+	color: #87909F;
+	line-height: 27px;
+	background: #f2f2f2 !important;
+	border: 1px solid #e6e6e6 !important;
+	display: table;
+	width: 100%;
+	border-radius: 10px !important;
+}
+
+.supportbg .tabbanner .nav-item .nav-link.active,
+.supportbg .tabbanner .nav-item .nav-link:hover {
+	border: 1px solid #ffd7b1 !important;
+	background: #ffecda !important;
+	color: #fff;
+}
+
+.supportbg .tabbanner .nav-item .nav-link tbody tr:hover {
+	background-color: transparent;
+}
+
+.supporttable table.sitetable tbody tr td hr {
+	margin: 0px;
+}
+
+.supportbg .table {
+	margin: 0px;
+}
+
+.closeiconbtn {
+	padding-bottom: 0;
+	position: absolute;
+	top: 2px;
+	right: -11px;
+	background: #FF6A00;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	color: #000;
+	text-align: center;
+	padding-top: 4px;
+	display: none;
+	cursor: pointer;
+}
+
+.chatticketlist .subhead {
+	padding: 15px 10px;
+}
+
+.chatflexticket img {
+	width: 100%;
+	max-width: 25px;
+	border-radius: 50px;
+	margin-right: 6px;
+	background: #e0e0e0;
+	padding: 2px;
+}
+
+.notes {
+	font-weight: 500;
+	color: #595959;
+	font-style: italic;
+}
+
+.tokencreatepage .react-form-wizard {
+	width: 100%;
+}
+
+.tokencreatepage .react-form-wizard .wizard-nav {
+	position: relative;
+}
+
+.tokencreatepage .react-form-wizard .wizard-nav::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 31px;
+	background-color: #f5f5f5;
+	width: 100%;
+	height: 4px;
+}
+
+.servicecheckboxbg {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.servicecheckboxbg>div {
+	width: 33.3%;
+	float: left;
+	padding-right: 10px;
+}
+
+.tokencreatepage .react-form-wizard .wizard-tab-content {
+	text-align: left;
+}
+
+.tokencreatepage .react-form-wizard .wizard-card-footer {
+	text-align: center;
+}
+
+.tokencreatepage .form-wizard-steps .active .smooth-border-left-to-right,
+.tokencreatepage .form-wizard-steps .smooth-border-left-to-right {
+	border-color: #fac91b !important;
+}
+
+.tokencreatepage .wizard-icon-circle,
+.tokencreatepage .form-wizard-steps .active .wizard-icon-container,
+.tokencreatepage .form-wizard-steps .wizard-icon-container {
+	background-color: #fac91b !important;
+}
+
+.tokencreatepage .react-form-wizard .wizard-icon-circle .wizard-icon {
+	color: #fff !important;
+}
+
+.tokencreatepage .form-wizard-steps .active .stepTitle,
+.tokencreatepage .form-wizard-steps .stepTitle {
+	color: #fac91b !important;
+	font-weight: 600;
+}
+
+.tokencreatepage .form-wizard-steps .stepTitle {
+	color: #333 !important;
+}
+
+.tokencreatepage .wizard-card-footer .btn {
+	margin-right: 5px;
+}
+
+.tokencreatepage .react-form-wizard {
+	padding-bottom: 0px !important;
+}
+
+.tokencreatepage .form-check label {
+	font-weight: 400;
+}
+
+.reviewicont img {
+	width: 100%;
+	max-width: 500px;
+	margin-bottom: 20px;
+}
+
+.reviewicont h5 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+
+.notestokentable tr td {
+	font-weight: 600 !important;
+	line-height: 26px !important;
+	font-size: 15px !important;
+	padding: 6px 13px !important;
+	white-space: inherit !important;
+}
+
+.notestokentable tr td .t-gray {
+	font-weight: 400 !important;
+}
+
+.notestokentable tbody>tr:hover {
+	background-color: transparent;
+}
+
+.paymentoptionaloption>p {
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.paymentoptionaloption>p::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 15px;
+	border-top: 1px dashed #ccc;
+	width: 100%;
+	height: 100%;
+}
+
+.paymentoptionaloption>p>span {
+	position: relative;
+	background: #fff;
+	display: inline-block;
+	width: 100%;
+	z-index: 9;
+	max-width: 76px;
+	color: #878787;
+}
+
+.notestokentable tr td img {
+	width: 100%;
+	max-width: 40px;
+}
+
+.tokencreatepage .react-form-wizard .wizard-tab-content {
+	padding: 20px 0px;
+}
+
+.tokenaccordianbox .accordion-button {
+	font-weight: 600;
+	font-size: 15px;
+	padding: 12px 20px;
+}
+
+.tokenaccordianbox .accordion-item {
+	overflow: hidden;
+	border-radius: 7px !important;
+}
+
+.tokenaccordianbox .accordion-body {
+	border-top: 1px solid #e1e1e1;
+	padding-top: 26px;
+}
+
+.subtablenots table tr td .btn {
+	padding: 3px 10px !important;
+	width: 100%;
+	max-width: 100px;
+}
+
+.subtablenots table tr td {
+	padding: 3px 8px !important;
+	font-size: 13px !important;
+	border-right: 1px solid #e6e6e6;
+	line-height: 24px !important;
+}
+
+.subtablenots table tr td img {
+	margin-bottom: 7px;
+}
+
+.subtablenots table tr td .btn {
+	margin-top: 7px;
+}
+
+.subtablenots {
+	background: #f4f7f8;
+}
+
+.boardscreenbox .lightgraybg {
+	background: #fff;
+}
+
+.boardscreenbox .notestokentable tr td {
+	padding: 6px 1px !important;
+}
+
+.pagecrumb a {
+	text-decoration: none;
+	color: #fac91b;
+}
+
+.pagecrumb .breadcrumb {
+	margin-bottom: 0px;
+}
+
+.complycube-sdk-ui-Theme-modalOverlay--after-open {
+	z-index: 9999 !important;
+}
+
+.lightgreenbg {
+	background-color: #78dabd3c !important;
+}
+
+.lightpinkbg {
+	background-color: #f3eec2 !important;
+}
+
+.lightbluebg {
+	background-color: #c1e3ff2f !important;
+}
+
+.lightyellowbg {
+	background-color: #fcd49c66 !important;
+}
+
+.lightpurblebg {
+	background-color: #fce4f8 !important;
+}
+
+.lightorangebg {
+	background-color: #c8eeff !important;
+}
+
+.lightredbg {
+	background-color: #ffe5e5 !important;
+}
+
+.transferpage .flexbox>div:first-child {
+	width: 30%;
+}
+
+.transferpage .flexbox>div:last-child {
+	width: 70%;
+}
+
+.pagination li .page-link {
+	font-size: 14px;
+	color: #000000;
+	background-color: #fff;
+}
+
+.pagination .disabled .page-link {
+	background-color: #fff;
+	color: #000;
+}
+
+.pagination {
+	border-top: 1px solid #eee;
+	padding-top: 13px;
+}
+
+.pagination .page-item.active .page-link {
+	background: #ff6a00;
+	color: #fff;
+	border-color: #ff6a00;
+}
+
+.transferpage .arrowhead {
+	z-index: inherit;
+}
+
+.dashboardpage .flexbox>div:first-child {
+	width: 35%;
+}
+
+.dashboardpage .flexbox>div:last-child {
+	width: 65%;
+}
+
+.convertfrmg .form-control,
+.convertfrmg .input-group-text {
+	border: 0px !important;
+}
+
+.convertfrmg.form-group {
+	background: #fafafa;
+	border: 1px solid #dddddd;
+	border-radius: 10px;
+	padding: 17px;
+	padding-bottom: 10px;
+}
+
+.convertfrmg label {
+	margin: 0px;
+}
+
+.convertfrmg .form-control {
+	padding-left: 0px;
+	font-size: 17px;
+}
+
+.convertfrmg input::-webkit-input-placeholder {
+	font-size: 17px;
+}
+
+.convertfrmg input::-moz-placeholder {
+	font-size: 17px;
+}
+
+.convertfrmg input::-ms-input-placeholder {
+	font-size: 17px;
+}
+
+.convertfrmg input::placeholder {
+	font-size: 17px;
+}
+
+.searchfrm .dropdown-toggle {
+	border: 1px solid #dddddd;
+	border-radius: 7px;
+	height: 40px;
+	padding: 9px;
+	font-size: 15px;
+}
+
+.searchfrm .dropdown-toggle::after {
+	float: right;
+	position: relative;
+	top: 7px;
+}
+
+.wlletdropmenubox .dropdown-menu {
+	padding: 10px 10px;
+	width: 100%;
+	min-width: 287px;
+	border: 0px;
+	box-shadow: 0px 0px 10px 6px #0000002e;
+}
+
+.wlletdropmenubox .dropdown-item {
+	padding: 8px 12px;
+	background: none;
+	border: 0px;
+	font-size: 15px;
+}
+
+.wlletdropmenubox .accordion-button::after {
+	background-size: 24px;
+	width: 23px;
+	height: 30px;
+}
+
+.wlletdropmenubox .accordion-item {
+	background: none !important;
+	margin-bottom: -2px;
+	border: 0px;
+}
+
+.wlletdropmenubox .accordion-button {
+	background: none !important;
+	padding: 10px 8px;
+	font-size: 14px;
+	background-size: 23px;
+}
+
+.wlletdropmenubox .accordion-body {
+	padding: 10px 8px;
+	padding-bottom: 0px;
+}
+
+.walletoverviewbg .panelcontentbox {
+	overflow: visible;
+}
+
+.merchantpage .tabrightbox {
+	top: 37px;
+}
+
+.listprojectstatus {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+.listprojectstatus::before {
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	width: 3px;
+	height: 100%;
+	background-color: #f5f5f5;
+}
+
+.listprojectstatus li {
+	list-style: none;
+	float: none;
+	padding-left: 35px;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.listprojectstatus li::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	background-color: #f5f5f5;
+	border: 3px solid #ccc;
+	border-radius: 50px;
+}
+
+.listprojectstatus .progressstatus::before {
+	background-color: #37bf8f;
+	border-color: #379c79;
+}
+
+.listprojectstatus h5 {
+	font-size: 15px;
+}
+
+.mercsettingpage .spotbalancechart {
+	height: 230px !important;
+}
+
+.mercsettingpage .mangelistbox {
+	margin-top: 40px;
+}
+
+.mangelistbox-line {
+	margin: 25px 0px;
+}
+
+/* .spotbalancechart-x {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+} */
+/* .mercsettingpage .spotbalancechart {
+	height: 197px !important;
+} */
+
+.merchantpymrntflex .d-flex>div {
+	width: 100%;
+}
+
+.merchantpymrntflex .d-flex>div:first-child {
+	width: 280px;
+}
+
+.crclfntsz {
+	font-size: 8px;
+}
+
+.profilepage .flexbox>div:first-child {
+	width: 40%;
+}
+
+.profilepage .flexbox>div:last-child {
+	width: 70%;
+}
+
+.profilepage .panelcontentbox {
+	overflow: visible;
+}
+
+.basicprftable table tbody tr>td:last-child {
+	width: 190px;
+}
+
+.securitypage .table-responsive {
+	max-height: 289px;
+}
+
+.totblance>div {
+	width: 100%;
+}
+
+
+.totblance.ern-hts-y>div:last-child {
+	width: 100%;
+}
+
+.downicon .fa-arrow-down {
+	transform: rotate(45deg);
+}
+
+.upicon .fa-arrow-up {
+	transform: rotate(45deg);
+}
+
+.basicprftable table tbody>tr:hover {
+	background-color: transparent !important;
+}
+
+.basicprftable table tbody>tr>td {
+	padding: 5px 5px;
+}
+
+.wlltdpstbox {
+	position: relative;
+}
+
+.wlltdpstbox .tabrightbox {
+	right: 0px;
+	top: -5px;
+}
+
+.css-1bzvr6x-control {
+	background: #fafafa !important;
+	min-height: 43px !important;
+}
+
+.cry-selt-wra-y .css-1bzvr6x-control {
+	background: #fafafa00 !important;
+	min-height: 43px !important;
+	border: 1px solid #dddddd !important;
+	border-left: 0px !important;
+}
+
+.css-1bzvr6x-control {
+	background: #fafafa !important;
+	min-height: 43px !important;
+}
+
+.css-8rjvy0-control {
+	min-height: 43px !important;
+	box-shadow: none !important;
+}
+
+.listprojectstatus>li:last-child {
+	padding-bottom: 0px !important;
+}
+
+.mangelistbox ul {
+	display: flex;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.mangelistbox li {
+	list-style: none;
+	float: left;
+	width: 100%;
+	margin: 0px 7px;
+	padding: 10px;
+}
+
+.mangelistbox h2 {
+	font-size: 18px;
+	margin: 0px;
+}
+
+.mangelistbox h5 {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.mangelistboxb ul {
+	display: inline-block;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.mangelistboxb li {
+	list-style: none;
+	float: left;
+	width: 100%;
+	margin: 5px 0px;
+}
+
+.mangelistboxb h2 {
+	font-size: 16px;
+	margin: 0px;
+}
+
+.mangelistboxb h5 {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.fswtchbox>div {
+	margin-right: 0px;
+	margin-bottom: 11px;
+}
+
+.mercoinviewpage table tbody>tr:hover {
+	background-color: transparent;
+}
+
+.mercoinviewpage table {
+	margin: 0px;
+}
+
+.swtchtogglebox .form-check-input {
+	width: 53px;
+	height: 20px;
+}
+
+.swtchtogglebox .form-switch {
+	text-align: right;
+	float: right;
+}
+
+.coinleftviewbox>div {
+	padding: 7px;
+}
+
+.coinleftviewbox .lightgraybg {
+	padding: 10px;
+}
+
+.mstchbox>div {
+	margin-right: 15px;
+}
+
+.balanceshowt .dropdown-toggle::after {
+	display: none;
+}
+
+.balanceshowt .h4>span {
+	display: inline-block;
+	width: 100%;
+	max-width: 135px;
+}
+
+.balanceshowt .dropdown-toggle {
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 13px;
+	margin-left: 5px;
+	position: relative;
+	top: -2px;
+}
+
+.balanceshowt .dropdown-menu {
+	border: 0px;
+	box-shadow: 0px 0px 13px #00000033;
+}
+
+.balanceshowt .fa-sort-down {
+	position: relative;
+	top: -3px;
+	font-size: 11px;
+}
+
+.balanceshowt .dropdown-menu .dropdown-item {
+	font-size: 14px;
+}
+
+.balanceshowt h5 .fa-eye,
+.balanceshowt h5 .fa-eye-slash {
+	font-size: 13px;
+}
+
+.prgrsflx>div {
+	width: 100%;
+	max-width: 50%;
+}
+
+.prgrsflx>div:first-child {
+	width: 50px;
+}
+
+.prgrsflx .progress-bar {
+	background-image: linear-gradient(#FFC632, #FF6A00);
+}
+
+.prgrsflx .progress {
+	border: 1px solid #ccc;
+	height: 14px;
+	border-radius: 50px;
+}
+
+.leftsidescroll {
+	height: calc(100vh - 100px);
+	overflow: hidden;
+	padding: 10px 14px;
+}
+
+.scrollleftmenu {
+	height: 100%;
+}
+
+.accorddatacell.mercntvew-y {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+	background-color: #fff;
+}
+
+.accorddatacell.mercntvew-y>div {
+	width: 31.3333% !important;
+	box-sizing: border-box;
+	word-break: break-word;
+	overflow-wrap: anywhere;
+	white-space: normal;
+}
+
+.sndhisrycom-y {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.sndhisrycom-y>div {
+	width: 31.3333% !important;
+	box-sizing: border-box;
+	word-break: break-word;
+	overflow-wrap: anywhere;
+	white-space: normal;
+}
+
+
+.summarymdal .modal-dialog {
+	max-width: 580px;
+}
+
+.notesminitable .table tr td {
+	padding: 5px 13px;
+	white-space: inherit;
+}
+
+.frmswtch .form-check {
+	float: right;
+}
+
+.summarymdal .alert .d-flex>div {
+	width: 100%;
+}
+
+.trns-his-y .h2 {
+	font-size: 25px;
+	margin-top: 20px;
+	text-align: left;
+	font-weight: 600;
+	color: #141414;
+}
+
+.accordionrow .fa-angle-down {
+	transition: transform 0.3s ease;
+}
+
+.accordionrow:not(.collapsed) .fa-angle-down {
+	transform: rotate(180deg);
+}
+
+.accordionrow .ang-down-y {
+	transform: rotate(0deg) !important;
+}
+
+.accordionrow .ang-down-y.acc-ang-rotate {
+	transform: rotate(180deg) !important;
+}
+
+.accordionrow.collapsed .fa-angle-down {
+	transform: inherit;
+}
+
+.accordion-collpse-y {
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition:
+		max-height 0.7s ease-in-out,
+		opacity 0.5s ease-in-out;
+}
+
+.accordion-collpse-y.open {
+	max-height: fit-content;
+	opacity: 1;
+}
+
+
+.accorddatacell>div {
+	width: 100%;
+	background: #f5f5f5;
+	border-radius: 10px;
+	margin: 0px 5px;
+	padding: 13px 20px;
+	border: 1px solid #d7d7d7;
+}
+
+.accorddatacell.mercntvew-y>div {
+	background: #fff;
+}
+
+.accorddatacell.mercntvew-y>div {
+	background: #fff;
+	grid-column: span 1;
+}
+
+
+.nightmode .accorddatacell.mercntvew-y>div {
+	background: #1e1e1e;
+}
+
+.accorddatacell h6 {
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	margin: 0px;
+}
+
+.accordeon-content>td {
+	padding: 0px !important;
+}
+
+.accorddatacell {
+	padding: 15px 15px;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.accordionrow,
+.accorddatacell {
+	background: #f5f5f5;
+}
+
+.accordionrow.collapsed {
+	background: none;
+}
+
+.angleiconcell {
+	width: 100px;
+}
+
+.submenu-dropdown .dropdown-menu {
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	z-index: 1000;
+	padding: 0px;
+	margin: 0px;
+}
+
+.submenu-dropdown .dropdown-toggle {
+	display: flex;
+	align-items: center;
+}
+
+.dropdown-menu-wrapper.submenu-open-active {
+	position: absolute;
+	width: 331px;
+	height: 100%;
+	border-radius: 8px 0px 0px 8px;
+	box-shadow: rgb(0 0 0 / 3%) 0px 4px 16px 0px !important;
+	max-height: calc(-70px + 100vh);
+	xtransition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	z-index: 100;
+	background: #151528;
+}
+
+.submenu-dropdown.show .dropdown-menu {
+	position: absolute;
+	top: 0px;
+	left: 100%;
+	width: 331px;
+	height: 100%;
+	display: block;
+	padding: 0;
+	border-radius: 0px 8px 8px 0px;
+	z-index: 999;
+	max-height: calc(-70px + 100vh);
+	box-shadow: rgb(0 0 0 / 3%) 4px 4px 9px 8px !important;
+	overflow: hidden;
+	margin: 0px;
+}
+
+.submenu-dropdown.show .dropdown-toggle.show {
+	background: #151528;
+	border-top-left-radius: 8px;
+}
+
+.submenu-dropdown.show.secondsubmenubox .dropdown-menu {
+	top: -71px;
+}
+
+.submenu-dropdown.show .dropdown-menu::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: #3d3e52;
+}
+
+.dropdownsubmenu .dropdown-menu-wrapper>div:last-child {
+	height: 100%;
+}
+
+.submenu-dropdown {
+	position: inherit !important;
+}
+
+.submenu-dropdown h6 {
+	padding: 16px;
+	padding-bottom: 0px;
+}
+
+.closesubmenu {
+	display: inline-block;
+	padding: 5px 5px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.currencycrtdrop .dropdown-toggle::after {
+	display: none;
+}
+
+.currencycrtdrop .h4>span {
+	display: inline-block;
+}
+
+.currencycrtdrop .dropdown-toggle {
+	padding: 5px 0px;
+	margin-left: 5px;
+	position: relative;
+	top: 0;
+	display: inline-block;
+}
+
+.currencycrtdrop {
+	display: inline-block;
+}
+
+.currencycrtdrop .dropdown-menu {
+	border: 0px;
+	box-shadow: 0px 0px 13px #00000033;
+	padding: 6px;
+}
+
+.currencycrtdrop .fa-angle-down {
+	position: relative;
+	top: 0px;
+	margin-left: 3px;
+	font-size: 17px;
+}
+
+.currencycrtdrop .dropdown-menu .dropdown-item {
+	font-size: 14px;
+	padding: 7px 15px;
+}
+
+.currencycrtdrop .dropdown-menu .dropdown-item:hover,
+.currencycrtdrop .dropdown-menu .dropdown-item:focus,
+.currencycrtdrop .dropdown-menu .dropdown-item:active {
+	background-color: transparent;
+	color: #4C4C4C;
+}
+
+.convertautopage .table tr td .coinlisticon {
+	width: 30px;
+}
+
+.convertautopage table tr td,
+.currencycrtdrop .dropdown-toggle {
+	font-size: 16px;
+}
+
+.apikeyfbox .d-flex>div {
+	width: 100%;
+}
+
+.apikeyfbox .d-flex>div:last-child {
+	width: 250px;
+}
+
+.apikeyfbox h5 {
+	font-size: 17px;
+}
+
+.highcharts-background {
+	fill: none;
+}
+
+.adrresssitetable table tr td {
+	padding: 10px 5px;
+	border-bottom: 1px solid #e6e6e6;
+	text-align: left;
+}
+
+.securitypage .flexbox>div {
+	width: 50%;
+}
+
+.currencydropscroll {
+	max-height: 200px;
+}
+
+.dropdown-menu-wrapper .dropdown-menu .dropdown-item.active {
+	color: #FF3C00;
+}
+
+.totblance .css-1bzvr6x-control,
+.totblance .css-8rjvy0-control {
+	min-height: 30px !important;
+	font-size: 13px;
+}
+
+.totblance .css-1xc3v61-indicatorContainer,
+.totblance .css-15lsz6c-indicatorContainer {
+	padding: 3px !important;
+}
+
+.totblance .css-b62m3t-container {
+	margin-left: 5px;
+}
+
+.totblance .css-vt33qg-option,
+.totblance .css-do35tu-option,
+.totblance .css-1nmdiq5-menu {
+	font-size: 12px !important;
+}
+
+.chtimgbg {
+	padding: 5px;
+	position: relative;
+	width: 100%;
+}
+
+.chtimgbg img {
+	width: 100%;
+	max-width: 300px;
+	height: -moz-fit-content;
+	height: fit-content;
+}
+
+.chtimg {
+	width: 100px;
+	height: auto;
+	max-height: 100px;
+	padding: 5px;
+	border-radius: 4px;
+	object-fit: cover;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.chtimg .img-view {
+	width: 100%;
+	height: 100%;
+}
+
+.chtimg.profilimg .closeicon {
+	top: -4px;
+	right: -15px;
+	line-height: 25px;
+}
+
+.mercsettingpage .lightgraybg {
+	padding: 10px 15px;
+}
+
+.mercsettingpage p {
+	margin: 0;
+}
+
+.wlletdropmenubox .accordion-button:not(.collapsed)::after {
+	background-size: 23px;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+
+.wlletdropmenubox .searchfrm>div {
+	width: auto;
+	padding: 0px 5px;
+	display: inline-block;
+	min-width: 123px;
+}
+
+.wlletdropmenubox .searchfrm .form-control {
+	height: 40px;
+}
+
+.dateinput {
+	position: relative;
+}
+
+.dateinput::before {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #ff3c00;
+	font-size: 16px;
+	position: absolute;
+	top: 8px;
+	right: 15px;
+}
+
+.flatpickr-calendar {
+	background-color: #ffffff !important;
+	color: #000;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+	background: #FF6A00 !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
+	background-color: #FF6A00 !important;
+}
+
+span.flatpickr-weekday,
+.flatpickr-months,
+.flatpickr-month,
+.flatpickr-weekdays {
+	background-color: #FF6A00 !important;
+	color: #ffffff !important;
+}
+
+.flatpickr-day {
+	background-color: #ffffff !important;
+	color: #000 !important;
+	border-radius: 4px;
+}
+
+.flatpickr-day:hover,
+.flatpickr-day.today,
+.flatpickr-day.selected {
+	background-color: #FF6A00 !important;
+	color: #ffffff !important;
+	border-color: #FF6A00 !important;
+}
+
+.flatpickr-months .flatpickr-month {
+	background: #FF6A00 !important;
+	color: #ffffff;
+}
+
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+	color: rgb(115 115 115) !important;
+	background: #e1e1e1;
+	border-color: transparent;
+	cursor: default;
+}
+
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover {
+	background-color: #FF6A00 !important;
+	color: #ffffff !important;
+	border-color: #FF6A00 !important;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+	fill: #ffffff;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+	color: #ffffff;
+	fill: #ffffff !important;
+}
+
+.flatpickr-input:focus {
+	outline: none !important;
+	border: none !important;
+}
+
+.radio-tog .siteformbg {
+	width: 100%;
+	max-width: 109px;
+	transition: width 0s;
+	position: absolute;
+	top: -12px;
+	right: 1px;
+}
+
+.radio-up {
+	display: flex;
+}
+
+.radio-tog .siteformbg .input-group-text {
+	height: 32px;
+}
+
+.radio-tog .siteformbg .form-control {
+	height: 32px;
+}
+
+.mstchbox .radio-up .siteformbg {
+	width: 100%;
+	max-width: 109px;
+	transition: width 0s;
+	position: relative;
+	top: -6px;
+	right: -10px;
+}
+
+.mstchbox .radio-up .siteformbg .form-control {
+	height: 32px;
+}
+
+
+
+.mstchbox .radio-up .siteformbg .input-group-text {
+	height: 32px;
+}
+
+.tradepage .leftsidemenu,
+.tradepage .footerboxuser,
+.tradepage .footerbottombg {
+	display: none;
+}
+
+.tradepage .btn-sm {
+	padding: 3px 12px !important;
+	font-size: 12px !important;
+	line-height: 18px !important;
+}
+
+.tradepage .gridparentbox {
+	padding-bottom: 0px;
+	padding-top: 62px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+body.tradepagbg {
+	padding-bottom: 0px;
+}
+
+.tradecontentbox .sitetable .coinlisticon {
+	width: 27px;
+	margin-right: 6px;
+}
+
+.marketlist .sitetable .coinlisticon {
+	width: 19px;
+}
+
+.tradepage .sitecontainer {
+	max-width: 100%;
+	padding: 0;
+}
+
+.chart {
+	grid-area: chart;
+}
+
+.orderform {
+	grid-area: orderform;
+}
+
+.tradehistory {
+	grid-area: tradehistory;
+	overflow: hidden;
+	border-bottom: 0px !important;
+	display: none;
+}
+
+.openorder {
+	grid-area: openorder;
+	border-left: 0px !important;
+	border-bottom: 0px !important;
+}
+
+.livepricelist {
+	grid-area: livepricelist;
+	overflow: visible !important;
+	border-left: 0px !important;
+}
+
+.mobilegrid {
+	grid-area: mobilegrid;
+	display: none;
+}
+
+.walletbalance {
+	grid-area: walletbalance;
+}
+
+.headerorder {
+	grid-area: headerorder;
+	overflow: visible !important;
+	border: 0px !important;
+}
+
+.headerorder .headbg {
+	position: relative;
+}
+
+.marketlist {
+	grid-area: marketlist;
+}
+
+.marketdepth {
+	grid-area: marketdepth;
+}
+
+.orderbook {
+	grid-area: orderbook;
+	position: relative;
+}
+
+.walletassets {
+	grid-area: walletassets;
+}
+
+.walletassets .bg-hover-none:hover {
+	background-color: transparent !important;
+	background: transparent !important;
+}
+
+.recentliveprice {
+	grid-area: recentliveprice;
+	overflow: visible !important;
+	display: none !important;
+}
+
+.grid-box {
+	display: -ms-grid;
+	display: grid;
+	grid-template-areas:
+		"livepricelist livepricelist livepricelist"
+		"chart orderbook orderform"
+		"chart orderbook walletassets"
+		"openorder openorder openorder";
+	grid-template-columns: 420px 1fr 420px;
+	grid-gap: 0px;
+	margin: 0px 0px;
+	border-radius: 0px;
+}
+
+.grid-box>div,
+.grid-box-futures>div {
+	background: #fff;
+	border: 1px solid #0000001f;
+	position: relative;
+	border-radius: 0px;
+	overflow: hidden;
+}
+
+.grid-box {
+	grid-template-columns: 1fr 370px 370px;
+}
+
+.tradepage .heading-box {
+	padding: 10px 12px;
+	font-size: 14px;
+}
+
+.livepricemobile {
+	padding: 4px 8px;
+	background: none;
+	position: relative;
+}
+
+.livepricenavbg {
+	padding-left: 0px;
+	width: 100%;
+	display: flex;
+	margin-bottom: 0px;
+}
+
+.livepricenavbg>li {
+	list-style: none;
+	float: left;
+	padding: 0px 16px;
+	width: auto;
+	line-height: normal;
+	white-space: nowrap;
+	min-width: 135px;
+}
+
+.livepricemobile li a {
+	color: #4c4c4c;
+	font-size: 15px;
+	line-height: normal;
+	text-decoration: none;
+	line-height: 21px;
+	font-weight: 500;
+}
+
+.livepricenavbg>li:first-child {
+	padding-left: 5px;
+}
+
+.coinlisttable {
+	display: table;
+}
+
+.coinlisttable img,
+.coinlisttable>div {
+	display: table-cell !important;
+	vertical-align: top;
+	line-height: 22px;
+}
+
+.marketlist .dropdown-toggle {
+	font-size: 15px;
+	color: #000;
+	padding-top: 6px;
+}
+
+.tradepage thead tr th {
+	font-size: 13px;
+	padding: 8px 6px;
+}
+
+.tradepage tbody tr td {
+	font-size: 12px !important;
+	padding: 4px 6px;
+}
+
+.livepricet span {
+	display: block;
+	text-align: left;
+	line-height: normal;
+	font-size: 13px;
+	padding-left: 0;
+	color: #000;
+	font-weight: 700;
+}
+
+.tradepage .innerpagetab .tabbanner .nav-item .nav-link {
+	padding: 7px 14px;
+	font-size: 12px;
+}
+
+.tradepage .tabbanner {
+	justify-content: inherit;
+	border-bottom: 1px solid #00000036;
+}
+
+.tradepage tr.activerow {
+	background: #0000000f;
+}
+
+.chart .tab-content,
+.tradechartlist.active,
+.tradechartlist>div,
+.tradechartlist>div>div {
+	display: flex;
+	flex: 1;
+	-webkit-flex: 1;
+	min-height: 609px;
+}
+
+.chart {
+	border-left: 0px !important;
+}
+
+.tradechartlist>div {
+	height: 450px;
+	min-height: 450px;
+}
+
+.marketchart.active,
+.marketchart>div {
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+	-webkit-flex: auto;
+}
+
+.marketchart>div {
+	height: 450px;
+	width: 100% !important;
+	min-height: 450px;
+}
+
+.fee-formbox {
+	margin-bottom: 3px !important;
+	flex-wrap: nowrap !important;
+}
+
+.orderchangebg {
+	width: 100%;
+	border-bottom: 0px !important;
+}
+
+.orderchangebg .nav-item {
+	width: 100%;
+	text-align: center;
+}
+
+.orderchangebg .nav-item img,
+.orderchangebg .nav-item svg {
+	width: 100%;
+	max-width: 14px;
+	height: auto;
+	border-radius: 3px;
+	opacity: 0.5;
+}
+
+.suborderbook .tabrightbox {
+	top: 0px;
+}
+
+.futureordertab .orderchangebg .nav-item {
+	width: auto !important;
+}
+
+.orderchangebg .nav-item .nav-link {
+	border: 0px !important;
+	padding: 5px 7px !important;
+	border-radius: 5px !important;
+	cursor: pointer;
+}
+
+.digitformbox .form-control {
+	height: 26px !important;
+	font-size: 12px;
+	padding: 3px;
+	background-color: transparent;
+	background-size: 15px;
+	padding-right: 26px !important;
+	background-position: right 6px top 4px;
+}
+
+.futureordertab .tabrightbox {
+	top: 35px;
+	right: 7px;
+	margin-top: 4px;
+}
+
+.tradepage tbody tr td {
+	font-size: 12px !important;
+	padding: 4px 6px;
+}
+
+.orderbookscroll table {
+	margin-bottom: 0px;
+}
+
+.buyshow .sellboxorder,
+.sellshow .buyboxorder {
+	display: none !important;
+}
+
+.buyshow .buyboxorder,
+.sellshow .sellboxorder {
+	display: block !important;
+}
+
+.buysellshow .buyboxorder,
+.buysellshow .sellboxorder {
+	display: block !important;
+}
+
+.sellboxorder .active,
+.sellboxorder .active:hover {
+	background: rgba(208, 63, 63, 0.2509);
+}
+
+.buyboxorder .active,
+.buyboxorder .active:hover {
+	background: rgba(7, 188, 83, 0.19);
+}
+
+.buyshow .buyboxorder {
+	min-height: 490px;
+}
+
+.buyboxorder .sitescroll {
+	max-height: 271px;
+}
+
+.buyshow .buyboxorder .sitescroll {
+	max-height: 501px;
+}
+
+.buyshow .buyboxorder {
+	min-height: 455px;
+}
+
+.sellboxorder .sitescroll {
+	position: relative;
+	max-height: inherit;
+	height: 230px;
+	overflow: auto;
+}
+
+.sellboxorder .sellboxtablebg {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	max-height: 270px;
+}
+
+.sellshow .sellboxorder .sellboxtablebg {
+	max-height: 754px !important;
+}
+
+.sellshow .sellboxorder .sitescroll {
+	height: 501px;
+}
+
+.sellboxorder table tbody td {
+	vertical-align: bottom;
+}
+
+.sellboxorder .sitescroll::-webkit-scrollbar-thumb {
+	background: #0a0a0a24;
+	border-radius: 50px;
+	visibility: hidden;
+}
+
+.css-qr46ko::-webkit-scrollbar {
+	width: 6px;
+}
+
+.css-qr46ko::-webkit-scrollbar-thumb {
+	background: #d5d5d5;
+	border-radius: 50px;
+}
+
+.css-qr46ko::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.sellboxorder .sitescroll::-webkit-scrollbar-track {
+	background: #d5d5d5;
+}
+
+.sellboxorder .sitescroll::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+.sellboxorder:hover .sitescroll::-webkit-scrollbar-thumb {
+	visibility: visible;
+}
+
+.buyboxorder thead,
+.sellboxorder thead {
+	visibility: hidden;
+}
+
+.buyboxorder th,
+.sellboxorder th {
+	padding: 0px !important;
+	border: 0px !important;
+	position: relative !important;
+	line-height: 0px;
+}
+
+.buyboxorder .sitetable th,
+.sellboxorder .sitetable th {
+	border-bottom: 0px !important;
+}
+
+.buyselltabbg {
+	padding: 0;
+	position: relative;
+	top: inherit;
+	right: inherit;
+	width: 100%;
+	margin: 0px auto;
+	background: #f5f5f50f;
+	border-radius: 8px;
+}
+
+.buyselltab {
+	border: 0px;
+}
+
+.orderfrmtab {
+	border-bottom: 0px;
+	display: flex;
+	flex-wrap: inherit;
+	border-bottom: 1px solid #0000002e;
+}
+
+.orderformbg1 {
+	display: flex;
+	flex: 1;
+	-webkit-flex: 1;
+	min-height: 286px;
+}
+
+.orderform {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	-webkit-flex: 1;
+}
+
+.orderformbox .btn {
+	padding: 10px 10px;
+	border-radius: 4px;
+	margin-top: 0px;
+	font-size: 14px;
+}
+
+.orderfrmtab .nav-item {
+	width: 50%;
+	text-align: center;
+	margin-bottom: 0px !important;
+	padding: 0px 5px;
+}
+
+.orderformbox .orderfrmtab .nav-item .nav-link {
+	border-radius: 0px;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 4px 19px;
+	border: 0px;
+	font-weight: 500;
+}
+
+.orderformbox .buyselltab .nav-item .nav-link {
+	border: 0px;
+	padding: 4px 13px;
+	font-size: 14px;
+	border-radius: 6px !important;
+	background: #0000001f;
+	font-weight: 500;
+}
+
+.orderformbox .buyselltab>.nav-item:last-child a {
+	border-right: 0px !important;
+}
+
+.orderformbox .buyselltab.nav-item .nav-link.active {
+	background-color: transparent;
+	color: #fff;
+}
+
+.orderformbox .buyselltab>.nav-item:first-child .nav-link.active {
+	background-color: #37bf8f;
+	border-color: #37bf8f !important;
+	color: #fff;
+	cursor: no-drop;
+}
+
+.orderformbox .buyselltab>.nav-item:last-child .nav-link.active {
+	background-color: #f97b7b;
+	border-color: #f97b7a !important;
+	color: #fff;
+	cursor: no-drop;
+}
+
+.orderformbg {
+	padding: 8px;
+	padding-bottom: 0px;
+}
+
+.orderformbox input.form-control::-webkit-input-placeholder {
+	color: #bfbfbf !important;
+}
+
+.orderformbox input.form-control::-moz-placeholder {
+	color: #bfbfbf !important;
+}
+
+.orderformbox input.form-control:-ms-input-placeholder {
+	color: #bfbfbf !important;
+}
+
+.orderformbox input.form-control::placeholder {
+	color: #bfbfbf !important;
+}
+
+.ruleslist {
+	padding: 0px;
+	margin-bottom: 0px;
+	position: absolute;
+	right: 5px;
+	top: 50px;
+}
+
+.ruleslist li {
+	list-style: none;
+	float: left;
+	padding: 3px 2px;
+	position: relative;
+}
+
+.ruleslist li a>i {
+	color: #b1b1b1;
+}
+
+.ruleslist li a {
+	text-decoration: none;
+	font-size: 13px;
+	padding: 3px 4px;
+	cursor: help;
+	padding-bottom: 0;
+	text-transform: capitalize;
+	color: #8a8a8a !important;
+}
+
+
+.ruleslist table tr>td>a:nth-child(2) {
+	border-left: 1px solid #1d4d73;
+}
+
+.ruleslist table tr>td>a:first-child {
+	padding-left: 0px !important;
+}
+
+.ruleslist table {
+	margin-bottom: 0px;
+}
+
+.ruleslist li img {
+	width: 100%;
+	max-width: 12px;
+}
+
+.rulesnotes {
+	background: #ffffff;
+	box-shadow: 1px 2px 15px 6px #0605051a;
+	padding: 4px 6px;
+	margin: -8px auto;
+	position: absolute;
+	z-index: 9;
+	right: 0px;
+	top: 0;
+	font-size: 12px;
+	line-height: 21px;
+	display: none;
+	margin-top: 23px;
+	cursor: auto;
+}
+
+.rulesnotes tr td {
+	border-top: 0px !important;
+	padding: 4px 9px !important;
+}
+
+.ruleslist li a:hover .rulesnotes {
+	display: block;
+}
+
+.rulesnotes tbody>tr td {
+	font-size: 12px;
+	padding: 3px 4px !important;
+}
+
+.orderformbox .limitabbg .nav-item .nav-link {
+	padding: 10px 11px;
+	text-transform: capitalize;
+	font-size: 13px;
+	border-bottom: 0px;
+	background: none !important;
+}
+
+.orderformbox .limitabbg .nav-item .nav-link.active {
+	color: #ff7104 !important;
+	border-bottom: 2px solid #ff7104;
+}
+
+.orderformbox .limitabbg .nav-item {
+	position: relative;
+	width: auto;
+}
+
+.orderformbox .limitabbg .nav-item {
+	padding: 0px;
+	width: auto;
+}
+
+.buyorderformactive1 .buyorderform {
+	display: block !important;
+}
+
+.sellorderformactive1 .sellorderform {
+	display: block !important;
+}
+
+.sellorderformactive1 .buyorderform {
+	display: none;
+}
+
+.buyorderformactive1 .sellorderform {
+	display: none;
+}
+
+.orderformbox .siteformbg {
+	padding: 10px 18px;
+}
+
+.orderformbox .form-group {
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.orderformbox .siteformbg label {
+	font-size: 12px;
+	margin-bottom: 6px;
+	min-width: 100px;
+}
+
+.stoplimtboxt {
+	width: 100%;
+}
+
+.orderformbox .form-control,
+.orderformbox .input-group-text {
+	font-size: 13px;
+	height: 34px !important;
+	padding: 4px 10px;
+}
+
+.orderformbg1>div {
+	width: 100%;
+	position: relative;
+}
+
+.orderformbg1>div:first-child {
+	border-right: 1px solid #00000040;
+}
+
+.orderformbg1 .bg-none,
+.orderformbg1 .bg-none .input-group-text {
+	padding: 0px;
+	border-radius: 0px;
+	border: 0px;
+	background: none !important;
+}
+
+.fee-formbox .input-group {
+	flex-wrap: inherit;
+}
+
+.fee-formbox .input-group>div,
+.fee-formbox .input-group>span {
+	width: 100%;
+	border: 0px;
+	line-height: 20px;
+}
+
+.fee-formbox .feeamt {
+	line-height: 24px;
+	justify-content: end;
+	text-align: right;
+}
+
+.buyorderform,
+.sellorderform {
+	position: relative;
+}
+
+.border-green,
+.border-green:hover,
+.border-green:focus {
+	border: 1px solid #37bf8f;
+	color: #37bf8f;
+
+}
+
+.tradepage .btn-sm:is(:hover, :focus) {
+	transform: none !important;
+}
+
+
+
+
+.border-red,
+.border-red:hover,
+.border-red:focus {
+	border: 1px solid #f97b7b;
+	color: #f97b7b;
+}
+
+
+
+.walletassets .btn {
+	width: 100%;
+	margin-top: 30px;
+	padding: 3px 10px !important;
+	border-radius: 5px;
+}
+
+.tradepage .viewbtn {
+	padding: 3px 12px;
+	font-size: 12px;
+	background: #1C5D99;
+	border: 0;
+	color: #FFC107 !important;
+	box-shadow: none !important;
+}
+
+.openorder .sitescroll,
+.orderhistory .sitescroll {
+	max-height: 190px;
+	min-height: 190px;
+}
+
+.tradehistory .sitescroll {
+	max-height: 200px;
+}
+
+.recenthistory .sitescroll {
+	max-height: 680px;
+}
+
+.marketlistsidemenu,
+.buyselltopbox {
+	display: none;
+}
+
+.buyselltab {
+	border: 0px;
+}
+
+.livepricemobile .dropdown .dropdown-menu {
+	background: #fff;
+	border-radius: 5px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	box-shadow: 0px 8px 15px -1px #00000038;
+	min-width: 545px;
+}
+
+.livepricemobile .dropdown .dropdown-menu .dropdown-item {
+	padding: 0;
+}
+
+.marketlist .tabrightbox {
+	top: -7px;
+	right: 0px;
+	width: 100%;
+	max-width: 217px;
+}
+
+.marketlist .form-control,
+.marketlist .input-group-text {
+	height: 29px;
+	padding: 0px 13px;
+	border-radius: 5px;
+}
+
+.marketlist .tab-content {
+	height: 100%;
+}
+
+.marketlist .table-responsive {
+	min-height: inherit;
+}
+
+.livepricenavbg .table-responsive {
+	max-height: 400px;
+}
+
+.marketlist .table-responsive {
+	max-height: 210px;
+}
+
+.closeiconlist {
+	color: #fff;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+	border-radius: 50px;
+	padding: 0 5px;
+	text-align: center;
+	z-index: 9;
+	font-size: 17px;
+	background: #ff7104;
+	cursor: pointer;
+}
+
+.livepricemobile .dropdown .dropdown-menu a {
+	padding: 0px 0px;
+	color: #a3a1a1 !important;
+	font-size: 13px;
+	line-height: normal;
+}
+
+.livepricemobile .dropdown .dropdown-menu a:hover {
+	background: transparent;
+}
+
+.livepricemobile .dropdown .dropdown-menu a:active {
+	background: #fff;
+}
+
+.filtersearch {
+	padding: 0px 16px;
+	padding-top: 10px;
+}
+
+.livepricelist .sitetable tbody tr td,
+.livepricelist .sitetable thead tr th {
+	border: 0px;
+	padding: 7px 12px;
+	font-size: 13px !important;
+	line-height: 26px;
+}
+
+.openorder .heading-box,
+.clostbuytab,
+.orderformbox .hidettitle {
+	display: none;
+}
+
+.markettabdropbox .dropdown-item:focus,
+.markettabdropbox .dropdown-item:hover {
+	background: #fff;
+}
+
+.marketlist .form-control,
+.marketlist .input-group-text {
+	height: 29px;
+	padding: 0px 13px;
+	border-radius: 5px;
+}
+
+.tradepage table tr td .sitebtn {
+	padding: 3px 15px !important;
+	font-size: 12px !important;
+}
+
+.form-group.rangesliderbox {
+	min-height: 40px;
+}
+
+.slider .slider-tick-label {
+	min-width: 0px;
+}
+
+.slider .slider-tick-label:first-child {
+	text-align: left;
+}
+
+.slider .slider-tick-label:last-child {
+	text-align: end;
+}
+
+.slider.slider-horizontal .slider-tick-label-container {
+	margin-left: -40px !important;
+}
+
+.tradepage .table {
+	margin: 0;
+}
+
+/* futures css */
+
+/* Futurestrade css */
+.grid-box-futures {
+	display: -ms-grid;
+	display: grid;
+	grid-template-areas:
+		"recentliveprice recentliveprice recentliveprice"
+		"livepricelist livepricelist livepricelist"
+		"chart orderbook orderform"
+		"chart orderbook walletassets"
+		"openorder openorder walletassets";
+	grid-template-columns: 1fr 400px 370px;
+	grid-gap: 0px;
+	margin: 0px 0px;
+	border-radius: 5px;
+}
+
+.grid-box-futures .sellboxorder .sitescroll {
+	height: 290px;
+	/* height: 240px; */
+}
+
+.grid-box-futures .buyboxorder .sitescroll {
+	max-height: 180px;
+}
+
+.grid-box-futures .buyboxorder {
+	min-height: 190px;
+}
+
+.grid-box-futures .buyboxorder .sitescroll {
+	max-height: 290px;
+	/* max-height: 338px; */
+}
+
+.futurespage .stylesettingdrop {
+	display: none;
+}
+
+.grid-box-futures .openorder tbody tr td {
+	padding: 4px 6px;
+}
+
+.grid-box-futures .buyshow .buyboxorder .sitescroll {
+	max-height: 570px;
+}
+
+.grid-box-futures .buyshow .buyboxorder {
+	min-height: 500px;
+}
+
+.grid-box-futures .sellshow .sellboxorder .sitescroll {
+	height: 578px;
+}
+
+.grid-box-futures .sellshow .sellboxorder .sellboxtablebg {
+	max-height: 580px;
+}
+
+.grid-box-futures .orderformbox .btn {
+	padding: 6px 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.balancewlt {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.balancewlt .h6 {
+	margin: 0px;
+	font-size: 13px;
+}
+
+.futuretab {
+	margin-top: 10px;
+}
+
+.futurespage .orderformbox .form-group {
+	flex-wrap: wrap;
+}
+
+.futuretab .nav-item {
+	background: #00000021;
+	margin: 0px 5px;
+	border-radius: 5px;
+}
+
+.futuretab .nav-item a {
+	display: block;
+	color: #000 !important;
+	text-transform: capitalize !important;
+}
+
+.grid-box-futures .ruleslist {
+	top: 47px;
+}
+
+.orderformbg1 select.form-control {
+	border: 0px;
+	height: 29px !important;
+}
+
+.avmodal {
+	cursor: pointer;
+}
+
+.adjusticon {
+	cursor: pointer;
+}
+
+.futurespage .tradechartlist>div {
+	height: 685px;
+	min-height: 650px;
+}
+
+.moredrp {
+	padding: 0 !important;
+	background: none !important;
+	border: 0;
+	font-weight: 500;
+	font-size: 13px !important;
+	color: #000000 !important;
+}
+
+.orderformbox .limitabbg .dropdown-menu .dropdown-item {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.positionsbg .siteformbg input {
+	width: 74px;
+	display: inline-block;
+	height: 23px;
+	position: relative;
+	top: 0;
+	font-size: 12px;
+	border-radius: 3px;
+	margin-left: 0px;
+}
+
+.positionsbg .viewbtn {
+	margin-right: 4px;
+}
+
+.orderform .slider .tooltip.bs-tooltip-top {
+	position: absolute;
+}
+
+.grid-box-futures .marketchart>div {
+	height: 675px;
+	min-height: 675px;
+}
+
+.markeselect .cointxt {
+	display: block;
+	padding-left: 34px;
+	margin-top: -5px;
+}
+
+.grid-box-futures .marketlist .dropdown-toggle {
+	padding-top: 0;
+}
+
+.grid-box-futures .livepricenavbg .dropdown-toggle .coinlisticon {
+	top: 5px;
+}
+
+.colorupdown svg,
+.colordownup svg {
+	width: 22px;
+	height: auto;
+}
+
+.futoptionlist .notestitle p {
+	flex-wrap: wrap;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.notesgray.futoptionlist {
+	display: flex;
+	justify-content: space-around;
+	padding: 5px;
+}
+
+.ordfrmbg-y {
+	min-height: 210px !important;
+}
+
+.purchasetable .sitescroll.myasttable-y {
+	max-height: 510px !important;
+}
+
+.dashboardpage .sitescroll,
+.dashboardpage .purchasetable .sitescroll.myasttable-y {
+	max-height: 480px !important;
+}
+
+.dashboardpage .sitescroll.trade-tag-sitescroll {
+	max-height: 440px !important;
+}
+
+.flexbox-equl-hh {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.flexbox-equl-hh>div {
+	margin-top: 0px !important;
+}
+
+.purchasetable .sitescroll.myast-table-y {
+	max-height: 591px !important;
+}
+
+.topblce-y .heading-box {
+	border-bottom: 0 !important;
+}
+
+.stacking-y {
+	display: flex !important;
+	gap: 10px !important;
+}
+
+.stacking-y>div {
+	width: 100% !important;
+	background: #f7f7f7;
+	padding: 20px;
+}
+
+.innerpagegrid .sitetable tbody tr td {
+	padding: 8px 11px;
+}
+
+.savingbannersec .table tr td {
+	width: 200px;
+	text-align: left;
+}
+
+.savingbannersec table tr td:last-child,
+.savingbannersec table tr th:last-child {
+	width: 118px;
+	text-align: end;
+}
+
+.savingpopup-y {
+	display: flex;
+	gap: 10px;
+}
+
+.ord-trde-y {
+	margin-bottom: -32px;
+}
+
+
+.react-multi-carousel-list {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.react-multi-carousel-track {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	will-change: transform, transition;
+}
+
+.partnerflex {
+	padding-left: 0 !important;
+}
+
+.partnerflex .react-multi-carousel-item {
+	text-align: center;
+}
+
+.s-flex-modal {
+	border: 1px solid #dddddd;
+	border-radius: 8px;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 12px;
+	max-width: 131px;
+	display: inline-block;
+	text-decoration: none;
+	text-align: left;
+}
+
+.s-flex-modal.active {
+	border-color: #ff6a00;
+	background: #ff6a0017;
+	color: #000;
+}
+
+.s-flex-modal.active p {
+	color: #1e1e1e !important;
+}
+
+.saving-summary {
+	padding: 15px;
+	border: 1px solid #dddddd;
+	border-radius: 10px;
+}
+
+.saving-checkbox-wrapper {
+	margin-top: 10px;
+	margin-bottom: 7px;
+}
+
+.saving-checkbox {
+	white-space: nowrap;
+	display: inline;
+}
+
+.saving-summary.savng-y .sitetable tbody tr td {
+	padding: 7px 0px;
+}
+
+.sub-date-y {
+	text-align: end;
+}
+
+.a-lik-y {
+	font-size: 14px;
+}
+
+.s-flex-modal .s-modal-txt {
+	font-size: 13px;
+	margin: 0;
+}
+
+.pnlmodalform .modal-dialog {
+	max-width: 880px;
+}
+
+.lngshrtflex>div {
+	width: 50%;
+}
+
+.lngshrtflex>div:last-child {
+	margin-left: 30px;
+}
+
+.lngshrtflex .lightgraybg {
+	padding: 15px;
+	border-radius: 7px;
+}
+
+.heleketsubs {
+	text-decoration: none;
+}
+
+.heleketqr {
+	width: 100%;
+	max-width: 150px;
+}
+
+.amtdrpdon-Y {
+	padding: 4px 28px 4px 10px;
+	border: 0 !important;
+	font-size: 13px !important;
+}
+
+.amtdrpdon-Y:focus {
+	box-shadow: none;
+}
+
+.buybxord-y .active,
+.buybxord-y .active:hover {
+	background: none;
+}
+
+.sellbxord-y .active,
+.sellbxord-y .active:hover {
+	background: none;
+}
+
+.historytable-read td {
+	color: #00000082 !important;
+}
+
+.nav-dot-y {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background-color: #FF6A00;
+	border-radius: 50%;
+	margin-right: 6px;
+	margin-bottom: 2px;
+}
+
+.nav-dot-grey {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background-color: #C5C5C5;
+	border-radius: 50%;
+	margin-right: 6px;
+	margin-bottom: 2px;
+}
+
+.viewallnoti-y {
+	text-decoration: none;
+	color: #000;
+}
+
+.saving-txt {
+	margin: 0;
+}
+
+
+.cryptdetbox {
+	display: flex;
+	width: 100%;
+}
+
+.profileiconpic.prof-icon-pic-y {
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+	background-color: transparent !important;
+	border: 0px;
+	padding: 0px;
+	border-radius: 50px;
+}
+
+.cryptdetbox>div {
+	padding-right: 50px;
+}
+
+.cryptobox .h4 {
+	font-size: 14px;
+	margin: 0px;
+	font-weight: 600;
+	line-height: normal;
+	padding-bottom: 2px;
+}
+
+.crytb-y {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 35px;
+	flex-wrap: wrap;
+}
+
+.crytb-y a {
+	font-size: 15px;
+}
+
+.innerpagecontent.inpcon-y {
+	padding: 15px 0px;
+}
+
+.cardlistbox .panelcontentbox {
+	padding: 10px;
+	position: relative;
+	width: 100%;
+}
+
+.react-multi-carousel-track>li {
+	padding-right: 15px;
+}
+
+.pricetable .h5 {
+	font-size: 34px !important;
+	margin: 0px;
+	color: #000 !important;
+}
+
+
+.text-right {
+	text-align: right;
+}
+
+.adsbox {
+	position: relative;
+	padding-top: 10px;
+}
+
+.introbox.panelcontentbox.panycon-y {
+	padding: 14px 25px;
+}
+
+.cryptdetbox>div:first-child {
+	padding-right: 8px;
+}
+
+.priceflexbox>div {
+	width: 32.9%;
+}
+
+.priceflexbox {
+	gap: 8px !important;
+	flex-wrap: wrap;
+}
+
+.usericont {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	margin-right: 4px;
+	padding: 2px;
+	background-color: #ffffff21;
+}
+
+.usericont {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	margin-right: 4px;
+	padding: 2px;
+	background-color: #ffffff21;
+}
+
+.buy-box-pge-y {
+	padding: 12px !important;
+}
+
+.buyboxpage .searchfrm.ser-frm-frm-y .form-group {
+	width: 310px;
+	padding: 0px 7px;
+	margin: 0;
+}
+
+.amtd-rpdon-Y.form-select {
+	height: 40px;
+	border: 0;
+}
+
+.panelcontentbox.buyboxpage.buy-box-pge-y .nav-tabs .nav-link {
+	display: inline-block;
+	margin: 0;
+	padding: 8px 30px;
+	background: #fff;
+	color: #000;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+	border: none;
+	border-radius: 0;
+	transition: all 0.25s ease;
+	position: relative;
+	z-index: 1;
+	box-shadow: none;
+}
+
+.panelcontentbox.buyboxpage.buy-box-pge-y .nav-tabs .nav-link.active {
+	background: linear-gradient(90deg, #FFC632, #FF6A00) !important;
+	color: #000 !important;
+	z-index: 2;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.panelcontentbox.buyboxpage.buy-box-pge-y .nav-tabs {
+	display: inline-flex;
+	align-items: center;
+	border-radius: 30px;
+	border: 1px solid #FF6A00 !important;
+	overflow: hidden;
+	border: none;
+	box-shadow: none;
+}
+
+.panelcontentbox.buyboxpage.buy-box-pge-y .nav-tabs .nav-item {
+	display: inline-block;
+}
+
+.panelcontentbox.buyboxpage.buy-box-pge-y .nav-tabs .nav-item:first-child .nav-link {
+	border-top-left-radius: 27px !important;
+	border-bottom-left-radius: 27px !important;
+}
+
+.panelcontentbox.buyboxpage.buy-box-pge-y .nav-tabs .nav-item:last-child .nav-link {
+	border-top-right-radius: 27px !important;
+	border-bottom-right-radius: 27px !important;
+}
+
+.suces-y {
+	background-color: transparent !important;
+	border-color: #e3e3e3;
+	color: #000;
+}
+
+.innertitle {
+	color: #db3802 !important;
+}
+
+.cty-bx-icon-y {
+	border: 1px solid #e3e3e3;
+	padding: 14px;
+	border-radius: 12px;
+	margin-right: 10px;
+}
+
+.info-bg-y {
+	background-color: transparent !important;
+	border-color: #e3e3e3;
+	color: #767676;
+}
+
+.searchfrm.ser-frm-frm-y .form-control {
+	height: 43px !important;
+}
+
+.sel-btn-y {
+	background-color: rgb(255, 0, 0) !important;
+}
+
+.viewbtn-y {
+	padding: 4px 18px;
+	font-size: 14px;
+	border-radius: 14px !important;
+	background: linear-gradient(#FFC632, #FF6A00);
+	color: #FF3C00;
+	font-weight: 400;
+	border: 0px;
+}
+
+.viewbtn-y:hover,
+.viewbtn-y:focus,
+.viewbtn-y:active {
+	background: #FF3C00;
+	color: #1E1E1E;
+}
+
+.deo-tre-y {
+	position: relative !important;
+	top: 60px !important;
+	padding: 5px 0px;
+	border-top: 1px solid #cfcfcf;
+	background: #f97b7b;
+}
+
+.deo-tre-y .content {
+	color: #fff !important;
+}
+
+.nightmode .deo-tre-y .content {
+	color: #fff !important;
+}
+
+.frm-grp-nots-y {
+	background-color: #fff;
+}
+
+.frm-grp-nots-y:hover .frm-grp-nots-y:focus {
+	background-color: #fff;
+}
+
+.fedbak-y {
+	z-index: 10;
+}
+
+.fedbak-y .tabbanner {
+	border-bottom: 0;
+}
+
+.in-pgy-con-y {
+	position: relative;
+}
+
+.balanceshowt.totblance .total-turn-over-y {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+	height: 100%;
+}
+
+.inc-fr-tdy-y {
+	width: fit-content;
+	background: #f7f7f7;
+	padding: 10px 15px;
+}
+
+.p2p .userfooterbox {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+
+.coin-badges {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+}
+
+.futurespage .container {
+	width: 100%;
+	max-width: 100%;
+}
+
+.coin-dropdown {
+	display: none !important;
+}
+
+.coin-dropdown {
+	display: block !important;
+	max-width: 240px;
+	margin-left: auto;
+}
+
+.futurespage .orderformbox .form-group {
+	width: 100%;
+}
+
+.gridparentbox.merchantpage.grd-part-mercht-y {
+	padding-top: 8px;
+}
+
+.accorddatacell.mercntvew-y {
+	padding: 0px 6px;
+	border-bottom: 0px;
+}
+
+.fundsand-y {
+	text-wrap: wrap;
+	font-size: 12px;
+	margin-bottom: 0;
+	padding-left: 26px;
+}
+
+.fund-sand-y {
+	text-wrap: wrap;
+	font-size: 12px;
+	margin-bottom: 0;
+	padding-left: 32px;
+}
+
+.mercntvew-y>div {
+	border: 0px;
+}
+
+.accordionrow.acr-rw-y {
+	background-color: #fff;
+}
+
+.mercntvew-y {
+	padding: 0px 6px;
+	border-bottom: 0px;
+}
+
+.alrt-y {
+	border-radius: 14px;
+	margin-bottom: 0;
+	text-align: left;
+	margin: 8px 14px;
+}
+
+.mer-viw-y {
+	display: flex;
+	justify-content: space-between;
+}
+
+.mer-viw-flt-y {
+	display: flex;
+	gap: 20px;
+}
+
+.mar-us-pid-y {
+	padding: 4px 12px;
+}
+
+.mer-vie-icon-y {
+	width: 100%;
+	max-width: 32px;
+}
+
+.mer-vie-icon-y {
+	width: 100%;
+	max-width: 36px;
+}
+
+.donlod-rept-y {
+	margin-left: -24px;
+}
+
+.form-check-input.mer-lik-y {
+	border-radius: 10px;
+}
+
+.siteformbg.srh-icon-y .input-group-text {
+	height: 40px;
+}
+
+.active-coin {
+	background: linear-gradient(90deg, #FFC632, #FF6A00) !important;
+	border: none;
+}
+
+.tradepicesubbg .h1 {
+	font-size: 15px;
+	font-weight: 400;
+	margin: 0px;
+	width: 100%;
+	color: #94969E;
+}
+
+.tradepicesubbg .h3 {
+	font-size: 16px;
+	margin: 0px;
+	font-weight: 600;
+	padding-left: 13px;
+	text-align: right;
+	width: 100%;
+	color: #94969E !important;
+}
+
+.authtblemdlbox .termsnotes h5 {
+	font-size: 15px;
+	color: #94969E;
+}
+
+.adjusticon,
+.adjusticon * {
+	user-select: none;
+	cursor: pointer;
+}
+
+.no-select {
+	user-select: none;
+}
+
+.innerpagecontent.inpgycon-y {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.spa .leftsidemenu li a>div {
+	display: inline-block;
+	text-align: left;
+	white-space: normal;
+	word-break: break-word;
+	overflow-wrap: break-word;
+	width: calc(100% - 40px);
+	vertical-align: middle;
+}
+
+.underline-y {
+	text-decoration: underline;
+}
+
+.faverifybox .addadres {
+	padding: 10px 0px;
+}
+
+.miss-btn-add .fa-magnifying-glass-dollar {
+	font-size: 15px !important;
+}
+
+/*media css start*/
+@media (max-width:1860px) {
+	.flexbox.stacking-y {
+		width: 38% !important;
+	}
+
+	.leftsidetabbg>div:last-child {
+		padding: 18px;
+	}
+
+	.trendcoinlist li {
+		padding: 7px;
+	}
+
+	.gridparentbox,
+	.innerpagecontent.by-trde-y {
+		padding-left: 0px;
+		padding-top: 12px;
+		padding-bottom: 0px;
+	}
+
+
+	.innerpagecontent.ern-hist-y {
+		padding-left: 0px;
+		padding-top: 50px;
+	}
+
+	.gridparentbox,
+	.innerpagecontent {
+		padding-left: 273px;
+		padding-right: 9px;
+	}
+
+	.innerpagecontent .tabrightbox {
+		right: 10px;
+	}
+}
+
+
+@media (max-width: 1650px) {
+
+
+	.cardlistbox>div {
+		width: 33.3%;
+	}
+
+	.transaction .table tbody tr td {
+		padding: 12px 11px !important;
+	}
+
+	.timerflexboxb svg {
+		width: 100%;
+		max-width: 65px;
+	}
+
+	.welcomebanner .table-content>div:last-child {
+		width: 237px;
+	}
+}
+
+@media (max-width: 1600px) {
+
+
+	.redbtn-y {
+		font-size: 13px !important;
+		padding: 5px 18px !important;
+		line-height: 21px;
+	}
+
+	.overviewbalancebox .btn-sm {
+		font-size: 12px !important;
+		padding: 6px 10px !important;
+	}
+
+	.dashboardpage .subhead {
+		font-size: 16px;
+	}
+
+	.walletoverviewbg .flexbox>div:first-child {
+		width: 35%;
+	}
+
+	.walletoverviewbg .flexbox>div:last-child {
+		width: 65%;
+	}
+
+	.livepricebox .h3 {
+		min-height: 50px;
+	}
+
+	.securitylink .panelcontentbox {
+		margin: 11px 11px;
+	}
+
+	.securitylink img {
+		max-width: 34px;
+	}
+
+	.overviewbalancebox h3 {
+		font-size: 30px;
+	}
+
+	.securitylink img {
+		max-width: 34px;
+	}
+
+	.overviewbalancebox h3 {
+		font-size: 30px;
+	}
+
+	.transaction .subhead {
+		font-size: 19px;
+	}
+
+	.priceboxflex .panelcontentbox {
+		padding: 13px;
+	}
+
+	.livepricetable>div:first-child img {
+		width: 28px;
+	}
+
+	.livepricetable .h5 {
+		font-size: 14px;
+	}
+
+	.livepricetable .h6 {
+		font-size: 13px;
+	}
+
+	.livepricebox .h3 {
+		font-size: 15px;
+	}
+
+	.dashboardpage .subhead {
+		font-size: 18px;
+	}
+
+	.innerpagegrid .tabbanner .nav-item .nav-link {
+		font-size: 15px;
+	}
+
+	.securitypage .boxtabb .tabbanner .nav-item .nav-link {
+		padding: 10px 10px;
+	}
+
+	.affiliatebg .col-lg-4 {
+		width: 100%;
+		max-width: 450px;
+	}
+
+	.headermenu .headbg .navbar-nav .nav-item .nav-link {
+		font-size: 15px;
+	}
+
+	.heading-box {
+		font-size: 18px;
+	}
+
+	.profiletablebox h4 {
+		font-size: 15px;
+	}
+
+	.innerpagecontent .h2 {
+		font-size: 25px;
+	}
+
+	.chat .chat-body p {
+		font-size: 13px !important;
+	}
+
+	.subhead {
+		font-size: 16px;
+	}
+
+	.leftsidemenu li a,
+	.leftsidemenu .dropdown a {
+		font-size: 14px;
+	}
+
+	.profilepage .flexbox>div:first-child {
+		width: 43%;
+	}
+
+	.profilepage .flexbox>div:last-child {
+		width: 67%;
+	}
+
+	.mangelistboxb h2 {
+		font-size: 14px;
+	}
+
+	.mangelistbox h2 {
+		font-size: 16px;
+	}
+
+	.supporttable table.sitetable tbody tr td {
+		font-size: 13px;
+	}
+
+	.chat .h4,
+	.supporttable table.sitetable tbody>tr:first-child td {
+		font-size: 14px;
+	}
+
+	.supporttable .viewbtn {
+		padding: 4px 13px;
+		font-size: 13px;
+	}
+}
+
+@media (max-width:1550px) {
+	.welcomebanner .table-content h5 {
+		font-size: 22px;
+		line-height: 31px;
+	}
+
+	.dashboardpage .balanceshowt .h4 {
+		font-size: 19px;
+	}
+
+	.tablebox>div {
+		padding: 20px;
+	}
+
+	.balanceshowt h5 {
+		font-size: 15px;
+	}
+
+	.supportbg .flexbox>div:first-child {
+		width: 40%;
+	}
+
+	.supportbg .flexbox>div:last-child {
+		width: 60%;
+	}
+
+	.dashboardpage .balancetableb .h4 {
+		font-size: 19px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.vrfimg {
+		max-width: 55px;
+		margin-bottom: 23px;
+	}
+
+	.timerflexboxb svg {
+		max-width: 54px;
+	}
+
+	.tokencreatepage .form-wizard-steps .stepTitle {
+		font-size: 13px;
+	}
+
+	.pymenttablesize .col-lg-5 {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1450px) {
+	.cryptdetbox.table-content>div {
+		padding: 0px 13px;
+	}
+
+	.totblance.balanceshowt .h4 {
+		font-size: 19px;
+	}
+
+	.subtablenots .row>div {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.subtablenots .row>div:first-child {
+		margin-bottom: 20px;
+	}
+
+	.balancedirectbox>div {
+		padding: 21px 10px;
+	}
+
+	.profilepage .flexbox>div:first-child {
+		width: 40%;
+	}
+
+	.profilepage .flexbox>div:last-child {
+		width: 60%;
+	}
+}
+
+@media (max-width: 1400px) {
+	.headermenu .headbg .navbar-nav .nav-item .nav-link {
+		font-size: 14px;
+		padding: 9px 9px;
+	}
+
+	.rf-img {
+		max-width: 50px;
+	}
+
+	.vrflex .subhead {
+		padding-bottom: 3px;
+		font-size: 16px;
+	}
+
+	.flexbox.pf-box>div:first-child {
+		width: 40%;
+	}
+
+	.flexbox.pf-box>div:last-child {
+		width: 60%;
+	}
+
+	.overviewbalancebox h3 {
+		font-size: 23px;
+	}
+
+	.notestitle p>.t-black {
+		font-size: 16px;
+	}
+
+	.trendcoinlist li {
+		padding: 4px;
+	}
+
+	.livepricenavbg>li {
+		padding: 0px 14px;
+		list-style-type: none !important;
+	}
+
+	.securpanelbox .badge {
+		padding: 8px 16px;
+		font-size: 12px;
+	}
+
+	.bankpage .panelcontentbox {
+		padding: 13px 7px;
+	}
+
+	.profileshowbox .photopic {
+		width: 100px;
+		height: 100px;
+	}
+
+	.profiletabbg .table-content>div:first-child {
+		width: 35%;
+	}
+
+	.profiletabbg .table-content>div:last-child {
+		width: 65%;
+	}
+
+	.servicecheckboxbg>div {
+		width: 50%;
+	}
+
+	.tokencreatepage .react-form-wizard.sm .wizard-icon-circle {
+		width: 40px !important;
+		height: 40px !important;
+	}
+
+	.tokencreatepage .react-form-wizard .wizard-nav::before {
+		top: 21px;
+	}
+
+	.tokencreatepage .smooth-border-left-to-right {
+		top: 21px !important;
+	}
+
+	.tokencreatepage .react-form-wizard .wizard-icon-circle .wizard-icon {
+		font-size: 14px !important;
+	}
+
+	.charttransation {
+		height: 215px !important;
+	}
+
+	.balancechartact .tabbanner .nav-item .nav-link {
+		font-size: 13px;
+		padding: 6px 11px;
+	}
+
+	.balancechartact {
+		padding: 25px 5px;
+	}
+
+	.balanceshowt img {
+		max-width: 58px;
+	}
+}
+
+@media (max-width: 1350px) {
+
+	.livepricet span {
+		font-size: 13px;
+	}
+
+	.livepricenavbg>li {
+		padding: 0px 8px;
+	}
+
+	.wlletrightbox.flexboxuser {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.balanceflebxbg {
+		display: flex;
+		margin: 0px !important;
+	}
+
+	.balanceflebxbg>div {
+		margin: 5px 5px !important;
+		width: 100%;
+	}
+
+	.balanceflebxbg>div:first-child {
+		margin-left: 0px !important;
+	}
+
+	.balanceflebxbg>div:last-child {
+		margin-right: 0px !important;
+	}
+
+	.wlletrightbox .chartlineicon img {
+		max-width: 115px;
+		position: absolute;
+		right: 16px;
+		top: 24px;
+		margin-top: 2px;
+	}
+
+	.chartlineicon {
+		min-height: inherit;
+	}
+
+	.wlletrightbox .livepricetable.mt-4 {
+		margin-top: 20px !important;
+	}
+
+	.livepricebox .h3 {
+		min-height: inherit;
+	}
+
+	.wlletrightbox>div {
+		width: 100%;
+	}
+
+	.welcomebanner .table-content>div:last-child {
+		width: 173px;
+	}
+
+	.tokencreatepage .wizard-tab-content .col-lg-4 {
+		width: 50%;
+		max-width: 50%;
+	}
+
+	.welcomebanner .table-content h5 {
+		font-size: 19px;
+		line-height: 28px;
+	}
+
+	.welcomebanner .table-content img {
+		max-width: 216px;
+	}
+
+	.depositbg .row>div,
+	.convertpage .row>div {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.add-tog .radio-tog .siteformbg {
+		position: relative;
+		top: 5px;
+		right: 1px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.flexbox.stacking-y {
+		width: 100% !important;
+	}
+
+	.priceflexbox>div {
+		width: 31.9% !important;
+	}
+
+	.searchfrm {
+		flex-wrap: wrap;
+	}
+
+	.introbox .h5 {
+		font-size: 13px;
+	}
+
+	.introbox .badge {
+		font-size: 12px;
+		min-width: inherit;
+	}
+
+	.introbox .table-content>div:first-child {
+		width: 52px;
+	}
+
+	.depositbg .leftsidetabbg .col-lg-12,
+	.depositbg .leftsidetabbg .col-md-6 {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.leftsidetabbg>div:first-child {
+		width: 55%;
+	}
+
+	.leftsidetabbg>div:last-child {
+		width: 45%;
+	}
+
+	.coinlisttable img {
+		width: 24px;
+	}
+
+	.livepricet span {
+		font-size: 12px;
+	}
+
+	.coinlisttable img {
+		width: 24px;
+	}
+
+	.livepricenavbg>li:first-child a {
+		font-size: 13px;
+	}
+
+	.livepricenavbg>li {
+		padding: 0px 10px;
+	}
+
+	.wlletrightbox .panelcontentbox {
+		min-height: inherit;
+	}
+
+	.tokenflexbox>div:first-child {
+		width: 40%;
+	}
+
+	.tokenflexbox>div:last-child {
+		width: 60%;
+	}
+
+	.depositbg .col-lg-4 {
+		width: 40%;
+	}
+
+	.invetstorradiobg>div {
+		width: 50%;
+		max-width: 50%;
+	}
+
+	.pymenttablesize>div {
+		width: 100% !important;
+	}
+
+	.notestokentable tr>td:last-child {
+		text-align: right;
+	}
+
+	.innerpagecontent .tabbanner .nav-item .nav-link {
+		font-size: 14px;
+	}
+
+	.profilepage .flexbox>div:first-child {
+		width: 45%;
+	}
+
+	.profilepage .flexbox>div:last-child {
+		width: 55%;
+	}
+
+	.mangelistbox ul {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.mangelistbox li {
+		width: 45%;
+		margin: 7px 7px;
+		padding: 15px 15px;
+	}
+}
+
+@media (max-width: 1250px) {
+
+	.marketlist .table-responsive {
+		max-height: 445px;
+	}
+
+	.sellboxorder .sitescroll {
+		height: 220px;
+	}
+
+	.buyboxorder .sitescroll {
+		max-height: 250px;
+	}
+
+	.sellboxorder .sellboxtablebg {
+		max-height: 250px;
+	}
+
+	.buyboxorder {
+		min-height: 200px;
+	}
+
+	.buyshow .buyboxorder .sitescroll {
+		max-height: 430px;
+	}
+
+	.buyshow .buyboxorder {
+		min-height: 433px;
+	}
+
+	.sellshow .sellboxorder .sitescroll {
+		height: 433px;
+	}
+
+	.sellshow .sellboxorder .sellboxtablebg {
+		max-height: 433px;
+	}
+
+	.cryptdetbox.table-content>div {
+		padding: 0px 8px;
+	}
+
+	.notestitle p>.t-black {
+		font-size: 14px;
+	}
+
+	.overviewbalancebox h3 {
+		font-size: 25px;
+	}
+
+	.transaction .alink {
+		font-size: 14px;
+	}
+
+	.pagecontentsize .gridparentbox,
+	.pagecontentsize .footerbox {
+		padding-left: 15px !important;
+	}
+
+	.tradepage .mobiletoggle {
+		display: block;
+	}
+
+	.devicetable tbody tr>td {
+		font-size: 13px;
+	}
+
+	.depositbg .col-lg-4 {
+		width: 50%;
+	}
+
+	.timerflexboxb {
+		max-width: 220px;
+	}
+
+	.leftsidescroll {
+		margin-top: 0px;
+	}
+
+	.leftsidemenu li a {
+		text-align: left;
+	}
+
+	.tokencreatepage .wizard-tab-content .col-lg-3 {
+		width: 50%;
+		max-width: 50%;
+	}
+
+	.gridparentbox,
+	.innerpagecontent {
+		padding-left: 261px;
+		padding-right: 8px;
+	}
+
+	.uheadbg {
+		padding-left: 0px;
+	}
+
+	.headermenu .headbg .navbar-nav .nav-item .nav-link {
+		font-size: 13px;
+		padding: 6px 10px !important;
+	}
+
+	.profilepage .panelcontentbox {
+		padding: 20px;
+	}
+
+	.securitypage .panelcontentbox {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 1200px) {
+
+
+	.crytb-y {
+		gap: 20px !important;
+	}
+
+	.grid-box {
+		grid-template-columns: 1fr 330px 325px;
+	}
+
+	.walletoverviewbg .flexbox {
+		display: block;
+	}
+
+	.walletoverviewbg .flexbox>div {
+		width: 100% !important;
+	}
+
+	.convertpage .input-group input {
+		font-size: 19px;
+		font-weight: 600;
+	}
+
+	.cardlistbox>div {
+		width: 50%;
+	}
+
+	.antiflexbox>div {
+		padding: 30px;
+	}
+
+	.tradepage .gridparentbox {
+		padding-top: 70px;
+	}
+
+	.supportbg .flexbox>div:first-child {
+		width: 47%;
+	}
+
+	.wizardform .flexbox>div:last-child {
+		width: 55%;
+	}
+
+	.subhead {
+		font-size: 19px;
+	}
+
+	.devicetable tbody tr>td {
+		font-size: 13px;
+	}
+
+	.tablebox>div {
+		padding: 17px 12px;
+	}
+
+	.wizardform #progressbar {
+		padding: 20px 17px;
+	}
+
+	.kycviewpage tbody tr td {
+		display: inline-block;
+		width: 33.3%;
+		float: left;
+	}
+
+	.kycviewpage tbody tr {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.flexbox.chartflexbox {
+		flex-wrap: wrap;
+		margin-top: 0px !important;
+	}
+
+	.chartflexbox>div:first-child {
+		width: 100%;
+	}
+
+	.chartflexbox>div:last-child {
+		width: 100%;
+	}
+
+	.chatboxscroll {
+		min-height: inherit;
+	}
+
+	.supportbg .thead {
+		font-size: 15px;
+	}
+
+	.supportlistscroll {
+		border-top: 1px solid #e3e3e3;
+	}
+
+	.supportlistscroll .tabbanner {
+		flex-wrap: wrap;
+		flex-direction: inherit !important;
+	}
+
+	.supportbg .tabbanner .nav-item {
+		width: 100%;
+		padding: 11px 15px;
+	}
+
+	.supportbg .flexbox {
+		display: block;
+	}
+
+	.supportbg .flexbox>div {
+		width: 100% !important;
+		margin: 8px 0px;
+	}
+
+	.supportlistscroll {
+		max-height: 393px;
+	}
+
+	.wlletflex {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.wlletflex>div {
+		width: 100%;
+		margin: 0px !important;
+	}
+
+	.balanceshowt .h4,
+	.balancetableb .h4 {
+		font-size: 14px;
+	}
+
+	.balanceshowt h5 {
+		font-size: 15px;
+	}
+
+	.wlletflex>div:last-child {
+		text-align: right !important;
+	}
+
+	.dashboardpage .balancetableb .h4 {
+		font-size: 16px;
+	}
+
+	.dashboardpage .flexbox>div:first-child {
+		width: 40%;
+	}
+
+	.dashboardpage .flexbox>div:last-child {
+		width: 60%;
+	}
+
+	.innerpagecontent .boxtabb .tabbanner .nav-item .nav-link {
+		font-size: 14px;
+		min-width: 85px;
+	}
+
+	.basicprftable table tbody tr>td:last-child {
+		width: 144px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.donlod-rept-y {
+		margin-left: 0px !important;
+	}
+
+	.walletpagebg .flexboxtable>div:first-child {
+		width: 70%;
+	}
+
+	.trendscroll {
+		max-height: 589px;
+	}
+
+	.amlverifypage .panelcontentbox {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.walletoverviewbg .flexbox>div:last-child {
+		width: 40%;
+	}
+
+	.totblance.balanceshowt .h4 {
+		font-size: 24px;
+	}
+
+	.welcomebanner .table-content>div:last-child {
+		width: 250px;
+	}
+
+	.welcomebanner .table-content img {
+		max-width: 250px;
+	}
+
+	.flexbox {
+		flex-wrap: wrap;
+	}
+
+	.flexbox>div {
+		width: 100% !important;
+		margin: 5px 0px;
+	}
+
+	.welcomebanner .table-content h5 {
+		font-size: 24px;
+		line-height: 33px;
+		padding-right: 50px;
+	}
+
+	.charttransation {
+		height: 270px !important;
+	}
+
+	.balancechartact,
+	.balanceshowbox {
+		width: 50%;
+		float: left;
+	}
+
+	.balanceshowbox {
+		margin-top: 0px !important;
+		padding-right: 20px;
+	}
+
+	.tablebox.d-flex {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox>div:first-child {
+		margin-bottom: 10px !important;
+	}
+
+	.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox {
+		margin-top: 0px !important;
+	}
+
+	.tablebox>div {
+		padding: 20px;
+		margin: 5px 0px;
+	}
+
+	.dashboardpage .balancetableb .h4 {
+		font-size: 20px;
+	}
+
+	.securpanelbox {
+		margin-bottom: 5px;
+	}
+
+	.spotbalancechart {
+		height: 211px !important;
+	}
+
+	.balancechartact .tabbanner .nav-item .nav-link {
+		font-size: 15px;
+	}
+
+	.mangelistbox ul {
+		display: flex;
+	}
+
+	.angleiconcell {
+		width: 70px;
+	}
+}
+
+@media (max-width: 1099px) {
+
+	.coin-dropdown {
+		display: block !important;
+		max-width: 160px;
+		margin-left: auto;
+
+	}
+}
+
+@media (max-width: 1080px) {
+	.sellshow .sellboxorder .sitescroll {
+		height: 330px;
+	}
+
+	.buyshow .buyboxorder {
+		min-height: 340px;
+	}
+
+	.buyshow .buyboxorder .sitescroll {
+		max-height: 339px;
+	}
+
+	.sellboxorder .sitescroll {
+		height: 150px;
+	}
+
+	.buyboxorder .sitescroll {
+		max-height: 190px;
+	}
+
+	.recenthistory .sitescroll {
+		max-height: 815px;
+	}
+
+	.searchfrm {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.historypage .tabbanner .nav-item .nav-link {
+		font-size: 14px !important;
+	}
+
+	.flexboxtable>div,
+	.accounttab.d-flex>div {
+		margin: 11px 0px;
+		width: 100% !important;
+	}
+
+	.flexboxtable,
+	.accounttab.d-flex {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.walletpagebg .flexboxtable>div,
+	.walletpagebg .flexboxtable>div:first-child {
+		width: 100% !important;
+	}
+
+	.totblance.balanceshowt .h4 {
+		font-size: 24px;
+	}
+
+
+	.wizardform .flexbox {
+		display: block;
+	}
+
+	.wizardform .flexbox>div {
+		width: 100% !important;
+	}
+
+	.wizardform .flexbox>div:first-child {
+		padding-right: 0;
+	}
+
+	.securitylink .btn {
+		font-size: 13px;
+	}
+
+	.livepricenavbg>li {
+		padding: 0px 22px;
+	}
+
+	.flexboxuser {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.flexboxuser>div {
+		width: 100% !important;
+		margin: 8px 0px;
+	}
+
+	.walletoverviewbg .flexboxuser>div:last-child {
+		margin-top: 20px !important;
+	}
+
+	.balanceshowt .h4 {
+		font-size: 16px;
+	}
+
+	.balanceshowt h5 {
+		font-size: 17px;
+	}
+
+	.innerpagegrid .gridparentbox {
+		padding-left: 10px !important;
+		padding-right: 10px;
+		padding-top: 0px;
+		padding-bottom: 20px;
+	}
+
+	.footerboxuser {
+		padding-left: 0px;
+	}
+
+	.innerpagegrid .footer-gray-bg {
+		padding: 0px;
+	}
+
+	.flexbox.liquidbg {
+		display: inline-block;
+	}
+
+	.flexbox.liquidbg>div {
+		width: 50% !important;
+		float: left;
+	}
+
+	.trade-stepbg .flexbox {
+		display: inline-block;
+	}
+
+	.trade-stepbg .flexbox>div {
+		width: 50% !important;
+		float: left;
+	}
+
+	.uheadbg {
+		/* padding-left: 15px; */
+	}
+
+	.innerpagecontent {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.mobiletoggle {
+		display: block;
+	}
+
+	.leftsidemenu {
+		visibility: hidden;
+		translate: -32vh 0;
+		padding-top: 40px !important;
+		transition-property: display opacity;
+		transition-duration: 0.6s;
+		transition-behavior: allow-discrete;
+		box-shadow: 0px 0px 9px 5px #00000047;
+	}
+
+	.pagewrapperbox .leftsidemenu.active {
+		display: block;
+		opacity: 1;
+		translate: 0 0;
+	}
+
+	.leftsidemenu.active {
+		top: 0;
+		padding: 15px 1px !important;
+		display: none;
+		z-index: 99999;
+		position: fixed;
+		padding-right: 4px !important;
+	}
+
+	.userfooterbox {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.tokencreatepage .react-form-wizard .wizard-tab-content {
+		padding: 0;
+	}
+
+	.innerpagecontent .tabrightbox {
+		right: 0px;
+	}
+
+	.leftsidemenu li a,
+	.leftsidemenu .dropdown a {
+		font-size: 14px !important;
+		padding: 10px 10px !important;
+	}
+
+	.securepanelbox .balanceshowt h5 {
+		padding-bottom: 5px;
+	}
+
+	.uheadbg .navbar-brand {
+		display: inline-block;
+	}
+
+	.innerpagecontent .boxtabb .tabbanner .nav-item .nav-link {
+		font-size: 13px;
+		padding: 7px 13px;
+		min-width: inherit;
+	}
+
+	.sidelogoicon {
+		padding-top: 0px;
+	}
+
+	.grid-box-futures .sellboxorder .sitescroll {
+		height: 370px;
+	}
+
+	.grid-box-futures .sellboxorder .sellboxtablebg {
+		max-height: 370px;
+	}
+
+	.grid-box-futures .buyboxorder .sitescroll {
+		max-height: 415px;
+	}
+
+	.grid-box-futures {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "recentliveprice  recentliveprice"
+			"livepricelist livepricelist"
+			"chart chart"
+			"orderform orderbook"
+			"walletassets orderbook"
+			"openorder openorder";
+	}
+
+
+	.grid-box {
+		grid-template-columns: 1fr 389px;
+		grid-template-areas: "recentliveprice  recentliveprice"
+			"livepricelist livepricelist"
+			"marketlist marketlist"
+			"chart chart"
+			"orderform orderbook"
+			"orderform orderbook"
+			"walletassets walletassets"
+			"openorder openorder";
+	}
+}
+
+@media (max-width: 991px) {
+	.coin-badges {
+		justify-content: flex-start;
+		margin-top: 13px;
+	}
+
+
+	.sitebannercontent.cpytrde .heading-title {
+		text-align: center !important;
+	}
+
+	.sitebannercontent.cpytrde p {
+		text-align: center !important;
+	}
+
+	.accorddatacell.mercntvew-y>div {
+		width: 100% !important;
+	}
+
+	.innerpagecontent.ern-hist-y {
+		padding-left: 0px;
+		padding-top: 80px;
+	}
+
+	.coin-dropdown {
+		margin-top: -36px;
+	}
+
+	.cons-y {
+		text-align: left !important;
+	}
+
+	.cons-y .badge {
+		margin: 4px;
+	}
+
+	.stesrl-y {
+		max-height: 377px !important;
+	}
+
+	.pagecontent .apiwhitelist-y h6 {
+		line-height: 22px !important;
+	}
+
+	.pagecontent .addadres .tabrightbox {
+		top: 0px;
+	}
+
+	.webhide {
+		display: inline-block !important;
+	}
+
+	.mobiletoggle {
+		top: 19px;
+	}
+
+	.userpanelpage .headermenu .dropdown-menu {
+		position: absolute !important;
+	}
+
+	.userpanelpage .headermenu .headbg .dropdown-item {
+		color: #000;
+	}
+
+	.mobhide {
+		display: none;
+	}
+
+	.notestitle p {
+		font-size: 14px;
+	}
+
+	.kyctablenotes {
+		min-height: auto;
+	}
+
+	.vrfbg .h4 {
+		font-size: 14px;
+	}
+
+	.vrfimg {
+		max-width: 41px;
+	}
+
+	.flexbox.securityinnerbox {
+		gap: 10px;
+		margin: 0 !important;
+		margin-top: 10px !important;
+	}
+
+	.flexbox.securityinnerbox>div {
+		margin: 0;
+	}
+
+	.profiletablebox h5 {
+		line-height: 22px;
+		font-size: 13px;
+	}
+
+	.profiletablebox h4 {
+		font-size: 15px;
+	}
+
+	.faverifybox .panelcontentbox {
+		padding: 9px 0px;
+	}
+
+	.faverifybox {
+		border: 0px;
+		padding: 0px;
+	}
+
+
+	.faverifybox>div {
+		padding: 13px 0px;
+	}
+
+	.securityinnerbox .d-flex>div {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+
+	.headermenu .headbg .navbar-nav .nav-item .nav-link {
+		padding: 6px 10px !important;
+		font-size: 14px;
+	}
+
+	.cryptdetbox.table-content {
+		display: block;
+	}
+
+	.cryptdetbox.table-content>div {
+		padding: 0px;
+		display: inline-block;
+		padding-right: 26px;
+		padding-bottom: 0px;
+	}
+
+	.convertpage .exchangerate {
+		border-top: 1px solid #dee1e0;
+		padding: 15px 20px;
+	}
+
+	.convertpage .input-group input::placeholder {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.convertpage .table-content .converticon svg {
+		rotate: 90deg;
+	}
+
+	.converticondiv {
+		position: relative;
+	}
+
+	.converticondiv::before {
+		content: "";
+		background: #e7e9e9;
+		position: absolute;
+		top: 26px;
+		width: 100%;
+		height: 1px;
+		left: 0;
+	}
+
+	.convertpage .table-content>div {
+		border-left: 0px;
+		border-bottom: 0px;
+		width: 100%;
+		display: block;
+	}
+
+	.convertpage .table-content>div:first-child .tabrightbox {
+		right: 23px;
+	}
+
+	.convertpage .table-content>div:first-child,
+	.convertpage .table-content>div:last-child {
+		padding: 20px 20px;
+	}
+
+	.marketlist .table-responsive {
+		max-height: 232px;
+	}
+
+	.historypage .tabbanner .nav-item .nav-link {
+		font-size: 13px !important;
+	}
+
+	.innerpagetab .tabbanner li a {
+		padding: 10px 13px;
+	}
+
+	.profilebox>div:last-child {
+		padding-right: 0;
+	}
+
+	.securitypage .boxtabb .tabbanner .nav-item .nav-link img {
+		max-width: 24px;
+	}
+
+	.profbtn {
+		margin-top: 0px !important;
+	}
+
+	.uheadbg {
+		padding: 10px 0px !important;
+		box-shadow: 0px 4px 11px #00000038;
+	}
+
+	.devicetable {
+		margin-bottom: 15px !important;
+	}
+
+	.headerrightsidemenu {
+		top: 14px;
+	}
+
+	.transaction {
+		margin-top: 10px !important;
+	}
+
+	.wlletrightbox {
+		margin-top: -10px !important;
+	}
+
+	.devicetable .tabbanner .nav-item .nav-link {
+		padding: 7px 14px !important;
+		font-size: 14px !important;
+	}
+
+	.livepricebox .h3 {
+		font-size: 16px;
+	}
+
+	.innerpagetab .tabbanner .nav-item .nav-link {
+		padding: 10px 13px;
+	}
+
+	.profileboxt {
+		margin: 10px 0px !important;
+	}
+
+	.balalnceflexbox>div:first-child {
+		width: 100%;
+	}
+
+	.balalnceflexbox>div:last-child {
+		width: 100%;
+	}
+
+	.profileshowbox .photopic {
+		width: 92px;
+		height: 94px;
+	}
+
+	.reflex,
+	.reflex>div {
+		display: inline-block !important;
+		width: 100% !important;
+	}
+
+	.reflex>div:last-child {
+		margin-top: 20px;
+	}
+
+	.uheadbg .navbar-nav .nav-item .viewbtn.nav-link {
+		width: 100%;
+		max-width: 120px;
+	}
+
+	.securityinnerbox hr {
+		margin: 5px 0px;
+	}
+
+	.securitypage p {
+		padding-bottom: 0px !important;
+		margin: 0px !important;
+	}
+
+	.langicon {
+		margin-top: 14px;
+		width: 100%;
+		max-width: 86px;
+	}
+
+	.wlltpageblnce.row>div:first-child,
+	.wlltpageblnce.row>div:first-child h2 {
+		text-align: center !important;
+	}
+
+	.refbox {
+		padding-top: 20px !important;
+		text-align: left;
+	}
+
+	.affiliatebg .table-content {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.affiliatebg .table-content>div {
+		display: inline-block;
+		width: 100% !important;
+	}
+
+	.affiliatebg .col-lg-4 {
+		max-width: 100%;
+	}
+
+	.affiliatebg .table-content>div:last-child {
+		text-align: center !important;
+	}
+
+	.invetstorradiobg>div {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.wizardform #progressbar li {
+		font-size: 14px;
+	}
+
+
+	.uheadbg .navbar-collapse {
+		border-top: 0px;
+		margin-top: 0;
+		display: block;
+		padding: 0px;
+	}
+
+	.headermenu .uheadbg .dropdown-menu {
+		left: inherit !important;
+		right: 0px !important;
+		min-width: inherit;
+		z-index: 99;
+	}
+
+	.userpanelpage .leftheadbg {
+		display: none !important;
+	}
+
+	.uheadbg .navbar-toggler {
+		display: none;
+	}
+
+	.userpanelpage .rightheadbg {
+		position: absolute !important;
+		top: 13px !important;
+		right: 7px !important;
+		z-index: 99999;
+		flex-direction: row !important;
+	}
+
+	.uheadbg .container {
+		justify-content: flex-start;
+	}
+
+
+	.kycnotestable {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.kycnotestable>div:first-child {
+		width: 100%;
+	}
+
+	.kycnotestable>div:last-child {
+		width: 100%;
+		text-align: center !important;
+		margin-top: 24px;
+	}
+
+	.servicecheckboxbg>div {
+		width: 100%;
+	}
+
+	.innerpagecontent {
+		padding-top: 107px;
+	}
+
+	.uheadbg {
+		background: #fff;
+	}
+
+	.balanceshowt h5 {
+		font-size: 16px;
+	}
+
+	.headermenu .uheadbg .usermenudrop.nav-item .nav-link {
+		padding-right: 7px !important;
+	}
+
+	.sidelogoicon img {
+		max-width: 136px !important;
+	}
+
+	.notesminitable .table tr td {
+		white-space: inherit;
+	}
+
+	.grid-box {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 850px) {
+
+	.faverifybox>div,
+	.securityflexbox>div {
+		width: 100%;
+		margin: 10px 0px;
+	}
+
+	.overviewbalancebox .tablebox {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.overviewbalancebox .tablebox>div {
+		width: 48%;
+		margin: 0;
+	}
+
+	.wizardform .flexbox {
+		margin-top: 20px;
+	}
+
+	.securitypage .tab-content.mt-4 {
+		margin-top: 0px !important;
+	}
+
+	.securitypage .boxtabb .tabbanner .nav-item .nav-link img {
+		max-width: 14px;
+	}
+
+	.securitypage .boxtabb .tabbanner .nav-item .nav-link {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 820px) {
+	.mecrcointabb {
+		position: relative;
+		right: inherit;
+		top: inherit !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox {
+		margin: 10px 0px !important;
+	}
+
+	.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox>div:first-child,
+	.flexbox-equl-hh .securpanelbox {
+		margin-bottom: 0px !important;
+	}
+
+	.prgrsbar-y.prgrsflx {
+		justify-content: end;
+		align-items: end;
+	}
+
+	.prf-txt-lnk-y {
+		display: block !important;
+	}
+
+	.inc-fr-tdy-y {
+		width: 100% !important;
+	}
+
+	.balanceshowt.totblance .total-turn-over-y {
+		display: flex;
+		gap: 10px;
+	}
+
+	.total-turn-over-y {
+		justify-content: center;
+	}
+
+	.panelcontentbox.tun-ove-y {
+		text-align: center;
+	}
+
+	.sub-heading.fed-bak-hed-y {
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.cons-y {
+		text-align: left !important;
+		margin-top: 8px;
+	}
+
+	.savingbannersec .table tr td {
+		width: 155px !important;
+	}
+
+	.duration-days {
+		display: none !important;
+	}
+
+	.buyshow .buyboxorder {
+		min-height: 300px;
+	}
+
+	.clostbuytab {
+		display: block;
+		position: absolute;
+		right: -2px;
+		top: -5px;
+		font-size: 25px;
+		z-index: 999;
+		color: #333;
+	}
+
+	.clostbuytab a {
+		font-size: 19px;
+		border-radius: 50px;
+		width: 35px;
+		height: 35px;
+		display: block;
+		text-align: center;
+		padding-top: 6px;
+		cursor: pointer;
+	}
+
+	.orderformbox .buyselltab .nav-item:last-child .nav-link {
+		background-color: #f97b7b;
+		border-color: #f97b7a !important;
+		color: #fff;
+	}
+
+	.orderformbox .buyselltab .nav-item:first-child .nav-link {
+		background-color: #37bf8f;
+		border-color: #37bf8f !important;
+		color: #fff;
+	}
+
+	.orderform .buyselltab .nav-item .nav-link {
+		font-size: 13px;
+		padding: 6px 19px;
+		color: #fff;
+	}
+
+	.orderform .buyselltab .nav-item {
+		width: 50%;
+		padding: 2px;
+	}
+
+	.orderform .buyselltab {
+		justify-content: left;
+	}
+
+	.orderform .buyselltabbg {
+		box-shadow: none !important;
+		padding: 0px;
+	}
+
+	.orderform .buyselltabbg {
+		position: relative !important;
+		bottom: inherit;
+		left: inherit;
+		width: 100%;
+		max-width: 182px;
+		background: none !important;
+		padding: 6px 12px;
+	}
+
+	.buyselltabbg {
+		padding: 10px 12px;
+		width: 100%;
+		max-width: 100%;
+		padding-bottom: 0px;
+	}
+
+	.orderform {
+		position: relative;
+		margin: 0px !important;
+		border-bottom-left-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+
+	.buyboxorder .sitescroll,
+	.sellboxorder .sitescroll {
+		height: 290px;
+		max-height: inherit;
+	}
+
+	.openorder {
+		display: none;
+	}
+
+	.orderform {
+		position: fixed !important;
+		bottom: 0px;
+		width: 100%;
+		left: 0px;
+		z-index: 999;
+	}
+
+	.orderform,
+	.orderform {
+		display: none;
+	}
+
+	.chartactive .chart,
+	.chartactive .orderbook,
+	.chartactive .walletassets {
+		flex-direction: column;
+		display: flex;
+	}
+
+	.orderformbox .buyselltab li a {
+		padding: 9px 13px;
+	}
+
+	.buyselltabbg ul {
+		margin-bottom: 0;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.buyselltabbg li {
+		width: 50%;
+		padding-right: 5px;
+	}
+
+	.buyselltabbg li a {
+		font-size: 14px;
+		border-radius: 5px;
+	}
+
+	.buyselltopbox .nav-item:first-child .nav-link,
+	.buyselltopbox .nav-item:first-child .nav-link:hover,
+	.buyselltopbox .nav-item:first-child .nav-link:active,
+	.buyselltopbox .nav-item:first-child .nav-link:focus {
+		background-color: #37bf8f;
+		color: #fff !important;
+		text-transform: uppercase;
+		border-color: #37bf8f;
+	}
+
+	.buyselltopbox .nav-item:nth-child(2) .nav-link,
+	.buyselltopbox .nav-item:nth-child(2) .nav-link:hover,
+	.buyselltopbox .nav-item:nth-child(2) .nav-link:focus,
+	.buyselltopbox .nav-item:nth-child(2) .nav-link:focus {
+		background-color: #f97b7b;
+		color: #fff !important;
+		text-transform: uppercase;
+		border-color: #f97b7b;
+	}
+
+	.grid-box {
+		display: block;
+	}
+
+	.marketnewbox {
+		display: none;
+	}
+
+	.openorderactive .chart,
+	.openorderactive .marketdepth,
+	.openorderactive .orderbook,
+	.openorderactive .tradehistory,
+	.chartactive .openorder,
+	.tradeactive .chart,
+	.tradeactive .orderbook,
+	.tradeactive .marketdepth,
+	.openorderactive .walletassets,
+	.tradeactive .walletassets {
+		display: none;
+	}
+
+	.buyorderformactive1 .orderform {
+		display: flex;
+		border: 0px;
+		box-shadow: 0px -9px 10px -4px #2828285e;
+	}
+
+	.sellorderformactive1 .orderform {
+		display: flex;
+		border: 0px;
+		box-shadow: 0px -9px 7px #0000001f;
+	}
+
+	.sellorderformactive1 .sellorderform {
+		display: block;
+	}
+
+	.orderformbg1 {
+		display: block;
+	}
+
+	.buyorderformactive1 .buyorderform {
+		display: block;
+	}
+
+	.sellorderformactive1 .sellorderform {
+		display: block;
+	}
+
+	.orderformbox .tab-content>.tab-pane {
+		display: none;
+	}
+
+	.livepricenavbg {
+		padding: 0px;
+		display: inline-block;
+		white-space: nowrap;
+		overflow-x: inherit;
+	}
+
+	.livepricenavbg>li {
+		line-height: 21px;
+		padding: 6px 11px !important;
+		padding-top: 3px;
+		width: 33.3%;
+		min-height: 64px;
+		border: 1px solid #ebebeb !important;
+		margin-top: -1px;
+		margin-right: -1px;
+	}
+
+	.nightmode .livepricenavbg>li {
+		border: 1px solid #313131 !important;
+	}
+
+	/* .apiwhitelist-y {
+		flex-direction: column !important;
+	} */
+
+	.apiwhitlit-y {
+		flex-direction: column !important;
+	}
+
+	.apiwhlit-y {
+		flex-direction: column !important;
+	}
+
+	.supportbg .innerpagecontent .h2,
+	.depositbg .innerpagecontent p,
+	.depositbg .innerpagecontent .h2,
+	.walletoverviewbg .innerpagecontent .h2 {
+		text-align: left !important;
+	}
+
+	.flexbox.pf-boxlink {
+		gap: 10px;
+	}
+
+	.pf-boxlink h5 {
+		font-size: 17px;
+	}
+
+	.pficon {
+		max-width: 50px;
+		margin-bottom: 7px;
+	}
+
+	.subhead {
+		font-size: 17px;
+	}
+
+	.vrfbg {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.overviewbalancebox .btn-sm {
+		padding: 6px 8px !important;
+	}
+
+	.refbox p {
+		padding-bottom: 4px;
+		font-size: 15px;
+		margin: 0;
+	}
+
+	.refbox .h4 {
+		font-size: 14px;
+		line-height: 27px;
+	}
+
+	.rf-img {
+		max-width: 40px;
+	}
+
+	.cardlistbox>div {
+		width: 100%;
+	}
+
+	.innerpagetab.boxtabb {
+		margin-bottom: 0px !important;
+	}
+
+	.searchfrm>div {
+		width: 100%;
+		float: left;
+		padding: 0px 0px;
+		max-width: 100%;
+		flex: 100%;
+		float: none;
+	}
+
+	.nodata img {
+		max-width: 90px;
+	}
+
+	.panelcontentbox,
+	.leftsidetabbg>div:first-child.panelcontentbox {
+		padding: 10px;
+	}
+
+	.notestitle p>.t-black {
+		font-size: 16px;
+	}
+
+	.antiflexbox>div {
+		padding: 20px;
+	}
+
+	.sendcodebtn .btn {
+		padding: 4px 6px !important;
+	}
+
+	.coinlisticon {
+		margin-right: 6px;
+		width: 28px;
+	}
+
+	.wllettable .tab-content.mt-4 {
+		margin-top: 10px !important;
+	}
+
+	.wllettable .tabrightbox {
+		top: 0;
+	}
+
+	.wllettable .boxtabb {
+		padding-bottom: 0px;
+	}
+
+	.wllettable .boxtabb {
+		padding: 20px 10px;
+	}
+
+	.wllettable {
+		padding: 0px;
+	}
+
+	.wllettable .supportsearch {
+		padding: 0px;
+	}
+
+	.supportsearch {
+		padding: 15px;
+	}
+
+	.supportlist .tabrightbox {
+		right: 10px;
+	}
+
+	.supportlistscroll {
+		max-height: 335px;
+	}
+
+	.supportbg .tabbanner .nav-item {
+		width: 100%;
+	}
+
+	.wtbtn {
+		text-align: center;
+	}
+
+	.wizardform .sitebtn {
+		width: 20%;
+	}
+
+	.securitypage .boxtabb .tabbanner {
+		flex-wrap: wrap;
+	}
+
+	.securitypage .boxtabb .tabbanner .nav-item {
+		width: 50%;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.welcomebanner .table-content h5 {
+		padding-right: 0px;
+	}
+
+	.balanceflebxbg {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.balanceflebxbg>div {
+		width: 100%;
+		margin: 5px 0px !important;
+	}
+
+	.devicetable {
+		padding: 10px;
+	}
+
+	.devicetable .tabbanner .nav-item .nav-link {
+		padding: 7px 9px !important;
+		font-size: 13px !important;
+	}
+
+	.securitylink {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.securitylink>div {
+		width: 50% !important;
+		float: left;
+		margin: 0px !important;
+	}
+
+	.panelcontentbox {
+		padding: 15px;
+	}
+
+	.innerpagecontent .h2 {
+		font-size: 25px;
+		padding-bottom: 10px;
+	}
+
+	.recoverlist ul {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.recoverlist ul>li {
+		width: 33.3%;
+		float: left;
+		font-size: 14px;
+	}
+
+	.flatpickr-input {
+		width: 100%;
+	}
+
+	.topheadertabmenu .tabbanner .nav-item {
+		padding: 0px 2px;
+	}
+
+	.thide {
+		display: none;
+	}
+
+	.securitycontentbox {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.securitycontentbox .recoveryboxt .tabrightbox {
+		position: relative;
+		top: -2px;
+		right: 0;
+	}
+
+	.innerpagegrid .heading-box {
+		font-size: 17px;
+	}
+
+	.chatticketlist .heading-box {
+		padding: 16px 16px;
+	}
+
+	.innerpagecontent .tabrightbox .btn {
+		width: 100%;
+	}
+
+	.innerpagecontent .tabrightbox.pay-deta-y .btn {
+		width: 30% !important;
+	}
+
+	.apimg {
+		max-width: 100px;
+	}
+
+	.securitycontentbox h3 {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.devicebox>div {
+		margin: 0px;
+	}
+
+	.devicetable {
+		padding: 0px;
+		flex-wrap: wrap;
+		gap: 14px;
+		margin-bottom: 0px !important;
+	}
+
+	.overviewbalancebox .table-content>div:last-child {
+		margin-top: 8px;
+	}
+
+	.overviewbalancebox h3 {
+		font-size: 17px;
+	}
+
+	.historypage .panelcontentbox {
+		padding: 0px;
+	}
+
+
+	.searchfrm {
+		border-top: 0px;
+		padding-top: 0;
+	}
+
+	.balancedirectbox {
+		width: 100%;
+		margin-top: 0px !important;
+	}
+
+	.balancedirectbox>div {
+		width: 48%;
+		float: left;
+		margin: 5px 5px !important;
+		padding: 10px 8px;
+	}
+
+	.balancedirectbox img {
+		max-width: 17px;
+	}
+
+	.spotbalancechart {
+		height: 250px !important;
+	}
+
+	.balancedirectbox h5 {
+		font-size: 12px;
+	}
+
+	.timerflexboxb {
+		max-width: 264px;
+	}
+
+	.securepanelbox {
+		padding: 0px;
+	}
+
+	.wlltpageblnce .text-end {
+		text-align: center !important;
+	}
+
+	.depositbg .col-lg-4 {
+		width: 100%;
+	}
+
+	.innerpagecontent {
+		padding-top: 80px;
+		padding-bottom: 0px;
+	}
+
+	.profiletabbg .table-content>div,
+	.profiletabbg .table-content>div {
+		width: 100% !important;
+		display: inline-block;
+		border-right: 0px !important;
+	}
+
+	.profiletabbg .table-content>div {
+		padding: 0px;
+	}
+
+	.wizardform #progressbar li>strong {
+		line-height: 25px;
+		font-size: 12px;
+		width: 33px;
+		height: 33px;
+	}
+
+	.wizardform #progressbar {
+		padding: 10px;
+	}
+
+	.buttonflex {
+		display: inline-block !important;
+		width: 100%;
+		text-align: center;
+	}
+
+	.buttonflex .btn {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	.mobilepaneltablebox .heading-box {
+		padding: 15px 15px !important;
+	}
+
+	.balanceshowt .h4,
+	.balancetableb .h4 {
+		font-size: 18px;
+	}
+
+	.kycviewpage tbody tr td {
+		width: 100% !important;
+	}
+
+	.kycviewpage table tr td {
+		font-size: 14px;
+		padding: 8px 11px !important;
+		display: flex;
+		text-align: right;
+	}
+
+	.kycviewpage table tr td .t-gray {
+		text-align: left;
+		width: 100%;
+	}
+
+	.kycviewpage table tr td br {
+		display: none;
+	}
+
+	.kycviewpage img {
+		max-width: 107px;
+		padding: 5px;
+	}
+
+	.modaltable .modal-dialog {
+		padding: 0px 14px;
+	}
+
+	.modaltable .table-content {
+		display: block;
+		width: 100%;
+		min-height: inherit;
+	}
+
+	.modaltable .table-content>div {
+		display: block;
+		width: 100%;
+	}
+
+	.supportchaticon {
+		text-align: center;
+	}
+
+	.supporticonc img {
+		max-width: 197px;
+		margin-top: 3px;
+	}
+
+	.modaltable .table-content>div {
+		padding: 17px;
+	}
+
+	.nodata .table-responsive-stack-thead {
+		display: none !important;
+	}
+
+	.nodata>td {
+		text-align: center !important;
+	}
+
+	.walletbalancebox .tablebox.d-flex>div {
+		width: 100%;
+	}
+
+	.sflexfilter {
+		padding: 13px;
+		padding-bottom: 0px;
+	}
+
+	.chartflexbox {
+		margin-top: 0px !important;
+	}
+
+	.wlltdpstbox .panelcontentbox {
+		padding: 0px;
+	}
+
+	.supporticonc {
+		margin-bottom: 10px !important;
+	}
+
+	.tokencreatepage .wizard-tab-content .col-lg-4 {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.tokencreatepage .react-form-wizard.sm .wizard-icon-circle {
+		width: 30px !important;
+		height: 30px !important;
+	}
+
+	.tokencreatepage .form-wizard-steps .stepTitle {
+		font-size: 11px;
+		line-height: 15px;
+	}
+
+	.tokencreatepage .react-form-wizard .wizard-nav::before,
+	.tokencreatepage .smooth-border-left-to-right {
+		top: 15px !important;
+	}
+
+	.tokencreatepage .react-form-wizard .wizard-icon-circle .wizard-icon {
+		font-size: 12px !important;
+	}
+
+	.tokencreatepage .wizard-tab-content .col-lg-3 {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.reviewicont img {
+		max-width: 234px;
+	}
+
+	.reviewicont h5 {
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.notestokentable tr td {
+		font-size: 13px !important;
+		padding: 4px 4px !important;
+	}
+
+	.pymenttablesize .lightgraybg {
+		padding: 0px;
+	}
+
+	.pymenttablesize .lightgraybg .notestokentable td {
+		text-align: left;
+	}
+
+	.subtablenots .table tr td {
+		display: inline-block !important;
+		width: 100%;
+		border-right: 0px;
+		border-bottom: 1px solid #e6e6e6;
+		padding: 15px 10px !important;
+	}
+
+	.subtablenots .table tr {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.totblance.balanceshowt .h4 {
+		font-size: 17px;
+	}
+
+	.boxtabb .tabbanner .nav-item .nav-link {
+		font-size: 13px;
+		padding: 8px 12px;
+	}
+
+	.devicetable .panelcontentbox {
+		padding: 0px;
+	}
+
+	.devicetable .heading-box {
+		padding: 15px 15px;
+	}
+
+	.clearbtn {
+		margin-top: 0px;
+	}
+
+	.uheadbg .container {
+		padding: 0px 0px;
+	}
+
+	.balancechartact,
+	.balanceshowbox {
+		width: 100%;
+		float: none;
+	}
+
+	.tablebox.d-flex {
+		display: flex !important;
+	}
+
+	.tablebox.d-flex>div {
+		width: 100%;
+		margin: 5px;
+	}
+
+	.tablebox.d-flex>div:first-child {
+		margin-left: 0px;
+	}
+
+	.tablebox.d-flex>div:last-child {
+		margin-right: 0px;
+	}
+
+	.balanceshowbox {
+		padding: 0px;
+	}
+
+	.prgrsflx {
+		justify-content: flex-end;
+	}
+
+	.breaktagtd br {
+		display: none;
+	}
+
+	.breaktagtd .t-gray {
+		padding-left: 10px;
+	}
+
+	/* .icontypes {
+		margin-left: auto;
+	} */
+
+	.icontypes {
+		background-color: #dbdbdb;
+		padding: 5px 10px;
+		border-radius: 15px;
+	}
+
+	.innerpagecontent .tabrightbox {
+		position: relative;
+		top: inherit;
+		right: inherit;
+		text-align: center;
+	}
+
+	.innerpagecontent .tabbanner {
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.innerpagecontent .h2 {
+		text-align: center;
+	}
+
+	.innerpagecontent .tabbanner .nav-item {
+		width: 34%;
+		margin-bottom: 5px;
+	}
+
+	.innerpagecontent .tabbner .nav-item {
+		width: 38% !important;
+		margin-bottom: 5px !important;
+	}
+
+
+	.depositbg .row>div {
+		max-width: 100%;
+	}
+
+	.innerpagetab .tabbanner .nav-item .nav-link {
+		padding: 3px 13px;
+	}
+
+	.css-1bzvr6x-control {
+		min-height: 36px !important;
+	}
+
+	.profilebox .profilepic {
+		width: 90px !important;
+		height: 90px;
+	}
+
+	.securitypage .form-check .form-check-input {
+		float: none;
+	}
+
+	.merchttabright .btn {
+		padding: 5px 10px;
+		font-size: 14px;
+	}
+
+	.balanceshowt h5 {
+		font-size: 14px;
+	}
+
+	.mecrcointabb .btn {
+		margin-bottom: 5px;
+	}
+
+	.accorddatacell {
+		display: inline-block !important;
+		width: 100%;
+		padding: 5px;
+	}
+
+	.accorddatacell>div {
+		width: 100%;
+		margin: 5px 0px;
+		padding: 10px;
+	}
+
+	.accordeon-content>td .table-responsive-stack-thead {
+		display: none !important;
+	}
+
+	.accorddatacell h6 {
+		font-size: 14px;
+		line-height: 22px;
+		text-align: left;
+	}
+
+	.accordionrow {
+		border-bottom: 1px solid #e3e3e3 !important;
+	}
+
+	.convertautopage table tr td,
+	.currencycrtdrop .dropdown-toggle {
+		font-size: 14px;
+	}
+
+	.convertautopage .table tr td .coinlisticon {
+		width: 26px;
+	}
+
+	.swtchtogglebox .form-check-input {
+		width: 40px;
+		height: 15px;
+	}
+
+	.headermenu .uheadbg .dropdown-menu {
+		padding: 5px 10px;
+		margin-top: 0px;
+		/* margin-right: -98px; */
+	}
+
+	.closesubmenu {
+		left: 25px;
+	}
+
+	.buyselltab {
+		max-width: 100%;
+	}
+
+	.livepricebox .sitetable tr th {
+		font-size: 14px;
+	}
+
+	.livepricebox th:first-child {
+		font-size: 16px !important;
+	}
+
+	.grid-box-futures .buyselltabbg li {
+		width: 100%;
+	}
+
+	.grid-box-futures .buyorderform .col-md-6 {
+		width: 50%;
+		float: left;
+	}
+
+	.grid-box-futures .buyboxorder {
+		min-height: 178px;
+	}
+
+	.grid-box-futures .buyshow .buyboxorder .sitescroll {
+		max-height: 354px;
+	}
+
+	.grid-box-futures .buyshow .buyboxorder {
+		min-height: 376px;
+	}
+
+	.grid-box-futures .sellboxorder .sitescroll {
+		height: 187px;
+	}
+
+	.grid-box-futures .sellboxorder .sellboxtablebg {
+		max-height: 187px;
+	}
+
+	.grid-box-futures .sellshow .sellboxorder .sitescroll {
+		height: 344px;
+	}
+
+	.grid-box-futures .sellshow .sellboxorder .sellboxtablebg {
+		max-height: 344px;
+	}
+
+	.grid-box-futures .tradehistory .sitescroll {
+		max-height: 380px;
+	}
+
+	.grid-box-futures .marketchart>div,
+	.tradechartlist>div,
+	.marketchart>div {
+		min-height: 420px;
+	}
+
+
+	.grid-box-futures .buyorderform .col-md-6 {
+		width: 50%;
+		float: left;
+	}
+
+	.grid-box-futures {
+		grid-template-areas: "recentliveprice recentliveprice"
+			"livepricelist livepricelist"
+			"mobilegrid mobilegrid"
+			"marketlist marketlist"
+			"chart chart"
+			"orderbook orderbook"
+			"walletassets walletassets"
+			"orderform orderform"
+			"openorder openorder";
+	}
+
+	.grid-box {
+		position: relative;
+		padding: 10px;
+		margin: 0px 0px;
+		grid-gap: 0;
+	}
+
+	.marketlistsidemenu,
+	.buyselltabbg {
+		display: block;
+	}
+
+	.buyselltabbg {
+		padding: 12px 2px;
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		position: fixed !important;
+		bottom: 0px;
+		z-index: 999;
+		background: #fff !important;
+		left: 0px;
+		top: inherit;
+		right: inherit;
+		margin: 0px !important;
+		border-radius: 0px !important;
+		border: 0px !important;
+		box-shadow: 0px -11px 20px #0000005e;
+	}
+
+	.nightmode .buyselltabbg {
+		background: #0f0f0f !important;
+	}
+
+	.orderfrmtab .nav-item {
+		width: 100%;
+	}
+
+	.buyselltopbox .nav-item:first-child .nav-link,
+	.buyselltopbox .nav-item:first-child .nav-link:hover,
+	.buyselltopbox .nav-item:first-child .nav-link:active,
+	.buyselltopbox .nav-item:first-child .nav-link:focus {
+		background-color: #37bf8f;
+		color: #fff !important;
+		text-transform: uppercase;
+		border-color: #37bf8f;
+	}
+
+	.buyselltopbox .nav-item:nth-child(2) .nav-link,
+	.buyselltopbox .nav-item:nth-child(2) .nav-link:hover,
+	.buyselltopbox .nav-item:nth-child(2) .nav-link:focus,
+	.buyselltopbox .nav-item:nth-child(2) .nav-link:focus {
+		background-color: #f97b7b;
+		color: #fff !important;
+		text-transform: uppercase;
+		border-color: #f97b7b;
+	}
+}
+
+@media (max-width: 620px) {
+	.innerpagecontent hr {
+		margin: 7px 0px;
+	}
+
+	.tabrightbox .tabbanner {
+		justify-content: center;
+	}
+
+	.totblance.balanceshowt .h4 {
+		font-size: 17px;
+		padding-top: 2px !important;
+		display: inline-block;
+	}
+
+	.supportbg .innerpagecontent .h2,
+	.depositbg .innerpagecontent p,
+	.depositbg .innerpagecontent .h2,
+	.walletoverviewbg .innerpagecontent .h2 {
+		text-align: center !important;
+	}
+
+	.walletoverviewbg .innerpagecontent .tabrightbox .tabbanner {
+		justify-content: center;
+	}
+
+	.innerpagecontent .tabrightbox {
+		position: relative;
+		top: inherit;
+		right: inherit;
+		text-align: center;
+	}
+
+	.cryptdetbox.table-content>div {
+		width: 50% !important;
+		padding: 4px !important;
+		float: left;
+	}
+
+	.welcomebanner .table-content h5 {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.balancedirectbox>div {
+		width: 47%;
+	}
+
+	.innerpagecontent,
+	.innerpagecontent .h2 {
+		text-align: center !important;
+	}
+
+	.chat li {
+		padding: 4px 10px;
+	}
+
+	.balanceshowt h5 {
+		font-size: 14px;
+	}
+
+	.dashboardpage .balancetableb .h4 {
+		font-size: 16px;
+	}
+
+	.innerpagegrid .gridparentbox {
+		padding-left: 5px !important;
+		padding-right: 5px;
+	}
+
+	.purchasetable .tabrightbox {
+		position: relative;
+		top: inherit;
+		right: inherit;
+		padding: 10px 10px;
+		padding-top: 0px;
+	}
+
+	.purchasetable .nav-item {
+		width: 100%;
+		text-align: center;
+	}
+
+	.dflexbtn {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.dflexbtn .btn {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.innerpagecontent {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.listprojectstatus h5 {
+		font-size: 14px;
+		line-height: 23px;
+	}
+
+	.mstchbox {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.mercoinviewpage .searchfrmbox .btn {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.amtd-rpdon-Y.form-select {
+		height: 38px !important;
+	}
+
+	.apiwhitelist-y h6 {
+		font-size: 14px;
+	}
+
+	.introbox .table-content>div {
+		display: block;
+		text-align: center;
+	}
+
+	.introbox h4 span.badge.bg-danger {
+		display: block;
+		margin: 0 !important;
+		position: relative;
+		top: 2px;
+		background: none !important;
+		border: none;
+	}
+
+	.introbox .profileiconpic {
+		margin: 0 auto !important;
+		margin-bottom: 7px !important;
+	}
+
+	.introbox .profileiconpic img {
+		width: 35px;
+		height: 35px;
+	}
+
+	.introbox .cryptobox>div:first-child.table-content>div:first-child {
+		width: 100% !important;
+	}
+
+	.walletoverviewbg .wllettable .tabrightbox {
+		top: 0;
+		right: 0;
+	}
+
+	.walletoverviewbg .wllettable .tabrightbox>div:first-child .form-check {
+		padding: 0;
+	}
+
+	.wllettable .tabrightbox {
+		text-align: inherit;
+		position: relative;
+		right: inherit;
+		top: inherit;
+		margin: 0px;
+		padding: 15px;
+		padding-bottom: 0px;
+	}
+
+	.securityinnerbox {
+		text-align: center;
+	}
+
+	.secure-status {
+		display: inline-block;
+		width: 100%;
+		font-size: 13px;
+		line-height: 27px;
+		margin: 0 !important;
+	}
+
+	.securityiconbox {
+		margin-bottom: 13px;
+	}
+
+	.securityinnerbox .contentbox>div:last-child {
+		margin-top: 6px;
+	}
+
+	.profiletablebox>div,
+	.profiletablebox .text-right,
+	.profiletablebox .text-left {
+		text-align: center !important;
+		width: 100% !important;
+		float: none !important;
+		padding: 0px;
+	}
+
+	.securityinnerbox .profiletablebox .sitebtn {
+		padding: 9px 13px !important;
+		font-size: 14px !important;
+		width: 100%;
+		display: block;
+	}
+
+	.securityinnerbox .profiletablebox {
+		display: block;
+		text-align: center;
+	}
+
+	.securityinnerbox .profiletablebox>div {
+		display: block;
+		white-space: inherit !important;
+		padding-right: 0px !important;
+	}
+
+	.historypage .tabbanner .nav-item .nav-link {
+		font-size: 12px !important;
+		padding: 10px 8px !important;
+	}
+
+	.antiflexbox>div {
+		width: 100%;
+		margin: 10px 0px;
+	}
+
+	.antiflexbox {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.wllettable.boxtabb .tabbanner .nav-item {
+		width: 100%;
+		text-align: center;
+	}
+
+	.wllettable .tabrightbox {
+		text-align: inherit;
+		position: relative;
+		right: inherit;
+	}
+
+	.totblance.balanceshowt .h4 {
+		font-size: 15px;
+	}
+
+	.balanceshowt .h4 {
+		font-size: 17px;
+	}
+
+	.wizardform .sitebtn {
+		width: auto;
+	}
+
+	.faverifybox {
+		display: block;
+		padding: 0px 0px !important;
+	}
+
+	.faverifybox>div {
+		margin: 0px;
+		padding: 5px 0px;
+	}
+
+	.wlletrightbox .chartlineicon img {
+		position: relative;
+		right: inherit;
+		top: inherit;
+	}
+
+	.livepricebox .h3 {
+		font-size: 13px;
+		line-height: 23px;
+	}
+
+	.transaction .table tbody tr td .t-gray {
+		font-size: 12px;
+	}
+
+	.profileshowbox h5 {
+		font-size: 14px;
+	}
+
+	.welcomebanner p,
+	.welcomebanner .content {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.introbox .h5 {
+		font-size: 13px;
+	}
+
+	.trendcoinlist h5 {
+		font-size: 13px;
+	}
+
+	.trendcoinlist .d-flex {
+		padding: 5px 5px;
+	}
+
+	.trendcoinlist .coinlisticon {
+		width: 17px !important;
+		margin-right: 2px;
+	}
+
+	.modaltable .subhead {
+		font-size: 18px;
+	}
+
+	.amlverifyviewpage .table tr td,
+	.amlverifyviewpage .table tr {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.amlverifyviewpage .table tr>td:nth-child(2) {
+		display: none;
+	}
+
+	.amlverifyviewpage .table tr>td {
+		padding: 0px !important;
+	}
+
+	.amlverifyviewpage .table tr {
+		padding: 11px 0px;
+		border-bottom: 1px dashed #dfdfdf;
+	}
+
+	.amlverifyviewpage .table tr>td:first-child {
+		color: #727272;
+	}
+
+	.balanceshowt .h4>span {
+		font-size: 12px;
+	}
+
+	.balancetableb hr {
+		margin: 13px 0px;
+	}
+
+	.spotbalancechart {
+		height: 386px !important;
+	}
+
+	.table .btn {
+		padding: 2px 12px !important;
+		font-size: 12px !important;
+	}
+
+	.wlltdpstbox .tabrightbox {
+		position: relative;
+		top: inherit;
+		right: inherit;
+		padding-bottom: 5px;
+	}
+
+	.wlltdpstbox .tabrightbox .btn {
+		width: 100%;
+	}
+
+	.mangelistbox ul {
+		display: inline-block;
+	}
+
+	.mangelistbox li {
+		width: 100%;
+	}
+
+
+
+	.wllettable .tabrightbox .btn.ms-3 {
+		margin-left: 0px !important;
+	}
+
+	.wllettable .tabrightbox.miss-btn-add {
+		position: static;
+		padding: 10px 0px !important;
+	}
+
+	.wllettable .tabrightbox.miss-btn-add button {
+		margin-right: 10px !important;
+	}
+
+
+	.profiletablebox .d-flex {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+@media (max-width: 550px) {
+	.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox {
+		flex-wrap: wrap;
+	}
+
+	.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox>div:first-child {
+		margin-bottom: 0px !important;
+	}
+
+	.supportbg .tabrightbox.imguploadbg {
+		top: 0px !important;
+		position: relative;
+		right: 0;
+		margin-bottom: 10px;
+	}
+
+	.buycryptopage .boxtabb .tabbanner .nav-item a {
+		font-size: 14px;
+		padding: 8px 16px;
+	}
+
+	.innerpagecontent p {
+		font-size: 13px;
+		padding-top: 0;
+	}
+
+	.secttable>div:first-child {
+		width: 33px;
+	}
+
+	.google_code h5 {
+		padding-bottom: 5px;
+	}
+
+	.secttable h3 {
+		font-size: 15px;
+	}
+
+	.authbg .secttable::before {
+		left: 13px;
+	}
+
+	.numiconb {
+		width: 27px;
+		height: 27px;
+		padding: 2px;
+	}
+
+	.overviewbalancebox .btn-sm {
+		margin: 4px;
+	}
+
+
+	.qcgo-dash img {
+		margin-bottom: 15px;
+	}
+
+	.overviewbalancebox .tablebox>div {
+		width: 100%;
+		border-right: 0px;
+		border-bottom: 1px solid #e6e6e6 !important;
+	}
+
+	.convertpage .table-content .input-group {
+		margin-top: 15px;
+		flex-direction: column-reverse;
+	}
+
+	.convertpage .input-group input {
+		display: block;
+		width: 100%;
+		background: #f7f7f7;
+		padding: 5px 10px !important;
+		margin-top: 10px;
+	}
+
+	.convertpage .exchangerate .d-flex>div {
+		width: 100%;
+		margin: 5px 0px;
+	}
+
+	.convertpage .exchangerate .d-flex {
+		display: inline-block !important;
+		text-align: center;
+		width: 100%;
+	}
+
+	.convertpage .table-content .tabrightbox {
+		position: inherit;
+		left: 0px;
+		top: 2px;
+	}
+
+	.livepricenavbg li .livepricet span {
+		float: right;
+		font-size: 13px;
+	}
+
+	.coinlisttable {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.coinlisttable img,
+	.coinlisttable>div {
+		display: block !important;
+	}
+
+	.coinlisttable img {
+		float: left;
+		position: relative;
+		top: -1px;
+		width: 22px;
+	}
+
+	.livepricemobile .dropdown .dropdown-menu {
+		max-width: 200px;
+		min-width: 327px;
+	}
+
+	.livepricenavbg li {
+		width: 100%;
+		padding: 4px 11px !important;
+		min-height: inherit !important;
+		border: 0px !important;
+	}
+
+	.historypage .tabbanner .nav-item .nav-link {
+		border: 0px !important;
+	}
+
+	.innerpagetab .tabbanner .nav-item .nav-link {
+		margin-bottom: 1px;
+		text-align: center;
+	}
+
+	.searchfrm>div {
+		width: 100%;
+	}
+
+	.siteformbg .form-control,
+	.siteformbg .input-group-text {
+		height: 40px;
+	}
+
+	.content,
+	p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.pwdnotes h5 {
+		font-size: 15px;
+	}
+
+	.pwdnotes p {
+		font-size: 14px;
+		line-height: 21px;
+		margin-bottom: 5px;
+	}
+
+	.controls .btn,
+	.controls .custom-file-upload {
+		padding: 5px 10px !important;
+	}
+
+	.profilebox>div:last-child {
+		margin-top: 10px !important;
+	}
+
+	.wllettable.boxtabb .tabbanner .nav-item .nav-link {
+		padding: 10px 10px !important;
+		font-size: 12px;
+	}
+
+	.supportlist .nav-item .nav-link p {
+		font-size: 14px;
+	}
+
+	.supportlist .nav-item .datetext {
+		position: relative;
+		top: 0;
+		right: inherit;
+		left: 0px;
+	}
+
+	.welcomebanner .table-content>div {
+		width: 100% !important;
+		display: block;
+		text-align: center !important;
+	}
+
+	.wlletrightbox .priceboxflex .priceboxouter {
+		width: 100%;
+		padding: 4px 0px;
+	}
+
+	.wlletrightbox .livepricebox {
+		display: table;
+		width: 100%;
+	}
+
+	.wlletrightbox .livepricetable {
+		display: table-cell;
+		width: 50%;
+	}
+
+	.wlletrightbox .livepricetable.mt-4 {
+		text-align: right;
+	}
+
+	.dashboardpage .subhead {
+		font-size: 17px;
+	}
+
+	.overviewbalancebox h3 {
+		font-size: 21px;
+	}
+
+	.securitylink>div {
+		width: 100% !important;
+		margin-bottom: 10px !important;
+		padding: 10px !important;
+	}
+
+	.securpanelbox .badge {
+		margin-top: 10px;
+	}
+
+	.securitylink .btn-link>div {
+		min-height: inherit;
+	}
+
+	.transaction .coinlisticon {
+		width: 20px;
+	}
+
+	.coinflexb>span:first-child {
+		width: 34px;
+	}
+
+	.livepricelist .sitetable tbody tr td,
+	.livepricelist .sitetable thead tr th {
+		padding: 4px 9px;
+		font-size: 12px !important;
+	}
+
+	.recoverlist ul>li {
+		width: 50%;
+	}
+
+	.payinputgroupbox>div {
+		font-size: 12px;
+	}
+
+	.transnotes .table tbody tr td {
+		display: inline-block;
+		width: 100%;
+		text-align: center !important;
+		padding: 1px 3px;
+	}
+
+	.transnotes .table tbody tr {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 5px;
+	}
+
+	.flexbox.liquidbg {
+		display: flex !important;
+	}
+
+	.sitebtn.borrowbtn {
+		width: 100%;
+	}
+
+	.trade-stepbg .flexbox {
+		display: flex;
+	}
+
+	.trade-stepbg .flexbox>div {
+		width: 100% !important;
+	}
+
+	.trade-stepbg .flexbox .step-box .step-line {
+		text-align: center;
+	}
+
+	.trade-stepbg .flexbox .step-box .step-line img {
+		margin: 0 auto;
+	}
+
+	.trade-stepbg .flexbox .step-line::before {
+		display: none;
+	}
+
+	.flexbox.liquidbg>div {
+		width: 100% !important;
+	}
+
+	.flexbox .liquid-box .infonotes {
+		width: 100% !important;
+	}
+
+	.liquid-box:nth-child(odd) {
+		background-color: #f4f4f4;
+		padding: 15px;
+		border-radius: 8px;
+	}
+
+	.liquid-box:nth-child(even) {
+		padding: 15px;
+	}
+
+	.borrowbg .row.link-div {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.flexbox.liquidbg {
+		gap: 0px;
+	}
+
+	.recoverlist {
+		padding: 9px;
+	}
+
+	.recoverlist li {
+		padding: 3px 3px;
+	}
+
+	.historypage .tabbanner {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.historypage .tabbanner .nav-item {
+		width: 100%;
+	}
+
+	.profilebox {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.profiledatainfo {
+		padding-left: 0px !important;
+	}
+
+	.welcomebanner .table-content h5 {
+		font-size: 20px;
+	}
+
+	.tablebox>div {
+		padding: 15px 10px;
+	}
+
+	.saletokenbg {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.saletokenbg>div {
+		display: inline-block;
+		width: 100% !important;
+	}
+
+	.timerflexboxb {
+		max-width: 100%;
+	}
+
+	.saletokenbg>div:last-child {
+		text-align: center !important;
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	.wizardform #progressbar {
+		display: inline-block !important;
+		margin-bottom: 22px;
+	}
+
+	.wizardform #progressbar li::before {
+		width: 3px;
+		height: 100%;
+		left: 20px;
+	}
+
+	.wizardform #progressbar li {
+		text-align: left;
+		width: 100%;
+		display: flex;
+		padding-bottom: 13px;
+		align-items: center;
+	}
+
+	.wizardform #progressbar>li:last-child {
+		padding-bottom: 0px;
+	}
+
+	.wizardform #progressbar li>strong {
+		margin: 0px;
+		float: left;
+	}
+
+	.wizardform #progressbar li>span {
+		width: auto;
+		float: left;
+		padding-left: 5px;
+	}
+
+	.wizardform #progressbar>li:last-child::before {
+		display: none;
+	}
+
+	.kycproffbox img {
+		width: 42px;
+		height: 42px;
+	}
+
+	.wizardform h5 {
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	.wizardform .alert {
+		font-size: 15px;
+	}
+
+	.pagecontent p {
+		font-size: 13px !important;
+		line-height: 23px;
+	}
+
+	.wizardform .btn {
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+
+	.saletokenbg>div:first-child {
+		padding: 0;
+	}
+
+	.saletokenbg h5 {
+		font-size: 16px;
+	}
+
+	.dashboardpage .balanceshowt .h4 {
+		font-size: 16px;
+	}
+
+	.kycproffbox {
+		display: block;
+		width: 100%;
+	}
+
+	.kycproffbox>div {
+		display: block;
+		width: 100%;
+		text-align: center !important;
+	}
+
+	.banknotesinfo table tbody>tr>td {
+		padding: 0px 0px !important;
+		width: 100%;
+		display: inline-block;
+		text-align: center !important;
+	}
+
+	.banknotesinfo table tbody>tr {
+		padding-bottom: 5px;
+		display: inline-block;
+		width: 100%;
+		border-bottom: 1px dashed #d3d3d3;
+	}
+
+	.notestokentable tr>td {
+		text-align: center !important;
+		display: inline-block;
+		width: 100%;
+		padding: 0px !important;
+	}
+
+	.notestokentable tr {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	.tokencreatepage .react-form-wizard.sm .wizard-icon-circle {
+		width: 20px !important;
+		height: 20px !important;
+	}
+
+	.tokencreatepage .react-form-wizard .wizard-nav::before,
+	.tokencreatepage .smooth-border-left-to-right {
+		top: 11px !important;
+		height: 4px !important;
+	}
+
+	.tabbanner .nav-item .nav-link.active {
+		border-bottom: 2px solid #FF3C00 !important;
+	}
+
+	.innerpagecontent .tabbanner .nav-item {
+		width: 46%;
+	}
+
+	.merchantpymrntflex .d-flex>div {
+		width: 100% !important;
+		text-align: center;
+	}
+
+	.merchantpymrntflex .d-flex {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.merchantpymrntflex .btn {
+		width: 100%;
+	}
+
+	.mangelistboxb h5 {
+		font-size: 14px;
+	}
+
+	.mangelistboxb li {
+		padding: 15px;
+	}
+
+	.mangelistboxb h2 {
+		line-height: 24px;
+	}
+
+	.listprojectstatus li {
+		padding-bottom: 5px;
+	}
+}
+
+@media (max-width:500px) {
+	.accorddatacell.mercntvew-y {
+		grid-template-columns: repeat(1, 1fr) !important;
+	}
+
+	/* .headermenu .uheadbg .dropdown-menu {
+		margin-right: -98px;
+	} */
+
+	.apiwhitelist-y h6 {
+		font-size: 12px;
+		word-break: break-all;
+	}
+
+	.addadres {
+		flex-direction: column !important;
+		align-items: center !important;
+		text-align: center;
+		gap: 10px;
+	}
+
+	.addadres .tabrightbox {
+		text-align: center !important;
+	}
+
+	.innerpagecontent .tabbner .nav-item {
+		width: 47% !important;
+		margin-bottom: 5px !important;
+	}
+
+	.profilesubdropbox>span {
+		display: inline-block;
+	}
+
+	.notesgray>p br {
+		display: none;
+	}
+
+	.notesgray>p {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.notestitle p>.t-black {
+		font-size: 15px;
+		float: right;
+	}
+
+	.modalbgt .modal-body {
+		padding: 20px;
+		padding-top: 15px;
+	}
+
+	.recoveryboxt .anticodebox {
+		padding: 5px;
+	}
+
+	.anticodebox h4 {
+		font-size: 14px;
+	}
+
+	.antiflexbox>div {
+		padding: 11px;
+	}
+
+	.sendmoneyicon img {
+		max-width: 43px;
+	}
+
+	.balancedirectbox>div {
+		width: 100%;
+		margin: 5px 0px;
+	}
+
+	.wlletflex {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.wlletflex>div:last-child {
+		text-align: center !important;
+	}
+
+	.sflexfilter>div {
+		padding-left: 0px !important;
+	}
+
+	.menuicon {
+		width: 14px;
+		height: 14px;
+	}
+
+	.kycnotestable .btn {
+		margin-bottom: 7px;
+	}
+
+	.radio-tog .siteformbg {
+		position: relative;
+		top: 5px;
+		right: 1px;
+	}
+}
+
+@media (max-width: 450px) {
+
+
+	.cryptdetbox.table-content>div {
+		width: 100% !important;
+		padding: 4px 0px !important;
+	}
+
+	/* .balanceshowt img {
+		display: block;
+		margin: 0 auto !important;
+	} */
+
+	.totblance .table-content>div:first-child,
+	.totblance .table-content,
+	.totblance .table-content>div {
+		display: block;
+		width: 100% !important;
+	}
+
+	.supportbg .tabbanner .nav-item .nav-link>div {
+		display: block;
+	}
+
+	.supportbg .tabbanner .nav-item .nav-link>div:last-child {
+		text-align: left;
+		width: 100%;
+	}
+
+	.securitypage .boxtabb .tabbanner .nav-item {
+		width: 100%;
+	}
+
+	.priceboxtable .tabrightbox {
+		position: relative;
+		right: inherit;
+		top: inherit;
+		text-align: center;
+	}
+
+	.innerpagecontent .h2 {
+		font-size: 24px;
+	}
+
+	.devicetable .tabbanner .nav-item .nav-link {
+		padding: 7px 6px !important;
+		font-size: 12px !important;
+	}
+
+	.marketlist .tabbanner li a {
+		padding: 5px 14px !important;
+		font-size: 11px !important;
+	}
+
+	.marketlist .tabrightbox li {
+		width: auto;
+	}
+
+	.marketlist .tabrightbox {
+		top: inherit;
+		right: inherit;
+		position: relative;
+		padding: 0px 10px;
+		margin: 0px;
+		padding-bottom: 0px;
+	}
+
+	.kyctablenotes>div {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.kyctablenotes p,
+	.kyctablenotes h4,
+	.vffoot {
+		text-align: center !important;
+	}
+
+	.vrfbg .btn {
+		width: 100%;
+	}
+
+	.profiletablebox h4 {
+		font-size: 13px;
+	}
+
+	.stpsfexbox>div:first-child {
+		width: 35px;
+	}
+
+	.stpiconb {
+		width: 25px;
+		height: 25px;
+	}
+
+	.refbox>div {
+		width: 100%;
+		border-right: 0px !important;
+		border-bottom: 1px solid #ffffff42 !important;
+		padding: 10px 0px;
+	}
+
+	.kycviewpage table tr td {
+		width: 100% !important;
+		text-align: center !important;
+		border-bottom: 1px dashed #e6e6e6;
+		display: inline-block !important;
+	}
+
+	.kycviewpage table tr td br {
+		display: block;
+	}
+
+	.wizard-card-footer .btn {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.balanceshowt img {
+		max-width: 44px;
+	}
+
+	.balancechartact .tabbanner .nav-item .nav-link {
+		padding: 6px 5px;
+	}
+
+	.merchttabright {
+		position: relative;
+		top: inherit;
+		right: inherit;
+	}
+}
+
+@media (max-width:430px) {
+	.wllettable .tabrightbox.miss-btn-add button {
+		margin-bottom: 10px !important;
+	}
+
+	.sitebtn,
+	.borderbtn,
+	.yellow-btn,
+	.black-btn {
+		padding: 8px 19px;
+		font-size: 14px;
+	}
+
+	.livepricemobile .dropdown .dropdown-menu {
+		min-width: 250px;
+	}
+
+	.securitypage .btn {
+		width: 100%;
+	}
+
+	.innerpagecontent .h2 {
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 400px) {
+	.balanceshowt.totblance .total-turn-over-y {
+		gap: 40px;
+	}
+
+	.dpstnotes p>span:last-child {
+		text-align: center;
+	}
+
+	.leftsidetabbg .notestitle p {
+		flex-wrap: wrap;
+	}
+
+	.leftsidetabbg .notestitle p>span:last-child {
+		text-align: center;
+	}
+
+	.dpstnotes p>span {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.notestitle p>.t-black {
+		float: none;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.notestitle p {
+		text-align: center;
+		line-height: 23px;
+		padding-bottom: 13px !important;
+		font-size: 14px;
+		display: inline-block;
+	}
+
+
+	.innerpagegrid .heading-box {
+		font-size: 17px;
+	}
+
+	.wizardform #progressbar li {
+		font-size: 13px;
+	}
+
+	.notestitle p>span:last-child {
+		text-align: center;
+	}
+
+	.innerpagecontent .boxtabb .tabbanner .nav-item .nav-link {
+		font-size: 11px;
+		padding: 7px 11px;
+	}
+
+	.innerpagecontent .h2 {
+		font-size: 20px;
+	}
+
+	.mecrcointabb .btn {
+		width: 100%;
+	}
+
+	.notesminitable .table tr td {
+		width: 100%;
+		display: inline-block;
+		text-align: center !important;
+		padding: 1px 10px;
+	}
+
+	.frmswtch .form-check {
+		float: none;
+		margin: 0px auto;
+	}
+
+	.frmswtch .form-check .form-check-input {
+		float: none;
+	}
+
+	.timerflexboxb {
+		justify-content: center;
+	}
+
+	.notesminitable .d-flex {
+		justify-content: center;
+	}
+
+	.summarymdal .alert .d-flex {
+		display: inline-block !important;
+		width: 100%;
+	}
+
+	.summarymdal .alert .d-flex>div {
+		text-align: center !important;
+	}
+
+	.tabrightbox.mecrcointabb .mx-2 {
+		margin: 0px !important;
+		margin-bottom: 5px !important;
+	}
+}
+
+@media (max-width:350px) {
+	.securitycontentbox h3 {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.historypage .tabbanner {
+		padding: 0px;
+	}
+
+	.sendcodebtn .btn {
+		padding: 4px 5px !important;
+		font-size: 12px !important;
+	}
+
+	.innerpagegrid .heading-box {
+		font-size: 16px;
+	}
+
+	.balanceshowt h5 {
+		font-size: 16px;
+	}
+
+	.innerpagegrid .heading-box {
+		font-size: 15px;
+	}
+}
+
+/*media css end*/
+
+
+/*nightmode css start*/
+
+
+
+.nightmode .uheadbg {
+	border-bottom: 1px solid #272727;
+}
+
+.nightmode .tradepage .tabbanner {
+	border-color: #272727;
+}
+
+.nightmode .leftsidemenu li a,
+.nightmode .leftsidemenu .dropdown a,
+.nightmode .css-1dimb5e-singleValue,
+.nightmode .leftsidemenu .logoutmenu {
+	color: #8f8f8f;
+}
+
+.nightmode .innerpagecontent .h2,
+.nightmode .heading-box,
+.nightmode .totblance,
+.nightmode .balanceshowt h5,
+.nightmode .footerboxuser .ftxt,
+.nightmode .balanceshowt .dropdown-menu .dropdown-item,
+.nightmode .profiledatainfo .h5,
+.nightmode .currencycrtdrop .dropdown-item,
+.nightmode .supporttable table.sitetable tbody>tr:first-child td {
+	color: #d6d6d6;
+}
+
+.nightmode .heading-box,
+.nightmode .balanceshowt .dropdown-toggle,
+.nightmode .searchfrm,
+.nightmode .searchfrm .dropdown-toggle,
+.nightmode .profiletabbg .table-content>div:first-child,
+.nightmode .supportbg .flexbox>div:first-child,
+.nightmode .chat-foot {
+	border-color: #313131;
+}
+
+.nightmode .leftsidemenu {
+	background: #1e1e1e;
+}
+
+.nightmode .highcharts-legend-item>text {
+	color: #9b9b9b !important;
+	fill: #9b9b9b !important;
+}
+
+.nightmode .prgrsflx .progress {
+	background: #2d2d2d;
+}
+
+.nightmode .icontypes {
+	background: #2d2d2d;
+	border-radius: 50%;
+	padding: 8px 10px;
+}
+
+.nightmode .prgrsflx .progress {
+	border-color: #444444;
+}
+
+.nightmode .leftsidescroll a img,
+.nightmode .leftsidescroll .logoutmenu img {
+	filter: grayscale(1) invert(1);
+}
+
+.nightmode .leftsidemenu a.active {
+	background: #2d2d2d;
+	color: #d6d6d6;
+	border-color: #2d2d2d;
+}
+
+.nightmode .css-19xgpdp-control,
+.nightmode .css-1bzvr6x-control,
+.nightmode .css-8rjvy0-control,
+.nightmode .css-do35tu-option {
+	background: #232323 !important;
+	border-color: #313131 !important;
+	color: #d6d6d6 !important;
+
+}
+
+.nightmode .currency-select-yy .css-19xgpdp-control,
+.nightmode .css-1bzvr6x-control,
+.nightmode .css-8rjvy0-control,
+.nightmode .css-do35tu-option {
+	background: #232323 !important;
+	border-color: #313131 !important;
+	color: #d6d6d6 !important;
+	/* border: 1px solid #313131 !important;
+	border-left: 0px solid #313131 !important; */
+}
+
+.nightmode .css-1nmdiq5-menu,
+.nightmode .css-1nmdiq5-menu>div,
+.nightmode .css-vt33qg-option {
+	background-color: #232323 !important;
+	border-color: #313131 !important;
+	color: #d6d6d6 !important;
+}
+
+.nightmode .css-vt33qg-option:active {
+	background-color: #2d2d2d;
+	color: #fff !important;
+}
+
+.nightmode .css-1dimb5e-singleValue,
+.nightmode .css-vt33qg-option span,
+.nightmode .css-vt33qg-option:active span,
+.nightmode .css-vt33qg-option,
+.nightmode .css-1nmdiq5-menu span,
+.nightmode .css-1bzvr6x-control input,
+.nightmode .css-1nmdiq5-menu div,
+.nightmode .css-1cfo1cf {
+	color: #fff !important;
+}
+
+.nightmode .css-tj5bde-Svg {
+	fill: #fff !important;
+	color: #fff !important;
+}
+
+.nightmode .css-1u9des2-indicatorSeparator {
+	background-color: #585858 !important;
+}
+
+.nightmode .mobiletoggle img {
+	filter: grayscale(1) invert(1);
+}
+
+.nightmode .leftsidemenu .dropdown-menu,
+.nightmode .balanceshowt .dropdown-menu,
+.nightmode .wlletdropmenubox .dropdown-menu,
+.nightmode .currencycrtdrop .dropdown-menu {
+	background: #0f0f0f;
+}
+
+.nightmode .leftsidemenu .dropdown-menu {
+	background: #232323 !important;
+}
+
+.nightmode .balanceshowt .dropdown-item:hover,
+.nightmode .nightmode .currencycrtdrop .dropdown-item:hover {
+	background-color: #0f0f0f;
+}
+
+.nightmode .convertpage .text-center img {
+	filter: grayscale(1)invert(1);
+}
+
+.nightmode .listprojectstatus::before {
+	background-color: #474747;
+}
+
+.nightmode .chat-foot {
+	background: #1e1e1e;
+}
+
+.nightmode .supportbg .tabbanner .nav-item .nav-link {
+	background: #232323 !important;
+	border-color: #313131 !important;
+	color: #d6d6d6 !important;
+}
+
+.nightmode .supportbg .tabbanner .nav-item .nav-link.active,
+.nightmode .supportbg .tabbanner .nav-item .nav-link:hover {
+	background: #4e260087 !important;
+	border-color: #7c4f2387 !important;
+	color: #d6d6d6 !important;
+}
+
+.tabbanner .nav-item .nav-link:hover {
+	color: #ff3c00;
+}
+
+.nightmode .chat .chat-body p {
+	background: #4e260087;
+	color: #d6d6d6;
+}
+
+.nightmode .chat .right p {
+	background: #232323;
+	color: #d6d6d6;
+}
+
+.nightmode .kycproffbox,
+.nightmode .convertfrmg.form-group {
+	background: #232323;
+	border-color: #313131;
+	color: #d6d6d6;
+}
+
+
+.nightmode .balancetableb hr {
+	border-color: #ffffff4a;
+}
+
+.nightmode .submenu-dropdown h6 {
+	color: #fff;
+}
+
+.nightmode .notifyicon .dropdown-menu .dropdown-item {
+	border-color: #2e2e2e;
+}
+
+.nightmode .notifyicon small {
+	font-size: .875em;
+	color: #6e6e6e;
+}
+
+.nightmode .notifyicon .righticon img {
+	filter: grayscale(1)invert(1);
+}
+
+.nightmode .headbg .notifyicon .dropdown-menu>a:first-child {
+	background: #232323 !important;
+	color: #fff;
+}
+
+.nightmode .notifyicon .userprofiledrop p {
+	color: #fff;
+}
+
+.nightmode .notifyicon .nodata img {
+	filter: grayscale(1) invert(1);
+}
+
+.nightmode .css-1dimb5e-singleValue span {
+	color: #fff !important;
+}
+
+.nightmode .accordionrow,
+.nightmode .accorddatacell {
+	background: #1e1e1e;
+}
+
+.nightmode .accorddatacell>div {
+	background: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.nightmode .accorddatacell {
+	border-color: #2d2d2d;
+}
+
+.nightmode .pagination {
+	border-color: #2d2d2d;
+}
+
+.nightmode .pagination li .page-link {
+	color: #ffffff;
+	border-color: #2d2d2d;
+	background-color: #1e1e1e;
+}
+
+.nightmode .pagination .disabled .page-link {
+	background-color: #1e1e1e;
+	color: #ffffff;
+}
+
+.nightmode .supportlistscroll,
+.nightmode .accordionrow {
+	border-color: #2d2d2d !important;
+}
+
+.nightmode .orderformbox .buyselltab .nav-item .nav-link {
+	background: #ffffff1f;
+}
+
+.nightmode .saving-summary {
+	border: 1px solid #313131;
+}
+
+.nightmode .s-flex-modal.active {
+	border-color: #ff6a0069;
+	background: #be5a1326;
+}
+
+.nightmode .s-flex-modal {
+	border: 1px solid #313131;
+}
+
+.nightmode .form-control[readonly] {
+	background-color: #232323 !important;
+	color: #fff !important;
+	border: 1px solid #313131;
+}
+
+
+.nightmode .input-group-text {
+	background-color: #232323 !important;
+	color: #fff !important;
+	border: 1px solid #313131;
+}
+
+.nightmode .merchant-modalbgt .alert p {
+	color: #000 !important;
+}
+
+.nightmode .wallet-dropdown {
+	background: #1e1e1e00;
+	border: 1px solid #dfd6d600;
+	box-shadow: 0 2px 8px rgba(200, 200, 200, 0.5);
+}
+
+.nightmode .kyc-prof-fbo,
+.nightmode .convertfrmg.form-group {
+	background: #232323;
+	border-color: #313131;
+	color: #d6d6d6;
+}
+
+.nightmode .stoplimtboxt .link-div>div {
+	background: #232323;
+	border: 1px solid #313131;
+}
+
+.nightmode .alrt-y.yellow-btn p {
+	color: #ffe69cb3;
+}
+
+.nightmode .livepricet span,
+.nightmode .orderformbox .orderfrmtab .nav-item .nav-link {
+	color: #d6d6d6;
+}
+
+.nightmode .adrresssitetable table tr td {
+	border-bottom: 1px solid #353535c2;
+}
+
+.nightmode .css-qr46ko::-webkit-scrollbar {
+	width: 6px;
+}
+
+.nightmode .css-qr46ko::-webkit-scrollbar-thumb {
+	background: #d5d5d51a;
+	border-radius: 50px;
+}
+
+.nightmode .css-qr46ko::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.nightmode .orderfrmtab {
+	border-bottom-color: #272727;
+}
+
+.nightmode .buyselltabbg {
+	background: transparent;
+}
+
+.nightmode .innerpagecontent.inpgycon-y p {
+	color: #acacac;
+}
+
+.nightmode .crytb-y a {
+	color: #acacac;
+}
+
+.nightmode .moredrp,
+.nightmode .orderformbox .limitabbg .dropdown-menu .dropdown-item {
+	color: #d6d6d6 !important;
+}
+
+.nightmode .dropdown-menu.show,
+.nightmode .rulesnotes {
+	background: #232323;
+	border-color: #313131;
+}
+
+.nightmode .dropdown-menu.show {
+	/* background: #cbcbcb; */
+	border-color: #313131;
+}
+
+.nightmode .api-doc-y .dropdown-item:hover {
+	background-color: transparent !important;
+}
+
+.nightmode .dropdown-item:hover {
+	background-color: #ff7104;
+}
+
+.nightmode .accordionrow.acr-rw-y {
+	background-color: #232323;
+}
+
+.nightmode .mercntvew-y>div {
+	background: #1e1e1e;
+	border-color: #1e1e1e;
+}
+
+.nightmode .inc-fr-tdy-y {
+	background: #232323;
+}
+
+.nightmode .trademsgflex .tradepicesubbg .h3 {
+	color: #A3A3A3;
+}
+
+.nightmode .s-flex-modal.active p {
+	color: #fff !important;
+}
+
+.nightmode .notesgray {
+	background-color: #ffffff12;
+}
+
+.nightmode .deo-tre-y {
+	border-color: #cfcfcf0d;
+}
+
+.nightmode .panelcontentbox.buyboxpage.buy-box-pge-y .nav-tabs .nav-link {
+	color: #fff;
+	background-color: #1e1e1e;
+}
+
+.nightmode .buy-box-pge-y .nav-tabs .nav-link {
+	background-color: #1e1e1e;
+}
+
+.nightmode .info-bg-y {
+	background-color: #1e1e1e !important;
+	border-color: #363131;
+	color: #767676;
+}
+
+.nightmode .inpgycon-y h2 {
+	color: #fff !important;
+}
+
+.nightmode .cty-bx-icon-y {
+	border: 1px solid #313131;
+	padding: 14px;
+	border-radius: 12px;
+}
+
+.nightmode .suces-y {
+	background-color: #1e1e1e !important;
+	border-color: #363131;
+	color: #d6d6d6;
+}
+
+.nightmode .adrescrol-y .dropdown-toggle:empty::after {
+	display: none;
+}
+
+.nightmode .paymentspsbg h6 {
+	color: #000 !important;
+}
+
+.nightmode .svg-inline--fa.fa-lg {
+	vertical-align: -0.2em;
+	color: #000 !important;
+}
+
+.nightmode .wallet-dropdown-item:hover {
+	background: #000 !important;
+}
+
+.nightmode .pagecontent .apiwhitelist-y {
+	border: 1px solid #565050;
+}
+
+
+.nightmode .livepricemobile li a {
+	color: #c6c6c6 !important;
+}
+
+.nightmode .amtdrpdon-Y {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16' stroke='%23ffffff' stroke-width='2'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: right 14px center;
+	background-size: 14px;
+}
+
+.nightmode .historytable-read td {
+	color: #a7a7a791 !important;
+}
+
+.nightmode .viewallnoti-y {
+	color: #c6c6c6;
+}
+
+.nightmode .orderformbox .orderfrmtab .nav-item .nav-link {
+	color: #fff !important;
+}
+
+.nightmode .futuretab .nav-item {
+	background: #423d3d;
+}
+
+.nightmode .stacking-y>div {
+	background: #232323;
+}
+
+.nightmode .topblce-y h2 {
+	color: #A3A3A3;
+}
+
+.flexbox-equl-hh .securpanelbox {
+	margin-bottom: 0px;
+}
+
+@media (max-width:1100px) {
+	.flexbox-equl-hh {
+		display: block;
+	}
+
+	.flexbox-equl-hh .securpanelbox {
+		margin-bottom: 10px;
+	}
+
+	.flexbox-equl-hh .walletbalancebox .tablebox {
+		margin-top: 0px !important;
+	}
+}
+
+@media (max-width:991px) {
+	.accorddatacell.mercntvew-y {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.nightmode .uheadbg {
+		background: #1e1e1e;
+	}
+
+	.nightmode .clostbuytab,
+	.nightmode.userpanelpage .headermenu .headbg .dropdown-item {
+		color: #c6c6c6;
+	}
+}

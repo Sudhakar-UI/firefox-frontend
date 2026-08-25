@@ -1,0 +1,1999 @@
+.feedbackscroll {
+	max-height: 385px;
+}
+
+.feedbackbox {
+	display: table;
+	width: 100%;
+	padding: 14px 0px;
+	position: relative;
+}
+
+.feedbackbox>div {
+	display: table-cell;
+	vertical-align: top;
+	float: none;
+	position: relative;
+}
+
+.feedbackbox>div:first-child {
+	margin-right: 5px;
+	width: 45px;
+}
+
+.feedbackbox img {
+	border-radius: 50px;
+	width: 35px;
+	height: 35px;
+	background-color: #e5e5e5;
+	border: 2px solid #e5e5e5;
+}
+
+.feedbackbox p {
+	margin: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.feedbackbox p:first-child {
+	font-weight: 600;
+}
+
+.announcement .feedbackbox p {
+	font-size: 14px;
+	line-height: 19px;
+	color: #333;
+}
+
+.adsbox .sitescroll {
+	max-height: 458px;
+}
+
+.cryptoboxicon img {
+	width: 100%;
+}
+
+.dashbaordoverview .flexbox .announcement {
+	width: 40%;
+}
+
+.dashbaordoverview .flexbox>div {
+	width: 60%;
+}
+
+.buyboxpage .searchfrm {
+	gap: 10px;
+	/* padding: 14px 10px; */
+	/* border-bottom: 1px solid #ffffff14 !important; */
+	/* justify-content: center; */
+}
+
+.buyboxpage .searchfrm .form-group {
+	width: 300px;
+	padding: 0;
+}
+
+.buyboxpage .clearbtn .btn {
+	width: auto !important;
+}
+
+.buyboxpage .searchboxbg .siteformbg {
+	display: flex;
+	width: 100%;
+	white-space: nowrap;
+	justify-content: center;
+	padding: 0;
+}
+
+/* .buyboxpage .searchfrm .btn {
+	padding: 8px 23px !important;
+	margin-top: 31px;
+
+} */
+
+.searchboxbg .siteformbg>div {
+	padding: 0px 5px;
+	width: auto;
+	min-width: 240px;
+}
+
+.searchboxbg .siteformbg>div:nth-child(5) {
+	width: auto;
+	min-width: inherit !important;
+}
+
+.usericont {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	margin-right: 4px;
+	padding: 2px;
+	background-color: #ffffff21;
+}
+
+.p2ppages .leftsidemenu.active {
+	display: none;
+}
+
+.p2ppages .navbar-brand .logo {
+	display: inline-block;
+}
+
+.p2ppages .mobiletoggle {
+	display: none;
+}
+
+.buyflextab {
+	display: flex;
+	padding: 20px 20px;
+}
+
+.buytab li a {
+	padding: 2px 15px;
+	border-radius: 5px !important;
+	border: 0px !important;
+	color: #fff;
+}
+
+/* 
+.buytab .tabbanner>.nav-item:first-child a {
+	background: #37bf8f !important;
+	color: #fff !important;
+}
+
+.buytab .tabbanner>.nav-item:last-child a {
+	background: #f97b7b !important;
+	color: #fff !important;
+} */
+.cryptotabbox .tabbanner li a {
+	padding: 8px 15px;
+	/* position: relative;
+	border-bottom: 0px !important; */
+	;
+}
+
+.cryptotabbox .tabbanner li {
+	padding: 4px 3px;
+}
+
+.cryptotabbox {
+	right: 11px;
+	top: -1px;
+}
+
+.badge-orange {
+	background-color: #fff0d1;
+	border-color: #f1dcb0;
+	color: #976805;
+	min-width: inherit;
+	padding: 9px 16px;
+	font-size: 13px;
+}
+
+.buyboxpage table tr td .textsize {
+	width: 120px;
+	display: inline-block;
+	line-height: 23px;
+}
+
+.buyboxpage table tr:hover {
+	background: none;
+}
+
+.howitworkbanner h2 {
+	font-size: 25px;
+	font-weight: 800;
+	padding-bottom: 25px;
+}
+
+.howitbox>div {
+	width: 100%;
+	padding: 10px 10px;
+}
+
+.howitbox h4 {
+	font-size: 17px;
+	margin-bottom: 3px;
+	font-weight: 700;
+}
+
+.howitbox p {
+	line-height: 26px;
+	font-size: 15px;
+	padding-top: 7px;
+}
+
+.cryptotable {
+	display: table;
+	width: 100%;
+}
+
+.cryptotable>div {
+	display: table-cell;
+	vertical-align: middle;
+	/* padding: 15px 8px; */
+	;
+}
+
+.cryptotable>div:first-child {
+	width: 67px;
+}
+
+.cryptotable>div:last-child {
+	width: 129px;
+}
+
+.announcement {
+	position: relative;
+	padding-top: 10px;
+}
+
+.announcement .badge {
+	min-width: inherit;
+}
+
+.announcement hr {
+	margin: 9px 0px;
+}
+
+.pricetable,
+.priceflexbox .owl-stage>div {
+	width: 100%;
+	display: flex;
+	box-shadow: none !important;
+}
+
+.priceflexbox {
+	gap: 18px;
+	flex-wrap: wrap;
+}
+
+/* .priceflexbox>div {
+    width: 32.5%;
+} */
+.pricetable>div,
+.pricetable>a {
+	width: 100%;
+	display: table;
+	width: 100%;
+}
+
+.pricetable>a {
+	color: #94969E;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.pricetable .panelcontentbox>div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.pricetable .h4 {
+	font-size: 15px;
+	/* margin: 0px; */
+	line-height: 25px;
+	color: #94969E;
+	padding-left: 12px;
+}
+
+.pricetable .h5 {
+	font-size: 22px;
+	margin: 0px;
+	color: #fff;
+}
+
+.cryptoboxicon {
+	width: 70px !important;
+}
+
+.cryptoboxicon img {
+	width: 100%;
+	max-width: 80px;
+	margin: 0px auto;
+}
+
+.cryptobox .h4 {
+	font-size: 14px;
+	margin: 0px;
+	font-weight: 600;
+	line-height: normal;
+	padding-bottom: 2px;
+}
+
+.cryptobox .h5 {
+	font-size: 14px;
+	margin: 0px;
+	font-weight: 500;
+	padding-top: 3px;
+	line-height: 22px;
+}
+
+.sellertrde .cryptotable>div {
+	padding: 10px 20px;
+}
+
+.sellertrde .cryptotable>div:nth-child(2) {
+	padding-left: 4px;
+}
+
+.sellertrde .cryptotable>div:first-child {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.tradepricebanner {
+	width: 100% !important;
+	margin: 0px 0px;
+	display: inline-block;
+	margin-bottom: 0px;
+}
+
+.tradepricebanner>div {
+	padding: 0px;
+	text-align: center;
+	display: table;
+	width: 100%;
+	float: left;
+	box-shadow: none;
+	border: 0px;
+	background: none;
+	backdrop-filter: none;
+}
+
+.tradepricebanner>div:last-child {
+	border-right: 0px;
+}
+
+.tradepicesubbg>div {
+	display: flex;
+	/* vertical-align: top;
+	float: none; */
+	padding: 9px 0px;
+}
+
+.tradepricebanner>div:last-child {
+	margin-right: 0px;
+}
+
+.tradepicesubbg .h1 {
+	font-size: 15px;
+	font-weight: 400;
+	margin: 0px;
+	width: 100%;
+	color: #94969E;
+}
+
+.tradepicesubbg .h3 {
+	font-size: 16px;
+	margin: 0px;
+	font-weight: 600;
+	padding-left: 13px;
+	text-align: right;
+	width: 100%;
+	color: #fff;
+}
+
+.tradeinfot td {
+	padding: 8px 10px;
+}
+
+.tradetransbox>div {
+	margin-bottom: 5px;
+}
+
+.tradetransbox p {
+	margin-bottom: 0px;
+	padding-bottom: 7px;
+}
+
+.trademsgflex>div:first-child {
+	width: 75%;
+	margin-bottom: 0px !important;
+}
+
+.notesgray {
+	padding: 15px;
+	border-radius: 8px;
+	background-color: #fafafa;
+}
+
+.tradetransbox .contentbox {
+	display: table;
+	width: 100%;
+	padding: 9px 14px;
+}
+
+.tradetransbox .contentbox>div {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+
+.tradetransbox .contentbox>div:last-child {
+	text-align: right;
+}
+
+.tablecontent {
+	display: table;
+	width: 100%;
+}
+
+.tablecontent>div {
+	display: table-cell;
+	vertical-align: top;
+	float: none;
+	padding: 15px 20px;
+	width: 50%;
+}
+
+.tradepricebox>div {
+	/* width: 50%;
+	float: left; */
+	text-align: left;
+}
+
+.termsnotes {
+	width: 100%;
+	display: block;
+}
+
+.tablecontent>div:first-child {
+	border-right: 1px dashed #dbdbdb;
+}
+
+.buytradedata td {
+	padding: 0px !important;
+	border: 0px !important;
+	white-space: inherit !important;
+}
+
+.buytradedata .collapse {
+	border-top: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.buytradedata td .t-gray {
+	word-wrap: break-word;
+	color: #000;
+}
+
+.termsnotes h5 {
+	font-size: 15px;
+	color: #fff;
+}
+
+.trademsgflex .tradepricebox {
+	padding: 0;
+	display: flex;
+	padding-bottom: 0px;
+}
+
+.trademsgflex .tradepricebox>div {
+	width: 100%;
+	margin: 0px 10px;
+	border-radius: 7px;
+	padding: 15px 19px;
+	margin-bottom: 0px;
+	position: relative;
+	background-color: #fafafa;
+}
+
+.nightmode .trademsgflex .tradepricebox>div {
+	background-color: #ffffff0a;
+}
+
+
+.trademsgflex .tradepricebox>div:first-child {
+	margin-left: 0px;
+}
+
+.trademsgflex .tradepricebox>div:last-child {
+	margin-right: 0px;
+}
+
+.trademsgflex>div:last-child {
+	width: 50%;
+	margin-bottom: 0px;
+	padding-bottom: 13px;
+}
+
+.trademsgflex .tradepicesubbg>div {
+	padding: 0;
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+
+.trademsgflex .tradepicesubbg .h3 {
+	padding-left: 0px;
+	padding-top: 8px;
+	font-size: 17px;
+	text-align: left;
+	font-weight: 500;
+	color: #535353;
+}
+
+.paymentbox h5 {
+	font-size: 15px;
+}
+
+.paymentbox .notesgray {
+	border: 1px solid #e7e7e7;
+	background: #ffffff05;
+}
+
+.nightmode .paymentbox .notesgray {
+	border: 1px solid #313131;
+}
+
+.chattrdeicon {
+	width: 100%;
+	max-width: 330px;
+	object-fit: contain;
+}
+
+.notesgray h4 {
+	font-size: 14px;
+	color: #ff7724;
+}
+
+.paymentbox p {
+	padding-bottom: 4px;
+}
+
+.paymentflex .notesgray>div {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.paymentflex .notesgray>div:first-child {
+	padding-right: 10px;
+}
+
+.paymentflex {
+	display: flex;
+}
+
+.paymentflex>div {
+	width: 100%;
+	margin: 5px 5px;
+}
+
+.paymentflex>div:first-child {
+	margin-left: 0px;
+}
+
+.paymentflex>div:last-child {
+	margin-right: 0px;
+}
+
+.modalbgt .notesgray p {
+	padding-bottom: 3px;
+}
+
+.trademsgflex .chat p {
+	width: 100%;
+}
+
+.infoicon {
+	background: #525252;
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	margin: 17px auto;
+	padding-top: 4px;
+	color: #fff;
+	border: 1px solid #525252;
+	font-size: 14px;
+}
+
+.modal input[type=checkbox] {
+	position: relative;
+	top: 2px;
+}
+
+.subannerlist {
+	background: #2a2927;
+	overflow-x: auto;
+}
+
+.subannerlist li a {
+	background: none !important;
+	padding: 14px 23px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.subannerlist li a.active {
+	background: none !important;
+	color: #dab357 !important;
+	border-color: #dab357 !important;
+}
+
+.p2ppages .sitecontainer {
+	padding: 0px 35px !important;
+}
+
+.subannerlist .tabbanner {
+	justify-content: center;
+	border: 0px;
+}
+
+.posttradepage .mlmwizardform #progressbar::before,
+.posttradepage .mlmwizardform #progressbar li:first-child::before,
+.posttradepage .mlmwizardform #progressbar li:last-child::before {
+	width: 3px;
+	height: 100%;
+	top: 0;
+	left: 32px;
+}
+
+.posttradepage .mlmwizardform #progressbar {
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.posttradepage .progressbg {
+	padding-left: 13px;
+}
+
+.posttradepage .mlmwizardform #progressbar li {
+	padding: 44px 5px;
+}
+
+.posttradepage .mlmwizardform li .infot {
+	text-align: left;
+	font-size: 13px;
+	float: left;
+}
+
+.posttradepage .mlmwizardform #progressbar li>strong {
+	clip-path: inherit;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	float: left;
+}
+
+.posttradepage .mlmwizardform #progressbar li:last-child::before {
+	left: inherit;
+	right: 0px;
+	background: #ffffff;
+}
+
+.innertitle {
+	font-size: 15px;
+	/* text-transform: uppercase; */
+	margin: 0px;
+	padding: 9px 0px;
+	color: #ff9800;
+	font-weight: 600;
+	position: relative;
+	margin-bottom: 11px;
+	padding-top: 0px;
+}
+
+.traderadiobox>div {
+	display: inline-block;
+	padding-right: 10px;
+	width: 15%;
+}
+
+.posttradepage>div input[type=radio] {
+	margin-right: 5px;
+}
+
+.traderadiobox1>div {
+	display: inline-block;
+	padding-right: 10px;
+	width: 33.3%;
+}
+
+.p2ppages .sitetable thead tr th {
+	background: #fff;
+	padding: 14px 15px;
+	font-size: 14px;
+}
+
+.openinghbg {
+	width: 100%;
+	display: flex;
+}
+
+.openinghbg>div {
+	float: left;
+	width: 100%;
+	padding: 0px 4px;
+}
+
+.openinghbg>div:last-child {
+	border-right: 0px;
+}
+
+.srthoursbg select {
+	width: 100%;
+	margin-right: 7px;
+	float: left;
+	padding: 4px;
+	height: 36px !important;
+	font-size: 15px !important;
+	margin-bottom: 7px;
+}
+
+.openinghbg h6 {
+	text-transform: capitalize;
+	color: #535353;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.nightmode .openinghbg h6 {
+	color: #acacac;
+}
+
+.posttradepage .tabbanner {
+	width: 100%;
+	justify-content: center;
+	background: #fff;
+	width: 100%;
+	max-width: 300px;
+	margin: 0px auto;
+}
+
+.posttradepage .tabbanner li a {
+	padding: 10px 15px;
+	font-size: 16px;
+}
+
+.posttradepage .tabbanner li {
+	padding: 10px 28px;
+}
+
+.posttradepage .panelcontentbox {
+	overflow: visible;
+	padding: 33px;
+}
+
+.user-photo img {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.user-photo {
+	width: 40px;
+	border-radius: 50px;
+	height: 40px;
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+	display: inline-block;
+	float: left;
+	margin-right: 6px;
+}
+
+.tabborder {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.feedbackscrt {
+	display: table;
+	margin-bottom: 12px;
+}
+
+.feedbackscrt>div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.feedbackscrt select {
+	margin-left: 10px;
+	margin-top: -8px;
+	border-radius: 3px !important;
+	padding: 0px 8px;
+	height: 28px !important;
+}
+
+.chatpagebox .chatticketlist {
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+.paymentupdatebox {
+	max-width: 470px;
+	margin-top: 0px;
+}
+
+.posttradebox p {
+	font-size: 14px;
+	margin: 0px;
+}
+
+.posttradepage .kycpagebg .siteformbg>div {
+	display: block;
+	width: 100%;
+}
+
+.posttradepage .kycpagebg .siteformbg {
+	width: 100%;
+	display: flex;
+}
+
+.posttradebox {
+	padding: 0px 0px;
+}
+
+.posttradepage .mlmwizardform fieldset {
+	padding: 0;
+	text-align: center;
+}
+
+.posttradepage .kycboxleft {
+	padding: 0px;
+}
+
+.posttradepage .contentbox {
+	padding: 0px;
+}
+
+.announcement .dtetext {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 13px !important;
+}
+
+.labelleft {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #8e8e8e !important;
+}
+
+.buytradedata .table-responsive-stack-thead {
+	display: none !important;
+}
+
+.historyfilter .searchboxbg .siteformbg>div:nth-child(5),
+.historyfilter .searchboxbg .siteformbg>div {
+	width: 100% !important;
+}
+
+.buyboxpage .tabrightbox {
+	right: 1px !important;
+	top: -5px !important;
+	position: absolute !important;
+}
+
+.ticketchat {
+	margin-top: 20px;
+}
+
+.posttitlebox {
+	/* border-bottom: 1px dashed #ffffff38; */
+	margin-bottom: 25px;
+}
+
+.feadbackpage .tabbanner {
+	justify-content: center;
+	border: 0px;
+}
+
+.trademsgflex .contentbox {
+	padding: 20px;
+}
+
+.disputepage .chatticketlist.collapse.show {
+	display: block;
+}
+
+.chatrowbox>td {
+	padding: 0px !important;
+	white-space: inherit !important;
+}
+
+.disputepage .chatboxscroll {
+	width: 100%;
+	display: inline-block;
+}
+
+.posttradepage .mlmwizardform {
+	padding: 0px;
+}
+
+.buyboxpage .sitescrollt {
+	max-height: 745px;
+}
+
+.cardbox {
+	display: inline-block;
+	width: 100%;
+}
+
+.cardbox>div {
+	padding: 8px;
+	width: 33.3%;
+	float: left;
+}
+
+.cardlistbox table {
+	margin-bottom: 0px;
+}
+
+.profileiconpic {
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+	background-color: #3a3a3a;
+	border: 0px;
+	padding: 0px;
+	border-radius: 50px;
+}
+
+.cardlistbox table tr td {
+	width: 50%;
+	padding: 7px 5px !important;
+}
+
+.smallcoin {
+	width: 23px;
+	margin-right: 4px;
+}
+
+#card table tbody tr>td:last-child {
+	text-align: left;
+}
+
+.disputepage .profileiconpic,
+.trademsgpage .profileiconpic {
+	float: none;
+	overflow: visible;
+}
+
+.p2poverview .tabrightbox {
+	top: 4px;
+}
+
+.cardlistbox>div {
+	margin-bottom: 0px;
+}
+
+.howitbox {
+	display: table;
+}
+
+.howitbox>div:first-child {
+	padding-left: 0px;
+}
+
+/* .howitbox>div {
+	display: table-cell;
+	vertical-align: text-top;
+	float: none;
+	width: 33.3%;
+	padding: 0px 31px;
+} */
+
+.howitbox .arrowicon {
+	width: 3%;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+.howitworkbanner {
+	padding-top: 50px;
+}
+
+
+.buytrademsgbox .trademsgflex .contentbox {
+	padding: 25px 25px;
+}
+
+.paymentwhitebox {
+	min-height: 573px;
+}
+
+.buytrademsgbox .chat li {
+	padding: 5px 0px;
+}
+
+.buytrademsgbox .chatboxscroll {
+	max-height: 460px;
+	min-height: 420px;
+	margin-bottom: 22px;
+}
+
+.notesgray>p {
+	float: none;
+}
+
+/* .modal-dialog {
+	max-width: 650px;
+} */
+
+.howitbg .iconwhitebox {
+	margin: 0px;
+	margin-bottom: 24px;
+}
+
+.t-gray {
+	color: #979797 !important;
+}
+
+.howitworkbanner .contentbox {
+	padding: 35px 35px;
+}
+
+.innerpagecontent .tabrightbox {
+	right: 0;
+	top: -7px;
+}
+
+.boxtabb .tabbanner img {
+	filter: inherit;
+}
+
+.buysellpage .howitbg>div:first-child {
+	padding-bottom: 15px;
+}
+
+.buysellpage .boxtabb .tabbanner img {
+	max-width: 20px;
+}
+
+.buysellpage .boxtabb .dropdown .dropdown-menu {
+	border-color: #eeeded !important;
+	border-radius: 5px;
+	min-width: 300px;
+	box-shadow: 1px 5px 16px 9px #0000001c;
+	border: 0px;
+	padding: 5px;
+}
+
+.cryptotabbox .dropdown-menu li {
+	padding: 4px 3px;
+	width: auto;
+	float: left;
+}
+
+.chatmodal .ticketchat {
+	margin-top: 0px;
+}
+
+.chatmodal .ticketchat {
+	padding: 15px 10px;
+}
+
+.chatmodal .chat li {
+	padding: 0px 15px;
+}
+
+.chatmodal .chatboxscroll {
+	max-height: 450px;
+	min-height: 424px;
+}
+
+.chatmodal .chat-foot {
+	background: none;
+}
+
+.disputepage table tbody tr td .badge,
+.trademsgpage table tbody tr td .badge {
+	padding: 8px 13px;
+}
+
+.profileiconpic img {
+	width: 100%;
+	height: 100%;
+}
+
+.feedbackbox.nodata img {
+	background: none !important;
+	border: 0px;
+	width: 100%;
+	height: auto;
+	border-radius: 0px;
+}
+
+.pricebox {
+	padding: 20px;
+}
+
+.buyiconslectbox {
+	width: 220px;
+}
+
+/* .adshistpage .btn {
+	color: #ff7622;
+	padding: 4px 10px;
+	background: none !important;
+} */
+
+.adshistpage .btn.t-green {
+	border: 1px solid #37bf8f;
+	border-radius: 5px;
+}
+
+.adshistpage .btn.t-red {
+	border: 1px solid #f97b7b;
+	border-radius: 18px;
+}
+
+.badge-success {
+	background-color: #e6fff6;
+	border-color: #0ebf814f;
+	color: #0ebf81;
+}
+
+.badge-danger {
+	background-color: #f97b7b2e;
+	border-color: #f97b7b2e;
+	color: #f97b7b;
+}
+
+.badge-warning {
+	background-color: #d1b43b29;
+	border-color: #d1b43b4d;
+	color: #d1a906;
+}
+
+.cardlistbox table tr:hover {
+	background: none !important;
+}
+
+.custom-file-upload {
+	padding: 8px 18px;
+	border: 0px;
+	background: none;
+	font-size: 14px !important;
+	border-radius: 50px;
+	cursor: pointer;
+	color: #818181 !important;
+	margin-top: 0;
+	text-transform: capitalize;
+	border: 1px solid #818181;
+}
+
+.p2poverview .flexbox {
+	gap: 15px;
+}
+
+.formcheckb .form-check-input {
+	float: none;
+	top: 0px !important;
+	margin-right: 6px;
+}
+
+.cardviewbg.tabrightbox {
+	top: 0px;
+}
+
+.buyboxpage .tabbanner .nav-item .nav-link {
+	background: none !important;
+	font-size: 13px;
+	padding: 6px 15px;
+}
+
+.buyboxpage .tabbanner .nav-item .nav-link.active {
+	background-color: #2196f3;
+	border-color: #2196f3;
+	color: #fff;
+}
+
+@media (max-width:1650px) {
+	.cardlistbox>div {
+		width: auto;
+	}
+
+	.pagecontentsize .pricetable .h5 {
+		font-size: 22px;
+	}
+
+	.searchboxbg .siteformbg>div {
+		min-width: 210px;
+	}
+}
+
+@media (max-width:1500px) {
+	.feedbackscroll {
+		max-height: 354px;
+	}
+
+	.pricetable .h5 {
+		font-size: 22px;
+	}
+
+	.pagecontentsize .profileiconpic {
+		width: 36px;
+		height: 36px;
+	}
+
+	.pagecontentsize .posttradepage .col-md-4 {
+		width: 38%;
+	}
+
+	.pagecontentsize .posttradepage .col-md-5 {
+		width: 40%;
+	}
+
+	.pagecontentsize .posttradepage .col-md-3 {
+		width: 22%;
+	}
+
+	.pagecontentsize .hrsbg .col-lg-7 {
+		width: 75%;
+	}
+
+	.pagecontentsize .trademsgflex>div:last-child {
+		padding: 15px;
+	}
+
+	.pagecontentsize .buytrademsgbox .trademsgflex .contentbox {
+		padding: 18px;
+	}
+
+	.pagecontentsize .trademsgflex>div:first-child .panelcontentbox {
+		padding: 15px;
+	}
+
+	.pagecontentsize .trademsgflex .tradepricebox>div {
+		padding: 15px;
+		margin: 0px 5px;
+	}
+
+	.pagecontentsize .trademsgflex .tradepicesubbg .h3 {
+		font-size: 16px;
+	}
+}
+
+@media(max-width:1450px) {
+	.p2poverview .cryptoboxicon {
+		width: 73px !important;
+	}
+
+	.p2poverview .cryptoboxicon img {
+		max-width: 60px;
+	}
+}
+
+@media (max-width:1400px) {
+	.posttradepage .col-md-4 {
+		width: 38%;
+	}
+
+	.posttradepage .col-md-5 {
+		width: 40%;
+	}
+
+	.posttradepage .col-md-3 {
+		width: 22%;
+	}
+
+	.hrsbg .col-lg-7 {
+		width: 75%;
+	}
+
+	.pricetable>a {
+		padding: 17px 17px;
+	}
+
+	.pricebox {
+		padding: 20px 18px;
+	}
+
+	.pagecontentsize .feadbackpage .cardlistbox table tr>td {
+		font-size: 14px;
+	}
+
+	.trademsgflex .tradepricebox>div {
+		padding: 15px;
+		margin: 0px 5px;
+	}
+
+	.trademsgflex .tradepicesubbg .h3 {
+		font-size: 16px;
+	}
+}
+
+@media (max-width:1350px) {
+	.openinghbg {
+		flex-wrap: wrap;
+	}
+
+	.openinghbg>div {
+		width: 33%;
+	}
+
+	.pagecontentsize .disputepage .cardlistbox table tr>td:first-child,
+	.pagecontentsize .disputepage .cardlistbox table tr>td,
+	.pagecontentsize .trademsgpage .cardlistbox table tr>td {
+		font-size: 13px;
+	}
+
+	.trademsgflex>div:last-child {
+		padding: 15px;
+	}
+
+	.buytrademsgbox .trademsgflex .contentbox {
+		padding: 18px;
+	}
+
+	.trademsgflex>div:first-child .panelcontentbox {
+		padding: 15px;
+	}
+
+	.disputepage .profileiconpic,
+	.trademsgpage .profileiconpic {
+		width: 38px;
+		height: 38px;
+	}
+}
+
+@media (max-width:1270px) {
+	.pricetable .h4 {
+		font-size: 13px;
+		line-height: 21px;
+	}
+
+	.p2poverview .cryptoboxicon {
+		width: 73px !important;
+	}
+
+	.feadbackpage .badge {
+		min-width: inherit;
+		padding: 8px 17px;
+	}
+
+	.pagecontentsize .disputepage table tbody tr td .badge,
+	.pagecontentsize .trademsgpage table tbody tr td .badge {
+		font-size: 13px;
+	}
+
+	.disputepage table tbody tr td .badge,
+	.trademsgpage table tbody tr td .badge {
+		padding: 8px 12px;
+		font-size: 11px;
+	}
+}
+
+@media (max-width:1200px) {
+
+	.p2ppages .sitecontainer {
+		padding: 0px 15px !important;
+	}
+
+	.cardbox>div {
+		width: 50%;
+	}
+
+	.feedbackbox {
+		padding: 7px 0px;
+	}
+
+	.searchboxbg .siteformbg>div {
+		min-width: 250px;
+	}
+}
+
+@media (max-width:1150px) {
+	.p2poverview .flexbox>div {
+		width: 55%;
+	}
+
+	.p2poverview .flexbox>div:last-child {
+		width: 45%;
+	}
+}
+
+@media (max-width:1100px) {
+	.subannerlist li a {
+		font-size: 13px;
+		padding: 14px 14px;
+	}
+
+	.cryptoboxicon img {
+		max-width: 38px;
+	}
+
+	.cryptoboxicon {
+		width: 52px !important;
+	}
+}
+
+@media (max-width:1080px) {
+	.paymentwhitebox {
+		min-height: inherit;
+	}
+}
+
+@media (max-width:991px) {
+
+	.priceflexbox>div {
+		width: 48% !important;
+	}
+
+	.tablecontent>div {
+		display: block;
+		width: 100%;
+	}
+
+	.usericont {
+		float: none;
+	}
+
+	.posttradepage .col-md-4 {
+		width: 100%;
+	}
+
+	.posttradepage .col-md-5 {
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.posttradepage .col-md-3 {
+		width: 100%;
+	}
+
+	.posttradepage .col-md-12 {
+		width: 100%;
+	}
+
+	.subannerlist li a {
+		font-size: 14px;
+		padding: 9px 12px;
+	}
+
+	.subannerlist li {
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+
+	.subannerlist ul>li:nth-child(even) {
+		text-align: right;
+	}
+
+	.subannerlist .tabbanner {
+		display: block;
+	}
+
+	.subannerlist {
+		height: 165px;
+		overflow-y: auto;
+	}
+
+	.subannerlist .container {
+		padding: 4px 14px !important;
+	}
+
+	.topbannerbg .heading-title {
+		color: #fff;
+		font-size: 17px;
+	}
+
+	.topbannerbg p {
+		font-size: 13px;
+	}
+
+	.topbannerbg {
+		padding: 16px 0px;
+		display: none;
+	}
+
+	.subannerlist .tabbanner li a.active {
+		border: 0px !important;
+	}
+
+	.subannerlist .tabbanner li a {
+		position: relative;
+	}
+
+	.subannerlist .tabbanner li a:before {
+		content: "\f105";
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		color: #ccc;
+		font-size: 18px;
+		padding-right: 10px;
+		position: absolute;
+		top: 6px;
+		left: 0;
+	}
+
+	.subannerlist .tabbanner>li:nth-child(even) a:before {
+		left: inherit;
+		right: 0px;
+		padding: 0px;
+		padding-left: 10px;
+		content: "\f104";
+	}
+
+	.announcement {
+		margin-top: 20px !important;
+	}
+
+	.howitbox>div {
+		padding: 0px 20px;
+	}
+
+	.buysellpage .howitworkbanner .contentbox {
+		padding: 35px 10px;
+	}
+
+	.cryptotabbox .tabbanner li a {
+		padding: 8px 9px;
+		font-size: 13px;
+	}
+
+}
+
+@media (max-width:767px) {
+	.fedbak-y .tabbanner {
+		border-bottom: 0;
+		justify-content: center;
+		flex-wrap: wrap;
+
+	}
+
+	.cardviewbg.tabrightbox {
+		position: inherit;
+		top: -10px;
+	}
+
+	.posttradepage .mlmwizardform fieldset {
+		padding-top: 0px;
+	}
+
+	.tradepicesubbg>div {
+		display: inline-block;
+		width: 100%;
+		padding: 0px 0px !important;
+	}
+
+	.tradepicesubbg .h3 {
+		padding: 0px !important;
+		padding-top: 6px !important;
+	}
+
+	.termsnotes {
+		text-align: center;
+	}
+
+	.posttradepage .kycpagebg .siteformbg {
+		display: block;
+	}
+
+	.posttradepage .mlmwizardform #progressbar::before,
+	.posttradepage .mlmwizardform #progressbar li:first-child::before,
+	.posttradepage .mlmwizardform #progressbar li:last-child::before {
+		width: 100%;
+		height: 2px;
+		top: 38px;
+		left: 0px;
+	}
+
+	.posttradepage .kycpagebg .siteformbg>div:first-child {
+		border-right: 0px !important;
+		width: 100%;
+	}
+
+	.posttradepage .mlmwizardform #progressbar li:first-child::before,
+	.posttradepage .mlmwizardform #progressbar li:last-child::before {
+		background: #ffffff;
+		width: 50%;
+		height: 5px;
+	}
+
+	.posttradepage .mlmwizardform #progressbar li {
+		width: auto;
+		padding: 14px 10px;
+	}
+
+	.posttradepage .mlmwizardform #progressbar li:last-child::before {
+		right: 0px;
+		left: inherit;
+	}
+
+	.posttradepage .mlmwizardform #progressbar li>strong {
+		margin: 0px auto;
+		float: none;
+		margin-bottom: 0px;
+	}
+
+	.posttradepage .mlmwizardform li .infot {
+		float: none;
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+		padding-top: 10px;
+		padding-left: 0px;
+	}
+
+	.posttradepage .mlmwizardform #progressbar {
+		flex-wrap: inherit;
+		width: 100%;
+		max-width: 100%;
+		border-right: 0px;
+	}
+
+	.user-photo {
+		width: 32px;
+		height: 32px;
+		float: right;
+		margin-right: 0px;
+		margin-left: 4px;
+	}
+
+	.cryptotabbox {
+		position: relative;
+		top: inherit;
+		right: inherit;
+	}
+
+	.buyflextab {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.buytab .tabbanner {
+		width: 100%;
+		max-width: 500px;
+		justify-content: center;
+		margin: 0px auto;
+	}
+
+	.buytab .tabbanner>.nav-item {
+		width: 100%;
+	}
+
+	.subannerlist li a {
+		font-size: 11px;
+	}
+
+	.p2ppages .tabrightbox {
+		position: relative;
+		text-align: center;
+		padding: 0px;
+	}
+
+	.p2ppages .innerpagecontent .h2 {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.buyboxpage .searchfrm,
+	.buyboxpage .searchboxbg .siteformbg {}
+
+	.buyboxpage .searchboxbg .siteformbg>div:nth-child(3) {
+		width: 100%;
+	}
+
+	.buyboxpage .searchboxbg .siteformbg>div:last-child {
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .buyboxpage .searchfrm .btn {
+		margin-top: 10px;
+	} */
+
+	.buyboxpage .searchfrm .form-group {
+		margin-bottom: 10px;
+	}
+
+	.cryptotabbox .tabbanner {
+		width: 100%;
+		white-space: nowrap;
+	}
+
+	.cryptotabbox .tabbanner li {
+		width: 100%;
+	}
+
+	.buytradecell {
+		text-align: left;
+	}
+
+	.trademsgflex .tradepicesubbg>div {
+		padding: 15px 15px;
+	}
+
+	.p2ppages .innerpagecontent {
+		padding-bottom: 0px;
+	}
+
+	.owl-carousel .owl-item {
+		padding: 0px 0px;
+	}
+
+	.buyboxpage .searchboxbg {
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+
+	.buytab {
+		padding: 15px 18px;
+		padding-top: 0px;
+	}
+
+	.feedbackbox {
+		padding: 10px 0px;
+	}
+
+	.pricetable>div,
+	.pricetable>a {
+		padding: 15px;
+		margin-top: 15px;
+	}
+
+	.tradepricebox>div:nth-child(even) {
+		text-align: right;
+	}
+
+	.posttradepage .panelcontentbox {
+		padding: 24px;
+	}
+
+	.chatrowbox .table-responsive-stack-thead {
+		display: none !important;
+	}
+
+	.cardbox>div {
+		width: 100%;
+		padding: 5px 0px;
+	}
+
+	.howitbox>div {
+		width: 100%;
+		display: block;
+		padding: 5px 0px !important;
+	}
+
+	.buysellpage .buyboxpage .tabrightbox {
+		position: inherit !important;
+		top: inherit !important;
+		right: inherit !important;
+	}
+
+	.trademsgflex .tradepricebox {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.trademsgflex .tradepricebox>div {
+		margin: 5px 0px;
+	}
+
+	.trademsgflex .tradepricebox>div {
+		padding: 15px 15px;
+		border-radius: 7px;
+	}
+
+	.feadbackpage .tabrightbox {
+		position: inherit;
+		top: -10px;
+	}
+
+	.buyboxpage .tabrightbox {
+		position: relative !important;
+	}
+
+	.buysellpage .boxtabb ul {
+		flex-wrap: wrap;
+		gap: 2px;
+		justify-content: center;
+	}
+
+	.buysellpage .boxtabb ul li {
+		width: auto;
+	}
+
+	.buysellpage .howitbox .arrowicon {
+		display: none;
+	}
+
+	.profiletxtlink {
+		justify-content: flex-end;
+		flex-direction: column;
+	}
+
+	.buyboxpage {
+		padding: 25px 0px;
+	}
+
+	.howitworkbanner h2 {
+		font-size: 19px;
+		line-height: 30px;
+	}
+
+	.openinghbg {
+		flex-wrap: wrap;
+	}
+
+	.openinghbg>div {
+		width: 33%;
+	}
+
+	.buyiconslectbox {
+		width: 100%;
+		padding: 0px 15px;
+	}
+
+	.buyboxpage table tr td .textsize {
+		width: auto;
+		padding-right: 7px;
+		display: none;
+	}
+
+	.tableheadhide .btn {
+		padding: 5px 17px;
+		font-size: 13px;
+	}
+
+	.adshistpage {
+		padding: 0px;
+	}
+
+	.announcement {
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+
+@media (max-width:550px) {
+
+	.posttradepage .mlmwizardform li .infot {
+		font-size: 11px;
+	}
+
+	.posttradepage .mlmwizardform #progressbar::before,
+	.posttradepage .mlmwizardform #progressbar li:first-child::before,
+	.posttradepage .mlmwizardform #progressbar li:last-child::before {
+		top: 33px;
+	}
+
+	.priceflexbox>div {
+		width: 100% !important;
+		padding: 0px !important;
+	}
+
+	.tradepicesubbg .h3 {
+		font-size: 12px;
+	}
+
+	.howitbox>div {
+		text-align: center;
+	}
+
+	.howitbg .iconwhitebox {
+		margin: 0 auto !important;
+		margin-bottom: 10px !important;
+		float: none;
+		width: 55px;
+		height: 55px;
+	}
+
+	.howitbox .arrowicon img {
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.cryptotable>div {
+		display: block;
+		width: 100% !important;
+		text-align: left !important;
+	}
+
+	.cryptotable>div:last-child {
+		padding-top: 10px;
+	}
+
+	.cryptotabbox .tabbanner li a {
+		padding: 8px 10px !important;
+		font-size: 14px;
+	}
+
+	.feadbackpage table tr td .badge {
+		font-size: 12px;
+		padding: 5px 11px;
+	}
+
+	.profileiconpic {
+		width: 37px;
+		height: 37px;
+	}
+
+	.feadbackpage table table tbody>tr:last-child td,
+	.feadbackpage table table tbody>tr:last-child {
+		display: inline-block;
+		width: 100%;
+		text-align: left !important;
+	}
+
+	.feadbackpage .cardlistbox table {
+		margin-bottom: 0px;
+	}
+
+	.pricetable>div,
+	.pricetable>a {
+		min-height: inherit;
+	}
+
+	.p2poverview .cryptoboxicon img {
+		/* max-width: 26px; */
+	}
+
+	.p2poverview .cryptoboxicon {
+		/* width: 37px !important; */
+	}
+
+	.announcement .tabrightbox .alink {
+		font-size: 13px;
+	}
+
+	.announcement .tabrightbox .fa {
+		margin-right: 4px !important;
+		font-size: 13px;
+	}
+
+	.announcement .dtetext {
+		top: -2px;
+		font-size: 11px !important;
+	}
+
+	.cryptobox .h5 {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.tableheadhide .btn {
+		padding: 3px 5px;
+		font-size: 12px;
+	}
+}
+
+@media(max-width:500px) {
+	.feadbackpage .tabbanner {
+		flex-wrap: wrap;
+	}
+
+	.feadbackpage .boxtabb .tabbanner .nav-item a {
+		padding: 8px 15px;
+		font-size: 13px;
+	}
+
+	.openinghbg>div {
+		width: 50%;
+	}
+}
+
+@media(max-width:400px) {
+	.trademsgflex .tradepicesubbg .h1 {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.trademsgflex .tradepicesubbg .h3 {
+		padding: 0px !important;
+		padding-top: 6px !important;
+		text-align: center !important;
+		font-size: 14px;
+	}
+
+	.openinghbg>div {
+		width: 50%;
+	}
+
+	.tableheadhide .btn {
+		margin-bottom: 4px;
+	}
+}

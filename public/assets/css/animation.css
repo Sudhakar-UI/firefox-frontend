@@ -1,0 +1,535 @@
+.headermenu .headbg .navbar-nav .nav-item .nav-link:hover {
+    color: #FF3C00;
+    transform: translateY(-1px);
+}
+
+.sitebtn:hover::before,
+.borderbtn:hover::before {
+    animation: btnShimmer 0.65s ease forwards;
+}
+
+.badge {
+    animation: badgePopIn 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.clock__block--bounce {
+    animation: bounce 0.75s;
+}
+
+.clock__block--bounce .clock__digit-group {
+    animation: roll 0.75s ease-in-out forwards;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(12%);
+    }
+}
+
+@keyframes roll {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.banner-img,.inner-img-ani {
+    animation: floatBanner 4s ease-in-out infinite;
+}
+
+@keyframes floatBanner {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 
+.nightmode .tablebox>div {
+    background: linear-gradient(135deg, #7a590170, #592501a6, #7a590170);
+    background-size: 300% 300%;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+.balanceshowt img {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.kycnotestable img {
+    animation: securityFloat 2s ease-in-out infinite;
+}
+
+@keyframes securityFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* .tablebox > div {
+background: linear-gradient(180deg, #ffc63270, #ff6a0036);
+    background-size: 300% 300%;
+    background-position: 0% 50%;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                    */
+
+.borderbtn:is(:hover, :focus) {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 60, 0, 0.35);
+}
+
+.sitebtn:is(:hover, :focus) {
+    background: linear-gradient(to right, #FFC632, #FF6A00);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 22px rgba(255, 106, 0, 0.4);
+}
+
+.gray-btn:hover,
+.gray-btn:focus {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.green-btn:hover,
+.green-btn:focus {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(55, 191, 143, 0.4);
+}
+
+
+.red-btn:hover,
+.red-btn:focus {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: none;
+}
+
+.tradepage .green-btn:hover,
+.tradepage .green-btn:focus,
+.tradepage .red-btn:focus,
+.tradepage .red-btn:hover {
+    box-shadow: none !important;
+}
+
+.viewbtn:hover,
+.viewbtn:focus {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 16px rgba(255, 106, 0, 0.35);
+}
+
+.telegrambtn:hover,
+.telegrambtn:focus,
+.telegrambtn:active {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(68, 163, 221, 0.4);
+}
+
+.alinkfnz:hover {
+    color: #ff3c00d4;
+    transform: translateY(-3px);
+}
+
+.alinkfnz:hover img {
+    animation: arrowMove 0.8s infinite ease-in-out;
+}
+
+@keyframes arrowMove {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.alinkfnz:hover span {
+    letter-spacing: 0.5px;
+    transform: translateX(3px);
+}
+
+.badge.bg-success:hover,
+.badge.bg-primary:hover {
+    animation: badgePulse 0.8s ease;
+    box-shadow: 0 4px 14px rgba(6, 174, 113, 0.25);
+}
+
+.badge.bg-danger:hover {
+    animation: badgePulse 0.8s ease;
+    box-shadow: 0 4px 14px rgba(220, 51, 39, 0.25);
+}
+
+.badge.bg-warning:hover {
+    animation: badgePulse 0.8s ease;
+    box-shadow: 0 4px 14px rgba(122, 98, 2, 0.2);
+}
+
+.profilepage .badge.bg-warning:hover {
+    animation: none;
+    box-shadow: none;
+}
+
+.brderleft.greenbrd .badge:hover,
+.brderleft.redbrd .badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+    transform: translateX(-3px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 234, 152, 0.6);
+    background: #ffe070;
+}
+
+.delete-btn-td:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 106, 0, 0.35);
+    color: #fff;
+}
+
+.modal .modal-header .btn-close:hover {
+    transform: rotate(90deg) scale(1.15);
+    background-color: #FFC632;
+    box-shadow: 0 0 15px rgba(255, 106, 0, 0.5);
+}
+
+.menusec ul li:hover {
+    transform: translateY(-3px);
+}
+
+.sociallist li:hover img {
+    animation: socialBounce 0.6s ease;
+}
+
+@keyframes socialBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.boxtabb .tabbanner .nav-item .nav-link:hover {
+    transform: translateY(-2px);
+    /* box-shadow: 0 6px 15px rgba(255, 106, 0, 0.25); */
+}
+
+.nightmode .back-btn:hover {
+    background: #5c4b01;
+    box-shadow: 0 4px 16px rgba(255, 234, 152, 0.28);
+}
+
+.nightmode .brderleft.greenbrd .badge:hover,
+.nightmode .brderleft.redbrd .badge:hover {
+    box-shadow: 0 3px 14px rgba(255, 113, 4, 0.28);
+}
+
+.nightmode .green-btn:hover,
+.nightmode .green-btn:focus {
+    box-shadow: 0 6px 20px rgba(80, 255, 191, 0.32);
+}
+
+.nightmode .red-btn:hover,
+.nightmode .red-btn:focus {
+    box-shadow: 0 6px 20px rgba(255, 100, 89, 0.38);
+}
+
+.nightmode .red-btn:hover {
+    background: #f23645 !important;
+}
+
+.nightmode .delete-btn-td:hover {
+    box-shadow: 0 4px 16px rgba(255, 113, 4, 0.48);
+    color: #fff;
+}
+
+.nightmode .headermenu .headbg .navbar-nav .nav-item .nav-link:hover {
+    text-shadow: 0 0 14px rgba(255, 113, 4, 0.35);
+}
+
+.nightmode .headermenu .headbg .navbar-nav .borderbtn:hover {
+    box-shadow: 0 4px 16px rgba(255, 113, 4, 0.32);
+    transform: translateY(-2px) scale(1.02);
+}
+
+.nightmode .telegrambtn:hover,
+.nightmode .telegrambtn:focus {
+    background: #2d8ac4;
+    box-shadow: 0 10px 24px rgba(45, 138, 196, 0.45);
+}
+
+.nightmode .btn-sm:is(:hover, :focus) {
+    box-shadow: 0 4px 14px rgba(255, 106, 0, 0.35);
+    background: linear-gradient(135deg, #ff7104, #ff3c00);
+}
+
+.nightmode .border-green:hover {
+    background: #37bf8f !important;
+    color: #000 !important;
+}
+
+.nightmode .border-red:hover {
+    background: #f97b7b !important;
+    color: #000 !important;
+}
+
+.btn-sm:is(:hover, :focus) {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: none !important;
+}
+
+.howitboxp2p:hover .howitflexp2picon {
+    transform: rotate(12deg) scale(1.15);
+}
+
+.howitflex>div:hover {
+    transform: translateY(-8px);
+    border-color: #ff6d015e !important;
+    box-shadow: 0 15px 35px rgb(255 125 11 / 22%) !important;
+}
+
+.arrhomeicon {
+    animation: arrowFloat 1.5s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+@keyframes arrowFloat {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-8px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.howitbg .hflex>div:hover {
+    border: 1px solid #FF6A00;
+    background-color: #ff6e0212;
+}
+
+.nightmode .howitbg .hflex>div:hover {
+    border-color: #ff6a0063;
+    background-color: #ff6e0212 !important;
+}
+
+.howitbox::before {
+    transform: translate(-50%, -50%);
+    filter: grayscale(1)invert(1);
+    opacity: 0.5;
+}
+
+.howitbox:hover::before {
+    filter: blur(1px);
+    opacity: 1;
+}
+
+.choosecentericon img {
+    animation: rotateImg 20s linear infinite;
+}
+
+@keyframes rotateImg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.chhsflex>div:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 106, 0, 0.5);
+}
+
+.partnerbox img:hover {
+    filter: brightness(0.5);
+}
+
+.supprtcoinbox:hover {
+    transform: translateY(-2px);
+    border-color: #ff6d0254 !important;
+    box-shadow: 0px 3px 12px #ff6d021c !important;
+}
+
+.suprttable img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.markettablebg table tr td .btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: none;
+}
+
+.markettablebg .nav-tabs .nav-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 198, 50, 0.35);
+}
+
+.markettablebg .nav-tabs .nav-link:hover {
+    background: #ffab24;
+    color: #000 !important;
+}
+
+.copyapicodeb .borderbtn:is(:hover, :focus),
+.modal-dialog .sitebtn:is(:hover, :focus) {
+    box-shadow: none;
+}
+
+.viewbtn {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.nightmode td .sitebtn::before,
+.nightmode td .borderbtn::before {
+    display: none;
+}
+
+.headermenu .headbg .dropdown-item:hover {
+    background-color: #0000000d !important;
+}
+
+.nightmode .headermenu .headbg .dropdown-item:hover {
+    background-color: #fafafa33 !important;
+}
+
+.nightmode .boxtabb .tabbanner .nav-item .nav-link:hover {
+    background: linear-gradient(#FFC632, #FF6A00);
+    color: #000;
+}
+
+.boxtabb .tabbanner .nav-item .nav-link:hover {
+    background: linear-gradient(#FFC632, #FF6A00);
+    color: #000;
+    /* box-shadow: 0 6px 15px rgba(255, 106, 0, 0.25); */
+}
+
+.leftsidemenu li a:hover {
+    background: #e1e1e178;
+    color: #000 !important;
+
+}
+
+.leftsidemenu li a:hover img {
+    opacity: 1 !important;
+}
+
+.nightmode .leftsidemenu li a:hover {
+    background: #2d2d2d;
+    color: #fff !important;
+}
+
+.personactb:hover {
+    border: 1px solid #FF6A00 !important;
+    background-color: #ff6e0212 !important;
+}
+
+.nightmode .borderbtn:is(:hover, :focus) {
+    box-shadow: 0 8px 24px rgba(255, 113, 4, 0.5), 0 0 14px rgba(255, 60, 0, 0.18);
+    border-color: transparent !important;
+}
+
+.border-green:hover {
+    background-color: #37bf8f;
+    color: #fff !important;
+}
+
+.border-red:hover {
+    background-color: #f97b7b;
+    color: #fff !important;
+}
+
+.nightmode .sitebtn:is(:hover, :focus) {
+    box-shadow: 0 8px 26px rgba(255, 106, 0, 0.55), 0 0 0 1px rgba(255, 198, 50, 0.12);
+}

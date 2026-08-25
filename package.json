@@ -1,0 +1,53 @@
+{
+  "name": "firefox",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@amcharts/amcharts5": "^5.8.3",
+    "aos": "^2.3.4",
+    "highcharts-react-official": "^3.2.3",
+    "jquery": "^3.7.1",
+    "next": "14.1.0",
+    "next-nprogress-bar": "^2.3.5",
+    "react": "^18",
+    "react-countdown": "^2.3.6",
+    "react-countdown-circle-timer": "^3.2.1",
+    "react-datepicker": "^6.2.0",
+    "react-datetime": "^3.2.0",
+    "react-dom": "^18",
+    "react-flatpickr": "^3.10.13",
+    "react-form-wizard-component": "^0.2.7",
+    "react-grid-layout": "^1.4.4",
+    "react-loading-skeleton": "^3.4.0",
+    "react-select": "^5.10.2",
+    "react-ui-scrollspy": "^2.3.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/jquery": "^3.5.29",
+    "@types/node": "22.0.0",
+    "@types/react-datepicker": "^6.0.2",
+    "@types/react-dom": "^18",
+    "bootstrap": "5.3.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "font-awesome": "^4.7.0",
+    "highcharts": "^11.4.8",
+    "html2canvas": "^1.4.1",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-bootstrap": "2.10.0",
+    "react-dom": "^18",
+    "react-multi-carousel": "^2.8.4",
+    "simplebar-react": "^3.2.4"
+  }
+}
