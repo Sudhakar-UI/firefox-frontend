@@ -733,11 +733,95 @@ const earn = () => {
                         </article >
                     </Container>
                 </section>
-                
+                <section className="payment-methods-section">
+                    <Container>
+                        {/* Heading */}
+                        <div className="payment-heading text-center">
+                            <h2 className="heading-title">
+                                Top <span className="heading-span-org">Payment</span> Methods
+                            </h2>
+
+                            <p>
+                                Choose from the most trusted and convenient payment
+                                <br />
+                                methods for your P2P trades.
+                            </p>
+                        </div>
+
+                        
+                        {/* Bottom Features */}
+                        <div className="payment-features">
+
+                            {/* Feature 1 */}
+                            <div className="feature-item ">
+                                <div className="feature-icon">
+                                  <FontAwesomeIcon icon={faUniversity} />
+
+                                </div>
+
+                                <div>
+                                   <h4>Bank Transfer</h4>
+                                        <p>
+                                            Transfer funds securely from your bank account
+                                            with ease.
+                                        </p>
+                                </div>
+                            </div>
+
+                            {/* Feature 2 */}
+                            <div className="feature-item">
+                                <div className="feature-icon">
+                                  <FontAwesomeIcon icon={faHandHoldingDollar} />
+
+                                </div>
+
+                                <div>
+                                    <h4>Earn</h4>
+                                        <p>
+                                            Earn rewards and cashback on your transactions
+                                            while you trade.
+                                        </p>
+                                </div>
+                            </div>
+
+                            {/* Feature 3 */}
+                            <div className="feature-item">
+                                <div className="feature-icon">
+                                  <FontAwesomeIcon icon={faCreditCard} />
+                                </div>
+
+                                <div>
+                                  <h4>Swipe</h4>
+                                        <p>
+                                            Make fast and secure payments using your debit
+                                            or credit card.
+                                        </p>
+                                </div>
+                            </div>
+
+                            {/* Feature 4 */}
+                            <div className="feature-item feature-item-last">
+                                <div className="feature-icon">
+                                    <FontAwesomeIcon icon={faBolt} />
+                                </div>
+
+                                <div>
+                                      <h4>Instant Transfers</h4>
+                                        <p>
+                                            Enjoy lightning-fast transfers and receive
+                                            funds instantly.
+                                        </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </Container>
+                </section>
+
 
                 <section className="howitbg">
                     <Container data-aos="fade-up" data-aos-duration="1000">
-                        <h2 className="heading-title text-center mb-4">Key Features Built for Every Trader</h2>
+                        <h2 className="heading-title text-center mb-4"> <span className="heading-span-org">Key Features</span> Built for Every Trader</h2>
                         <div className="table-content">
                             <div className="hflex">
                                 <div className="hbox d-flex gap-3">
@@ -814,7 +898,7 @@ const earn = () => {
                         </div>
                     </Container>
                 </section>
-                <section className="choosefeatresbg" id="features">
+                {/* <section className="choosefeatresbg" id="features">
                     <Container data-aos="fade-up" data-aos-duration="1000">
                         <h2 className="heading-title text-center pb-4">Top Payment Methods</h2>
 
@@ -854,7 +938,7 @@ const earn = () => {
                             </Col>
                         </Row>
                     </Container>
-                </section>
+                </section> */}
                 {/* <section className="what-earn">
                     <Container className="sitebannercontent">
                         <Row className="align-items-center text-center">
