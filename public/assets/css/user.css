@@ -2346,6 +2346,8 @@ input:-webkit-autofill:active {
 
 .form-check-input:checked {
 	background-color: #F39200 !important;
+	border-color: #F39200 !important;
+
 }
 
 .react-multiple-carousel__arrow::before {
@@ -10450,7 +10452,9 @@ body.tradepagbg {
 }
 
 .nightmode .leftsidemenu {
-	background: #1e1e1e;
+	/* background: #1e1e1e; */
+	background-image: url(../images/banner1.png);
+
 }
 
 .nightmode .highcharts-legend-item>text {
@@ -10853,6 +10857,11 @@ body.tradepagbg {
 	border-color: #363131;
 	color: #d6d6d6;
 }
+
+.nightmode .new-p2p-page .suces-y {
+	color: #fff;
+}
+
 
 .nightmode .adrescrol-y .dropdown-toggle:empty::after {
 	display: none;
