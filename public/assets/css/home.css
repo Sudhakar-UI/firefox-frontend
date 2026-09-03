@@ -34,9 +34,10 @@
 	padding-bottom: 96px;
 	position: relative;
 }
+
 .new-p2p-page .homebannerbg .sitebannercontent {
-    padding-top: 145px;
-    padding-bottom: 86px;
+	padding-top: 145px;
+	padding-bottom: 86px;
 
 }
 
@@ -233,7 +234,8 @@
 .chooseusflex {
 	padding-top: 120px;
 }
-.new-p2p-page .chooseusflex{
+
+.new-p2p-page .chooseusflex {
 	padding-top: 40px;
 }
 
@@ -1161,6 +1163,7 @@ ul.footcryptobg>li {
 	padding: 10px 16px;
 	font-size: 17px;
 }
+
 .new-p2p-page .markettablebg table tr td {
 	font-size: 15px;
 }
@@ -1530,16 +1533,18 @@ ul.footcryptobg>li {
 	filter: blur(1px);
 	opacity: 1;
 }
-.new-p2p-page .howitbg .hbox img{
-	padding: 10px;
-	border: 1px solid #d0d0d0;
-	border-radius: 8px;
-	width: 100%;
-	max-width: 90px;
+
+.new-p2p-page .howitbg .hbox img {
+	/* padding: 10px; */
+	/* border: 1px solid #d0d0d0; */
+	/* border-radius: 8px; */
+	width: auto !important;
+	max-width: 50px !important;
 }
-.nightmode .new-p2p-page .howitbg .hbox img{
+
+/* .nightmode .new-p2p-page .howitbg .hbox img{
 	filter: invert(1);
-}
+} */
 
 @media (max-width:1700px) {
 	.tokensize img {

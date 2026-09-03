@@ -5,7 +5,7 @@ import Homeheader from '../components/Homeheader';
 import Homefooter from '../components/Homefooter';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faBuildingColumns,faMobileScreenButton, faWallet, faMoneyBillTransfer, faThumbsUp, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faBuildingColumns, faMobileScreenButton, faWallet, faMoneyBillTransfer, faThumbsUp, faClock } from '@fortawesome/free-solid-svg-icons';
 import ResponsiveTable from '../components/ResponsiveTable';
 import SimpleBar from 'simplebar-react';
 import Carousel from 'react-multi-carousel';
@@ -815,8 +815,8 @@ const p2poverview = () => {
                             <div className="hflex">
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/multi-crypto-wallet-p.svg" width={100} height={100} alt="ficon" className='howitbgicon' />
-
+                                        <Image src="/assets/images/VerifiedP2PTraders.svg" width={100} height={100} alt="ficon" className='howitbgicon  lightthemeicon' />
+                                        <Image src="/assets/images/VerifiedP2PTraders-1.svg" width={100} height={100} alt="ficon" className='howitbgicon  darkthemeicon' />
                                     </div>
                                     <div>
 
@@ -827,7 +827,8 @@ const p2poverview = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/erc20-support-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
+                                        <Image src="/assets/images/CompetitivePrices.svg" width={100} height={100} alt="ficon" className='howitbgicon  lightthemeicon' />
+                                        <Image src="/assets/images/CompetitivePrices-1.svg" width={100} height={100} alt="ficon" className='howitbgicon  darkthemeicon' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Competitive Prices</h4>
@@ -837,7 +838,8 @@ const p2poverview = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/P2P-Trading.svg" width={100} height={100} alt="ficon" className='howitbgicon' />
+                                        <Image src="/assets/images/FlexiblePayment.svg" width={100} height={100} alt="ficon" className='howitbgicon  lightthemeicon' />
+                                        <Image src="/assets/images/FlexiblePayment-1.svg" width={100} height={100} alt="ficon" className='howitbgicon  darkthemeicon' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Flexible Payment Options</h4>
@@ -853,7 +855,8 @@ const p2poverview = () => {
                             <div className="hflex">
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/advanced-security-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
+                                        <Image src="/assets/images/SecureEscrow.svg" width={100} height={100} alt="ficon" className='howitbgicon  lightthemeicon' />
+                                        <Image src="/assets/images/SecureEscrow-1.svg" width={100} height={100} alt="ficon" className='howitbgicon  darkthemeicon' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Secure Escrow Protection</h4>
@@ -862,7 +865,8 @@ const p2poverview = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/secure-kyc-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
+                                        <Image src="/assets/images/Trader.svg" width={100} height={100} alt="ficon" className='howitbgicon  lightthemeicon' />
+                                        <Image src="/assets/images/Trader-1.svg" width={100} height={100} alt="ficon" className='howitbgicon  darkthemeicon' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Trader Reputation</h4>
@@ -871,7 +875,8 @@ const p2poverview = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/smart-dashboard-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
+                                        <Image src="/assets/images/FastP2P.svg" width={100} height={100} alt="ficon" className='howitbgicon  lightthemeicon' />
+                                        <Image src="/assets/images/FastP2P-1.svg" width={100} height={100} alt="ficon" className='howitbgicon  darkthemeicon' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Fast P2P Transactions</h4>
@@ -1035,7 +1040,7 @@ const p2poverview = () => {
                                 <div className="howitboxp2p">
                                     <div>
                                         <Image
-                                            src="assets/images/p2p-how-2.svg"
+                                            src="assets/images/ConfirmPayment.svg"
                                             width={35}
                                             height={35}
                                             alt="Wait for payment"
