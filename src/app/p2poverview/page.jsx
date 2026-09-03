@@ -5,7 +5,7 @@ import Homeheader from '../components/Homeheader';
 import Homefooter from '../components/Homefooter';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faSortDown, faEyeSlash, faAngleDown, faQuestionCircle, faCircleExclamation, faAngleRight, faThumbsUp, faClock } from '@fortawesome/free-solid-svg-icons';
+import {  faBuildingColumns,faMobileScreenButton, faWallet, faMoneyBillTransfer, faThumbsUp, faClock } from '@fortawesome/free-solid-svg-icons';
 import ResponsiveTable from '../components/ResponsiveTable';
 import SimpleBar from 'simplebar-react';
 import Carousel from 'react-multi-carousel';
@@ -26,7 +26,7 @@ import {
 
 
 
-const earn = () => {
+const p2poverview = () => {
     const flexscroll = {
         desktop: {
             breakpoint: { max: 1920, min: 1200 },
@@ -72,6 +72,8 @@ const earn = () => {
     const [showDropdown, setShowDropdown] = useState(false);
 
     const pathname = usePathname();
+
+    const [activeTab, setActiveTab] = useState("buy");
     return (
         <>
             <article className="innerpage new-earn-page new-p2p-page">
@@ -80,18 +82,9 @@ const earn = () => {
                     <Container className="sitebannercontent">
                         <Row className="align-items-center text-center">
                             <Col lg={6} md={6} sm={12} className="main-div-flex" >
-                                <button className="nexpeer-glass-btn">
-                                    <span className="nexpeer-glass-icon">
-                                        <FontAwesomeIcon icon={faShareNodes} />
-                                    </span>
-
-                                    <span className="nexpeer-glass-text">
-                                        How Nexpeer Works
-                                    </span>
-                                </button>
                                 <h2 className="main-heading mt-3">Buy & Sell <br /><span>Crypto with P2P</span></h2>
-                                <p className="text-start"> Connect directly with verified users to buy and sell crypto securely, with <br /> flexible payment options and competitive prices on Firefox P2P.</p>
-                                < button className="sitebtn w-auto">Join Now</button>
+                                <p className="text-start">Buy and sell cryptocurrencies directly with verified traders using your preferred payment method. Choose an offer, make a secure payment, and receive your crypto with confidence.</p>
+                                < button className="sitebtn w-auto">Start P2P Trading</button>
                             </Col>
                             <Col lg={6} md={6} sm={12}>
                                 <div className="text-center">
@@ -105,7 +98,8 @@ const earn = () => {
                     <Container >
                         <article className="">
                             <Container className="p2poverview">
-                                <h2 className="heading-title text-start mb-4">Buy/Sell</h2>
+                                <h2 className="heading-title text-start mb-4">Buy & Sell Crypto with P2P</h2>
+                                <p>Find the right offer from verified P2P traders and trade using the payment method that works for you.</p>
                                 <Tab.Container defaultActiveKey="buy">
                                     <div className="panelcontentbox buyboxpage mb-2 buy-box-pge-y">
                                         <Row >
@@ -113,8 +107,8 @@ const earn = () => {
 
                                                 <div className="">
                                                     <Nav className="nav nav-tabs tabbanner border-0" role="tablist">
-                                                        <Nav.Item className="nav-item"><Nav.Link eventKey="buy">Buy</Nav.Link></Nav.Item>
-                                                        <Nav.Item className="nav-item"><Nav.Link eventKey="sell">Sell</Nav.Link></Nav.Item>
+                                                        <Nav.Item className="nav-item"><Nav.Link eventKey="buy">Buy Crypto</Nav.Link></Nav.Item>
+                                                        <Nav.Item className="nav-item"><Nav.Link eventKey="sell">Sell Crypto</Nav.Link></Nav.Item>
                                                     </Nav>
                                                 </div>
 
@@ -746,33 +740,22 @@ const earn = () => {
                     <Container>
                         {/* Heading */}
                         <div className="payment-heading text-center">
-                            <h2 className="heading-title">
-                                Top <span className="heading-span-org">Payment</span> Methods
-                            </h2>
-
-                            <p>
-                                Choose from the most trusted and convenient payment
-                                <br />
-                                methods for your P2P trades.
-                            </p>
+                            <h2 className="heading-title">Trade Your Way</h2>
+                            <p>Choose from multiple payment options and trade directly with other users.</p>
                         </div>
 
 
                         {/* Bottom Features */}
                         <div className="payment-features">
-
                             {/* Feature 1 */}
                             <div className="feature-item ">
                                 <div className="feature-icon">
-                                    <FontAwesomeIcon icon={faUniversity} />
-
+                                    <FontAwesomeIcon icon={faBuildingColumns} />
                                 </div>
-
                                 <div>
                                     <h4>Bank Transfer</h4>
                                     <p>
-                                        Transfer funds securely from your bank account
-                                        with ease.
+                                        Pay securely using your preferred bank transfer method.
                                     </p>
                                 </div>
                             </div>
@@ -780,15 +763,14 @@ const earn = () => {
                             {/* Feature 2 */}
                             <div className="feature-item">
                                 <div className="feature-icon">
-                                    <FontAwesomeIcon icon={faHandHoldingDollar} />
+                                    <FontAwesomeIcon icon={faMobileScreenButton} />
 
                                 </div>
 
                                 <div>
-                                    <h4>Earn</h4>
+                                    <h4>UPI Payments</h4>
                                     <p>
-                                        Earn rewards and cashback on your transactions
-                                        while you trade.
+                                        Complete P2P trades quickly with convenient UPI payments.
                                     </p>
                                 </div>
                             </div>
@@ -796,14 +778,13 @@ const earn = () => {
                             {/* Feature 3 */}
                             <div className="feature-item">
                                 <div className="feature-icon">
-                                    <FontAwesomeIcon icon={faCreditCard} />
+                                    <FontAwesomeIcon icon={faWallet} />
                                 </div>
 
                                 <div>
-                                    <h4>Swipe</h4>
+                                    <h4>Digital Wallets</h4>
                                     <p>
-                                        Make fast and secure payments using your debit
-                                        or credit card.
+                                        Use supported digital wallets for simple and flexible payments.
                                     </p>
                                 </div>
                             </div>
@@ -811,14 +792,13 @@ const earn = () => {
                             {/* Feature 4 */}
                             <div className="feature-item feature-item-last">
                                 <div className="feature-icon">
-                                    <FontAwesomeIcon icon={faBolt} />
+                                    <FontAwesomeIcon icon={faMoneyBillTransfer} />
                                 </div>
 
                                 <div>
-                                    <h4>Instant Transfers</h4>
+                                    <h4>Local Payment Methods</h4>
                                     <p>
-                                        Enjoy lightning-fast transfers and receive
-                                        funds instantly.
+                                        Discover payment options available in your region.
                                     </p>
                                 </div>
                             </div>
@@ -830,7 +810,7 @@ const earn = () => {
 
                 <section className="howitbg">
                     <Container data-aos="fade-up" data-aos-duration="1000">
-                        <h2 className="heading-title text-center mb-4"> <span className="heading-span-org">Key Features</span> Built for Every Trader</h2>
+                        <h2 className="heading-title text-center mb-4"> Why Trade Crypto with P2P?</h2>
                         <div className="table-content">
                             <div className="hflex">
                                 <div className="hbox d-flex gap-3">
@@ -840,8 +820,8 @@ const earn = () => {
                                     </div>
                                     <div>
 
-                                        <h4 className="sub-heading">Multi-crypto Wallets</h4>
-                                        <p className="content">Instant crypto payments with multi-network support.</p>
+                                        <h4 className="sub-heading">Verified P2P Traders</h4>
+                                        <p className="content">Trade with verified users and view their order history and completion rate before choosing an offer.</p>
                                     </div>
 
                                 </div>
@@ -850,8 +830,8 @@ const earn = () => {
                                         <Image src="/assets/images/erc20-support-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
-                                        <h4 className="sub-heading">ERC20 & BEP20 Token support</h4>
-                                        <p className="content">Buy and sell crypto in real-time with live charts.</p>
+                                        <h4 className="sub-heading">Competitive Prices</h4>
+                                        <p className="content">Compare multiple offers and choose the price that works best for your trade.</p>
                                     </div>
 
                                 </div>
@@ -860,8 +840,8 @@ const earn = () => {
                                         <Image src="/assets/images/P2P-Trading.svg" width={100} height={100} alt="ficon" className='howitbgicon' />
                                     </div>
                                     <div>
-                                        <h4 className="sub-heading">Secure P2P Trading</h4>
-                                        <p className="content">Trade with leverage and control your profits easily.</p>
+                                        <h4 className="sub-heading">Flexible Payment Options</h4>
+                                        <p className="content">Select from available payment methods based on your location and preference.</p>
                                     </div>
                                 </div>
 
@@ -876,8 +856,8 @@ const earn = () => {
                                         <Image src="/assets/images/advanced-security-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
-                                        <h4 className="sub-heading">Advanced Security</h4>
-                                        <p className="content">Multi-layer protection with 2FA and cold wallet storage.</p>
+                                        <h4 className="sub-heading">Secure Escrow Protection</h4>
+                                        <p className="content">Your crypto is held securely during the transaction until the payment is confirmed.</p>
                                     </div>
                                 </div>
                                 <div className="hbox d-flex gap-3">
@@ -885,8 +865,8 @@ const earn = () => {
                                         <Image src="/assets/images/secure-kyc-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
-                                        <h4 className="sub-heading">Secure KYC Verification</h4>
-                                        <p className="content">Supports Ethereum, BSC, and Tron networks seamlessly.</p>
+                                        <h4 className="sub-heading">Trader Reputation</h4>
+                                        <p className="content">Check trader ratings, completed orders and success rates before trading.</p>
                                     </div>
                                 </div>
                                 <div className="hbox d-flex gap-3">
@@ -894,154 +874,220 @@ const earn = () => {
                                         <Image src="/assets/images/smart-dashboard-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
-                                        <h4 className="sub-heading">Smart Dashboard</h4>
-                                        <p className="content">Manage payments, trades, and wallets in one place.</p>
+                                        <h4 className="sub-heading">Fast P2P Transactions</h4>
+                                        <p className="content">Connect with the right trader and complete your crypto trade with fewer steps.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </Container>
                 </section>
-                {/* <section className="choosefeatresbg" id="features">
-                    <Container data-aos="fade-up" data-aos-duration="1000">
-                        <h2 className="heading-title text-center pb-4">Top Payment Methods</h2>
 
-
-
-
-                        <Row className="chooseusflex align-items-center">
-                            <Col lg={4}>
-                                <div className="chooseusbox">
-                                    <div>
-                                        <h5>Bank Transfer</h5>
-                                        <p>Phasellus vestibulum, purus vel dignissim suscipit, diam odio ultrices turpis malesuada justo.</p>
-                                    </div>
-                                    <div>
-                                        <h5>Earn</h5>
-                                        <p>Phasellus vestibulum, purus vel dignissim suscipit, diam odio ultrices turpis malesuada justo.</p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col lg={4} className="choosecentericon pos">
-                                <Image src="assets/images/chooseicon.svg" className="lightthemeicon" alt="icon" width={100} height={100} />
-                                <Image src="assets/images/chooseicon1.svg" className="darkthemeicon" alt="icon" width={100} height={100} />
-
-                            </Col>
-                            <Col lg={4}>
-                                <div className="chooseusbox">
-                                    <div>
-                                        <h5>swipe</h5>
-                                        <p>Phasellus vestibulum, purus vel dignissim suscipit, diam odio ultrices turpis malesuada justo.</p>
-                                    </div>
-                                    <div>
-                                        <h5>Instant Transfers</h5>
-                                        <p>Phasellus vestibulum, purus vel dignissim suscipit, diam odio ultrices turpis malesuada justo.</p>
-                                    </div>
-
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </section> */}
-                {/* <section className="what-earn">
-                    <Container className="sitebannercontent">
-                        <Row className="align-items-center text-center">
-
-                            <Col lg={6} md={6} sm={12}>
-                                <div className="text-center">
-                                    <Image src="assets/images/earn-banner-dark.png" className="banner-img lightthemeicon" alt="icon" width={100} height={100} />
-                                    <Image src="assets/images/staking-img.png" className="banner-img " alt="icon" width={100} height={100} />
-                                </div>
-                            </Col>
-                            <Col lg={6} md={6} sm={12} className=" d-flex align-items-start flex-column justify-content-start" >
-                                <h2 className="heading-title">What is Staking?</h2>
-                                <p className="text-start"> Staking allows you to lock your crypto assets for a period of time to earn rewards. The longer you stake, the more you earn — without active trading.</p>
-                                < button className="sitebtn w-auto">Start Earning</button>
-                            </Col>
-                        </Row>
-                    </Container>
-                </section> */}
                 <section className="howitworksp2p" id="howitworksp2p">
                     <Container data-aos="fade-up">
-                        <h2 className="heading-title text-center pb-3">How It Works</h2>
 
-                        <div className="howitflexp2p">
-                            <div className="howitboxp2p">
-                                <div className="">
-                                    <Image
-                                        src="assets/images/p2p-how-1.svg"
-                                        width={35}
-                                        height={35}
-                                        alt="btc"
-                                        className="howitflexp2picon"
-                                    />
-                                </div>
-                                <div>
-                                    <h5 className="text-center">1.Choose an Offer</h5>
-                                    <p className="text-center">
-                                        Browse available buy or sell offers and choose the one that best matches your preferred price and payment method.
-                                    </p>
-                                </div>
-                            </div>
+                        <h2 className="heading-title text-center pb-3">
+                            How P2P Trading Works
+                        </h2>
 
-                            <div className="arrowptop">
-                                <Image
-                                    src="assets/images/arrhome.svg"
-                                    width={35}
-                                    height={35}
-                                    alt="btc"
-                                    className="arrhomeicon"
-                                />
-                            </div>
-
-                            <div className="howitboxp2p">
-                                <div className="">
-                                    <Image
-                                        src="assets/images/p2p-how-2.svg"
-                                        width={35}
-                                        height={35}
-                                        alt="btc"
-                                        className="howitflexp2picon"
-                                    />
-                                </div>
-                                <div>
-                                    <h5 className="text-center">2.Make the Payment</h5>
-                                    <p className="text-center">
-                                        Enter the trade amount and complete the payment using the selected payment method.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="arrowptop">
-                                <Image
-                                    src="assets/images/arrhome.svg"
-                                    width={35}
-                                    height={35}
-                                    alt="btc"
-                                    className="arrhomeicon"
-                                />
-                            </div>
-
-                            <div className="howitboxp2p">
-                                <div className="">
-                                    <Image
-                                        src="assets/images/p2p-how-3.svg"
-                                        width={35}
-                                        height={35}
-                                        alt="btc"
-                                        className="howitflexp2picon"
-                                    />
-                                </div>
-                                <div>
-                                    <h5 className="text-center">3.Receive Your Crypto</h5>
-                                    <p className="text-center">
-                                        Once the payment is confirmed, the crypto is securely released from escrow directly to your wallet.
-                                    </p>
-                                </div>
-                            </div>
+                        <p className="text-center p2p-how-subtitle">
+                            Buy or sell crypto securely with trusted P2P traders in just a few simple steps.
+                        </p>
+                        <div className="">
+                            <Nav className="mb-3 nav-tabs border-0 gap-3 nav nav-tabs justify-content-center" role="tablist">
+                                <Nav.Item className="nav-item"><Nav.Link className={activeTab === "buy" ? "active" : ""}
+                                    onClick={() => setActiveTab("buy")}>Buy Crypto </Nav.Link></Nav.Item>
+                                <Nav.Item className="nav-item"><Nav.Link className={activeTab === "sell" ? "active" : ""}
+                                    onClick={() => setActiveTab("sell")}>Sell Crypto</Nav.Link></Nav.Item>
+                            </Nav>
                         </div>
+                        {/* Buy / Sell Tabs */}
 
+                        {/* BUY TAB */}
+                        {activeTab === "buy" && (
+                            <div className="howitflexp2p">
 
+                                <div className="howitboxp2p">
+                                    <div>
+                                        <Image
+                                            src="assets/images/p2p-how-1.svg"
+                                            width={35}
+                                            height={35}
+                                            alt="Choose P2P offer"
+                                            className="howitflexp2picon"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <h5 className="text-center">
+                                            Choose an Offer
+                                        </h5>
+
+                                        <p className="text-center">
+                                            Browse available P2P offers and choose a trusted seller based on price, payment method and order limits.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="arrowptop">
+                                    <Image
+                                        src="assets/images/arrhome.svg"
+                                        width={35}
+                                        height={35}
+                                        alt="Next step"
+                                        className="arrhomeicon"
+                                    />
+                                </div>
+
+                                <div className="howitboxp2p">
+                                    <div>
+                                        <Image
+                                            src="assets/images/p2p-how-2.svg"
+                                            width={35}
+                                            height={35}
+                                            alt="Make payment"
+                                            className="howitflexp2picon"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <h5 className="text-center">
+                                            Make the Payment
+                                        </h5>
+
+                                        <p className="text-center">
+                                            Enter your amount and complete the payment securely using the seller's selected payment method.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="arrowptop">
+                                    <Image
+                                        src="assets/images/arrhome.svg"
+                                        width={35}
+                                        height={35}
+                                        alt="Next step"
+                                        className="arrhomeicon"
+                                    />
+                                </div>
+
+                                <div className="howitboxp2p">
+                                    <div>
+                                        <Image
+                                            src="assets/images/p2p-how-3.svg"
+                                            width={35}
+                                            height={35}
+                                            alt="Receive crypto"
+                                            className="howitflexp2picon"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <h5 className="text-center">
+                                            Receive Your Crypto
+                                        </h5>
+
+                                        <p className="text-center">
+                                            Once your payment is confirmed, the seller releases the crypto securely to your wallet.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        )}
+
+                        {/* SELL TAB */}
+                        {activeTab === "sell" && (
+                            <div className="howitflexp2p">
+
+                                <div className="howitboxp2p">
+                                    <div>
+                                        <Image
+                                            src="assets/images/p2p-how-1.svg"
+                                            width={35}
+                                            height={35}
+                                            alt="Choose P2P offer"
+                                            className="howitflexp2picon"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <h5 className="text-center">
+                                            Choose an Offer
+                                        </h5>
+
+                                        <p className="text-center">
+                                            Find a suitable P2P buyer and review their price, payment method and order limits before trading.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="arrowptop">
+                                    <Image
+                                        src="assets/images/arrhome.svg"
+                                        width={35}
+                                        height={35}
+                                        alt="Next step"
+                                        className="arrhomeicon"
+                                    />
+                                </div>
+
+                                <div className="howitboxp2p">
+                                    <div>
+                                        <Image
+                                            src="assets/images/p2p-how-2.svg"
+                                            width={35}
+                                            height={35}
+                                            alt="Wait for payment"
+                                            className="howitflexp2picon"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <h5 className="text-center">
+                                            Confirm Payment
+                                        </h5>
+
+                                        <p className="text-center">
+                                            Start the trade and wait for the buyer to complete the payment using the selected payment method.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="arrowptop">
+                                    <Image
+                                        src="assets/images/arrhome.svg"
+                                        width={35}
+                                        height={35}
+                                        alt="Next step"
+                                        className="arrhomeicon"
+                                    />
+                                </div>
+
+                                <div className="howitboxp2p">
+                                    <div>
+                                        <Image
+                                            src="assets/images/p2p-how-3.svg"
+                                            width={35}
+                                            height={35}
+                                            alt="Release crypto"
+                                            className="howitflexp2picon"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <h5 className="text-center">
+                                            Release Your Crypto
+                                        </h5>
+
+                                        <p className="text-center">
+                                            After confirming the payment, securely release the crypto to the buyer and complete the trade.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        )}
 
                     </Container>
                 </section>
@@ -1064,11 +1110,11 @@ const earn = () => {
                                             className={activeKey === "1" ? "active" : ""}
                                         >
                                             <Accordion.Header>
-                                                What is P2P Trading?
+                                                What is P2P crypto trading?
                                             </Accordion.Header>
 
                                             <Accordion.Body>
-                                                P2P (Peer-to-Peer) trading allows users to buy and sell cryptocurrencies directly with other users using their preferred payment methods.
+                                                P2P (Peer-to-Peer) trading allows users to buy and sell cryptocurrency directly with other users using supported payment methods.
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item
@@ -1080,7 +1126,7 @@ const earn = () => {
                                             </Accordion.Header>
 
                                             <Accordion.Body>
-                                                Yes. Our secure escrow system helps protect both buyers and sellers by holding the crypto safely until the transaction is successfully completed.
+                                                P2P trading uses security measures such as trader verification and escrow protection to help protect transactions.
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item
@@ -1088,10 +1134,10 @@ const earn = () => {
                                             className={activeKey === "3" ? "active" : ""}
                                         >
                                             <Accordion.Header>
-                                                How do I buy crypto using P2P?
+                                                How do I buy crypto through P2P?
                                             </Accordion.Header>
                                             <Accordion.Body>
-                                                Choose a seller, enter the amount you want to buy, complete the payment using the selected payment method, and receive your crypto once the seller confirms the payment.
+                                                Choose a suitable offer, enter your amount, confirm the trade, complete the payment and receive your crypto after the seller confirms the payment.
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item
@@ -1099,10 +1145,10 @@ const earn = () => {
                                             className={activeKey === "4" ? "active" : ""}
                                         >
                                             <Accordion.Header>
-                                                How do I sell crypto using P2P?
+                                                How do I sell crypto through P2P?
                                             </Accordion.Header>
                                             <Accordion.Body>
-                                                Create or select a sell order, wait for a buyer to place an order, confirm that you have received the payment, and then release the crypto securely.
+                                                Choose or create a suitable sell offer, wait for the buyer payment and release the crypto after confirming that the payment has been received.
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item
@@ -1110,10 +1156,10 @@ const earn = () => {
                                             className={activeKey === "5" ? "active" : ""}
                                         >
                                             <Accordion.Header>
-                                                Are there any fees for P2P Trading?
+                                                How do I choose a P2P trader?
                                             </Accordion.Header>
                                             <Accordion.Body>
-                                                Fees may vary depending on the platform and transaction type. You can review all applicable fees before confirming your trade.
+                                                Compare price, order limits, completed orders, completion rate, ratings and payment methods before selecting a trader.
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -1154,7 +1200,7 @@ const earn = () => {
                                 </div>
                                 <div className="tradepicesubbg">
                                     <div>
-                                        <h1 className="h1">Seller's Payment method</h1>
+                                        <h1 className="h1">Seller Payment method</h1>
                                         <h3 className="h3 t-blue ">Cash Deposit</h3>
                                     </div>
                                 </div>
@@ -1230,7 +1276,7 @@ const earn = () => {
                                 </div>
                                 <div className="tradepicesubbg">
                                     <div>
-                                        <h1 className="h1">Seller's Payment method</h1>
+                                        <h1 className="h1">Sellers Payment method</h1>
                                         <h3 className="h3 t-blue">Cash Deposit</h3>
                                     </div>
                                 </div>
@@ -1281,4 +1327,4 @@ const earn = () => {
     )
 }
 
-export default earn
+export default p2poverview
