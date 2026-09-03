@@ -1530,6 +1530,16 @@ ul.footcryptobg>li {
 	filter: blur(1px);
 	opacity: 1;
 }
+.new-p2p-page .howitbg .hbox img{
+	padding: 10px;
+	border: 1px solid #d0d0d0;
+	border-radius: 8px;
+	width: 100%;
+	max-width: 90px;
+}
+.nightmode .new-p2p-page .howitbg .hbox img{
+	filter: invert(1);
+}
 
 @media (max-width:1700px) {
 	.tokensize img {

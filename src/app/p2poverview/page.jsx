@@ -20,7 +20,7 @@ import {
     faBolt,
     faShieldAlt,
     faUsers,
-    faHeadset,
+    faHeadset, faShareNodes
 } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -80,9 +80,18 @@ const earn = () => {
                     <Container className="sitebannercontent">
                         <Row className="align-items-center text-center">
                             <Col lg={6} md={6} sm={12} className="main-div-flex" >
-                                <h2 className="main-heading">Buy & Sell <br /><span>Crypto with P2P</span></h2>
+                                <button className="nexpeer-glass-btn">
+                                    <span className="nexpeer-glass-icon">
+                                        <FontAwesomeIcon icon={faShareNodes} />
+                                    </span>
+
+                                    <span className="nexpeer-glass-text">
+                                        How Nexpeer Works
+                                    </span>
+                                </button>
+                                <h2 className="main-heading mt-3">Buy & Sell <br /><span>Crypto with P2P</span></h2>
                                 <p className="text-start"> Connect directly with verified users to buy and sell crypto securely, with <br /> flexible payment options and competitive prices on Firefox P2P.</p>
-                                < button className="sitebtn w-auto">Start Earning</button>
+                                < button className="sitebtn w-auto">Join Now</button>
                             </Col>
                             <Col lg={6} md={6} sm={12}>
                                 <div className="text-center">
@@ -748,54 +757,54 @@ const earn = () => {
                             </p>
                         </div>
 
-                        
+
                         {/* Bottom Features */}
                         <div className="payment-features">
 
                             {/* Feature 1 */}
                             <div className="feature-item ">
                                 <div className="feature-icon">
-                                  <FontAwesomeIcon icon={faUniversity} />
+                                    <FontAwesomeIcon icon={faUniversity} />
 
                                 </div>
 
                                 <div>
-                                   <h4>Bank Transfer</h4>
-                                        <p>
-                                            Transfer funds securely from your bank account
-                                            with ease.
-                                        </p>
+                                    <h4>Bank Transfer</h4>
+                                    <p>
+                                        Transfer funds securely from your bank account
+                                        with ease.
+                                    </p>
                                 </div>
                             </div>
 
                             {/* Feature 2 */}
                             <div className="feature-item">
                                 <div className="feature-icon">
-                                  <FontAwesomeIcon icon={faHandHoldingDollar} />
+                                    <FontAwesomeIcon icon={faHandHoldingDollar} />
 
                                 </div>
 
                                 <div>
                                     <h4>Earn</h4>
-                                        <p>
-                                            Earn rewards and cashback on your transactions
-                                            while you trade.
-                                        </p>
+                                    <p>
+                                        Earn rewards and cashback on your transactions
+                                        while you trade.
+                                    </p>
                                 </div>
                             </div>
 
                             {/* Feature 3 */}
                             <div className="feature-item">
                                 <div className="feature-icon">
-                                  <FontAwesomeIcon icon={faCreditCard} />
+                                    <FontAwesomeIcon icon={faCreditCard} />
                                 </div>
 
                                 <div>
-                                  <h4>Swipe</h4>
-                                        <p>
-                                            Make fast and secure payments using your debit
-                                            or credit card.
-                                        </p>
+                                    <h4>Swipe</h4>
+                                    <p>
+                                        Make fast and secure payments using your debit
+                                        or credit card.
+                                    </p>
                                 </div>
                             </div>
 
@@ -806,11 +815,11 @@ const earn = () => {
                                 </div>
 
                                 <div>
-                                      <h4>Instant Transfers</h4>
-                                        <p>
-                                            Enjoy lightning-fast transfers and receive
-                                            funds instantly.
-                                        </p>
+                                    <h4>Instant Transfers</h4>
+                                    <p>
+                                        Enjoy lightning-fast transfers and receive
+                                        funds instantly.
+                                    </p>
                                 </div>
                             </div>
 
@@ -826,8 +835,8 @@ const earn = () => {
                             <div className="hflex">
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/nari1.svg" width={100} height={100} alt="ficon" className='howitbgicon lightthemeicon' />
-                                        <Image src="/assets/images/nari11.svg" width={100} height={100} alt="ficon" className='howitbgicon darkthemeicon' />
+                                        <Image src="/assets/images/multi-crypto-wallet-p.svg" width={100} height={100} alt="ficon" className='howitbgicon' />
+
                                     </div>
                                     <div>
 
@@ -838,8 +847,7 @@ const earn = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/nari2.svg" width={100} height={100} alt="ficon" className='howitbgicon lightthemeicon' />
-                                        <Image src="/assets/images/nari22.svg" width={100} height={100} alt="ficon" className='howitbgicon darkthemeicon' />
+                                        <Image src="/assets/images/erc20-support-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">ERC20 & BEP20 Token support</h4>
@@ -849,8 +857,7 @@ const earn = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/nari3.svg" width={100} height={100} alt="ficon" className='howitbgicon lightthemeicon' />
-                                        <Image src="/assets/images/nari33.svg" width={100} height={100} alt="ficon" className='howitbgicon darkthemeicon' />
+                                        <Image src="/assets/images/P2P-Trading.svg" width={100} height={100} alt="ficon" className='howitbgicon' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Secure P2P Trading</h4>
@@ -866,8 +873,7 @@ const earn = () => {
                             <div className="hflex">
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/nari4.svg" width={100} height={100} alt="ficon" className='howitbgicon lightthemeicon' />
-                                        <Image src="/assets/images/nari44.svg" width={100} height={100} alt="ficon" className='howitbgicon darkthemeicon' />
+                                        <Image src="/assets/images/advanced-security-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Advanced Security</h4>
@@ -876,8 +882,7 @@ const earn = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/nari5.svg" width={100} height={100} alt="ficon" className='howitbgicon lightthemeicon' />
-                                        <Image src="/assets/images/nari55.svg" width={100} height={100} alt="ficon" className='howitbgicon darkthemeicon' />
+                                        <Image src="/assets/images/secure-kyc-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Secure KYC Verification</h4>
@@ -886,8 +891,7 @@ const earn = () => {
                                 </div>
                                 <div className="hbox d-flex gap-3">
                                     <div>
-                                        <Image src="/assets/images/nari6.svg" width={100} height={100} alt="ficon" className='howitbgicon lightthemeicon' />
-                                        <Image src="/assets/images/nari66.svg" width={100} height={100} alt="ficon" className='howitbgicon darkthemeicon' />
+                                        <Image src="/assets/images/smart-dashboard-p.svg" width={100} height={100} alt="ficon" className='howitbgicon ' />
                                     </div>
                                     <div>
                                         <h4 className="sub-heading">Smart Dashboard</h4>

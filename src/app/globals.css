@@ -386,7 +386,9 @@
 
 	.form-check-input:checked {
 		background-color: #F39200 !important;
+		border-color:#F39200 !important ;
 	}
+	
 
 	.radio-gap .form-check-label {
 		margin-left: 8px;
@@ -403,6 +405,150 @@
 		top: 3px;
 		margin-top: 1px;
 	}
+/* =====================================
+   NORMAL / LIGHT MODE
+===================================== */
+
+.nexpeer-glass-btn {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 5px 18px 5px 5px;
+
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
+
+  color: #171717;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Top glass shine */
+.nexpeer-glass-btn::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 15%;
+
+  width: 70%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 1),
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+
+/* Hover */
+.nexpeer-glass-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+
+  border-color: rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
+}
+
+
+/* =====================================
+   ICON
+===================================== */
+
+.nexpeer-glass-icon {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.12),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
+
+  color: #333;
+
+  font-size: 15px;
+
+  z-index: 1;
+}
+
+
+/* Text */
+.nexpeer-glass-text {
+  position: relative;
+
+  z-index: 1;
+
+  white-space: nowrap;
+
+  color: #171717;
+}
+.nightmode .nexpeer-glass-btn {
+  background: rgba(10, 10, 18, 0.55);
+  border-color: rgba(255, 255, 255, 0.14);
+
+  color: #fff;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+.nightmode .nexpeer-glass-icon {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.18);
+
+  color: #fff;
+}
+
+.nightmode .nexpeer-glass-text {
+  color: #fff;
+}
 
 
 	.usermenu .dropdown-toggle {
@@ -1871,6 +2017,7 @@
 
 	.btn:disabled {
 		background: #FFB703;
+		border-color: #FFB703;
 	}
 
 	.headermenu .rightheadbg .dropdown-menu {
