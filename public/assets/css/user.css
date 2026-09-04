@@ -3648,6 +3648,11 @@ input:-webkit-autofill:active {
 	background-color: #f5f5f5;
 }
 
+.listprojectstatus-new:before {
+	height: 70%;
+	left: 9px;
+}
+
 .listprojectstatus li {
 	list-style: none;
 	float: none;

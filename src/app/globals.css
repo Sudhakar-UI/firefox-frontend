@@ -4498,8 +4498,15 @@ pre {
 	border-left: 4px solid #FF4D4F;
 }
 
-.nightmode .del-alert {
+/* .nightmode .del-alert {
 	background: #ff2a1a30;
+} */
+
+.nightmode .del-alert {
+    background: #ff2a1a29;
+}
+.bold-red-tt {
+    font-weight: bolder;
 }
 
 .del-alert .warn-tt {
@@ -5492,9 +5499,13 @@ body {
 	box-shadow: none !important;
 }
 
-.nightmode .form-check-input {
+/* .nightmode .form-check-input {
 	--bs-form-check-bg: #6d6d6d !important;
 	border-color: #6d6d6d;
+} */
+ .nightmode .form-check-input {
+    --bs-form-check-bg: #44434391 !important;
+    border-color: #6d6d6d;
 }
 
 

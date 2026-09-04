@@ -203,7 +203,8 @@ const Merchant = () => {
 							<Image className="wran-img" src="assets/images/warning.svg" width={50} height={50} alt="nodata" />
 
 							<div>
-								<span className="warn-tt">You need to release a different API key for accepting payment and making payouts</span>
+								<span className="warn-tt">Deleting this merchant account will remove its Invoice or Static Wallet and API keys. Future deposits to the existing wallet address may not be tracked. 
+									<br /> <span className="bold-red-tt">Do not send new deposits to associated address.</span> </span>
 								<FormGroup className="checkboxlabelbg checkboxlabelbg-wran mt-2">
 									<InputGroup className=" d-flex  gap-3">
 										<FormCheck type="checkbox" label="Invoice Wallet" id='sureinvoice' />
