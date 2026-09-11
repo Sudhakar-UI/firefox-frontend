@@ -1165,7 +1165,7 @@ ul.footcryptobg>li {
 }
 
 .new-p2p-page .markettablebg table tr td {
-	font-size: 15px;
+	font-size: 14px;
 }
 
 
@@ -1540,6 +1540,14 @@ ul.footcryptobg>li {
 	/* border-radius: 8px; */
 	width: auto !important;
 	max-width: 50px !important;
+}
+
+.new-p2p-page .profiletxtlink .coinicon {
+	width: 100%;
+	max-width: 40px;
+	margin-right: 0;
+	border-radius: 320px;
+	height: 40px;
 }
 
 /* .nightmode .new-p2p-page .howitbg .hbox img{

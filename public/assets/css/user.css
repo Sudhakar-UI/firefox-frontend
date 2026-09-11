@@ -4710,7 +4710,8 @@ body.tradepagbg {
 	display: flex;
 	flex: 1;
 	-webkit-flex: 1;
-	min-height: 609px;
+	min-height: 659px;
+	/* min-height: 609px; */
 }
 
 .chart {
@@ -4830,7 +4831,7 @@ body.tradepagbg {
 }
 
 .buyboxorder .sitescroll {
-	max-height: 271px;
+	max-height: 261px;
 }
 
 .buyshow .buyboxorder .sitescroll {
@@ -4842,9 +4843,9 @@ body.tradepagbg {
 }
 
 .sellboxorder .sitescroll {
-	position: relative;
 	max-height: inherit;
-	height: 230px;
+	height: 250px;
+	position: relative;
 	overflow: auto;
 }
 
@@ -5948,6 +5949,7 @@ body.tradepagbg {
 	margin: 0;
 }
 
+
 .amtd-rpdon-Y.form-select {
 	height: 40px;
 	border: 0;
@@ -6273,6 +6275,21 @@ body.tradepagbg {
 .miss-btn-add .fa-magnifying-glass-dollar {
 	font-size: 15px !important;
 }
+.spin-liner-head {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: normal;
+  text-align: left;
+  background: linear-gradient(90deg, #FF6A00 0%, #FF3C00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.spin-wheel-page .main-heading{
+	font-size: 52px;
+	font-weight: bold;
+}
+
 
 /*media css start*/
 @media (max-width:1860px) {
@@ -10471,10 +10488,15 @@ body.tradepagbg {
 	background: #2d2d2d;
 }
 
-.nightmode .icontypes {
-	background: #2d2d2d;
+.icontypes {
 	border-radius: 50%;
 	padding: 8px 10px;
+	background: #e4e4e48c;
+
+}
+
+.nightmode .icontypes {
+	background: #2d2d2d;
 }
 
 .nightmode .prgrsflx .progress {

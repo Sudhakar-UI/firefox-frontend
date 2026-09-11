@@ -76,6 +76,8 @@ const p2poverview = () => {
     const [activeTab, setActiveTab] = useState("buy");
     return (
         <>
+         <div className="pagecontent gridpagecontent innerpagegrid">
+      <div className="backgroundoverlay" id="backgroundoverlay"></div>
             <article className="innerpage new-earn-page new-p2p-page">
                 <Homeheader />
                 <section className="homebannerbg">
@@ -174,7 +176,7 @@ const p2poverview = () => {
 
                                         </Row>
                                         <Form className="siteformbg">
-                                            <div className="searchfrm border-0 mb-2 ser-frm-frm-y">
+                                            <div className="searchfrm border-0 mb-2 ser-frm-frm-y searchfrm-p2p">
                                                 <Form.Group className="form-group">
                                                     <Form.Label></Form.Label>
                                                     <InputGroup>
@@ -199,11 +201,15 @@ const p2poverview = () => {
                                                         <option>Select Payment Method</option>
                                                     </Form.Select>
                                                 </Form.Group>
-                                                <Form.Group className="form-group">
+                                                {/* <Form.Group className="form-group">
                                                     <Form.Label></Form.Label>
                                                     <Form.Select className="form-control" id="buyfiat_select">
                                                         <option>Sort By Price</option>
                                                     </Form.Select>
+                                                </Form.Group> */}
+                                                <Form.Group className="form-group">
+                                                    <Form.Label></Form.Label>
+                                                    <button className="btn borderbtn me-1 w-100 btn btn-primary">Reset</button>
                                                 </Form.Group>
                                             </div>
                                         </Form>
@@ -1328,6 +1334,7 @@ const p2poverview = () => {
                     </div>
                 </Modal.Body>
             </Modal>
+            </div>
         </>
     )
 }
