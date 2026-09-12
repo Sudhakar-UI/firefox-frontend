@@ -106,6 +106,7 @@
 		color: #535353;
 		text-transform: inherit;
 		font-weight: 400;
+		margin-bottom: 3px;
 	}
 
 	.borderbtn:is(:hover, :focus) {
