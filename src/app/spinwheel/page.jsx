@@ -28,6 +28,7 @@ export default function Home() {
     const [wonPrize, setWonPrize] = useState(null);
     const [showResult, setShowResult] = useState(false);
     const [recentSpinSlide, setRecentSpinSlide] = useState(0);
+    const [recentSpinsPerSlide, setRecentSpinsPerSlide] = useState(4);
 
     const PRIZES = [
         { name: '100 Tokens', type: 'win', tokens: 100, angle: 22.5 },
@@ -50,12 +51,36 @@ export default function Home() {
         { title: '50 Tokens', icon: 'lhu.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Won', statusClass: 'bg-success', statusIcon: 're-green-tick.svg' },
         { title: 'Try Again', icon: 'rec-try-icon.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Try Again', statusClass: 'badge-fail', statusIcon: 'try-again.svg', iconClass: 'ihu' },
     ];
-    const recentSpinsPerSlide = 4;
     const recentSpinsStep = 2;
     const recentSpinsSlideCount = Math.max(
         1,
         Math.ceil((RECENT_SPINS.length - recentSpinsPerSlide) / recentSpinsStep) + 1
     );
+
+    useEffect(() => {
+        const updateVisibleSpins = () => {
+            if (window.innerWidth < 400) {
+                setRecentSpinsPerSlide(1);
+            }
+           else if (window.innerWidth < 576) {
+                setRecentSpinsPerSlide(2);
+            } else if (window.innerWidth < 992) {
+                setRecentSpinsPerSlide(2);
+            } else if (window.innerWidth < 1200) {
+                setRecentSpinsPerSlide(3);
+            } else {
+                setRecentSpinsPerSlide(4);
+            }
+        };
+
+        updateVisibleSpins();
+        window.addEventListener('resize', updateVisibleSpins);
+        return () => window.removeEventListener('resize', updateVisibleSpins);
+    }, []);
+
+    useEffect(() => {
+        setRecentSpinSlide((slide) => Math.min(slide, recentSpinsSlideCount - 1));
+    }, [recentSpinsSlideCount]);
 
     const BULB_POSITIONS = [
         { x: 239, y: 26, color: '#FFFF49', glow: 'rgba(255, 255, 73, 0.95)' },
@@ -620,7 +645,7 @@ export default function Home() {
                                 </div>
                                 <div className="recent-spins-login-card">
                                     <Image
-                                        src="assets/images/sign-in-to-pin.svg"
+                                        src="assets/images/spin-sinup.png"
                                         width={72}
                                         height={72}
                                         className="recent-spins-login-image"
