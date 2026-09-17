@@ -4503,10 +4503,11 @@ pre {
 } */
 
 .nightmode .del-alert {
-    background: #ff2a1a29;
+	background: #ff2a1a29;
 }
+
 .bold-red-tt {
-    font-weight: bolder;
+	font-weight: bolder;
 }
 
 .del-alert .warn-tt {
@@ -5503,9 +5504,9 @@ body {
 	--bs-form-check-bg: #6d6d6d !important;
 	border-color: #6d6d6d;
 } */
- .nightmode .form-check-input {
-    --bs-form-check-bg: #44434391 !important;
-    border-color: #6d6d6d;
+.nightmode .form-check-input {
+	--bs-form-check-bg: #44434391 !important;
+	border-color: #6d6d6d;
 }
 
 
@@ -7266,4 +7267,285 @@ Responsive
 .whyicon img {
 	width: 100%;
 	max-width: 46px !important;
+}
+
+/* 
+.spin-btn {
+    padding: 10px;
+    width: 170px;
+    text-decoration: none;
+    border: none;
+    border-radius: 60px;
+    background: linear-gradient(135deg,
+			#ff9d18,
+			#ff7200,
+			#ff3d00);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.5),
+		inset 0 -5px 6px rgba(180, 50, 0, 0.4),
+		0 6px 12px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+} */
+
+.spin-btn:hover {
+	transform: translateY(-2px);
+}
+
+
+/* Text */
+.spin-text {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.spin-btn .spin-now {
+	max-width: 26px;
+}
+
+.spin-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #f8be2ee6 0%, #fe8703cc 50%, #f8be2ee6 100%);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    padding: 19px 20px;
+    border: 2px solid #fe8a05d6;
+    border-radius: 20px;
+    width: 326px;
+    max-width: calc(100vw - 40px);
+    position: relative;
+    box-shadow: 0 8px 20px rgba(254, 138, 5, 0.22),
+		0 2px 6px rgba(0, 0, 0, 0.10);
+    animation: spinBannerBg 3s ease-in-out infinite;
+}
+
+@keyframes spinBannerBg {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+.spin-banner-wrapper {
+	position: fixed;
+	right: 26px;
+	bottom: 50px;
+	z-index: 5000;
+}
+
+.spin-banner-wrapper.is-minimized {
+	right: 50px;
+	bottom: 50px;
+}
+
+.spin-minimized-btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 68px;
+	height: 68px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: transparent;
+	cursor: pointer;
+}
+
+.spin-notification-badge {
+	position: absolute;
+	top: -26px;
+	right: -14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border: 3px solid #ff2d1b;
+	border-radius: 50%;
+	background: #ff2d1b;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	box-shadow: 0 3px 8px rgb(0 0 0 / 25%);
+
+	animation: notificationPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes notificationPulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 3px 8px rgb(0 0 0 / 25%);
+	}
+
+	50% {
+		transform: scale(1.15);
+		box-shadow: 0 0 0 8px rgb(255 45 27 / 20%);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 3px 8px rgb(0 0 0 / 25%);
+	}
+}
+
+.spin-minimized-img {
+	width: 130px;
+	height: 130px;
+	object-fit: contain;
+}
+
+.spin-pro-img {
+	width: 100%;
+	max-width: 100%;
+	max-width: 150px;
+	/* max-width: 230px; */
+}
+
+.wheel-section {
+	position: absolute;
+	left: -15px;
+	top: -14px;
+}
+
+.spin-title {
+	/* padding-left: 220px; */
+	padding-left: 118px;
+}
+
+.spin-close-btn {
+	position: absolute;
+	right: -11px;
+	top: -14px;
+	font-size: 14px;
+	/* padding: 8px; */
+	background: #F73A00;
+	border-radius: 50px;
+	border: none;
+	width: 28px;
+	height: 28px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.spin-btn {
+	padding: 8px;
+	width: 115px;
+	text-decoration: none;
+	border: none;
+	border-radius: 60px;
+	background: linear-gradient(135deg,
+			#ff9d18,
+			#ff7200,
+			#ff3d00);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* gap: 10px; */
+	cursor: pointer;
+	box-shadow: inset 0 3px 4px rgba(255, 255, 255, 0.5),
+		inset 0 -5px 6px rgba(180, 50, 0, 0.4),
+		0 6px 12px rgba(0, 0, 0, 0.25);
+	transition: 0.2s;
+	margin: 0 auto;
+}
+
+.spin-btn .spin-now {
+	max-width: 14px;
+}
+
+@media (max-width: 767px) {
+	.spin-banner-wrapper {
+		right: 10px;
+		top: auto;
+		bottom: 16px;
+	}
+
+	/* .spin-banner-wrapper.is-minimized {
+		right: 6px;
+		bottom: 10px;
+	} */
+
+	/* .spin-minimized-btn,
+	.spin-minimized-img {
+		width: 58px;
+		height: 58px;
+	} */
+
+
+	.spin-banner {
+		width: 320px;
+		max-width: calc(100vw - 20px);
+		padding: 28px 14px;
+	}
+
+	.wheel-section {
+		left: 10px;
+		top: -18px;
+	}
+
+	.spin-pro-img {
+		width: 110px;
+	}
+
+	.spin-title {
+		padding-left: 120px;
+	}
+
+	.spin-text-img {
+		width: 150px;
+	}
+}
+
+.spin-now {
+	animation: spinNow 2s linear infinite;
+}
+
+@keyframes spinNow {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.spin-text-img {
+	width: 230px;
+	padding-bottom: 10px;
+	max-width: 100%;
+	animation: spinText 2s ease-in-out infinite;
+}
+
+@keyframes spinText {
+	0% {
+		transform: translateY(0) scale(1);
+	}
+
+	50% {
+		transform: translateY(-5px) scale(1.03);
+	}
+
+	100% {
+		transform: translateY(0) scale(1);
+	}
 }

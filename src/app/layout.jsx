@@ -6,6 +6,7 @@ import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 import { Image } from 'react-bootstrap';
 import "./globals.css";
 import "../../public/assets/css/animation.css";
+import SpinBanner from "./components/SpinBanner";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -34,6 +35,8 @@ export default function RootLayout({ children }) {
               </div>
             </div>
           )} */}
+          <SpinBanner />
+
           {children}<ProgressBar height="3px" color="#FF3C00" options={{ showSpinner: false }} shallowRouting />
         </main>
       </body>
