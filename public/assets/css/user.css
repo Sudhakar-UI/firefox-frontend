@@ -4710,7 +4710,8 @@ body.tradepagbg {
 	display: flex;
 	flex: 1;
 	-webkit-flex: 1;
-	min-height: 659px;
+	/* min-height: 659px; */
+	min-height: 604px;
 	/* min-height: 609px; */
 }
 
@@ -4831,7 +4832,8 @@ body.tradepagbg {
 }
 
 .buyboxorder .sitescroll {
-	max-height: 261px;
+	max-height: 243px;
+	/* max-height: 261px; */
 }
 
 .buyshow .buyboxorder .sitescroll {
@@ -6275,21 +6277,54 @@ body.tradepagbg {
 .miss-btn-add .fa-magnifying-glass-dollar {
 	font-size: 15px !important;
 }
+
 .spin-liner-head {
-  font-weight: 700;
-  font-size: 72px;
-  line-height: normal;
-  text-align: left;
-  background: linear-gradient(90deg, #FF6A00 0%, #FF3C00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: normal;
+	text-align: left;
+	background: linear-gradient(90deg, #FF6A00 0%, #FF3C00 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
-.spin-wheel-page .main-heading{
+
+.spin-wheel-page .main-heading {
 	font-size: 52px;
 	font-weight: bold;
 }
 
+.tradepagbg .chart .tab-content,
+.tradepagbg .tradechartlist.active,
+.tradepagbg .tradechartlist>div,
+.tradepagbg .tradechartlist>div>div {
+	min-height: 563px;
+}
+
+.tradepagbg .orderformbox {
+	min-height: 447px;
+}
+
+.tradepagbg .walletassets .btn {
+	margin-top: 7px;
+}
+
+.tradepagbg .buyboxorder .sitescroll {
+	max-height: 234px;
+	/* max-height: 261px; */
+}
+
+.tradepagbg .buyboxorder .sitescroll {
+	max-height: 246px;
+}
+
+.tradepagbg .sellboxorder .sitescroll {
+	height: 207px;
+}
+
+.tradepagbg .orderformbox .siteformbg {
+	padding-bottom: 0px;
+}
 
 /*media css start*/
 @media (max-width:1860px) {

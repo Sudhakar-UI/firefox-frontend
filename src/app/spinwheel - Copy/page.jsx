@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
-import { Container, Row, Col, Image, Table, Accordion, Button, Tab, Nav, Badge, Tabs, Modal, Carousel, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Container, Row, Col, Image, Table, Accordion, Button, Tab, Nav, Badge, Tabs, Modal } from 'react-bootstrap';
 import Homeheader from '../components/Homeheader';
 import Homefooter from '../components/Homefooter';
 import AOS from 'aos';
@@ -27,7 +27,6 @@ export default function Home() {
     const [soundOn, setSoundOn] = useState(true);
     const [wonPrize, setWonPrize] = useState(null);
     const [showResult, setShowResult] = useState(false);
-    const [recentSpinSlide, setRecentSpinSlide] = useState(0);
 
     const PRIZES = [
         { name: '100 Tokens', type: 'win', tokens: 100, angle: 22.5 },
@@ -39,23 +38,6 @@ export default function Home() {
         { name: 'Not This Time', type: 'loss', tokens: 0, angle: 292.5 },
         { name: 'Spin Again', type: 'spin_again', tokens: 0, angle: 337.5 },
     ];
-
-    const RECENT_SPINS = [
-        { title: '100 Tokens', icon: 'lhu.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Won', statusClass: 'bg-success', statusIcon: 're-green-tick.svg' },
-        { title: '0 Tokens', icon: 'zero-tokens.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Lost', statusClass: 'bg-danger', statusIcon: 'loss-rec.svg' },
-        { title: '50 Tokens', icon: 'lhu.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Won', statusClass: 'bg-success', statusIcon: 're-green-tick.svg' },
-        { title: 'Try Again', icon: 'rec-try-icon.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Try Again', statusClass: 'badge-fail', statusIcon: 'try-again.svg', iconClass: 'ihu' },
-        { title: '100000 Tokens', icon: 'lhu.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Won', statusClass: 'bg-success', statusIcon: 're-green-tick.svg' },
-        { title: '0 Tokens', icon: 'zero-tokens.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Lost', statusClass: 'bg-danger', statusIcon: 'loss-rec.svg' },
-        { title: '50 Tokens', icon: 'lhu.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Won', statusClass: 'bg-success', statusIcon: 're-green-tick.svg' },
-        { title: 'Try Again', icon: 'rec-try-icon.svg', date: 'Sep 6, 2025 02:14 PM', status: 'Try Again', statusClass: 'badge-fail', statusIcon: 'try-again.svg', iconClass: 'ihu' },
-    ];
-    const recentSpinsPerSlide = 4;
-    const recentSpinsStep = 2;
-    const recentSpinsSlideCount = Math.max(
-        1,
-        Math.ceil((RECENT_SPINS.length - recentSpinsPerSlide) / recentSpinsStep) + 1
-    );
 
     const BULB_POSITIONS = [
         { x: 239, y: 26, color: '#FFFF49', glow: 'rgba(255, 255, 73, 0.95)' },
@@ -256,10 +238,12 @@ export default function Home() {
                             </div>
 
                             <div className='spin-timing-section'>
-
-                                <div className="countdown-section containerr">
+                                <div className="countdown-section">
                                     <div className="countdown-card">
+
+
                                         <h2>Next spin available in</h2>
+
                                         <div className="countdown">
                                             <div className="time-box">
                                                 <span className="number">
@@ -288,37 +272,6 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className="countdown-section ">
-                                    <div className="countdown-card">
-                                        <h2>Next spin available in</h2>
-                                        <div className="countdown">
-                                            <div className="time-box">
-                                                <span className="number">
-                                                    {String(time.hours).padStart(2, "0")}
-                                                </span>
-                                                <span className="label">Hours</span>
-                                            </div>
-
-                                            <span className="separator">:</span>
-
-                                            <div className="time-box">
-                                                <span className="number">
-                                                    {String(time.minutes).padStart(2, "0")}
-                                                </span>
-                                                <span className="label">Minutes</span>
-                                            </div>
-
-                                            <span className="separator">:</span>
-
-                                            <div className="time-box">
-                                                <span className="number">
-                                                    {String(time.seconds).padStart(2, "0")}
-                                                </span>
-                                                <span className="label">Seconds</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> */}
                                 <div className='my-4'>
                                     <button className='spin-wheel-left-spin-btn ' onClick={handleShowModal2}>
                                         <Image
@@ -374,10 +327,10 @@ export default function Home() {
                                         onClick={() => setSoundOn(!soundOn)}
                                     >
                                         <span className="spin-wheel-left-sound-btn-icon"><Image
-                                            src={soundOn ? "assets/images/spk-icon.svg" : "assets/images/sound-off.svg"}
+                                            src="assets/images/spk-icon.svg"
                                             width={100}
                                             height={100}
-                                            alt={soundOn ? "Sound on" : "Sound off"}
+                                            alt="btc"
                                             className="spk-icon"
                                         /></span>
                                         Sound {soundOn ? 'On' : 'Off'}
@@ -569,7 +522,7 @@ export default function Home() {
                     </div>
                 </Container>
             </section>
-
+            
             <section className="recentspins">
                 <Container>
                     <div className="recent-spins-row">
@@ -598,78 +551,69 @@ export default function Home() {
                                     <p className='youvewin mb-0'>Here’s what you’ve won in your recent spins
                                     </p>
                                 </div>
-                                <div className="add-prenext-btn">
-                                    <button
-                                        type="button"
-                                        className="recent-spins-control prev"
-                                        aria-label="Previous recent spins"
-                                        disabled={recentSpinSlide === 0}
-                                        onClick={() => setRecentSpinSlide((slide) => Math.max(slide - 1, 0))}
-                                    >
-                                        <span aria-hidden="true">&lsaquo;</span>
-                                    </button>
-                                    <button
-                                        type="button"
-                                        className="recent-spins-control next"
-                                        aria-label="Next recent spins"
-                                        disabled={recentSpinSlide >= recentSpinsSlideCount - 1}
-                                        onClick={() => setRecentSpinSlide((slide) => Math.min(slide + 1, recentSpinsSlideCount - 1))}
-                                    >
-                                        <span aria-hidden="true">&rsaquo;</span>
-                                    </button>
-                                </div>
-                                <div className="recent-spins-login-card">
-                                    <Image
-                                        src="assets/images/sign-in-to-pin.svg"
-                                        width={72}
-                                        height={72}
-                                        className="recent-spins-login-image"
-                                        alt="Sign in to view recent spins"
-                                    />
-                                    <div className="recent-spins-login-content">
-                                        <h6 className="sub-heading">Sign in to view your spins</h6>
-                                        <p className="mb-3">Your recent rewards will appear here after you sign in.</p>
-                                        <Link href="/signin" className="btn borderbtn btn-sm">Sign in</Link>
-                                    </div>
-                                </div>
                             </div>
 
-                            <Carousel
-                                id="recent-spins-carousel"
-                                controls={false}
-                                indicators={false}
-                                interval={null}
-                                activeIndex={recentSpinSlide}
-                                onSelect={setRecentSpinSlide}
-                                className="recent-spins-carousel"
-                            >
-                                {Array.from({ length: recentSpinsSlideCount }, (_, slideIndex) => (
-                                    <Carousel.Item key={slideIndex}>
-                                        <div className="recent-spins-box">
-                                            {RECENT_SPINS.slice(
-                                                slideIndex * recentSpinsStep,
-                                                slideIndex * recentSpinsStep + recentSpinsPerSlide
-                                            ).map((spin) => (
-                                                <div className="recent-spins-tokens" key={`${spin.title}-${spin.date}`}>
-                                                    <div className="recent-spins-box">
-                                                        <div className={`recent-spins-lhu ${spin.iconClass || ''}`}>
-                                                            <Image src={`assets/images/${spin.icon}`} width={25} height={25} className="spinbox" alt={spin.title} />
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="sub-heading text-center">{spin.title}</h6>
-                                                        <p className="mb-0">{spin.date}</p>
-                                                    </div>
-                                                    <span className={`badge ${spin.statusClass}`}>
-                                                        <span><Image src={`assets/images/${spin.statusIcon}`} width={16} height={16} className="me-1" alt="" /></span>
-                                                        {spin.status}
-                                                    </span>
-                                                </div>
-                                            ))}
+                            <div className="recent-spins-box">
+                                <div className="recent-spins-tokens">
+
+                                    <div className="recent-spins-box">
+                                        <div className="recent-spins-lhu">
+                                            <Image src="assets/images/lhu.svg" width={25} height={25} className="spinbox" alt="spinbox" />
                                         </div>
-                                    </Carousel.Item>
-                                ))}
-                            </Carousel>
+
+                                    </div>
+                                    <div>
+                                        <h6 className="sub-heading text-center">100 Tokens</h6>
+                                        <p className='mb-0'>Sep 6, 2025 02:14 PM</p>
+                                    </div>
+                                    <span className="badge bg-success"><span><Image src="assets/images/re-green-tick.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Won</span>
+                                </div>
+                                <div className="recent-spins-tokens">
+
+                                    <div className="recent-spins-box">
+                                        <div className="recent-spins-lhu">
+                                            <Image src="assets/images/zero-tokens.svg" width={25} height={25} className="spinbox" alt="spinbox" />
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <h6 className="sub-heading text-center">0 Tokens</h6>
+                                        <p className='mb-0'>Sep 6, 2025
+                                            02:14 PM</p>
+                                    </div>
+                                    <span className="badge bg-danger"><span><Image src="assets/images/loss-rec.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Lost</span>
+                                </div>
+                                <div className="recent-spins-tokens">
+
+                                    <div className="recent-spins-box">
+                                        <div className="recent-spins-lhu">
+                                            <Image src="assets/images/lhu.svg" width={25} height={25} className="spinbox" alt="spinbox" />
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <h6 className="sub-heading text-center">50 Tokens</h6>
+                                        <p className='mb-0'>Sep 6, 2025
+                                            02:14 PM</p>
+                                    </div>
+                                    <span className="badge bg-success"><span><Image src="assets/images/re-green-tick.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Won</span>
+                                </div>
+                                <div className="recent-spins-tokens">
+
+                                    <div className="recent-spins-box">
+                                        <div className="recent-spins-lhu ihu">
+                                            <Image src="assets/images/rec-try-icon.svg" width={25} height={25} className="spinbox" alt="spinbox" />
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <h6 className="sub-heading text-center">Try Again</h6>
+                                        <p className='mb-0'>Sep 6, 2025
+                                            02:14 PM</p>
+                                    </div>
+                                    <span className="badge badge-fail"><span><Image src="assets/images/try-again.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Try Again</span>
+                                </div>
+                            </div>
                         </div>
                         <div className="recent-spins recent-spins-right">
                             <div className="recent-times align-content-center">
@@ -700,20 +644,21 @@ export default function Home() {
                                     <p className="mb-0">Current Reward Balance</p>
                                 </div>
                                 <div className="recent-time-icon-wrapper">
-                                    <OverlayTrigger
-                                        placement="top"
-                                        overlay={<Tooltip id="reward-balance-tooltip">Your current reward balance</Tooltip>}
-                                    >
-                                        <span className="recent-balance-tooltip-trigger">
-                                            <Image
-                                                src="/assets/images/exgola-mark.svg"
-                                                width={14}
-                                                height={14}
-                                                className="recent-time-icon time"
-                                                alt="Reward balance"
-                                            />
-                                        </span>
-                                    </OverlayTrigger>
+                                    <Image
+                                        src="/assets/images/exgola-mark.svg"
+                                        width={14}
+                                        height={14}
+                                        className="recent-time-icon time"
+                                        alt="Recent Spins"
+                                    />
+
+                                    {/* <Image
+                                        src="/assets/images/recent-times.svg"
+                                        width={30}
+                                        height={30}
+                                        className="recent-time-icon darkthemeicon"
+                                        alt="Recent Spins"
+                                    /> */}
                                 </div>
                             </div>
                             <div className="d-flex gap-2 align-items-center">
@@ -1095,7 +1040,7 @@ export default function Home() {
                         <h5>You have Won</h5>
                         <div className="spin-wheel-left-conversion">
                             <div className="spin-wheel-left-conversion-text">
-                                <span className="spin-wheel-left-conversion-usd pe-2">100 LHU</span>
+                                <span className="spin-wheel-left-conversion-usd pe-2">100</span>
                                 <span className="spin-wheel-left-conversion-lhu">Tokens</span>
 
 
@@ -1145,7 +1090,7 @@ export default function Home() {
                             </h2>
                         </div>
                         <p className='text-center mb-0 color-ch'>You didn’t win this time, but there are more <br /> rewards waiting for you!</p>
-                        <div className="countdown-section containerr">
+                        <div className="countdown-section">
                             <div className="countdown-card">
 
 

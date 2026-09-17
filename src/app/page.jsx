@@ -12,6 +12,7 @@ import "react-multi-carousel/lib/styles.css";
 import SimpleBar from 'simplebar-react';
 import ResponsiveTable from '../app/components/ResponsiveTable';
 import 'simplebar-react/dist/simplebar.min.css';
+import SpinBanner from './components/SpinBanner';
 
 
 
