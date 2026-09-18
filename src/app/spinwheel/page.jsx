@@ -62,13 +62,14 @@ export default function Home() {
             if (window.innerWidth < 400) {
                 setRecentSpinsPerSlide(1);
             }
-           else if (window.innerWidth < 576) {
+            else if (window.innerWidth < 576) {
                 setRecentSpinsPerSlide(2);
             } else if (window.innerWidth < 992) {
                 setRecentSpinsPerSlide(2);
-            } else if (window.innerWidth < 1200) {
+            } else if (window.innerWidth < 1400) {
                 setRecentSpinsPerSlide(3);
-            } else {
+            }
+            else {
                 setRecentSpinsPerSlide(4);
             }
         };
@@ -345,7 +346,7 @@ export default function Home() {
                                     </div>
                                 </div> */}
                                 <div className='my-4'>
-                                    <button className='spin-wheel-left-spin-btn ' onClick={handleShowModal2}>
+                                    <button className='spin-wheel-left-spin-btn ' onClick={handleShowModal1}>
                                         <Image
                                             src="assets/images/locked.svg"
                                             width={100}
@@ -421,17 +422,34 @@ export default function Home() {
                                 </div>
 
                                 <div className="spin-wheel-left-auth">
-                                    <span className="spin-wheel-left-auth-icon"><Image
-                                        src="assets/images/sign-in-to-pin.svg"
-                                        width={100}
-                                        height={100}
-                                        alt="btc"
-                                        className="sign-in-to-pin"
-                                    /></span>
-                                    <span className="spin-wheel-left-auth-text">
-                                        Authentication Required. <strong>Please Sign in to spin!</strong>
-                                    </span>
-                                    <span className="spin-wheel-left-auth-arrow">   <FontAwesomeIcon icon={faChevronRight} /></span>
+
+                                    <div className="spin-wheel-left-auth-icon">
+                                        <Image
+                                            src="/assets/images/sign-in-to-pin.svg"
+                                            width={100}
+                                            height={100}
+                                            alt="Sign in to spin"
+                                            className="sign-in-to-pin"
+                                        />
+                                    </div>
+
+                                    <div className="spin-wheel-left-auth-text">
+                                        Authentication Required.{" "}
+                                        <Link
+                                            className="new-a-link"
+                                            href="/signin"
+                                        >
+                                            Please Sign in to spin!
+                                        </Link>
+                                    </div>
+
+                                    <Link
+                                        href="/"
+                                        className="spin-wheel-left-auth-arrow"
+                                    >
+                                        <FontAwesomeIcon icon={faChevronRight} />
+                                    </Link>
+
                                 </div>
                             </div>
                         </div>
@@ -643,20 +661,7 @@ export default function Home() {
                                         <span aria-hidden="true">&rsaquo;</span>
                                     </button>
                                 </div>
-                                <div className="recent-spins-login-card">
-                                    <Image
-                                        src="assets/images/spin-sinup.png"
-                                        width={72}
-                                        height={72}
-                                        className="recent-spins-login-image"
-                                        alt="Sign in to view recent spins"
-                                    />
-                                    <div className="recent-spins-login-content">
-                                        <h6 className="sub-heading">Sign in to view your spins</h6>
-                                        <p className="mb-3">Your recent rewards will appear here after you sign in.</p>
-                                        <Link href="/signin" className="btn borderbtn btn-sm">Sign in</Link>
-                                    </div>
-                                </div>
+
                             </div>
 
                             <Carousel
@@ -668,6 +673,7 @@ export default function Home() {
                                 onSelect={setRecentSpinSlide}
                                 className="recent-spins-carousel"
                             >
+
                                 {Array.from({ length: recentSpinsSlideCount }, (_, slideIndex) => (
                                     <Carousel.Item key={slideIndex}>
                                         <div className="recent-spins-box">
@@ -695,8 +701,22 @@ export default function Home() {
                                     </Carousel.Item>
                                 ))}
                             </Carousel>
+                            <div className="recent-spins-login-card">
+                                <Image
+                                    src="assets/images/spin-sinup.png"
+                                    width={72}
+                                    height={72}
+                                    className="recent-spins-login-image"
+                                    alt="Sign in to view recent spins"
+                                />
+                                <div className="recent-spins-login-content">
+                                    <h6 className="sub-heading">Sign in to view your spins</h6>
+                                    <p className="mb-3">Your recent rewards will appear here after you sign in.</p>
+                                    <Link href="/signin" className="btn borderbtn btn-sm">Sign in</Link>
+                                </div>
+                            </div>
                         </div>
-                        <div className="recent-spins recent-spins-right">
+                        {/* <div className="recent-spins recent-spins-right">
                             <div className="recent-times align-content-center">
                                 <div className="recent-time-icon-wrapper spn-wlt-icon-div">
                                     <Image
@@ -707,13 +727,7 @@ export default function Home() {
                                         alt="Recent Spins"
                                     />
 
-                                    {/* <Image
-                                        src="/assets/images/recent-times.svg"
-                                        width={30}
-                                        height={30}
-                                        className="recent-time-icon darkthemeicon"
-                                        alt="Recent Spins"
-                                    /> */}
+                                    
                                 </div>
 
                                 <div>
@@ -771,7 +785,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
                 </Container>
             </section>
@@ -876,7 +890,225 @@ export default function Home() {
                 </Container>
             </section>
 
-            <section className="p2pfaq" id="faq" data-aos="fade-up" data-aos-duration="1000">
+
+            <section className="" id="faq" data-aos="fade-up" data-aos-duration="1000">
+                <Container>
+                    <h2 className="heading-title text-center pb-3">Frequently asked questions</h2>
+
+                    <Tab.Container defaultActiveKey="tab1">
+                        <Row className=' justify-content-center'>
+
+                            <Col xl={10} lg={11} md={12}>
+                                <Tab.Content>
+                                    <Tab.Pane eventKey="tab1">
+                                        <Accordion defaultActiveKey="1" flush>
+                                            <Accordion.Item eventKey="1" className="active">
+                                                <Accordion.Header>How do I get started with Spin & Win?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Sign up or log in to your account, get your LHU tokens, and use them to spin the wheel and win rewards.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="2">
+                                                <Accordion.Header>How does the Spin & Win wheel work?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="3">
+                                                <Accordion.Header>How many LHU tokens do I need to spin?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="4">
+                                                <Accordion.Header>What rewards can I win?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="5">
+                                                <Accordion.Header>Can I spin again after winning?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="tab2">
+                                        <Accordion defaultActiveKey="persn1" flush>
+                                            <Accordion.Item eventKey="persn1" className="active">
+                                                <Accordion.Header>How do I get started with the gateway?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Simply sign up, configure your wallet or API settings, and choose how you want to receive payments—through plugins, invoices, or custom integrations.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="persn2">
+                                                <Accordion.Header>Which cryptocurrencies are supported?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="persn3">
+                                                <Accordion.Header>Is it safe to accept crypto payments?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="persn4">
+                                                <Accordion.Header>Can I integrate this with my e-commerce store?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="persn5">
+                                                <Accordion.Header>What are the transaction fees?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="tab3">
+                                        <Accordion defaultActiveKey="busness1" flush>
+                                            <Accordion.Item eventKey="busness1" className="active">
+                                                <Accordion.Header>How do I get started with the gateway?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Simply sign up, configure your wallet or API settings, and choose how you want to receive payments—through plugins, invoices, or custom integrations.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness2">
+                                                <Accordion.Header>Which cryptocurrencies are supported?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness3">
+                                                <Accordion.Header>Is it safe to accept crypto payments?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness4">
+                                                <Accordion.Header>Can I integrate this with my e-commerce store?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness5">
+                                                <Accordion.Header>What are the transaction fees?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="tab4">
+                                        <Accordion defaultActiveKey="busness1" flush>
+                                            <Accordion.Item eventKey="busness1" className="active">
+                                                <Accordion.Header>How do I get started with the gateway?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Simply sign up, configure your wallet or API settings, and choose how you want to receive payments—through plugins, invoices, or custom integrations.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness2">
+                                                <Accordion.Header>Which cryptocurrencies are supported?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness3">
+                                                <Accordion.Header>Is it safe to accept crypto payments?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness4">
+                                                <Accordion.Header>Can I integrate this with my e-commerce store?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness5">
+                                                <Accordion.Header>What are the transaction fees?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="tab5">
+                                        <Accordion defaultActiveKey="busness1" flush>
+                                            <Accordion.Item eventKey="busness1" className="active">
+                                                <Accordion.Header>How do I get started with the gateway?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Simply sign up, configure your wallet or API settings, and choose how you want to receive payments—through plugins, invoices, or custom integrations.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness2">
+                                                <Accordion.Header>Which cryptocurrencies are supported?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness3">
+                                                <Accordion.Header>Is it safe to accept crypto payments?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness4">
+                                                <Accordion.Header>Can I integrate this with my e-commerce store?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                    culpa qui officia deserunt mollit anim id est laborum.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                            <Accordion.Item eventKey="busness5">
+                                                <Accordion.Header>What are the transaction fees?</Accordion.Header>
+                                                <Accordion.Body>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis consectetur pariatur quidem sit quo fugit et cumque itaque, eius ipsam dolore iure dolor error, blanditiis quaerat, quos autem! Nihil.
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    </Tab.Pane>
+                                </Tab.Content>
+                            </Col>
+                        </Row>
+                    </Tab.Container>
+                </Container>
+            </section>
+
+
+            {/* <section className="p2pfaq" id="faq" data-aos="fade-up" data-aos-duration="1000">
                 <Container>
                     <Tab.Container defaultActiveKey="tab1">
                         <Row>
@@ -1099,7 +1331,8 @@ export default function Home() {
                         </Row>
                     </Tab.Container>
                 </Container>
-            </section>
+            </section> */}
+
 
             <Modal className="modalbgt spain-wheel-pop-up" show={showModal1} onHide={handleCloseModal1} aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header closeButton>
