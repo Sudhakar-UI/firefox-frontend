@@ -479,7 +479,7 @@ export default function Home() {
                                     <h6 className="sub-heading">100 Tokens</h6>
                                     <p>Sep 6, 2025
                                         02:14 PM</p>
-                                    <span className="badge bg-success"><span><Image src="assets/images/re-green-tick.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Won</span>
+                                    <span className="badge bg-success mt-2"><span><Image src="assets/images/re-green-tick.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Won</span>
                                 </div>
                                 <div className="recent-spins-tokens">
 
@@ -492,7 +492,7 @@ export default function Home() {
                                     <h6 className="sub-heading">100 Tokens</h6>
                                     <p>Sep 6, 2025
                                         02:14 PM</p>
-                                    <span className="badge bg-danger"><span><Image src="assets/images/loss-rec.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Lost</span>
+                                    <span className="badge bg-danger mt-2"><span><Image src="assets/images/loss-rec.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Lost</span>
                                 </div>
                                 <div className="recent-spins-tokens">
 
