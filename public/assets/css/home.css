@@ -6389,6 +6389,1279 @@ RIGHT STARTING BORDER
 	background-image: none !important;
 }
 
-.nightmode .countdown-section .number {
-	color: #ff3d0a;
+/*nightmode css end*/
+
+
+
+/* spin wheel css */
+
+.how-spin-wheel .how-it-img-y {
+	position: relative;
+	z-index: 20;
+	padding-top: 25px;
+}
+
+.how-spin-wheel .howitwrkheadimg {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.how-spin-wheel .howitflex-spin {
+	display: flex;
+	text-align: center;
+	gap: 35px;
+}
+
+.how-spin-wheel .howiticon {
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+
+.how-spin-wheel .badge {
+	padding: 6px 4px;
+	/* border: 1px solid #696969; */
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 50px;
+	min-width: 73px;
+	margin-top: 38px;
+	margin-bottom: 20px;
+}
+
+.how-spin-wheel .badge.step-one {
+	background-color: #F2F2F2;
+	border: 0;
+	color: #3E4156;
+}
+
+.how-spin-wheel .badge.step-two {
+	background-color: #EBE6FF;
+	border: 0;
+	color: #6D4BF5;
+}
+
+.how-spin-wheel .badge.step-three {
+	background-color: #FEF9C3;
+	border: 0;
+	color: #8D0101;
+}
+
+.how-spin-wheel .badge.step-four {
+	background-color: #FFE5DA;
+	border: 0;
+	color: #F64602;
+}
+
+.recentspins .recent-spins {
+	background: #F6F6F6;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+
+.spinbox {
+	width: 100%;
+	max-width: 50px;
+}
+
+.recent-spins-box {
+	display: flex;
+	gap: 15px;
+}
+
+.recent-spins-box .badge-fail {
+	background: #ECEFF4;
+	color: #000000;
+	border: 0;
+}
+
+.recent-spins-lhu.ihu {
+	background-color: #DFF5FF;
+}
+
+/* .recentspins .row {
+	gap: 10px;
+} */
+.recent-spins-lhu {
+	background-color: #FFF5DF;
+	padding: 8px 12px;
+	border-radius: 50%;
+	margin-bottom: 8px;
+}
+
+.recent-spins-tokens {
+	flex: 1 1;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 8px;
+	border-radius: 12px;
+}
+
+.recent-spins-tokens .sub-heading {
+	font-size: 17px;
+}
+
+.recent-spins-tokens p {
+	font-size: 14px;
+}
+
+.recent-time-icon.time {
+	width: 20px;
+
+}
+
+.recent-times {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.youvewin {
+	margin-bottom: 14px;
+	padding-left: 38px;
+}
+
+.recent-time-icon-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.recent-time-icon {
+	width: 30px;
+	height: 30px;
+	display: block;
+}
+
+.recent-times .sub-heading {
+	margin: 0;
+}
+
+.recent-spins {
+	background: #F6F6F6;
+}
+
+.recent-spins-row {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+	border: none;
+}
+
+.recent-spins-left {
+	width: 70%;
+}
+
+.recent-spins-right {
+	width: 30%;
+}
+
+.reward-spin-progress {
+	width: 100%;
+}
+
+.reward-spin-progress .reward-spin-progress-top {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 5px;
+}
+
+.reward-spin-progress .reward-spin-progress-top span {
+	font-size: 14px;
+	color: #666;
+}
+
+.reward-spin-progress .reward-progress-bar-bg {
+	width: 100%;
+	height: 10px;
+	background: #edf0f4;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.reward-spin-progress .reward-progress-bar-fill {
+	width: 50%;
+	height: 100%;
+	background: #ff3b0a;
+	border-radius: 20px;
+}
+
+.reward-spin-progress .reward-next-box {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-top: 30px;
+	padding: 10px 15px;
+	background: #fff5ed;
+	border: 1px solid #f5e5d9;
+	border-radius: 8px;
+}
+
+.reward-spin-progress .reward-next-content h6 {
+	margin: 0 0 5px;
+	font-size: 14px;
+}
+
+.reward-spin-progress .reward-next-content p {
+	margin: 0;
+	color: #777;
+	font-size: 13px;
+}
+
+.reward-spin-progress .reward-arrow {
+	margin-left: auto;
+	font-size: 14px;
+	color: #4C4C4C;
+}
+
+.nightmode .recentspins .recent-spins {
+	background: #1e1e1e;
+}
+
+.nightmode .recent-spins-tokens {
+	background-color: #2a2a2a;
+}
+
+.nightmode .reward-spin-progress .reward-next-box {
+	background: #2a2521;
+	border-color: #4a3b32;
+}
+
+.spin-wheel-content {
+	display: flex;
+	width: 100%;
+	gap: 24px;
+	align-items: stretch;
+}
+
+.spin-wheel-left,
+.spin-wheel-right {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+	.spin-wheel-content {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.spin-wheel-left,
+	.spin-wheel-right {
+		width: 100%;
+	}
+}
+
+.val-img {
+	width: 100%;
+	max-width: 660px;
+	height: 100%;
+}
+
+.fox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spin-wheel-left {
+	background: #ffffff;
+	border-radius: 16px;
+	padding: 24px;
+	/* background-image: radial-gradient(#eef1f5 1px, transparent 1px); */
+	background-size: 14px 14px;
+}
+
+.spin-wheel-left-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: #FEF4ED;
+	color: #FF6A00;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 6px 12px;
+	border-radius: 999px;
+	margin-bottom: 16px;
+}
+
+.spin-wheel-left-badge-icon {
+	font-size: 14px;
+}
+
+.spin-wheel-left-heading {
+	font-size: 53px;
+	font-weight: 800;
+	line-height: 63px;
+	color: #0f172a;
+	margin: 0 0 12px 0;
+	/* white-space: nowrap; */
+}
+
+.spin-wheel-left-heading-highlight {
+	display: block;
+	color: #ff4d00;
+	font-size: 68px;
+	font-weight: 800;
+	/* white-space: nowrap; */
+}
+
+.spin-wheel-left-subtext {
+	color: #4C4C4C;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 600;
+	line-height: 25px;
+}
+
+.spin-wheel-left-subtext {
+	font-size: 14px;
+	color: #64748b;
+	margin: 0 0 20px 0;
+}
+
+.spin-wheel-left-conversion {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(135deg, #fff7dd, #ffe9b0);
+	/* background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(254, 235, 143, 0.82) 100%); */
+	border-radius: 14px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.spin-wheel-left-conversion-lhu {
+	font-size: 26px;
+	font-weight: 800;
+	color: #0f172a;
+}
+
+.spin-wheel-left-conversion-equal {
+	font-size: 26px;
+	font-weight: 700;
+	color: #0f172a;
+	margin: 0 6px;
+}
+
+.spin-wheel-left-conversion-usd {
+	font-size: 26px;
+	font-weight: 800;
+	color: #ff3b00;
+}
+
+.spin-wheel-left-conversion-caption {
+	font-size: 14px !important;
+	color: #475569;
+	margin: 4px 0 0 0;
+}
+
+.spin-wheel-left-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 18px;
+}
+
+.spin-wheel-left-spin-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: #ff4d00;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 500;
+	border: none;
+	border-radius: 999px;
+	padding: 12px 22px;
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.spin-wheel-left-spin-btn:hover {
+	background: #e64500;
+	transform: translateY(-1px);
+}
+
+.spin-wheel-left-spin-btn-arrow {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.spin-wheel-left-sound-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: #ffffff;
+	color: #0f172a;
+	font-size: 14px;
+	font-weight: 600;
+	border: 1px solid #e2e8f0;
+	border-radius: 999px;
+	padding: 12px 18px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.spin-wheel-left-sound-btn:hover {
+	background: #f8fafc;
+}
+
+.spin-wheel-left-duration {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 16px;
+	color: #475569;
+	margin-bottom: 18px;
+}
+
+.spin-wheel-left-duration-value {
+	color: #ff4d00;
+	font-weight: 500;
+}
+
+.spin-wheel-left-auth {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background: #fff1ee;
+	border-radius: 12px;
+	padding: 12px 16px;
+}
+
+.spin-wheel-left-auth-icon {
+	color: #fb7185;
+	font-size: 15px;
+}
+
+.spin-wheel-left-auth-text {
+	flex: 1;
+	font-size: 13px;
+	color: #f87171;
+}
+
+.spin-wheel-left-auth-text strong {
+	color: #ef4444;
+	font-weight: 500;
+}
+
+.spin-wheel-left-auth-arrow {
+	color: #fb7185;
+	font-size: 16px;
+}
+
+.spin-wheel-page .homebannerbg .sitebannercontent {
+	padding-top: 105px;
+	padding-bottom: 0px !important;
+	position: relative;
+}
+
+.sign-in-to-pin {
+	width: 100%;
+	max-width: 30px;
+}
+
+
+.spin-wheel-right-wheel-wrap {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spin-wheel-right-wheel {
+	transition: transform 4.5s cubic-bezier(0.17, 0.67, 0.24, 0.99);
+}
+
+.spin-wheel-right-pointer {
+	position: absolute;
+	top: -6px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #ff4d00;
+	font-size: 22px;
+}
+
+.spn-cn-icon {
+	width: 100%;
+	max-width: 120px;
+}
+
+.nightmode .spin-wheel-left,
+.nightmode .spin-wheel-right {
+	background: #101010;
+	/* border: 1px solid #262b3a; */
+}
+
+.how-spin-wheel .howitbox::before {
+	display: none;
+}
+
+.nightmode .spin-wheel-left-sound-btn-icon {
+	filter: invert(1)
+}
+
+.nightmode .recent-time-icon {
+	filter: invert(1)
+}
+
+.nightmode .spin-wheel-left-badge {
+	background: #3a2415;
+	color: #fb923c;
+}
+
+.nightmode .spin-wheel-left-heading {
+	color: #f1f5f9;
+}
+
+.nightmode .spin-wheel-left-heading-highlight {
+	color: #ff6a2b;
+}
+
+.nightmode .spin-wheel-left-subtext {
+	color: #94a3b8;
+}
+
+.nightmode .spin-wheel-left-conversion {
+	background: linear-gradient(135deg, #3a2f13, #4a3814);
+}
+
+.nightmode .spin-wheel-left-conversion-lhu,
+.nightmode .spin-wheel-left-conversion-equal {
+	color: #f1f5f9;
+}
+
+.nightmode .spin-wheel-left-conversion-caption {
+	color: #cbd5e1;
+}
+
+.nightmode .spin-wheel-left-spin-btn {
+	background: #ff5a15;
+}
+
+.nightmode .spin-wheel-left-spin-btn:hover {
+	background: #ff7433;
+}
+
+.nightmode .spin-wheel-left-sound-btn {
+	background: #1a1d29;
+	color: #e2e8f0;
+	border: 1px solid #2c3142;
+}
+
+.nightmode .spin-wheel-left-sound-btn:hover {
+	background: #22263380;
+}
+
+.nightmode .spin-wheel-left-duration {
+	color: #94a3b8;
+}
+
+.nightmode .spin-wheel-left-auth {
+	background: #331717;
+}
+
+.nightmode .spin-wheel-left-auth-text {
+	color: #fca5a5;
+}
+
+.nightmode .spin-wheel-left-auth-text strong {
+	color: #f87171;
+}
+
+.nightmode .recent-spins-lhu {
+	background-color: #3a3328;
+}
+
+.nightmode .recent-spins-lhu.ihu {
+	background-color: #263940;
+}
+
+@media (max-width: 991px) {
+	.recent-spins-row {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.recent-spins-left,
+	.recent-spins-right {
+		width: 100%;
+	}
+
+	.recent-spins-box {
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	.how-spin-wheel .howitwrkheadimg {
+		display: none;
+	}
+
+	.how-spin-wheel .howitflex-spin {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.how-spin-wheel .howitbox {
+		flex: 0 0 44%;
+		max-width: 44%;
+	}
+}
+
+@media (max-width: 767px) {
+	.spin-wheel-content {
+		flex-direction: column;
+	}
+
+	.spin-wheel-left,
+	.spin-wheel-right {
+		width: 100%;
+	}
+
+	.recent-spins-tokens {
+		flex-basis: calc(50% - 8px);
+		max-width: calc(50% - 8px);
+	}
+
+	.how-spin-wheel .howiticon {
+		width: 60px;
+	}
+
+	.how-spin-wheel .howitbox {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 20px 16px;
+		background: #F6F6F6;
+		border-radius: 10px;
+	}
+
+	.nightmode .how-spin-wheel .howitbox {
+		background: #1e1e1e;
+	}
+}
+
+@media (max-width: 400px) {
+	.recent-spins-tokens {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.spinbox {
+		max-width: 35px;
+	}
+}
+
+/* ==========================================================================
+   INTERACTIVE SPIN WHEEL WITH BACKLIGHT & ROTATING LIGHTS
+   ========================================================================== */
+
+.spin-wheel-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	position: relative;
+}
+
+.spin-wheel-left {
+	flex: 1 1 45%;
+	max-width: 540px;
+	z-index: 4;
+}
+
+.spin-wheel-right {
+	position: relative;
+	flex: 1 1 55%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 540px;
+}
+
+/* Scene Container */
+.spin-wheel-scene {
+	position: relative;
+	width: 100%;
+	max-width: 620px;
+	aspect-ratio: 658 / 535;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+/* Radiant Backlight Aura Behind the Wheel */
+.spin-wheel-backlight {
+	position: absolute;
+	width: 440px;
+	height: 440px;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	pointer-events: none;
+	z-index: 1;
+	transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+	opacity: 0.75;
+}
+
+.backlight-radial-1 {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(255, 120, 0, 0.48) 0%, rgba(255, 60, 0, 0.24) 45%, rgba(255, 180, 0, 0.08) 65%, transparent 75%);
+	filter: blur(35px);
+	animation: backlightBreathe 3.5s ease-in-out infinite alternate;
+}
+
+.backlight-radial-2 {
+	position: absolute;
+	inset: -25px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(255, 200, 0, 0.32) 0%, rgba(255, 90, 0, 0.16) 40%, transparent 68%);
+	filter: blur(45px);
+	animation: backlightBreathe 4.5s ease-in-out infinite alternate-reverse;
+}
+
+.backlight-radial-3 {
+	position: absolute;
+	inset: -50px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(255, 60, 0, 0.2) 0%, rgba(255, 140, 0, 0.08) 50%, transparent 72%);
+	filter: blur(60px);
+	opacity: 0.6;
+}
+
+.spin-wheel-backlight.spinning {
+	opacity: 1;
+	transform: translateX(-50%) scale(1.15);
+}
+
+.spin-wheel-backlight.spinning .backlight-radial-1 {
+	background: radial-gradient(circle, rgba(255, 130, 0, 0.7) 0%, rgba(255, 60, 0, 0.45) 45%, rgba(255, 210, 0, 0.2) 65%, transparent 80%);
+	filter: blur(28px);
+	animation: backlightIntense 0.7s ease-in-out infinite alternate;
+}
+
+.spin-wheel-backlight.spinning .backlight-radial-2 {
+	background: radial-gradient(circle, rgba(255, 220, 0, 0.55) 0%, rgba(255, 80, 0, 0.35) 45%, transparent 75%);
+	filter: blur(40px);
+	animation: backlightIntense 0.9s ease-in-out infinite alternate-reverse;
+}
+
+/* Fox Background Layer */
+.spin-fox-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spin-fox-bg .fox-img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.1));
+}
+
+/* Spin Wheel Frame & Assembly */
+.spin-wheel-frame-wrapper {
+	position: absolute;
+	width: 74%;
+	max-width: 486px;
+	aspect-ratio: 486 / 552;
+	bottom: 0;
+	left: 50.8%;
+	transform: translateX(-50%);
+	z-index: 3;
+}
+
+/* Base Frame: Stand, Rim, and Base Graphic */
+.wheel-base-img-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.wheel-base-svg-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.22));
+}
+
+/* Rotating Rotor Layer */
+.wheel-rotor-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	pointer-events: none;
+	transform-origin: 50.34% 44.69%;
+	will-change: transform;
+}
+
+.rotor-svg-element {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Animated Light Bulbs Around Rim */
+.wheel-bulbs-track {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 4;
+}
+
+.rim-bulb-glow {
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s ease;
+	opacity: 0.65;
+	animation: bulbIdlePulse 2.4s ease-in-out infinite alternate;
+}
+
+.wheel-bulbs-track.spinning .rim-bulb-glow,
+.wheel-bulbs-track.lit .rim-bulb-glow {
+	opacity: 1;
+	animation: bulbChaseSpin 0.6s ease-in-out infinite alternate;
+}
+
+.wheel-bulbs-track.spinning .bulb-idx-1,
+.wheel-bulbs-track.spinning .bulb-idx-6 {
+	animation-delay: 0s;
+}
+
+.wheel-bulbs-track.spinning .bulb-idx-2,
+.wheel-bulbs-track.spinning .bulb-idx-7 {
+	animation-delay: 0.12s;
+}
+
+.wheel-bulbs-track.spinning .bulb-idx-3,
+.wheel-bulbs-track.spinning .bulb-idx-8 {
+	animation-delay: 0.24s;
+}
+
+.wheel-bulbs-track.spinning .bulb-idx-4,
+.wheel-bulbs-track.spinning .bulb-idx-9 {
+	animation-delay: 0.36s;
+}
+
+.wheel-bulbs-track.spinning .bulb-idx-5,
+.wheel-bulbs-track.spinning .bulb-idx-10 {
+	animation-delay: 0.48s;
+}
+
+/* Interactive Top Pin */
+.wheel-pin-wrapper {
+	position: absolute;
+	top: 4.8%;
+	left: 50.34%;
+	transform: translateX(-50%);
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+	transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.pin-svg-icon {
+	display: block;
+	width: 44px;
+	height: 45px;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.35));
+	transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.wheel-pin-wrapper:hover {
+	transform: translateX(-50%) scale(1.14);
+}
+
+.wheel-pin-wrapper:hover .pin-svg-icon {
+	filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.9)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.wheel-pin-wrapper:active {
+	transform: translateX(-50%) scale(0.92);
+}
+
+.pin-pulse-halo {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -3px;
+	left: -3px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(255, 215, 0, 0.5) 0%, transparent 70%);
+	pointer-events: none;
+	animation: pinPulseHalo 2s ease-in-out infinite;
+}
+
+.pin-hint-tag {
+	position: absolute;
+	top: -28px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: linear-gradient(135deg, #ff6a00, #ff3c00);
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 700;
+	padding: 3px 10px;
+	border-radius: 12px;
+	white-space: nowrap;
+	box-shadow: 0 4px 12px rgba(255, 60, 0, 0.4);
+	pointer-events: none;
+	animation: pinHintFloat 2s ease-in-out infinite alternate;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.pin-hint-tag::after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 5px solid #ff3c00;
+}
+
+.wheel-pin-wrapper.ticking {
+	animation: pinTickShake 0.12s ease-in-out infinite alternate;
+}
+
+/* Button Active States on the Left Panel */
+.spin-wheel-left-spin-btn.spinning-active {
+	opacity: 0.85;
+	cursor: not-allowed;
+	pointer-events: none;
+	filter: saturate(0.8);
+}
+
+.spin-wheel-left-sound-btn.sound-on-active {
+	border-color: #D7DDE7 !important;
+	color: #1E1E1E !important;
+	font-size: 16px;
+}
+
+.spk-icon {
+	width: 100%;
+	max-width: 25px;
+	height: 100%;
+}
+
+.spin-duration-icon {
+	width: 100%;
+	max-width: 25px;
+	height: 100%;
+}
+
+.spin-result-toast {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	animation: resultZoomIn 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.result-card {
+	position: relative;
+	background: #ffffff;
+	border-radius: 18px;
+	padding: 26px 28px;
+	text-align: center;
+	min-width: 290px;
+	max-width: 340px;
+	box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28), 0 0 0 2px rgba(255, 106, 0, 0.3);
+	border: 1px solid rgba(255, 106, 0, 0.2);
+}
+
+.result-close-btn {
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	line-height: 1;
+	color: #94a3b8;
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+
+.result-close-btn:hover {
+	color: #0f172a;
+}
+
+.result-icon-anim {
+	font-size: 40px;
+	margin-bottom: 8px;
+	animation: bounceIcon 0.8s ease-in-out infinite alternate;
+}
+
+.result-title {
+	font-size: 20px;
+	font-weight: 800;
+	color: #1e293b;
+	margin-bottom: 6px;
+}
+
+.result-prize-badge {
+	display: inline-block;
+	background: linear-gradient(135deg, #ff6a00, #ff3c00);
+	color: #ffffff;
+	font-weight: 800;
+	font-size: 17px;
+	padding: 6px 18px;
+	border-radius: 20px;
+	margin-bottom: 12px;
+	box-shadow: 0 4px 14px rgba(255, 60, 0, 0.35);
+}
+
+.result-subtitle {
+	font-size: 13px;
+	color: #64748b;
+	line-height: 1.5;
+	margin-bottom: 16px;
+}
+
+/* Animations */
+@keyframes backlightBreathe {
+	0% {
+		transform: scale(0.96);
+		opacity: 0.65;
+	}
+
+	100% {
+		transform: scale(1.04);
+		opacity: 0.85;
+	}
+}
+
+@keyframes backlightIntense {
+	0% {
+		transform: scale(1.08);
+		opacity: 0.85;
+		filter: blur(28px);
+	}
+
+	100% {
+		transform: scale(1.22);
+		opacity: 1;
+		filter: blur(34px);
+	}
+}
+
+@keyframes bulbIdlePulse {
+	0% {
+		transform: translate(-50%, -50%) scale(0.9);
+		opacity: 0.6;
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1.15);
+		opacity: 0.95;
+	}
+}
+
+@keyframes bulbChaseSpin {
+	0% {
+		transform: translate(-50%, -50%) scale(0.95);
+		filter: brightness(1);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1.55);
+		filter: brightness(1.75);
+	}
+}
+
+@keyframes pinPulseHalo {
+
+	0%,
+	100% {
+		transform: scale(0.85);
+		opacity: 0.3;
+	}
+
+	50% {
+		transform: scale(1.35);
+		opacity: 0.75;
+	}
+}
+
+@keyframes pinHintFloat {
+	0% {
+		transform: translateX(-50%) translateY(0);
+	}
+
+	100% {
+		transform: translateX(-50%) translateY(-5px);
+	}
+}
+
+@keyframes pinTickShake {
+	0% {
+		transform: translateX(-50%) rotate(0deg);
+	}
+
+	25% {
+		transform: translateX(-50%) rotate(-8deg);
+	}
+
+	75% {
+		transform: translateX(-50%) rotate(8deg);
+	}
+
+	100% {
+		transform: translateX(-50%) rotate(0deg);
+	}
+}
+
+@keyframes resultZoomIn {
+	0% {
+		transform: translate(-50%, -50%) scale(0.6);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes bounceIcon {
+	0% {
+		transform: translateY(0) scale(1);
+	}
+
+	100% {
+		transform: translateY(-6px) scale(1.08);
+	}
+}
+
+/* Night Mode Compatibility */
+.nightmode .spin-wheel-backlight {
+	opacity: 0.9;
+}
+
+.nightmode .backlight-radial-1 {
+	background: radial-gradient(circle, rgba(255, 120, 0, 0.65) 0%, rgba(255, 60, 0, 0.35) 45%, rgba(255, 180, 0, 0.12) 65%, transparent 75%);
+}
+
+.nightmode .result-card {
+	background: #1a1d29;
+	border: 1px solid rgba(255, 106, 0, 0.3);
+	box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(255, 106, 0, 0.4);
+}
+
+.nightmode .result-title {
+	color: #f1f5f9;
+}
+
+.nightmode .result-subtitle {
+	color: #94a3b8;
+}
+
+.nightmode .result-close-btn {
+	color: #64748b;
+}
+
+.nightmode .result-close-btn:hover {
+	color: #f1f5f9;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+	.spin-wheel-scene {
+		max-width: 540px;
+	}
+
+	.spin-wheel-backlight {
+		width: 390px;
+		height: 390px;
+	}
+}
+
+@media (max-width: 991px) {
+	.spin-wheel-content {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.spin-wheel-left,
+	.spin-wheel-right {
+		width: 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.spin-wheel-scene {
+		max-width: 520px;
+	}
+}
+
+@media (max-width: 576px) {
+	.spin-wheel-scene {
+		max-width: 360px;
+	}
+
+	.spin-wheel-backlight {
+		width: 280px;
+		height: 280px;
+		top: 15px;
+	}
+
+	.rim-bulb-glow {
+		width: 9px;
+		height: 9px;
+	}
+
+	.pin-svg-icon {
+		width: 32px;
+		height: 33px;
+	}
+
+	.pin-hint-tag {
+		font-size: 9px;
+		padding: 2px 7px;
+		top: -24px;
+	}
+}
+
+
+.gift-hand {
+	width: 100%;
+	max-width: 35px;
+	height: 100%;
+}
+
+.spin-now {
+	width: 100%;
+	max-width: 35px;
+	height: 100%;
 }
