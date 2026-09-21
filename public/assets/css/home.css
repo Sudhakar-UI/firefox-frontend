@@ -7110,6 +7110,20 @@ RIGHT STARTING BORDER
 	.login-form .heading-title {
 		font-size: 17px !important;
 	}
+
+	to {
+		transform: rotate(360deg);
+	}
 }
 
-/* Responsive Media Queries */
+.nightmode .countdown-section {
+	background-color: #101010;
+}
+
+.nightmode .countdown-section {
+	background-image: none !important;
+}
+
+.nightmode .countdown-section .number {
+	color: #ff3d0a;
+}

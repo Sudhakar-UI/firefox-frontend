@@ -505,7 +505,7 @@ export default function Home() {
                                     <h6 className="sub-heading">100 Tokens</h6>
                                     <p>Sep 6, 2025
                                         02:14 PM</p>
-                                    <span className="badge bg-success mt-2"><span><Image src="assets/images/re-green-tick.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Won</span>
+                                    <span className="badge bg-success"><span><Image src="assets/images/re-green-tick.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Won</span>
                                 </div>
                                 <div className="recent-spins-tokens">
 
@@ -518,12 +518,12 @@ export default function Home() {
                                     <h6 className="sub-heading">100 Tokens</h6>
                                     <p>Sep 6, 2025
                                         02:14 PM</p>
-                                    <span className="badge badge-fail mt-2"><span><Image src="assets/images/try-again.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Try Again</span>
+                                    <span className="badge badge-fail"><span><Image src="assets/images/try-again.svg" width={16} height={16} className="me-1" alt="spinbox" /></span>Try Again</span>
                                 </div>
                             </div>
                         </div>
                         <div className="recent-spins recent-spins-right">
-                            <div className="recent-times times">
+                            <div className="recent-times">
                                 <div className="recent-time-icon-wrapper">
                                     <Image
                                         src="/assets/images/spn-wlt-icon.svg"
@@ -543,7 +543,7 @@ export default function Home() {
                                 </div>
 
                                 <div>
-                                    <h6 className="sub-heading yor-spn">Your Spin</h6>
+                                    <h6 className="sub-heading">Your Spin</h6>
                                 </div>
                             </div>
                             <div className="recent-times">
