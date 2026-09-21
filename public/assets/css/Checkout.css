@@ -202,6 +202,20 @@ textarea.form-control::placeholder {
     }
 }
 
+@media (max-width:400px) {
+    .pyspsbg {
+        height: auto;
+        display: block;
+    }
+
+
+    img.qrimg {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
 .fibht {
     color: #000 !important;
 }
@@ -211,7 +225,7 @@ textarea.form-control::placeholder {
     border: 1px solid #e7e4e4;
     background-color: #fff;
     border-radius: 15px;
-    color:#000;
+    color: #000;
 }
 
 .paybg {
@@ -343,29 +357,28 @@ textarea.form-control::placeholder {
     margin: 0;
 }
 
-.counttimerb>div
-{
-	width: 100%;
-	padding: 0px 10px;
-	text-align: center;
+.counttimerb>div {
+    width: 100%;
+    padding: 0px 10px;
+    text-align: center;
 }
-.counttimerb>div
-{
-	font-size: 17px;
+
+.counttimerb>div {
+    font-size: 17px;
 }
-.numicon
-{
-  width: 65px;
-  height: 60px;
-  background: #8ddfff;
-  border: 1px solid #8ddfff;
-  color: #fff;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px auto;
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
+
+.numicon {
+    width: 65px;
+    height: 60px;
+    background: #8ddfff;
+    border: 1px solid #8ddfff;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }

@@ -1716,76 +1716,7 @@ ul.footcryptobg>li {
 }
 
 
-@media (max-width:991px) {
-	.twotablesec .nav-tabs .nav-item {
-		padding-right: 10px;
-		padding-bottom: 10px;
-	}
 
-	.nightmode .chooseusbox>div {
-		border-color: #2c2c2c;
-	}
-
-	.spin-wheel-left-conversion-lhu,
-	.spin-wheel-left-conversion-equal,
-	.spin-wheel-left-conversion-usd {
-		font-size: 30px !important;
-	}
-}
-
-@media (max-width:767px) {
-
-	.spin-wheel-left-conversion-lhu,
-	.spin-wheel-left-conversion-equal,
-	.spin-wheel-left-conversion-usd {
-		font-size: 28px !important;
-	}
-
-	.spin-wheel-left-heading-highlight {
-		font-size: 47px !important;
-	}
-
-	.spin-wheel-left-heading {
-		font-size: 36px !important;
-		line-height: 47px !important;
-	}
-
-	.telegrambtn {
-		padding: 8px 14px !important;
-	}
-
-	.telegrm-btn-box {
-		text-align: center !important;
-	}
-
-	.telegrambanner br {
-		display: none;
-	}
-
-	.telegrambanner .d-block {
-		text-align: center;
-		margin-top: 10px;
-	}
-
-	.telegrambanner p {
-		text-align: center;
-	}
-
-	.nightmode .formbg {
-		background-color: #0f0f0f;
-	}
-
-	.nightmode .logotopflex {
-		border-color: #2c2c2c;
-	}
-}
-
-@media (max-width:500px) {
-
-	.nightmode .persicon {
-		background: #2f2f2f;
-	}
-}
 
 /*nightmode css end*/
 
@@ -2269,17 +2200,7 @@ ul.footcryptobg>li {
 	box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-	.spin-wheel-content {
-		flex-direction: column;
-		gap: 16px;
-	}
 
-	.spin-wheel-left,
-	.spin-wheel-right {
-		width: 100%;
-	}
-}
 
 .val-img {
 	width: 100%;
@@ -2526,11 +2447,11 @@ ul.footcryptobg>li {
 	max-width: 130px;
 }
 
-.nightmode .spin-wheel-left,
+/* .nightmode .spin-wheel-left,
 .nightmode .spin-wheel-right {
-	/* background: #101010; */
-	/* border: 1px solid #262b3a; */
-}
+	background: #101010;
+	border: 1px solid #262b3a;
+} */
 
 .how-spin-wheel .howitbox::before {
 	display: none;
@@ -3886,6 +3807,18 @@ RIGHT STARTING BORDER
 	border-radius: 8px !important;
 }
 
+.nightmode .countdown-section {
+	background-color: #101010;
+}
+
+.nightmode .countdown-section {
+	background-image: none !important;
+}
+
+.nightmode .countdown-section .number {
+	color: #ff3d0a;
+}
+
 
 
 @media (max-width:1700px) {
@@ -4312,6 +4245,27 @@ RIGHT STARTING BORDER
 		max-width: 167px;
 	}
 }
+
+@media (max-width:991px) {
+	.twotablesec .nav-tabs .nav-item {
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+
+	.nightmode .chooseusbox>div {
+		border-color: #2c2c2c;
+	}
+
+	.spin-wheel-left-conversion-lhu,
+	.spin-wheel-left-conversion-equal,
+	.spin-wheel-left-conversion-usd {
+		font-size: 30px !important;
+	}
+}
+
+
+
+
 
 @media (max-width: 991px) {
 	.spin-wheel-right {
@@ -5122,6 +5076,7 @@ RIGHT STARTING BORDER
 		gap: 20px;
 	}
 
+
 	.how-spin-wheel .howitbox {
 		flex: 0 0 44%;
 		max-width: 44%;
@@ -5138,8 +5093,73 @@ RIGHT STARTING BORDER
 
 
 
+@media (max-width: 768px) {
+	.spin-wheel-content {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.spin-wheel-left,
+	.spin-wheel-right {
+		width: 100%;
+	}
+}
+
+@media (max-width:767px) {
+
+	.spin-wheel-left-conversion-lhu,
+	.spin-wheel-left-conversion-equal,
+	.spin-wheel-left-conversion-usd {
+		font-size: 28px !important;
+	}
+
+	.spin-wheel-left-heading-highlight {
+		font-size: 47px !important;
+	}
+
+	.spin-wheel-left-heading {
+		font-size: 36px !important;
+		line-height: 47px !important;
+	}
+
+	.telegrambtn {
+		padding: 8px 14px !important;
+	}
+
+	.telegrm-btn-box {
+		text-align: center !important;
+	}
+
+	.telegrambanner br {
+		display: none;
+	}
+
+	.telegrambanner .d-block {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.telegrambanner p {
+		text-align: center;
+	}
+
+	.nightmode .formbg {
+		background-color: #0f0f0f;
+	}
+
+	.nightmode .logotopflex {
+		border-color: #2c2c2c;
+	}
+}
 
 @media (max-width: 767px) {
+	.how-spin-wheel .howitflex-spin {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		gap: 20px;
+	}
+
 	.spin-wheel-page .accordion-body {
 		font-size: 15px;
 	}
@@ -5907,6 +5927,10 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 650px) {
+	.how-spin-wheel .howitbox {
+		padding: 10px;
+	}
+
 	.countdown-section .number {
 		font-size: 28px;
 	}
@@ -6103,11 +6127,33 @@ RIGHT STARTING BORDER
 		margin: 0px;
 	}
 
+	.how-spin-wheel .howiticon {
+		width: 70px;
+	}
+
 }
 
 
 
 @media (max-width: 600px) {
+	.how-spin-wheel .howiticon {
+		width: 60px;
+	}
+
+	.how-spin-wheel .howitflex-spin {
+		gap: 10px;
+	}
+
+	.howitflex-spin h5.sub-heading {
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+
+	.howitbox p {
+		font-size: 13px;
+		line-height: 21px;
+	}
+
 	.spin-wheel-page .accordion-body {
 		font-size: 14px;
 	}
@@ -6658,7 +6704,25 @@ RIGHT STARTING BORDER
 	}
 }
 
+
 @media (max-width: 500px) {
+	.howitbox p {
+		font-size: 12px;
+		line-height: 20px !important;
+	}
+
+	.howitflex-spin h5.sub-heading {
+		font-size: 14px;
+	}
+
+	.how-spin-wheel .howiticon {
+		width: 50px;
+	}
+
+	.how-spin-wheel .howitbox {
+		padding: 14px 10px;
+	}
+
 	.add-prenext-btn {
 		margin: 0px;
 	}
@@ -6809,6 +6873,10 @@ RIGHT STARTING BORDER
 
 	.personactb p {
 		font-size: 14px;
+	}
+
+	.nightmode .persicon {
+		background: #2f2f2f;
 	}
 }
 
@@ -7057,6 +7125,9 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 360px) {
+	.how-spin-wheel .howitflex-spin {
+		grid-template-columns: repeat(1, 1fr);
+	}
 
 	.spain-wheel-pop-up .spin-wheel-left-conversion,
 	.last-gift-banner {
@@ -7114,16 +7185,4 @@ RIGHT STARTING BORDER
 	to {
 		transform: rotate(360deg);
 	}
-}
-
-.nightmode .countdown-section {
-	background-color: #101010;
-}
-
-.nightmode .countdown-section {
-	background-image: none !important;
-}
-
-.nightmode .countdown-section .number {
-	color: #ff3d0a;
 }

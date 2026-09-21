@@ -5375,10 +5375,10 @@ body.userpanelpage.nightmode,
 	background-color: #0f0f0f;
 }
 
-body.userpanelpage,
+/* body.userpanelpage,
 body {
-	/* transition: background-color 0.5s ease; */
-}
+	transition: background-color 0.5s ease;
+} */
 
 /* Theme circle animation */
 .theme-transition {
@@ -6055,31 +6055,19 @@ Responsive
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: rgba(255, 255, 255, 0.55);
-	backdrop-filter: blur(14px);
-	-webkit-backdrop-filter: blur(14px);
-	padding: 19px 20px;
-	/* border: 2px solid rgba(254, 138, 5, 0.65); */
-	border-radius: 20px;
 	width: 313px;
 	max-width: calc(100vw - 40px);
+	padding: 19px 20px;
 	position: relative;
-	/* box-shadow: 0 8px 20px rgba(254, 138, 5, 0.22),
-		0 2px 6px rgba(0, 0, 0, 0.10),
-		inset 0 1px 0 rgba(255, 255, 255, 0.8); */
-	/* animation: spinBannerBg 3s ease-in-out infinite; */
+	background: linear-gradient(135deg,
+			rgba(255, 255, 255, 0.72),
+			rgba(241, 247, 255, 0.15));
+	backdrop-filter: blur(14px) !important;
+	-webkit-backdrop-filter: blur(14px);
 	border: 1px solid rgba(255, 255, 255, 0.65);
 	border-radius: 16px;
-	background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgb(241 247 255 / 0%));
 	box-shadow: 0 12px 30px rgba(93, 120, 158, 0.1);
-	backdrop-filter: blur(14px);
-	-webkit-backdrop-filter: blur(14px);
 }
-
-
-
-
-
 
 .spin-banner-wrapper {
 	position: fixed;
@@ -6130,19 +6118,20 @@ Responsive
 @keyframes notificationPulse {
 	0% {
 		transform: scale(1);
-		box-shadow: 0 3px 8px rgb(0 0 0 / 25%);
+		/* box-shadow: 0 3px 8px rgb(0 0 0 / 25%); */
 	}
 
 	50% {
-		transform: scale(1.15);
-		box-shadow: 0 0 0 8px rgb(255 45 27 / 20%);
+		transform: scale(1.10);
+		/* box-shadow: 0 0 0 8px rgb(255 45 27 / 20%); */
 	}
 
 	100% {
 		transform: scale(1);
-		box-shadow: 0 3px 8px rgb(0 0 0 / 25%);
+		/* box-shadow: 0 3px 8px rgb(0 0 0 / 25%); */
 	}
 }
+
 
 .spin-minimized-img {
 	width: 130px;

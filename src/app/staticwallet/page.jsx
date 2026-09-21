@@ -141,6 +141,15 @@ const page = () => {
                                                             </div>
                                                         </InputGroup>
                                                     </Form.Group>
+                                                     <Form.Group className="form-group">
+                                                        <Form.Label><b>Recipient's wallet address:</b></Form.Label>
+                                                        <InputGroup>
+                                                            <Form.Control type="text" id="merchantid" placeholder="TXf8aUAZqRUwT6M2zk75kVgtfRK7yRaDby..." />
+                                                            <div className="input-group-append">
+                                                                <InputGroup.Text id="copybtn"> <FontAwesomeIcon icon={faCopy} /> </InputGroup.Text>
+                                                            </div>
+                                                        </InputGroup>
+                                                    </Form.Group>
                                                 </form>
                                             </div>
 
