@@ -177,12 +177,21 @@ textarea.form-control::placeholder {
     }
 }
 
+@media (max-width:425px) {}
 
 @media (max-width:425px) {
+    .paybg.pay-bg-y {
+        max-width: auto !important;
+    }
 
-    .paymentspsbg h2 {
+    /* .paymentspsbg h2 {
         font-weight: 500 !important;
         font-size: 20px !important;
+    } */
+
+    .paymentspsbg h2 {
+        font-size: 14px !important;
+        font-weight: 600 !important;
     }
 
     .procedbtn {
@@ -205,7 +214,11 @@ textarea.form-control::placeholder {
 @media (max-width:400px) {
     .pyspsbg {
         height: auto;
-        display: block;
+        display: block !important;
+    }
+
+    .paybg {
+        max-width: auto;
     }
 
 

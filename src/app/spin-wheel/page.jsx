@@ -74,7 +74,7 @@ export default function Home() {
             gain.connect(ctx.destination);
             osc.start();
             osc.stop(ctx.currentTime + 0.04);
-        } catch (e) {}
+        } catch (e) { }
     };
 
     const playWinSound = () => {
@@ -95,7 +95,7 @@ export default function Home() {
                 osc.start(ctx.currentTime + idx * 0.12);
                 osc.stop(ctx.currentTime + idx * 0.12 + 0.35);
             });
-        } catch (e) {}
+        } catch (e) { }
     };
 
     const handleSpin = () => {
@@ -165,7 +165,7 @@ export default function Home() {
                                     alt="btc"
                                     className="gift-hand"
                                 /></span>
-                                <span>1 Free spin available</span>
+                                <span></span>
                             </div>
 
                             <h2 className="spin-wheel-left-heading">
@@ -273,7 +273,7 @@ export default function Home() {
                                         height={535}
                                         alt="Fox Background"
                                         className="fox-img"
-                                        priority
+
                                     />
                                 </div>
 
@@ -287,7 +287,7 @@ export default function Home() {
                                             height={552}
                                             alt="Wheel Frame"
                                             className="wheel-base-svg-img"
-                                            priority
+
                                         />
                                     </div>
 
@@ -424,8 +424,8 @@ export default function Home() {
                                                 {wonPrize.type === 'win'
                                                     ? `Awesome! ${wonPrize.tokens} LHU tokens have been awarded!`
                                                     : wonPrize.type === 'spin_again'
-                                                    ? 'You won 1 more free spin! Click the pin to spin again!'
-                                                    : 'Not this time, try your luck again on the next spin!'}
+                                                        ? 'You won 1 more free spin! Click the pin to spin again!'
+                                                        : 'Not this time, try your luck again on the next spin!'}
                                             </p>
                                             <button className="sitebtn btn-sm" onClick={handleSpin} disabled={isSpinning}>
                                                 Spin Again

@@ -471,7 +471,7 @@ export default function Home() {
                                         height={535}
                                         alt="Fox Background"
                                         className="fox-img"
-                                        priority
+
                                     />
                                 </div>
 
@@ -485,7 +485,7 @@ export default function Home() {
                                             height={552}
                                             alt="Wheel Frame"
                                             className="wheel-base-svg-img"
-                                            priority
+
                                         />
                                     </div>
 
