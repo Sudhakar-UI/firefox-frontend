@@ -53,7 +53,11 @@ export default function Home() {
     useEffect(() => {
         AOS.init();
     })
+    const [animateText, setAnimateText] = useState(false);
 
+    useEffect(() => {
+        setAnimateText(true);
+    }, []);
 
 
 
@@ -68,14 +72,14 @@ export default function Home() {
                     <div className="spin-wheel-content">
                         <div className="spin-wheel-left">
                             <div className="spin-wheel-left-badge">
-                                 <span className="spin-wheel-left-spin-btn-icon"><Image
-                                        src="assets/images/lhu-coin.svg"
-                                        width={100}
-                                        height={100}
-                                        alt="btc"
-                                        className="lhu-icon"
-                                    /></span>
-                                <span>The Native Token of Our Exchange</span>
+                                <span className="spin-wheel-left-spin-btn-icon"><Image
+                                    src="assets/images/lhu-coin.svg"
+                                    width={100}
+                                    height={100}
+                                    alt="btc"
+                                    className="lhu-icon"
+                                /></span>
+                                <span className={animateText ? "spin-wheel-badge-text animate" : "spin-wheel-badge-text"}>The Native Token of Our Exchange</span>
                             </div>
 
                             <h2 className="spin-wheel-left-heading">
@@ -177,7 +181,47 @@ export default function Home() {
 
                         </div>
 
-                        <div className="spin-wheel-right">
+                        {/* <div className="spin-wheel-right lhu-banner-orbit">
+                            <Image
+                                src="/assets/images/right-bottom.png"
+                                width={100}
+                                height={100}
+                                alt="btc"
+                                className="lhu-banner-img lhu-left-top"
+                            />
+
+                            <Image
+                                src="/assets/images/left-bottom.png"
+                                width={100}
+                                height={100}
+                                alt="btc"
+                                className="lhu-banner-img lhu-left-bottom"
+                            />
+                            <Image
+                                src="/assets/images/lhu-center.png"
+                                width={100}
+                                height={100}
+                                alt="btc"
+                                className="lhu-banner-img lhu-center-main"
+                            />
+                            <Image
+                                src="/assets/images/right-top.png"
+                                width={100}
+                                height={100}
+                                alt="btc"
+                                className="lhu-banner-img lhu-right-top"
+                            />
+
+                            <Image
+                                src="/assets/images/left-top.png"
+                                width={100}
+                                height={100}
+                                alt="btc"
+                                className="lhu-banner-img  lhu-right-bottom"
+                            />
+
+                        </div> */}
+                        {/* <div className="spin-wheel-right">
                             <Image
                                 src="assets/images/lhu-banner.svg"
                                 width={100}
@@ -192,11 +236,113 @@ export default function Home() {
                                 alt="btc"
                                 className="lhu-banner-img lhu-dark"
                             />
+                        </div> */}
+                        <div className="spin-wheel-right lhu-banner-orbit">
+                            <div className="lhu-stage-container">
+                                <div className="lhu-stage-inner">
+
+                                    <img
+                                        src="/assets/images/left-top.png"
+                                        alt="Left Top Coin"
+                                        className="lhu-satellite-coin lhu-pos-left-top"
+                                    />
+                                    <img
+                                        src="/assets/images/left-bottom.png"
+                                        alt="Left Bottom Coin"
+                                        className="lhu-satellite-coin lhu-pos-left-bottom"
+                                    />
+                                    <img
+                                        src="/assets/images/right-top.png"
+                                        alt="Right Top Coin"
+                                        className="lhu-satellite-coin lhu-pos-right-top"
+                                    />
+                                    <img
+                                        src="/assets/images/right-bottom.png"
+                                        alt="Right Bottom Coin"
+                                        className="lhu-satellite-coin lhu-pos-right-bottom"
+                                    />
+
+                                    <div className="lhu-podium-stack">
+                                        <div className="lhu-podium-ground-shadow" />
+                                        <img
+                                            src="/assets/images/main-center-bottom-1.png"
+                                            alt="Podium Base"
+                                            className="lhu-podium-layer-1"
+                                        />
+
+                                        <div className="lhu-podium-layer-2-wrapper">
+                                            <img
+                                                src="/assets/images/main-center-bottom-2.png"
+                                                alt="Glowing Ring"
+                                                className="lhu-podium-layer-2-img"
+                                            />
+                                            <svg
+                                                viewBox="0 0 510 64"
+                                                className="lhu-podium-ring-svg"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <defs>
+                                                    <linearGradient id="lhuBeamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
+                                                        <stop offset="35%" stopColor="#ffaa00" />
+                                                        <stop offset="70%" stopColor="#ffe744" />
+                                                        <stop offset="100%" stopColor="#ffffff" />
+                                                    </linearGradient>
+                                                    <filter id="lhuGlow" x="-15%" y="-40%" width="130%" height="180%">
+                                                        <feGaussianBlur stdDeviation="2" result="blur" />
+                                                        <feMerge>
+                                                            <feMergeNode in="blur" />
+                                                            <feMergeNode in="SourceGraphic" />
+                                                        </feMerge>
+                                                    </filter>
+                                                </defs>
+                                                <ellipse
+                                                    cx="255"
+                                                    cy="32"
+                                                    rx="250"
+                                                    ry="27.5"
+                                                    fill="none"
+                                                    stroke="url(#lhuBeamGrad)"
+                                                    strokeWidth="5"
+                                                    strokeLinecap="round"
+                                                    className="lhu-ring-beam-1"
+                                                    filter="url(#lhuGlow)"
+                                                />
+                                                <ellipse
+                                                    cx="255"
+                                                    cy="32"
+                                                    rx="250"
+                                                    ry="27.5"
+                                                    fill="none"
+                                                    stroke="url(#lhuBeamGrad)"
+                                                    strokeWidth="4"
+                                                    strokeLinecap="round"
+                                                    className="lhu-ring-beam-2"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <img
+                                            src="/assets/images/main-center-bottom-3.png"
+                                            alt="Upper Podium Tier"
+                                            className="lhu-podium-layer-3"
+                                        />
+                                        <div className="lhu-main-coin-shadow" />
+                                    </div>
+
+                                    <div className="lhu-main-coin-wrapper">
+                                        <img
+                                            src="/assets/images/main-center-bottom-4.png"
+                                            alt="Main Center Fox Coin"
+                                            className="lhu-main-coin-img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Container>
             </section>
-            <section className="recentspins about-lhu">
+            <section className="recentspins about-lhu about-lhu-main">
                 <Container>
                     <div className="recent-spins-row">
                         <div className="lhu-banner-div" >
@@ -413,7 +559,7 @@ export default function Home() {
                     </div>
                     <div className={`how-it-img-y how-section-one ${activeHowSection === "trading" ? "" : "d-none"}`}>
                         <Image
-                            src="assets/images/howitwrkhead.png"
+                            src="/assets/images/howitwrkhead.svg"
                             width={100}
                             height={100}
                             alt="btc"
@@ -506,7 +652,7 @@ export default function Home() {
                     </div>
                     <div className={`how-it-img-y how-section-two ${activeHowSection === "spin" ? "" : "d-none"}`}>
                         <Image
-                            src="assets/images/howitwrkhead.png"
+                            src="/assets/images/howitwrkhead.svg"
                             width={100}
                             height={100}
                             alt="btc"
@@ -640,6 +786,7 @@ export default function Home() {
                     </div>
                 </Container>
             </section>
+
 
 
 

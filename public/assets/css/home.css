@@ -2242,6 +2242,30 @@ ul.footcryptobg>li {
 	margin-bottom: 8px;
 }
 
+.lhu-home-page .spin-wheel-left-badge {
+	padding: 4px 15px 5px 6px;
+}
+
+.spin-wheel-badge-text {
+	display: inline-block;
+	white-space: nowrap;
+	clip-path: inset(0 100% 0 0);
+}
+
+.spin-wheel-badge-text.animate {
+	animation: textReveal 3s steps(32, end) forwards;
+}
+
+@keyframes textReveal {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
 .spin-wheel-left-badge-icon {
 	font-size: 14px;
 }
@@ -2875,6 +2899,10 @@ ul.footcryptobg>li {
 	width: 100%;
 	max-width: 25px;
 	height: 100%;
+}
+
+.nightmode .lhu-home-page .spk-icon {
+	filter: invert(1);
 }
 
 .spin-duration-icon {
@@ -3868,7 +3896,76 @@ RIGHT STARTING BORDER
 
 .lhu-banner-img {
 	width: 100%;
+	/* max-width: 500px; */
 	max-width: 650px;
+}
+
+.lhu-banner-orbit {
+	position: relative;
+	min-height: 510px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.lhu-banner-orbit .lhu-banner-img {
+	position: absolute;
+	width: auto;
+	height: auto;
+	max-width: none;
+}
+
+.lhu-banner-orbit .lhu-center-main {
+	width: min(100%, 510px);
+	max-width: 510px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.lhu-banner-orbit .lhu-left-top,
+.lhu-banner-orbit .lhu-left-bottom,
+.lhu-banner-orbit .lhu-right-top,
+.lhu-banner-orbit .lhu-right-bottom {
+	z-index: 3;
+	animation: lhu-orbit-float 3s ease-in-out infinite;
+}
+
+.lhu-banner-orbit .lhu-left-top {
+	left: 25%;
+	top: 2%;
+}
+
+.lhu-banner-orbit .lhu-left-bottom {
+	left: 2%;
+	bottom: 31%;
+	animation-delay: -1.5s;
+}
+
+.lhu-banner-orbit .lhu-right-top {
+	right: 1%;
+	top: 24%;
+	animation-delay: -0.75s;
+}
+
+.lhu-banner-orbit .lhu-right-bottom {
+	right: 7%;
+	bottom: 22%;
+	animation-delay: -2.25s;
+}
+
+@keyframes lhu-orbit-float {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
 }
 
 .luh-left-last {
@@ -3961,6 +4058,21 @@ RIGHT STARTING BORDER
 	height: 240px;
 	margin: 0 auto;
 	display: block;
+	animation: floatImage 3s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .about-lhu .spin-wheel-left-badge {
@@ -3990,6 +4102,29 @@ RIGHT STARTING BORDER
 	font-weight: 500;
 	margin: 0 auto;
 	display: block;
+	transition: all 0.3s ease;
+}
+
+.border-btn-y:hover {
+	background-color: #FF3C00;
+	color: #fff;
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(255, 60, 0, 0.2);
+}
+
+.border-btn-y img {
+	width: 100%;
+	max-width: 20px;
+	transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.border-btn-y:hover img {
+	filter: brightness(0) invert(1);
+	transform: translateX(4px);
+}
+
+.border-btn-y:hover img {
+	transform: translateX(5px);
 }
 
 .spin-why-main-x {
@@ -4000,6 +4135,19 @@ RIGHT STARTING BORDER
 .border-btn-y img {
 	width: 100%;
 	max-width: 20px;
+	animation: arrowMove 1.2s ease-in-out infinite;
+}
+
+@keyframes arrowMove {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(5px);
+	}
 }
 
 .why-lhu-box {
@@ -4013,6 +4161,54 @@ RIGHT STARTING BORDER
 	border-radius: 12px;
 	/* width: auto; */
 }
+
+.why-lhu-box {
+	position: relative;
+	gap: 16px;
+	border: 1px solid #D7DDE7;
+	padding: 22px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.why-lhu-box::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border: 1px solid transparent;
+	border-radius: 12px;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.why-lhu-box:hover::before {
+	opacity: 1;
+	border-color: #FF3C00;
+	animation: borderRun 2s linear infinite;
+}
+
+@keyframes borderRun {
+	0% {
+		clip-path: inset(0 100% 0 0);
+	}
+
+	25% {
+		clip-path: inset(0 0 75% 0);
+	}
+
+	50% {
+		clip-path: inset(0 0 0 75%);
+	}
+
+	75% {
+		clip-path: inset(75% 0 0 0);
+	}
+
+	100% {
+		clip-path: inset(0 100% 0 0);
+	}
+}
+
 
 
 
@@ -4047,6 +4243,43 @@ RIGHT STARTING BORDER
 .line-abot {
 	width: 100%;
 	max-width: 60px;
+}
+
+.about-lhu-main .recent-spins-box .line-abot {
+	/* Animation */
+	transform: scaleX(0);
+	transform-origin: center;
+	animation: lineReveall 1.2s ease-in-out infinite;
+}
+
+@keyframes lineReveall {
+	0% {
+		transform: scaleX(0);
+	}
+
+	50% {
+		transform: scaleX(1);
+	}
+
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+.about-lhu .recent-spins-lhu img {
+	transition: transform 0.3s ease;
+}
+
+.about-lhu .recent-spins-tokens:hover .recent-spins-lhu img {
+	transform: scale(1.15);
+}
+
+.about-lhu .recent-spins-tokens:hover {
+	background: #fffbf9e0;
+}
+
+.nightmode .about-lhu .recent-spins-tokens:hover {
+	background: #1e1e1e;
 }
 
 .recent-spins-tokens .span-p-about {
@@ -4141,6 +4374,20 @@ RIGHT STARTING BORDER
 .join-lhu-img {
 	width: 100%;
 	max-width: 250px !important;
+	animation: floatImage 3s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+
+	0%,
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-10px) rotate(1deg);
+	}
+
 }
 
 .leran-more-btn {
@@ -4153,6 +4400,23 @@ RIGHT STARTING BORDER
 	display: flex;
 	align-items: center;
 	gap: 15px;
+}
+
+.btn-join-div .spin-wheel-left-spin-btn-arrow {
+	display: inline-block;
+	animation: arrowMove 1s ease-in-out infinite;
+}
+
+@keyframes arrowMove {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(5px);
+	}
 }
 
 .lhu-home-page .join-lhu .lhu-banner-div {
@@ -4242,6 +4506,23 @@ RIGHT STARTING BORDER
 
 .how-lhu {
 	padding-top: 0px;
+}
+
+.lhu-home-page .howiticon {
+	max-width: 120px;
+	animation: howIconFloat 3s ease-in-out infinite;
+}
+
+@keyframes howIconFloat {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-8px);
+	}
 }
 
 
@@ -4799,6 +5080,18 @@ RIGHT STARTING BORDER
 
 
 @media (max-width: 1080px) {
+	.lhu-main-coin-wrapper {
+
+		left: 24.25%;
+		top: 1.55%;
+		width: 53%;
+	}
+
+	.lhu-stage-container {
+		max-width: 499px;
+		padding: 11px 0 8px;
+	}
+
 	.why-lhu-box {
 		min-height: 500px;
 	}
@@ -4908,6 +5201,42 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width:991px) {
+	.lhu-main-coin-wrapper {
+		left: 31.25% !important;
+		top: 6.55% !important;
+		width: 38% !important;
+	}
+
+	.lhu-podium-stack {
+		left: 21.13% !important;
+		bottom: 14.45% !important;
+		width: 57.06% !important;
+	}
+
+	.lhu-pos-left-top {
+		left: 25.25% !important;
+		top: 6.95% !important;
+		width: 10.9% !important;
+	}
+
+	.lhu-pos-left-bottom {
+		left: 16.96% !important;
+		top: 35.42% !important;
+		width: 12.7% !important;
+	}
+
+	.lhu-pos-right-bottom {
+		left: 66.51% !important;
+		top: 48.8% !important;
+		width: 12.7% !important;
+	}
+
+	.lhu-pos-right-top {
+		left: 69.9% !important;
+		top: 20.5% !important;
+		width: 11.19% !important;
+	}
+
 	.join-lhu-title {
 		font-size: 32px !important;
 	}
@@ -7066,6 +7395,26 @@ RIGHT STARTING BORDER
 
 
 @media (max-width: 600px) {
+	.lhu-main-coin-wrapper {
+		left: 27.25%;
+		top: 4.55%;
+		width: 49%;
+	}
+
+	.lhu-pos-left-bottom {
+		left: 7.96%;
+		top: 48.42%;
+		width: 15.7%;
+	}
+
+	.lhu-pos-left-top {
+		top: 5.95%;
+	}
+
+	.lhu-pos-right-bottom {
+		width: 15.7%;
+	}
+
 	.btn-join-div {
 		justify-content: center;
 	}
@@ -8425,4 +8774,318 @@ RIGHT STARTING BORDER
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+/* ==========================================================
+   LhuHeroAnimation.css
+   Pixel-matched 100% to reference (775 x 606 canvas)
+   NO HOVER EFFECTS (Completely autonomous smooth animation)
+   ========================================================== */
+
+/* Main Stage Canvas */
+.lhu-stage-container {
+	position: relative;
+	width: 100%;
+	max-width: 775px;
+	margin: 0 auto;
+	aspect-ratio: 775 / 606;
+	user-select: none;
+	cursor: default;
+	overflow: visible;
+}
+
+.lhu-stage-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/* ==========================================================
+   ANIMATIONS (60 FPS Hardware-Accelerated)
+   ========================================================== */
+
+/* 1. Main Fox Coin Floating (Top & Bottom Animation) */
+@keyframes lhuCoinFloat {
+
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(-16px);
+	}
+}
+
+/* 2. Synchronized Cast Shadow under the Fox Coin */
+@keyframes lhuShadowBreathe {
+
+	0%,
+	100% {
+		transform: scale(1);
+		opacity: 0.82;
+		filter: blur(4px);
+	}
+
+	50% {
+		transform: scale(0.84);
+		opacity: 0.42;
+		filter: blur(7px);
+	}
+}
+
+/* 3. Rotating Golden Neon Ring Beams (Perimeter Orbit) */
+@keyframes lhuRingRotate {
+	0% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: -1019;
+	}
+}
+
+@keyframes lhuRingRotateReverse {
+	0% {
+		stroke-dashoffset: -510;
+	}
+
+	100% {
+		stroke-dashoffset: -1529;
+	}
+}
+
+/* 4. Satellite Coins Floating Animations */
+@keyframes lhuFloatLeftTop {
+
+	0%,
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-14px) rotate(-2deg);
+	}
+}
+
+@keyframes lhuFloatLeftBottom {
+
+	0%,
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-12px) rotate(2deg);
+	}
+}
+
+@keyframes lhuFloatRightTop {
+
+	0%,
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-13px) rotate(2deg);
+	}
+}
+
+@keyframes lhuFloatRightBottom {
+
+	0%,
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-11px) rotate(-2deg);
+	}
+}
+
+/* ==========================================================
+   ELEMENT POSITIONS (100% Matched to Reference Image)
+   ========================================================== */
+
+/* Satellite Coins Base Class (NO HOVER EFFECTS) */
+.lhu-satellite-coin {
+	position: absolute;
+	cursor: default;
+	pointer-events: none;
+	/* filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.12)); */
+}
+
+/* 1. Left-Top Coin: x=188, y=30, w=131 */
+.lhu-pos-left-top {
+	left: 22.25%;
+	top: 0.95%;
+	width: 13.9%;
+	z-index: 25;
+	animation: lhuFloatLeftTop 3.8s ease-in-out infinite;
+}
+
+/* 2. Left-Bottom Coin: x=85, y=245, w=114 */
+.lhu-pos-left-bottom {
+	left: 1.96%;
+	top: 40.42%;
+	width: 16.7%;
+	z-index: 25;
+	animation: lhuFloatLeftBottom 4.2s ease-in-out infinite;
+	animation-delay: 0.6s;
+}
+
+/* 3. Right-Top Coin: x=596, y=197, w=79 */
+.lhu-pos-right-top {
+	left: 78.9%;
+	top: 30.5%;
+	width: 13.19%;
+	z-index: 25;
+	animation: lhuFloatRightTop 3.5s ease-in-out infinite;
+	animation-delay: 0.3s;
+}
+
+/* 4. Right-Bottom Coin: x=500, y=320, w=145 */
+.lhu-pos-right-bottom {
+	left: 69.51%;
+	top: 62.8%;
+	width: 18.7%;
+	z-index: 25;
+	animation: lhuFloatRightBottom 4.0s ease-in-out infinite;
+	animation-delay: 0.8s;
+}
+
+/* ==========================================================
+   CENTER PODIUM STACK (Stationary base & top, rotating ring)
+   x=187, y=450, w=388, h=129
+   ========================================================== */
+.lhu-podium-stack {
+	position: absolute;
+	left: 12.13%;
+	bottom: -6.55%;
+	width: 74.06%;
+	aspect-ratio: 388 / 129;
+	z-index: 10;
+	pointer-events: none;
+}
+
+/* Soft ground shadow below the base */
+.lhu-podium-ground-shadow {
+	position: absolute;
+	bottom: -6%;
+	left: 5%;
+	width: 90%;
+	height: 70%;
+	background: radial-gradient(ellipse at center, rgb(252 148 5 / 22%) 0%, rgb(255 75 0 / 12%) 45%, #ff420000 70%);
+	border-radius: 50%;
+	z-index: 2;
+	filter: blur(8px);
+}
+
+/* LAYER 1: main-center-bottom-1 (Base Bronze Cylinder - Stationary) */
+.lhu-podium-layer-1 {
+	position: absolute;
+	bottom: 10%;
+	left: 0%;
+	width: 100%;
+	height: auto;
+	z-index: 5;
+	display: block;
+}
+
+/* LAYER 2: main-center-bottom-2 (100% Reference Placement)
+   Sits flush right along the joint between bottom-1 and bottom-3
+*/
+.lhu-podium-layer-2-wrapper {
+	position: absolute;
+	bottom: 31.5%;
+	left: -0.5%;
+	width: 100%;
+	height: auto;
+	z-index: 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* The actual main-center-bottom-2 image */
+.lhu-podium-layer-2-img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Rotating Energy Beams Overlay */
+.lhu-podium-ring-svg {
+	position: absolute;
+	inset: 0;
+	width: 94%;
+	height: 100%;
+	overflow: visible;
+	pointer-events: none;
+}
+
+.lhu-ring-beam-1 {
+	stroke-dasharray: 200 819;
+	animation: lhuRingRotate 3.2s linear infinite;
+}
+
+.lhu-ring-beam-2 {
+	stroke-dasharray: 200 819;
+	animation: lhuRingRotateReverse 3.2s linear infinite;
+}
+
+.lhu-banner-orbit {
+	position: relative;
+	min-height: 590px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+/* LAYER 3: main-center-bottom-3 (Upper White Tier - Stationary) */
+.lhu-podium-layer-3 {
+	position: absolute;
+	bottom: 38.5%;
+	left: 0%;
+	width: 100%;
+	height: auto;
+	z-index: 7;
+	display: block;
+}
+
+/* Dynamic Shadow on top of main-center-bottom-3 */
+.lhu-main-coin-shadow {
+	position: absolute;
+	bottom: 68%;
+	left: 24%;
+	width: 52%;
+	height: 16%;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.22) 55%, transparent 75%);
+	border-radius: 50%;
+	z-index: 8;
+	animation: lhuShadowBreathe 3.6s ease-in-out infinite;
+}
+
+/* ==========================================================
+   MAIN FOX COIN (main-center-bottom-4)
+   x=188, y=70, w=391, h=409 (NO HOVER EFFECTS)
+   ========================================================= */
+.lhu-main-coin-wrapper {
+	position: absolute;
+	left: 21.25%;
+	top: 1.55%;
+	width: 56%;
+	z-index: 20;
+	cursor: default;
+	pointer-events: none;
+	animation: lhuCoinFloat 3.6s ease-in-out infinite;
+}
+
+.lhu-main-coin-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.1));
 }
