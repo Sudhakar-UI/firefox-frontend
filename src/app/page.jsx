@@ -16,8 +16,27 @@ import SpinBanner from './components/SpinBanner';
 
 
 
+const supportedCoins = [
+    { name: 'Bitcoin BTC', icon: 'btc' },
+    { name: 'Ethereum ETH', icon: 'eth' },
+    { name: 'Litecoin LTC', icon: 'ltc' },
+    { name: 'Tron TRX', icon: 'trx' },
+    { name: 'Bitcoin Cash BCH', icon: 'bch' },
+    { name: 'Tether USDT', icon: 'usdt' },
+    { name: 'Solana SOL', icon: 'sol' },
+    { name: 'Avalanche AVAX', icon: 'avax' },
+    { name: 'Toncoin TON', icon: 'ton' },
+];
 
 export default function Home() {
+    const [animateText, setAnimateText] = useState(false);
+    const [activeHowSection, setActiveHowSection] = useState("trading");
+    const [isSpinning, setIsSpinning] = useState(false);
+
+    useEffect(() => {
+        setAnimateText(true);
+    }, []);
+
 
     const [activeKey, setActiveKey] = useState("1");
     const [activeTab, setActiveTab] = useState("trade");
@@ -40,18 +59,169 @@ export default function Home() {
                         <Col lg={12} className="mx-auto">
                             <h2 className="heading-title">Manage crypto payments and spot trading from a single dashboard.</h2>
                             <Link href='/signin' className="alink alinkfnz">Get Started <Image src="assets/images/arrowbtn.svg" alt="icon" width={24} height={24} /></Link>
-                            <div className="text-center">
-                                <Image src="assets/images/bannericon.svg" className="banner-img lightthemeicon" alt="icon" width={100} height={100} />
-                                <Image src="assets/images/bannericon1.svg" className="banner-img darkthemeicon" alt="icon" width={100} height={100} />
+                            <div className="text-center position-relative">
+                                <Image src="assets/images/firefox-home-banner.svg" className="banner-img lightthemeicon " alt="icon" width={100} height={100} />
+                                <Image src="assets/images/home-banner-graphic.svg" className="home-banner-graphic-img  position-absolute" alt="icon" width={100} height={100} />
+                                <Image src="assets/images/firefox-home-banner-dark.svg" className="banner-img darkthemeicon" alt="icon" width={100} height={100} />
+                                <Image src="assets/images/home-banner-round.svg" className="home-banner-round-img  position-absolute" alt="icon" width={100} height={100} />
+
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </section>
 
+            <section className="lhu-new-section">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col lg={6} md={6}>
+                            <div className="spin-wheel-left">
+                                <div className="spin-wheel-left-badge">
+
+                                    <span className={animateText ? "spin-wheel-badge-text animate" : "spin-wheel-badge-text"}>The Native Token of Our Exchange</span>
+                                </div>
+
+                                <h2 className="spin-wheel-left-heading">
+                                    <span className="">Meet LHU</span>
+                                    — The Token Powering Our Ecosystem
+                                </h2>
+
+                                <p className="">
+                                    Discover LHU, our native ecosystem token built for rewards, trading, and utility across our platform.
+                                </p>
+
+                                <div className="spin-wheel-left-actions">
+                                    <button
+                                        type="button"
+                                        className={`spin-wheel-left-spin-btn ${isSpinning ? 'spinning-active' : ''}`}
+
+                                        disabled={isSpinning}
+                                    >
+
+                                        {isSpinning ? 'Spinning...' : 'Explore LHU Token'}
+                                        <span className="spin-wheel-left-spin-btn-arrow">
+                                            <FontAwesomeIcon icon={faChevronRight} />
+                                        </span>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={6} md={6}>
+
+                            <div className="lhu-stage-container">
+                                <div className="lhu-stage-inner">
+
+                                    <img
+                                        src="/assets/images/left-top.png"
+                                        alt="Left Top Coin"
+                                        className="lhu-satellite-coin lhu-pos-left-top"
+                                    />
+                                    <img
+                                        src="/assets/images/left-bottom.png"
+                                        alt="Left Bottom Coin"
+                                        className="lhu-satellite-coin lhu-pos-left-bottom"
+                                    />
+                                    <img
+                                        src="/assets/images/right-top.png"
+                                        alt="Right Top Coin"
+                                        className="lhu-satellite-coin lhu-pos-right-top"
+                                    />
+                                    <img
+                                        src="/assets/images/right-bottom.png"
+                                        alt="Right Bottom Coin"
+                                        className="lhu-satellite-coin lhu-pos-right-bottom"
+                                    />
+
+                                    <div className="lhu-podium-stack">
+                                        <div className="lhu-podium-ground-shadow" />
+                                        <img
+                                            src="/assets/images/main-center-bottom-1.png"
+                                            alt="Podium Base"
+                                            className="lhu-podium-layer-1"
+                                        />
+
+                                        <div className="lhu-podium-layer-2-wrapper">
+                                            <img
+                                                src="/assets/images/main-center-bottom-2.png"
+                                                alt="Glowing Ring"
+                                                className="lhu-podium-layer-2-img"
+                                            />
+                                            <svg
+                                                viewBox="0 0 510 64"
+                                                className="lhu-podium-ring-svg"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <defs>
+                                                    <linearGradient id="lhuBeamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
+                                                        <stop offset="35%" stopColor="#ffaa00" />
+                                                        <stop offset="70%" stopColor="#ffe744" />
+                                                        <stop offset="100%" stopColor="#ffffff" />
+                                                    </linearGradient>
+                                                    <filter id="lhuGlow" x="-15%" y="-40%" width="130%" height="180%">
+                                                        <feGaussianBlur stdDeviation="2" result="blur" />
+                                                        <feMerge>
+                                                            <feMergeNode in="blur" />
+                                                            <feMergeNode in="SourceGraphic" />
+                                                        </feMerge>
+                                                    </filter>
+                                                </defs>
+                                                <ellipse
+                                                    cx="255"
+                                                    cy="32"
+                                                    rx="250"
+                                                    ry="27.5"
+                                                    fill="none"
+                                                    stroke="url(#lhuBeamGrad)"
+                                                    strokeWidth="5"
+                                                    strokeLinecap="round"
+                                                    className="lhu-ring-beam-1"
+                                                    filter="url(#lhuGlow)"
+                                                />
+                                                <ellipse
+                                                    cx="255"
+                                                    cy="32"
+                                                    rx="250"
+                                                    ry="27.5"
+                                                    fill="none"
+                                                    stroke="url(#lhuBeamGrad)"
+                                                    strokeWidth="4"
+                                                    strokeLinecap="round"
+                                                    className="lhu-ring-beam-2"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <img
+                                            src="/assets/images/main-center-bottom-3.png"
+                                            alt="Upper Podium Tier"
+                                            className="lhu-podium-layer-3"
+                                        />
+                                        <div className="lhu-main-coin-shadow" />
+                                    </div>
+
+                                    <div className="lhu-main-coin-wrapper">
+                                        <img
+                                            src="/assets/images/main-center-bottom-4.png"
+                                            alt="Main Center Fox Coin"
+                                            className="lhu-main-coin-img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
             <section className="personalsbanner">
                 <Container>
                     <Row className="align-items-center">
+                        <Col lg={6} md={6}>
+                            <div className="text-center pernalcrypto">
+                                <Image src="assets/images/home-ac.svg" alt="icon" width={100} height={100} />
+                            </div>
+                        </Col>
                         <Col lg={6} md={6}>
                             <p>Whether you're managing personal transactions or running a full-scale operation, our crypto payment solution adapts to your needs—seamlessly, securely, and globally.</p>
                             <div className="personalcntbox">
@@ -78,22 +248,14 @@ export default function Home() {
                                 <Link href='/signup' className="alink alinkfnz">Create an Account <Image src="assets/images/arrowbtn.svg" alt="icon" width={24} height={24} /></Link>
                             </div>
                         </Col>
-                        <Col lg={6} md={6}>
-                            <div className="text-center pernalcrypto">
-                                <Image src="assets/images/personalcrypto.png" alt="icon" width={100} height={100} />
-                            </div>
-                        </Col>
+
                     </Row>
                 </Container>
             </section>
             <section className="telegrambanner">
                 <Container>
                     <Row className="align-items-center">
-                        <Col lg={6} md={6}>
-                            <div className="text-center pernalcryptos">
-                                <Image src="assets/images/telegrambot.png" alt="icon" width={100} height={100} />
-                            </div>
-                        </Col>
+
                         <Col lg={6} md={6}>
 
                             <Link href="/" className="mb-3 d-block">
@@ -118,6 +280,11 @@ export default function Home() {
                                 </button>
                             </div>
 
+                        </Col>
+                        <Col lg={6} md={6}>
+                            <div className="text-center pernalcryptos">
+                                <Image src="assets/images/firefox-tele-gif.gif" alt="icon" width={100} height={100} />
+                            </div>
                         </Col>
 
                     </Row>
@@ -912,110 +1079,30 @@ export default function Home() {
 
 
             <div className="supportcoinbg mt-5 mb-5">
-                <Container className="text-center" data-aos="fade-up" data-aos-duration="1000">
+                <div className="text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 className="heading-title pb-3">Supported Cryptocurrencies</h2>
-                    <div className="supprtcoinsbg">
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/btc.svg" alt="icon" width={100} height={100} />
+                    <div className="supprtcoinsbg py-2">
+                        <div className="supprtcoin-track">
+                            {[0, 1].map((groupIndex) => (
+                                <div className="supprtcoin-group" key={groupIndex} aria-hidden={groupIndex === 1}>
+                                    {supportedCoins.map((coin) => (
+                                        <div className="supprtcoinbox" key={coin.icon}>
+                                            <div className="suprttable">
+                                                <div>
+                                                    <Image src={`assets/images/color/${coin.icon}.svg`} alt="" width={100} height={100} />
+                                                </div>
+                                                <div>
+                                                    <p>{coin.name}</p>
+                                                    <h5>$116,600.14</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
-                                <div>
-                                    <p>Bitcoin BTC</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/eth.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Ethereum ETH</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/ltc.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Litecoin LTC</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/trx.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Tron TRX</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/bch.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Bitcoin Cash BCH</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/usdt.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Tether USDT</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/sol.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Solana SOL</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/avax.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Avalanche AVAX</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="supprtcoinbox">
-                            <div className="suprttable">
-                                <div>
-                                    <Image src="assets/images/color/ton.svg" alt="icon" width={100} height={100} />
-                                </div>
-                                <div>
-                                    <p>Toncoin TON</p>
-                                    <h5>$116,600.14</h5>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
-                </Container>
+                </div>
             </div>
 
 

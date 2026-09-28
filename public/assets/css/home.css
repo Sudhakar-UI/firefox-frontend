@@ -986,12 +986,11 @@ ul.footcryptobg>li {
 }
 
 
-.personalsbanner {
-	background: linear-gradient(to bottom, #f6f6f6, #ffffff);
-}
 
-.telegrambanner {
-	background: linear-gradient(to bottom, #f6f6f6, #ffffff);
+
+.telegrambanner,
+.personalsbanner {
+	background: #f6f6f6;
 }
 
 .pernalcrypto img {
@@ -1070,10 +1069,30 @@ ul.footcryptobg>li {
 } */
 
 .supprtcoinsbg {
+	width: 100%;
+	overflow: hidden;
+}
+
+.supprtcoin-track {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	width: max-content;
+	animation: supportcoin-scroll 35s linear infinite;
+}
+
+.supprtcoin-track:has(.supprtcoinbox:hover) {
+	animation-play-state: paused;
+}
+
+.supprtcoin-group {
+	display: flex;
 	gap: 10px;
+	padding-right: 10px;
+}
+
+@keyframes supportcoin-scroll {
+	to {
+		transform: translateX(-50%);
+	}
 }
 
 .supprtcoinbox p {
@@ -1092,10 +1111,21 @@ ul.footcryptobg>li {
 	padding: 14px 20px;
 	width: 100%;
 	max-width: 250px;
+	flex: 0 0 min(250px, 78vw);
 }
 
 .supprtcoinbox:hover {
 	background-color: #f5f5f5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.supprtcoin-track {
+		animation: none;
+	}
+
+	.supprtcoinsbg {
+		overflow-x: auto;
+	}
 }
 
 
@@ -1479,6 +1509,7 @@ ul.footcryptobg>li {
 .suprttable img {
 	width: 100%;
 	max-width: 55px;
+	animation: none !important;
 }
 
 .choosecentericon img {
@@ -4212,8 +4243,42 @@ RIGHT STARTING BORDER
 
 
 
-.why-lhu .react-multi-carousel-list {
+.why-lhu-main {
+	padding-bottom: 40px;
+}
+
+.why-lhu-main .carousel-inner {
 	overflow: visible;
+}
+
+.why-lhu-slide {
+	display: flex;
+	gap: 26px;
+	padding: 7px 13px;
+}
+
+.why-lhu-slide .why-lhu-box {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+.why-lhu-main .carousel-indicators {
+	display: none;
+	margin-bottom: 0;
+}
+
+.why-lhu-main .carousel-indicators [data-bs-target] {
+	width: 8px;
+	height: 8px;
+	margin: 0 4px;
+	border: 0;
+	border-radius: 50%;
+	background-color: #d7dde7;
+	opacity: 1;
+}
+
+.why-lhu-main .carousel-indicators .active {
+	background-color: #ff3c00;
 }
 
 .why-tick-lhu-img {
@@ -4226,12 +4291,6 @@ RIGHT STARTING BORDER
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-}
-
-
-
-.why-lhu-main .react-multi-carousel-dot-list {
-	display: none;
 }
 
 
@@ -4500,10 +4559,6 @@ RIGHT STARTING BORDER
 	background: #3a2415;
 }
 
-.why-lhu .react-multi-carousel-item {
-	padding: 7px 13px;
-}
-
 .how-lhu {
 	padding-top: 0px;
 }
@@ -4525,6 +4580,74 @@ RIGHT STARTING BORDER
 	}
 }
 
+.lhu-new-section .spin-wheel-left {
+	max-width: 100%;
+	width: auto;
+}
+
+.lhu-new-section .spin-wheel-left-heading {
+	white-space: wrap;
+	font-size: 42px;
+	line-height: 58px;
+	font-weight: 600;
+}
+
+.lhu-new-section .spin-wheel-left-heading span {
+	color: #FF3C00;
+}
+
+.lhu-new-section .lhu-stage-container {
+	width: 500px;
+}
+
+.lhu-new-section .spin-wheel-left-spin-btn {
+	padding: 14px 28px;
+}
+
+.home-banner-graphic-img {
+	top: 46px;
+	left: 40%;
+	width: 100%;
+	max-width: 40px;
+	z-index: 100;
+
+	animation: graphicMove 3s ease-in-out infinite;
+}
+
+@keyframes graphicMove {
+
+	0%,
+	100% {
+		transform: translateX(0) rotate(0deg);
+	}
+
+	50% {
+		transform: translateX(10px) rotate(6deg);
+	}
+}
+
+.home-banner-round-img {
+	bottom: 110px;
+	right: 30px;
+	width: 100%;
+	max-width: 80px;
+	animation: roundRotate 5s linear infinite;
+	z-index: 100;
+}
+
+@keyframes roundRotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.lhu-new-section .spin-wheel-left {
+	padding: 0px;
+}
 
 @media (max-width:1700px) {
 	.tokensize img {
@@ -4605,7 +4728,7 @@ RIGHT STARTING BORDER
 
 	.y-lhu-img {
 		max-width: 210px;
-		height: 100%;
+		/* height: 100%; */
 	}
 
 	.luh-left-last {
@@ -4719,6 +4842,10 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 1300px) {
+	.lhu-new-section .spin-wheel-left-heading {
+		font-size: 40px;
+		line-height: 48px;
+	}
 
 	.join-lhu-title {
 		font-size: 39px;
@@ -4787,6 +4914,10 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width:1230px) {
+	.supprtcoinbox {
+		padding: 14px 20px;
+		max-width: fit-content;
+	}
 
 	.lhu-home-page .spin-wheel-left-heading,
 	.lhu-home-page .spin-wheel-left-heading-highlight {
@@ -4815,6 +4946,23 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 1200px) {
+	.lhu-new-section .spin-wheel-left-heading {
+		font-size: 36px;
+		line-height: 47px;
+	}
+
+	.lhu-new-section .lhu-stage-container {
+		width: 410px;
+	}
+
+	.home-banner-graphic-img {
+		max-width: 30px;
+	}
+
+	.home-banner-round-img {
+		max-width: 70px;
+	}
+
 	.lhu-home-page .recentspins .recent-spins {
 		width: 100%;
 	}
@@ -5008,11 +5156,7 @@ RIGHT STARTING BORDER
 		font-size: 15px;
 	}
 
-	.why-lhu-main .react-multi-carousel-list {
-		padding-left: 10px;
-	}
-
-	.why-lhu-main .react-multi-carousel-dot-list {
+	.why-lhu-main .carousel-indicators {
 		display: flex;
 	}
 
@@ -5080,6 +5224,11 @@ RIGHT STARTING BORDER
 
 
 @media (max-width: 1080px) {
+	.lhu-new-section .spin-wheel-left-heading {
+		font-size: 35px;
+		line-height: 44px;
+	}
+
 	.lhu-main-coin-wrapper {
 
 		left: 24.25%;
@@ -5174,12 +5323,6 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 768px) {
-	.why-lhu-main .react-multi-carousel-list {
-		padding-left: 0;
-	}
-
-
-
 	/* .why-lhu-box {
 		margin: 0 auto;
 	} */
@@ -5201,6 +5344,11 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width:991px) {
+	.home-banner-graphic-img {
+		top: 63px;
+	}
+
+
 	.lhu-main-coin-wrapper {
 		left: 31.25% !important;
 		top: 6.55% !important;
@@ -5425,6 +5573,16 @@ RIGHT STARTING BORDER
 		font-size: 42px;
 		line-height: 49px;
 		text-align: center;
+
+	}
+
+	.lhu-new-section .spin-wheel-left-heading,
+	.lhu-new-section .spin-wheel-left p {
+		text-align: start;
+	}
+
+	.lhu-new-section .spin-wheel-left-actions {
+		justify-content: start;
 
 	}
 
@@ -6210,6 +6368,11 @@ RIGHT STARTING BORDER
 		font-size: 60px !important;
 		line-height: 63px !important;
 	}
+
+	.lhu-new-section .spin-wheel-left-heading {
+		font-size: 32px !important;
+		line-height: 41px !important;
+	}
 }
 
 @media (max-width: 870px) {
@@ -6239,6 +6402,12 @@ RIGHT STARTING BORDER
 
 
 @media (max-width: 768px) {
+	.home-banner-round-img {
+		max-width: 60px;
+		bottom: 40px;
+		right: 10px;
+	}
+
 	.lhu-home-page .recent-spins-tokens {
 		max-width: 200px;
 	}
@@ -6255,6 +6424,32 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width:767px) {
+
+	.lhu-new-section .spin-wheel-left-heading,
+	.lhu-new-section .spin-wheel-left p {
+		text-align: center;
+	}
+
+	.lhu-new-section .spin-wheel-left-actions {
+		justify-content: center;
+	}
+
+	.pernalcrypto img {
+		max-width: 450px;
+	}
+
+	.personalsbanner .row {
+		flex-direction: column-reverse;
+		gap: 10px;
+	}
+
+	.telegrambanner .row {
+		gap: 20px;
+	}
+
+	.pernalcryptos img {
+		max-width: 408px;
+	}
 
 	.spin-wheel-left-spin-btn,
 	.lhu-home-page .leran-more-btn {
@@ -7146,6 +7341,10 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 650px) {
+	.home-banner-graphic-img {
+		top: 35px;
+	}
+
 	.join-lhu-title {
 		font-size: 28px !important;
 		line-height: 32px !important;
@@ -7395,6 +7594,11 @@ RIGHT STARTING BORDER
 
 
 @media (max-width: 600px) {
+	.home-banner-graphic-img {
+		max-width: 26px;
+		top: 21px;
+	}
+
 	.lhu-main-coin-wrapper {
 		left: 27.25%;
 		top: 4.55%;
@@ -8180,6 +8384,13 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 500px) {
+	.home-banner-round-img {
+		max-width: 40px;
+	}
+
+	.home-banner-graphic-img {
+		max-width: 24px;
+	}
 
 	.spin-minimized-img {
 		width: 110px;
@@ -8699,6 +8910,10 @@ RIGHT STARTING BORDER
 }
 
 @media (max-width: 380px) {
+	.home-banner-graphic-img {
+		max-width: 19px;
+	}
+
 	.spin-wheel-left-heading {
 		font-size: 26px !important;
 		line-height: 43px !important;
@@ -9019,10 +9234,11 @@ RIGHT STARTING BORDER
 .lhu-podium-ring-svg {
 	position: absolute;
 	inset: 0;
-	width: 94%;
+	width: 88%;
 	height: 100%;
 	overflow: visible;
 	pointer-events: none;
+	left: 28px;
 }
 
 .lhu-ring-beam-1 {

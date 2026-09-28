@@ -1,58 +1,78 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
-import { Container, Row, Col, Image, Table, Accordion, Button, Tab, Nav, Badge, Tabs } from 'react-bootstrap';
+import { Container, Image, Carousel } from 'react-bootstrap';
 import Homeheader from '../components/Homeheader';
 import Homefooter from '../components/Homefooter';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faChevronRight, faTelegramPlane, faTelegram } from '@fortawesome/free-solid-svg-icons';
-import "react-multi-carousel/lib/styles.css";
-import Carousel from "react-multi-carousel";
-import SimpleBar from 'simplebar-react';
-import ResponsiveTable from '../components/ResponsiveTable';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import 'simplebar-react/dist/simplebar.min.css';
 
-const whyLhuResponsive = {
-    desktop: {
-        breakpoint: { max: 1920, min: 1080 },
-        items: 3,
+const whyLhuFeatures = [
+    {
+        icon: 'y-lhu-1.svg',
+        title: 'Free LHU Claim',
+        points: [
+            'Participate in Spin Wheel',
+            'Win and claim LHU tokens for free',
+            'Reward amount varies by spin result',
+            'Claimed LHU credited to your wallet',
+        ],
+        button: 'Spin & Claim Now',
     },
-    // tablet: {
-    //     breakpoint: { max: 1200, min: 1080 },
-    //     items: 3,
-    // },
-    tablet: {
-        breakpoint: { max: 1080, min: 769 },
-        items: 2,
+    {
+        icon: 'y-lhu-2.svg',
+        title: 'Trade LHU',
+        points: [
+            'Trade LHU on our centralized exchange',
+            'Trading pair: LHU/USDT',
+            'Buy and sell through the order book',
+            'Market price based on reat trading activity',
+        ],
+        button: 'Trade LHU/USDT',
     },
-    mobile: {
-        breakpoint: { max: 768, min: 0 },
-        items: 1,
+    {
+        icon: 'y-lhu-3.svg',
+        title: 'LHU Wallet',
+        points: [
+            'View your LHU balance',
+            'Check transaction history',
+            'Use LHU for supported features',
+            'Secure and easy to manage',
+        ],
+        button: 'View Wallet',
     },
-};
-
-
+];
 
 
 export default function Home() {
 
-    const [activeKey, setActiveKey] = useState("1");
-    const [activeTab, setActiveTab] = useState("trade");
     const [activeHowSection, setActiveHowSection] = useState("trading");
     const [isSpinning, setIsSpinning] = useState(false);
-    const [wheelRotation, setWheelRotation] = useState(0);
-    const [lightsOn, setLightsOn] = useState(false);
-    const [soundOn, setSoundOn] = useState(true);
-    const [wonPrize, setWonPrize] = useState(null);
-    const [showResult, setShowResult] = useState(false);
+    const [cardsPerSlide, setCardsPerSlide] = useState(3);
+    const [activeFeatureSlide, setActiveFeatureSlide] = useState(0);
 
 
 
     useEffect(() => {
         AOS.init();
     })
+
+    useEffect(() => {
+        const updateCardsPerSlide = () => {
+            setCardsPerSlide(window.innerWidth <= 768 ? 1 : window.innerWidth <= 1080 ? 2 : 3);
+        };
+
+        updateCardsPerSlide();
+        window.addEventListener('resize', updateCardsPerSlide);
+        return () => window.removeEventListener('resize', updateCardsPerSlide);
+    }, []);
+
+    useEffect(() => {
+        setActiveFeatureSlide(0);
+    }, [cardsPerSlide]);
     const [animateText, setAnimateText] = useState(false);
 
     useEffect(() => {
@@ -431,97 +451,42 @@ export default function Home() {
                     </div>
                     <Carousel
                         className='why-lhu-main'
-                        responsive={whyLhuResponsive}
-                        arrows={false}
-                        showDots={true}
-                        infinite={false}
-                        swipeable={true}
-                        draggable={true}
+                        controls={false}
+                        indicators={cardsPerSlide < whyLhuFeatures.length}
+                        interval={null}
+                        touch={true}
+                        wrap={false}
+                        activeIndex={activeFeatureSlide}
+                        onSelect={setActiveFeatureSlide}
                     >
-                        <div className='why-lhu-box'>
-                            <Image src="assets/images/y-lhu-1.svg" width={16} height={16} className="y-lhu-img" alt="spinbox" />
-                            <div className='spin-why-main-x'>
-                                <div className="spin-why-main">
-                                    Free LHU Claim
+                        {Array.from({ length: Math.ceil(whyLhuFeatures.length / cardsPerSlide) }, (_, slideIndex) => (
+                            <Carousel.Item key={slideIndex}>
+                                <div className='why-lhu-slide'>
+                                    {whyLhuFeatures
+                                        .slice(slideIndex * cardsPerSlide, (slideIndex + 1) * cardsPerSlide)
+                                        .map((feature) => (
+                                            <div className='why-lhu-box' key={feature.title}>
+                                                <Image src={`assets/images/${feature.icon}`} width={16} height={16} className="y-lhu-img" alt="spinbox" />
+                                                <div className='spin-why-main-x'>
+                                                    <div className="spin-why-main">{feature.title}</div>
+                                                    <div className='why-lhu-main-list'>
+                                                        {feature.points.map((point) => (
+                                                            <div className='why-lhu-box-list' key={point}>
+                                                                <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
+                                                                <p className='mb-0'>{point}</p>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                <button className='border-btn-y'>
+                                                    {feature.button}
+                                                    <span><Image src="assets/images/y-lhu-arrow.svg" width={16} height={16} className="line-abot" alt="spinbox" /></span>
+                                                </button>
+                                            </div>
+                                        ))}
                                 </div>
-                                <div className='why-lhu-main-list'>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Participate in Spin Wheel</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Win and claim LHU tokens for free</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Reward amount varies by spin result</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Claimed LHU credited to your wallet</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button className='border-btn-y'>Spin & Claim Now <span> <Image src="assets/images/y-lhu-arrow.svg" width={16} height={16} className="line-abot" alt="spinbox" /></span> </button>
-                        </div>
-                        <div className='why-lhu-box'>
-                            <Image src="assets/images/y-lhu-2.svg" width={16} height={16} className="y-lhu-img" alt="spinbox" />
-                            <div className='spin-why-main-x'>
-                                <div className="spin-why-main">
-                                    Trade LHU
-                                </div>
-                                <div className='why-lhu-main-list'>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Trade LHU on our centralized exchange</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Trading pair: LHU/USDT</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Buy and sell through the order book</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Market price based on reat trading activity</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button className='border-btn-y'>Trade LHU/USDT <span> <Image src="assets/images/y-lhu-arrow.svg" width={16} height={16} className="line-abot" alt="spinbox" /></span> </button>
-                        </div>
-                        <div className='why-lhu-box'>
-                            <Image src="assets/images/y-lhu-3.svg" width={16} height={16} className="y-lhu-img" alt="spinbox" />
-                            <div className='spin-why-main-x'>
-                                <div className="spin-why-main">
-                                    LHU Wallet
-                                </div>
-                                <div className='why-lhu-main-list'>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>View your LHU balance</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Check transaction history</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Use LHU for supported features</p>
-                                    </div>
-                                    <div className='why-lhu-box-list'>
-                                        <Image src="assets/images/why-tick-lhu.svg" width={16} height={16} className="why-tick-lhu-img" alt="spinbox" />
-                                        <p className='mb-0'>Secure and easy to manage</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button className='border-btn-y'>View Wallet <span> <Image src="assets/images/y-lhu-arrow.svg" width={16} height={16} className="line-abot" alt="spinbox" /></span> </button>
-                        </div>
+                            </Carousel.Item>
+                        ))}
                     </Carousel>
                 </Container>
             </section>
@@ -786,10 +751,6 @@ export default function Home() {
                     </div>
                 </Container>
             </section>
-
-
-
-
             <Homefooter />
         </div>
 

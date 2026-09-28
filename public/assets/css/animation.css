@@ -353,10 +353,15 @@ background: linear-gradient(180deg, #ffc63270, #ff6a0036);
     transform: rotate(12deg) scale(1.15);
 }
 
-.howitflex>div:hover {
+/* .howitflex>div:hover {
     transform: translateY(-8px);
     border-color: #ff6d015e !important;
     box-shadow: 0 15px 35px rgb(255 125 11 / 22%) !important;
+} */
+ .howitflex>div:hover {
+    transform: translateY(-8px);
+    border-color: #6e6e6e5e !important;
+    box-shadow: 0px 10px 13px rgb(135 135 135 / 11%) !important;
 }
 
 .arrhomeicon {
