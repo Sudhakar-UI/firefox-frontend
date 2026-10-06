@@ -1,0 +1,99 @@
+   <div className="lhu-podium-layer-2-wrapper">
+                                            <img
+                                                src="/assets/images/center-line.svg"
+                                                alt="Glowing Ring"
+                                                className="lhu-podium-layer-2-img"
+                                            />
+                                            <div class="glowing-ring-container">
+                                                <svg viewBox="0 0 350 52" xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        {/* <!-- Radiant Yellow Gradient --> */}
+                                                        <linearGradient id="ringYellow350" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                            <stop offset="0%" stop-color="#ffbb00" />
+                                                            <stop offset="20%" stop-color="#ffea00" />
+                                                            <stop offset="50%" stop-color="#fffff0" />
+                                                            <stop offset="80%" stop-color="#ffea00" />
+                                                            <stop offset="100%" stop-color="#ffbb00" />
+                                                        </linearGradient>
+
+                                                        {/* <!-- Rotating Comet Beam --> */}
+                                                        <linearGradient id="ringComet350" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                            <stop offset="0%" stop-color="rgba(255, 234, 0, 0)" />
+                                                            <stop offset="40%" stop-color="#ffd000" />
+                                                            <stop offset="70%" stop-color="#fff580" />
+                                                            <stop offset="100%" stop-color="#ffffff" />
+                                                        </linearGradient>
+
+                                                        {/* <!-- Reduced Shadow --> */}
+                                                        <filter id="shadow350" x="-20%" y="-60%" width="140%" height="220%">
+                                                            <feGaussianBlur stdDeviation="3.5" result="blurShadow" />
+                                                        </filter>
+
+                                                        {/* <!-- Crisp Neon Bloom --> */}
+                                                        <filter id="glow350" x="-20%" y="-60%" width="140%" height="220%">
+                                                            <feGaussianBlur stdDeviation="3" result="blurBloom" />
+                                                            <feMerge>
+                                                                <feMergeNode in="blurBloom" />
+                                                                <feMergeNode in="SourceGraphic" />
+                                                            </feMerge>
+                                                        </filter>
+                                                    </defs>
+
+                                                    {/* <!-- 1. Reduced Subtle Warm Shadow (No hard borders) --> */}
+                                                    <ellipse cx="175" cy="26" rx="170" ry="19" fill="none" stroke="#ff8800" stroke-width="10" opacity="0.25" filter="url(#shadow350)" />
+
+                                                    {/* <!-- 2. Main Big Bold Yellow Line --> */}
+                                                    <ellipse cx="175" cy="25" rx="170" ry="19" fill="none" stroke="#ffea00" stroke-width="15" opacity="0.8" filter="url(#glow350)" />
+                                                    <ellipse cx="175" cy="25" rx="170" ry="19" fill="none" stroke="url(#ringYellow350)" stroke-width="10" opacity="1" filter="url(#glow350)" />
+                                                    <ellipse cx="175" cy="25" rx="170" ry="19" fill="none" stroke="#ffffff" stroke-width="4.5" opacity="0.95" />
+
+                                                    {/* <!-- 3. Rotating 3D Comet (Round aagura animation) --> */}
+                                                    <ellipse cx="175" cy="25" rx="170" ry="19" fill="none" stroke="url(#ringComet350)" stroke-width="11" stroke-linecap="round" class="neon-beam-orbit" filter="url(#glow350)" />
+                                                    <ellipse cx="175" cy="25" rx="170" ry="19" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" class="neon-core-orbit" />
+                                                </svg>
+                                            </div>
+                                            {/* <svg
+                                                viewBox="0 0 510 64"
+                                                className="lhu-podium-ring-svg"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <defs>
+                                                    <linearGradient id="lhuBeamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
+                                                        <stop offset="35%" stopColor="#ffaa00" />
+                                                        <stop offset="70%" stopColor="#ffe744" />
+                                                        <stop offset="100%" stopColor="#ffffff" />
+                                                    </linearGradient>
+                                                    <filter id="lhuGlow" x="-15%" y="-40%" width="130%" height="180%">
+                                                        <feGaussianBlur stdDeviation="2" result="blur" />
+                                                        <feMerge>
+                                                            <feMergeNode in="blur" />
+                                                            <feMergeNode in="SourceGraphic" />
+                                                        </feMerge>
+                                                    </filter>
+                                                </defs>
+                                                <ellipse
+                                                    cx="255"
+                                                    cy="32"
+                                                    rx="250"
+                                                    ry="27.5"
+                                                    fill="none"
+                                                    stroke="url(#lhuBeamGrad)"
+                                                    strokeWidth="5"
+                                                    strokeLinecap="round"
+                                                    className="lhu-ring-beam-1"
+                                                    filter="url(#lhuGlow)"
+                                                />
+                                                <ellipse
+                                                    cx="255"
+                                                    cy="32"
+                                                    rx="250"
+                                                    ry="27.5"
+                                                    fill="none"
+                                                    stroke="url(#lhuBeamGrad)"
+                                                    strokeWidth="4"
+                                                    strokeLinecap="round"
+                                                    className="lhu-ring-beam-2"
+                                                />
+                                            </svg> */}
+                                        </div>
