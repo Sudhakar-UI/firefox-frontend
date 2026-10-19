@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from 'next/link';
 import { Container, Navbar, Nav, Image, NavDropdown, Modal, Form } from 'react-bootstrap';
 import { usePathname } from 'next/navigation'
@@ -7,22 +7,51 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const Homeheader = () => {
-  const handleThemeChange = (e) => {
-    const x = `${e.clientX}px`;
-    const y = `${e.clientY}px`;
+  const themeTimeouts = useRef([]);
+  const themeTransitionId = useRef(0);
+  const handleThemeChange = (nightMode) => {
+    const body = document.body;
+    const root = document.documentElement;
+    const toggle = document.querySelector(".modebg");
+    const toggleBounds = toggle?.getBoundingClientRect();
 
-    document.body.style.setProperty("--x", x);
-    document.body.style.setProperty("--y", y);
+    if (!toggleBounds) {
+      body.classList.toggle("nightmode", nightMode);
+      return;
+    }
 
-    document.body.classList.add("theme-transition");
+    root.style.setProperty("--theme-x", `${toggleBounds.left + toggleBounds.width / 2}px`);
+    root.style.setProperty("--theme-y", `${toggleBounds.top + toggleBounds.height / 2}px`);
+    themeTimeouts.current.forEach(clearTimeout);
+    const transitionId = ++themeTransitionId.current;
+    root.classList.remove("theme-going-to-bottom", "theme-going-to-toggle");
+    body.classList.remove("theme-transition", "theme-going-to-bottom", "theme-going-to-toggle");
+    void root.offsetWidth;
 
-    setTimeout(() => {
-      document.body.classList.toggle("nightmode");
-    }, 100);
+    const transitionClass = nightMode ? "theme-going-to-bottom" : "theme-going-to-toggle";
+    body.style.setProperty("--theme-overlay-color", nightMode ? "#0f0f0f" : "#fff");
+    if (document.startViewTransition) {
+      root.classList.add(transitionClass);
+      const transition = document.startViewTransition(() => {
+        body.classList.toggle("nightmode", nightMode);
+      });
+      const clearTransitionClass = () => {
+        if (themeTransitionId.current === transitionId) {
+          root.classList.remove(transitionClass);
+        }
+      };
+      transition.finished.then(clearTransitionClass, clearTransitionClass);
+      return;
+    }
 
-    setTimeout(() => {
-      document.body.classList.remove("theme-transition");
-    }, 700);
+    body.classList.add("theme-transition", transitionClass);
+
+    themeTimeouts.current = [
+      setTimeout(() => body.classList.toggle("nightmode", nightMode), 1000),
+      setTimeout(() => {
+        body.classList.remove("theme-transition", "theme-going-to-bottom", "theme-going-to-toggle");
+      }, 1200),
+    ];
   };
 
 
@@ -53,7 +82,6 @@ const Homeheader = () => {
 
 
   function nightMode() {
-    document.body.classList.add('nightmode');
     var element = document.getElementById("daymode");
     element?.classList.remove("activemode");
     var element1 = document.getElementById("nightmode");
@@ -61,7 +89,6 @@ const Homeheader = () => {
   }
 
   function dayMode() {
-    document.body.classList.remove('nightmode');
     var element2 = document.getElementById("daymode");
     element2?.classList.add("activemode");
     var element3 = document.getElementById("nightmode");
@@ -112,12 +139,12 @@ const Homeheader = () => {
                 <Nav.Item className="modebg">
                   <Link href="#" className="nav-link modeicon daymodeicon activemode" id="daymode" onClick={(e) => {
                     e.preventDefault();
-                    handleThemeChange(e);
+                    handleThemeChange(false);
                     dayMode();
                   }}><Image src="assets/images/sun.svg" width={20} height={20} alt="icon" /></Link>
                   <Link href="#" className="nav-link modeicon nightmodeicon" id="nightmode" onClick={(e) => {
                     e.preventDefault();
-                    handleThemeChange(e);
+                    handleThemeChange(true);
                     nightMode();
                   }}><Image src="assets/images/moon.svg" width={20} height={20} alt="icon" /></Link>
                 </Nav.Item>

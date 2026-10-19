@@ -4160,6 +4160,467 @@ input:-webkit-autofill:active {
 	position: inherit !important;
 }
 
+.profile-menu-wrapper {
+	min-width: 0;
+	padding: 6px;
+	border-radius: 8px;
+	background: #ffffff;
+	color: #212529;
+}
+
+.usermenudrop.dropdownsubmenu>.dropdown-menu {
+	max-height: none;
+	overflow: visible !important;
+	z-index: 1100;
+}
+
+.profile-menu-wrapper>hr {
+	margin: 8px 0;
+}
+
+.profile-menu-wrapper .profilesubdropbox {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px;
+	white-space: normal;
+}
+
+.profile-menu-wrapper .submenu-dropdown {
+	display: block;
+	margin: 0 !important;
+	position: relative !important;
+}
+
+.profile-menu-wrapper .submenu-dropdown #lang {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	width: 100%;
+	text-align: left;
+}
+
+.profile-menu-wrapper .submenu-dropdown>.dropdown-toggle {
+	width: 100%;
+	padding: 6px 8px;
+	border-radius: 5px;
+	color: inherit;
+	text-decoration: none;
+	text-align: left;
+}
+
+.profile-menu-wrapper .submenu-dropdown>.dropdown-toggle:hover,
+.profile-menu-wrapper .submenu-dropdown.show>.dropdown-toggle.show {
+	background: #f2f2f2;
+	color: inherit;
+}
+
+.profile-menu-wrapper .submenu-dropdown.show .dropdown-menu {
+	position: static !important;
+	top: auto !important;
+	right: auto !important;
+	left: auto !important;
+	transform: none !important;
+	float: none;
+	width: 100%;
+	min-width: 0;
+	height: auto;
+	min-height: 0;
+	max-height: none;
+	margin: 0 0 8px;
+	background: #ffffff;
+	color: #212529;
+	border: 1px solid #e5e5e5;
+	border-radius: 6px;
+	box-shadow: none;
+	overflow: visible;
+}
+
+.profile-menu-wrapper .submenu-dropdown h6 {
+	margin: 0;
+	padding: 16px;
+	color: inherit;
+}
+
+.profile-menu-wrapper .submenu-dropdown .closesubmenu {
+	border: 0;
+	background: transparent;
+	color: inherit;
+}
+
+.profile-menu-wrapper .submenu-dropdown .dropdown-menu .dropdown-item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px 16px;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	text-align: left;
+}
+
+.profile-menu-wrapper .submenu-dropdown .dropdown-menu .dropdown-item:hover,
+.profile-menu-wrapper .submenu-dropdown .dropdown-menu .dropdown-item:focus {
+	background: #f2f2f2;
+	color: inherit;
+}
+
+.profile-menu-wrapper .submenu-dropdown .dropdown-menu .dropdown-item.active {
+	background: #f2f2f2;
+	color: #ff3c00;
+}
+
+.profile-menu-wrapper .submenu-dropdown .langenicon img {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.profile-menu-wrapper .supportsearch {
+	padding: 10px;
+}
+
+.profile-menu-wrapper .currencydropscroll {
+	height: auto;
+	max-height: none;
+	overflow: visible !important;
+}
+
+.profile-menu-wrapper .currencydropscroll .simplebar-wrapper,
+.profile-menu-wrapper .currencydropscroll .simplebar-mask,
+.profile-menu-wrapper .currencydropscroll .simplebar-offset,
+.profile-menu-wrapper .currencydropscroll .simplebar-content-wrapper {
+	height: auto !important;
+	max-height: none !important;
+	overflow: visible !important;
+}
+
+.profile-menu-wrapper .currencydropscroll .simplebar-content {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 8px;
+}
+
+.profile-menu-wrapper .currencydropscroll .simplebar-track {
+	display: none !important;
+}
+
+.profile-menu-wrapper .profile-menu-row {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	text-align: left;
+}
+
+.profile-menu-wrapper .profile-menu-row:hover,
+.profile-menu-wrapper .profile-menu-row:focus {
+	background: #f2f2f2;
+	color: inherit;
+}
+
+.nightmode .profile-menu-wrapper {
+	background: #232323;
+	color: #d6d6d6;
+}
+
+.usermenudrop>.dropdown-menu:has(>.dropdown-menu-wrapper) {
+	left: auto !important;
+	right: 0 !important;
+	width: 282px !important;
+	min-width: 282px !important;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper {
+	width: 100%;
+	min-width: 0;
+	padding: 6px;
+	border-radius: 8px;
+	background: #ffffff;
+	color: #212529;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown {
+	display: block;
+	position: relative !important;
+	width: 100%;
+	margin: 0 !important;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown #lang {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0;
+	width: 100%;
+	margin: 0;
+	line-height: 1.25;
+	text-align: left;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown #lang .iconboxbg {
+	flex: 0 0 24px;
+	margin: 0 8px 0 0 !important;
+	text-align: left;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown>.dropdown-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 40px;
+	padding: 6px 8px !important;
+	margin: 0 !important;
+	border-radius: 5px;
+	color: inherit;
+	cursor: pointer;
+	pointer-events: auto;
+	text-align: left;
+	text-decoration: none;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown>.dropdown-toggle:hover {
+	background: #f2f2f2;
+	color: inherit;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown>.dropdown-toggle:focus-visible,
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown.show>.dropdown-toggle.show {
+	background: #f2f2f2;
+	color: inherit;
+	outline: none;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #profile-language-label,
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #profile-currency-label {
+	position: static !important;
+	left: auto !important;
+	width: 100%;
+	background: transparent;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #profile-language-label:hover,
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #profile-language-label:focus,
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #profile-currency-label:hover,
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #profile-currency-label:focus {
+	background: transparent !important;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #logoutlink {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	padding: 7px 8px;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+	text-align: left;
+}
+
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #logoutlink:hover,
+.usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #logoutlink:focus {
+	background: #f2f2f2;
+	color: inherit;
+}
+
+.nightmode .usermenudrop>.dropdown-menu>.dropdown-menu-wrapper {
+	background: #232323;
+	color: #d6d6d6;
+}
+
+.nightmode .usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown>.dropdown-toggle:hover,
+.nightmode .usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown>.dropdown-toggle:focus-visible,
+.nightmode .usermenudrop>.dropdown-menu>.dropdown-menu-wrapper .submenu-dropdown.show>.dropdown-toggle.show,
+.nightmode .usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #logoutlink:hover,
+.nightmode .usermenudrop>.dropdown-menu>.dropdown-menu-wrapper #logoutlink:focus {
+	background: #333333;
+	color: #ffffff;
+}
+
+.nightmode .profile-menu-wrapper .submenu-dropdown>.dropdown-toggle:hover,
+.nightmode .profile-menu-wrapper .submenu-dropdown.show>.dropdown-toggle.show,
+.nightmode .profile-menu-wrapper .submenu-dropdown.show .dropdown-menu .dropdown-item:hover,
+.nightmode .profile-menu-wrapper .submenu-dropdown.show .dropdown-menu .dropdown-item:focus,
+.nightmode .profile-menu-wrapper .submenu-dropdown.show .dropdown-menu .dropdown-item.active,
+.nightmode .profile-menu-wrapper .profile-menu-row:hover,
+.nightmode .profile-menu-wrapper .profile-menu-row:focus {
+	background: #333333;
+	color: #ffffff;
+}
+
+.nightmode .profile-menu-wrapper .submenu-dropdown.show .dropdown-menu {
+	background: #232323;
+	color: #d6d6d6;
+	border-color: #3a3a3a;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) {
+	position: relative;
+	width: 100%;
+	min-width: 0;
+	margin-left: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: visible;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show)>:not(:has(.submenu-dropdown.show)) {
+	display: none !important;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown {
+	position: static !important;
+	margin: 0 !important;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show>.dropdown-toggle {
+	display: none !important;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show>.dropdown-menu {
+	position: static !important;
+	inset: auto !important;
+	display: block;
+	width: 100% !important;
+	min-width: 100% !important;
+	height: auto;
+	max-height: none;
+	margin: 0 0 8px;
+	padding: 0 0 10px;
+	transform: none !important;
+	border: 0;
+	border-radius: 8px;
+	background: #ffffff;
+	color: #212529;
+	box-shadow: none;
+	overflow: visible;
+	z-index: 2;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show>.dropdown-menu::before {
+	display: none;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show h6 {
+	position: relative;
+	margin: 0;
+	padding: 10px 40px;
+	border-bottom: 1px dashed #dedede;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-align: left;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show h6 .closesubmenu {
+	top: 50%;
+	left: 12px;
+	padding: 4px;
+	transform: translateY(-50%);
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show h6+hr {
+	display: none;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show .dropdown-menu .dropdown-item {
+	box-sizing: border-box;
+	min-height: 42px;
+	width: 100%;
+	padding: 6px 12px;
+	border-radius: 4px;
+	justify-content: flex-start;
+	text-align: left;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show .dropdown-menu .dropdown-item.active::before {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show:has(.langenicon) .dropdown-menu .dropdown-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-align: left;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show:has(.langenicon) .dropdown-menu .langenicon {
+	display: inline-flex;
+	flex: 0 0 25px;
+	float: none;
+	margin-right: 0;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show:has(.langenicon) .dropdown-menu .langenicon img {
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show .dropdown-menu .dropdown-item:hover,
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show .dropdown-menu .dropdown-item:focus,
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show .dropdown-menu .dropdown-item.active {
+	background: #f4f4f4;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .supportsearch {
+	padding: 8px 10px 6px;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .currencydropscroll .simplebar-content {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 0;
+	padding: 0 10px;
+}
+
+.dropdown-menu-wrapper:has(.submenu-dropdown.show) .currencydropscroll .dropdown-item {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	min-width: 0;
+	width: 100%;
+	min-height: 38px;
+	padding: 7px 12px;
+	justify-content: flex-start;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.nightmode .dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show>.dropdown-menu {
+	background: #232323;
+	color: #d6d6d6;
+	box-shadow: 0 8px 24px #00000070;
+}
+
+.nightmode .dropdown-menu-wrapper:has(.submenu-dropdown.show) .submenu-dropdown.show h6 {
+	border-color: #3a3a3a;
+}
+
+@media (max-width: 767px) {
+	.dropdown-menu-wrapper:has(.submenu-dropdown.show) {
+		width: min(282px, calc(100vw - 24px));
+		min-width: min(282px, calc(100vw - 24px));
+	}
+
+	.usermenudrop>.dropdown-menu:has(>.dropdown-menu-wrapper) {
+		width: min(282px, calc(100vw - 24px)) !important;
+		min-width: min(282px, calc(100vw - 24px)) !important;
+	}
+}
+
 .submenu-dropdown h6 {
 	padding: 16px;
 	padding-bottom: 0px;
@@ -4275,6 +4736,7 @@ input:-webkit-autofill:active {
 
 .totblance .css-b62m3t-container {
 	margin-left: 5px;
+	width: 112px;
 }
 
 .totblance .css-vt33qg-option,
@@ -4837,11 +5299,11 @@ body.tradepagbg {
 }
 
 .buyshow .buyboxorder .sitescroll {
-	max-height: 501px;
+	max-height: 455px !important;
 }
 
 .buyshow .buyboxorder {
-	min-height: 455px;
+	min-height: 417px !important;
 }
 
 .sellboxorder .sitescroll {
@@ -4863,8 +5325,8 @@ body.tradepagbg {
 	max-height: 754px !important;
 }
 
-.sellshow .sellboxorder .sitescroll {
-	height: 501px;
+.derivative.futurespage .sellshow .sellboxorder .sitescroll {
+	height: 581px !important;  
 }
 
 .sellboxorder table tbody td {
@@ -6309,17 +6771,48 @@ body.tradepagbg {
 	margin-top: 7px;
 }
 
-.tradepagbg .buyboxorder .sitescroll {
-	max-height: 234px;
-	/* max-height: 261px; */
+/* =========================================
+   BUY + SELL BOTH SHOW (default mode)  [182 + 259 = 441]
+========================================= */
+
+/* SELL (red) */
+.tradepagbg .suborderbook.buysellshow .sellboxorder .sitescroll {
+	height: 210px  !important;
 }
 
-.tradepagbg .buyboxorder .sitescroll {
-	max-height: 246px;
+.tradepagbg .suborderbook.buysellshow .sellboxorder .sellboxtablebg {
+	max-height: 100%;
 }
 
-.tradepagbg .sellboxorder .sitescroll {
-	height: 207px;
+/* BUY (green) */
+.tradepagbg .suborderbook.buysellshow .buyboxorder .sitescroll {
+	max-height: 244px;
+}
+
+.tradepagbg .suborderbook.buysellshow .buyboxorder.buybxord-y .sellboxtablebg {
+	max-height: 245px !important;
+}
+
+/* =========================================
+   BUY ONLY MODE
+========================================= */
+.tradepagbg .suborderbook.buyshow .buyboxorder .sitescroll {
+	max-height: 418px;
+}
+
+.tradepagbg .suborderbook.buyshow .buyboxorder.buybxord-y .sellboxtablebg {
+	max-height: 457px;
+}
+
+/* =========================================
+   SELL ONLY MODE
+========================================= */
+.tradepagbg .suborderbook.sellshow .sellboxorder .sitescroll {
+	height: 454px;
+}
+
+.tradepagbg .suborderbook.sellshow .sellboxorder .sellboxtablebg {
+	max-height: 100%;
 }
 
 .tradepagbg .orderformbox .siteformbg {
@@ -6922,6 +7415,7 @@ body.tradepagbg {
 
 @media (max-width: 1250px) {
 
+
 	.marketlist .table-responsive {
 		max-height: 445px;
 	}
@@ -6947,7 +7441,7 @@ body.tradepagbg {
 	}
 
 	.buyshow .buyboxorder {
-		min-height: 433px;
+		min-height: 416px;
 	}
 
 	.sellshow .sellboxorder .sitescroll {
@@ -7033,6 +7527,9 @@ body.tradepagbg {
 }
 
 @media (max-width: 1200px) {
+	.tradepagbg .suborderbook.sellshow .sellboxorder .sitescroll {
+		height: 269px !important;
+	}
 
 
 	.crytb-y {
@@ -7196,7 +7693,23 @@ body.tradepagbg {
 		width: 144px;
 	}
 }
-
+@media (max-width: 1080px) {
+	.sellshow .sellboxorder .sitescroll {
+    height: 330px !important;
+}
+.buyboxorder .sitescroll {
+    max-height: 181px !important;
+}
+.sellboxorder .sitescroll {
+    height: 157px !IMPORTANT;
+}
+.buyshow .buyboxorder .sitescroll {
+    max-height: 339px !important;
+}
+.stesrl-y {
+    max-height: 407px;
+}
+}
 @media (max-width: 1150px) {
 	.donlod-rept-y {
 		margin-left: 0px !important;
@@ -7216,6 +7729,24 @@ body.tradepagbg {
 }
 
 @media (max-width: 1100px) {
+	.tradepagbg .suborderbook.buysellshow .sellboxorder .sitescroll {
+    height: 96px !important;
+}
+	.buyboxorder {
+    min-height: 144px !important;
+}
+.tradepagbg .suborderbook.buysellshow .buyboxorder .sitescroll {
+    max-height: 173px !important;
+}
+    .buyboxorder {
+        min-height: 174px !important;
+    }
+	.tradepagbg .suborderbook.buyshow .buyboxorder .sitescroll {
+    max-height: 255px !important;
+}
+.buyshow .buyboxorder {
+    min-height: 209px !important;
+}
 	.walletoverviewbg .flexbox>div:last-child {
 		width: 40%;
 	}
@@ -11014,3 +11545,36 @@ body.tradepagbg {
 		color: #c6c6c6;
 	}
 }
+
+.futurespage.tradepagbg .suborderbook.buysellshow .buyboxorder .sitescroll {
+    max-height: 261px !important;
+}
+.futurespage.tradepagbg .suborderbook.buyshow .buyboxorder .sitescroll {
+    max-height: 568px !important;
+}
+.futurespage.tradepagbg .suborderbook.sellshow .sellboxorder .sitescroll {
+    height: 577px !important;
+}
+.futurespage.tradepagbg .suborderbook.buysellshow .sellboxorder .sitescroll {
+    height: 315px !important;
+}
+
+.futurespage .sellshow .sellboxorder .sitescroll {
+    height: auto !important;
+    max-height: 578px !important;
+}
+
+.userpanelpage .buyshow .buyboxorder .sitescroll.trade-ing {
+    max-height: 451px !important;
+}
+/* .userpanelpage .buyshow .buyboxorder .sitescroll.slug {
+    max-height: 489px !important;
+} */
+/* .userpanelpage.tradepagbg .sellshow .sellboxorder .sitescroll {
+    height: 418px !important;
+    max-height: 499px !important;
+} */
+
+/* .table-responsive.sitescroll.slug.simplebar-scrollable-y {
+
+} */
