@@ -13,6 +13,8 @@ import SimpleBar from 'simplebar-react';
 import ResponsiveTable from '../app/components/ResponsiveTable';
 import 'simplebar-react/dist/simplebar.min.css';
 import SpinBanner from './components/SpinBanner';
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 
@@ -63,7 +65,7 @@ export default function Home() {
                                     <Image src="assets/images/arrowbtn.svg" alt="icon" width={24} height={24} className="hero-cta-arrow" />
                                 </span>
                             </Link>
-                            <div className="text-center position-relative">
+                            <div className="home-banner-illustration text-center position-relative">
                                 <Image src="assets/images/firefox-home-banner.svg" className="banner-img lightthemeicon " alt="icon" width={100} height={100} />
                                 <Image src="assets/images/home-banner-graphic.svg" className="home-banner-graphic-img  position-absolute" alt="icon" width={100} height={100} />
                                 <Image src="assets/images/firefox-home-banner-dark.svg" className="banner-img darkthemeicon" alt="icon" width={100} height={100} />
@@ -1549,6 +1551,7 @@ export default function Home() {
                 </Container>
             </section>
 
+            <ScrollToTop />
             <Homefooter />
         </div>
 

@@ -10,7 +10,25 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faEye, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Userheader = () => {
+  const [selectedLang, setSelectedLang] = useState("en");
+  const [selectedCurrency, setSelectedCurrency] = useState("BTC");
+  const [currencySearch, setCurrencySearch] = useState("");
+  const themeTimeouts = useRef([]);
+  const themeTransitionId = useRef(0);
+  const profileLanguages = [
+    { code: "en", label: "English", icon: "/assets/images/en.svg" },
+    { code: "cn", label: "中文", icon: "/assets/images/cn.svg" },
+    { code: "es", label: "Español", icon: "/assets/images/es.svg" },
+    { code: "ru", label: "Русский", icon: "/assets/images/ru.svg" },
+  ];
 
+  const profileCurrencyCodes = [
+    "AFN", "EUR", "ALL", "DZD", "USD",
+    "BTC", "ETH", "SOL", "TON", "TRX", "BCH", "USDT", "AVAX",
+  ];
+  const profileCurrencies = profileCurrencyCodes
+    .map((code) => ({ code }))
+    .filter((currency) => currency.code.toLowerCase().includes(currencySearch.toLowerCase()));
   const pathname = usePathname()
 
   useEffect(() => {
@@ -52,6 +70,8 @@ const Userheader = () => {
 
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [showsDropdown, setShowsDropdown] = useState(false);
+  const [showssDropdown, setShowssDropdown] = useState(false);
 
   const isDesktop = () => window.innerWidth >= 280;
 
@@ -73,6 +93,14 @@ const Userheader = () => {
 
     setActiveDropdown(null);
     setActiveSubmenu(null);
+  };
+
+  const handleProfileMouseLeave = (e) => {
+    if (showsDropdown || showssDropdown) {
+      return;
+    }
+
+    handleMouseLeave(e);
   };
 
   const handleSubmenuEnter = (submenuKey) => {
@@ -109,26 +137,52 @@ const Userheader = () => {
   const handleShowModal2 = () => setShowModal2(true);
   const handleCloseModal2 = () => setShowModal2(false);
 
-  const handleThemeChange = (e) => {
-    const x = `${e.clientX}px`;
-    const y = `${e.clientY}px`;
+  const handleThemeChange = (nightMode) => {
+    const body = document.body;
+    const root = document.documentElement;
+    const toggle = document.querySelector(".modebg");
+    const toggleBounds = toggle?.getBoundingClientRect();
 
-    document.body.style.setProperty("--x", x);
-    document.body.style.setProperty("--y", y);
+    if (!toggleBounds) {
+      body.classList.toggle("nightmode", nightMode);
+      return;
+    }
 
-    document.body.classList.add("theme-transition");
+    root.style.setProperty("--theme-x", `${toggleBounds.left + toggleBounds.width / 2}px`);
+    root.style.setProperty("--theme-y", `${toggleBounds.top + toggleBounds.height / 2}px`);
+    themeTimeouts.current.forEach(clearTimeout);
+    const transitionId = ++themeTransitionId.current;
+    root.classList.remove("theme-going-to-bottom", "theme-going-to-toggle");
+    body.classList.remove("theme-transition", "theme-going-to-bottom", "theme-going-to-toggle");
+    void root.offsetWidth;
 
-    setTimeout(() => {
-      document.body.classList.toggle("nightmode");
-    }, 100);
+    const transitionClass = nightMode ? "theme-going-to-bottom" : "theme-going-to-toggle";
+    body.style.setProperty("--theme-overlay-color", nightMode ? "#0f0f0f" : "#fff");
+    if (document.startViewTransition) {
+      root.classList.add(transitionClass);
+      const transition = document.startViewTransition(() => {
+        body.classList.toggle("nightmode", nightMode);
+      });
+      const clearTransitionClass = () => {
+        if (themeTransitionId.current === transitionId) {
+          root.classList.remove(transitionClass);
+        }
+      };
+      transition.finished.then(clearTransitionClass, clearTransitionClass);
+      return;
+    }
 
-    setTimeout(() => {
-      document.body.classList.remove("theme-transition");
-    }, 700);
+    body.classList.add("theme-transition", transitionClass);
+
+    themeTimeouts.current = [
+      setTimeout(() => body.classList.toggle("nightmode", nightMode), 1000),
+      setTimeout(() => {
+        body.classList.remove("theme-transition", "theme-going-to-bottom", "theme-going-to-toggle");
+      }, 1200),
+    ];
   };
 
   function nightMode() {
-    document.body.classList.add('nightmode');
     var element = document.getElementById("daymode");
     element?.classList.remove("activemode");
     var element1 = document.getElementById("nightmode");
@@ -136,7 +190,6 @@ const Userheader = () => {
   }
 
   function dayMode() {
-    document.body.classList.remove('nightmode');
     var element2 = document.getElementById("daymode");
     element2?.classList.add("activemode");
     var element3 = document.getElementById("nightmode");
@@ -145,58 +198,76 @@ const Userheader = () => {
   }
 
 
-  const [showsDropdown, setShowsDropdown] = useState(false);
-  const dropdownRef = useRef(null);
-
   const handleToggles = (isOpen) => {
-    setShowsDropdown(isOpen);
+    if (isOpen) {
+      setShowsDropdown(true);
+      setShowssDropdown(false);
+    }
   };
 
   const submenuClose = () => {
-    setShowsDropdown(false); // This closes the dropdown
+    setShowsDropdown(false);
+    setActiveDropdown("profile");
   };
 
-  // Close on click outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
-        setShowsDropdown(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-
-  const [showssDropdown, setShowssDropdown] = useState(false);
-  const dropdownsRef = useRef(null);
-
   const handleToggless = (isOpen) => {
-    setShowssDropdown(isOpen);
+    if (isOpen) {
+      setShowssDropdown(true);
+      setShowsDropdown(false);
+    }
   };
 
   const submenusClose = () => {
-    setShowssDropdown(false); // This closes the dropdown
+    setShowssDropdown(false);
+    setActiveDropdown("profile");
   };
 
-  // Close on click outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        dropdownsRef.current &&
-        !dropdownsRef.current.contains(event.target)
-      ) {
-        setShowssDropdown(false);
-      }
-    };
+  const handleLanguageSelect = (language) => {
+    setSelectedLang(language.code);
+  };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  const handleCurrencySelect = (currency) => {
+    setSelectedCurrency(currency.code);
+    setCurrencySearch("");
+  };
+
+  const profileSubmenuHeaderStyle = {
+    position: "relative",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxSizing: "border-box",
+    minHeight: "44px",
+    margin: 0,
+    padding: "10px 40px",
+    borderBottom: "1px dashed #dedede",
+    textAlign: "center",
+  };
+  const profileSubmenuBackStyle = {
+    position: "absolute",
+    top: "50%",
+    left: "12px",
+    padding: "4px",
+    transform: "translateY(-50%)",
+  };
+  const profileSubmenuItemsStyle = {
+    display: "flex",
+    flexDirection: "column",
+    gap: "4px",
+    boxSizing: "border-box",
+    width: "100%",
+    padding: "8px 10px",
+  };
+  const profileSubmenuItemStyle = {
+    display: "flex",
+    alignItems: "center",
+    boxSizing: "border-box",
+    width: "100%",
+    minHeight: "40px",
+    margin: 0,
+    padding: "6px 12px",
+    textAlign: "left",
+  };
 
   return (
     <div>
@@ -317,77 +388,140 @@ const Userheader = () => {
                 <Nav.Item className="modebg">
                   <Link href="#" className="nav-link modeicon daymodeicon activemode" id="daymode" onClick={(e) => {
                     e.preventDefault();
-                    handleThemeChange(e);
+                    handleThemeChange(false);
                     dayMode();
                   }}><Image src="assets/images/sun.svg" width={20} height={20} alt="icon" /></Link>
                   <Link href="#" className="nav-link modeicon nightmodeicon" id="nightmode" onClick={(e) => {
                     e.preventDefault();
-                    handleThemeChange(e);
+                    handleThemeChange(true);
                     nightMode();
                   }} ><Image src="assets/images/moon.svg" width={20} height={20} alt="icon" /></Link>
                 </Nav.Item>
-                <NavDropdown className="usermenudrop dropdownsubmenu" title={<div className="pull-left"><Image src="assets/images/profile.svg" className="photopic" id="userprofile" alt="user" /><span className="prfileusertxt">John</span></div>} id="profiledrp" show={activeDropdown === "profile"} onMouseEnter={() => handleMouseEnter("profile")} onMouseLeave={handleMouseLeave} onClick={() => handleDropdownClick("profile")}>
-                  <div className="dropdown-menu-wrapper">
+                <NavDropdown className="usermenudrop dropdownsubmenu" title={<div className="pull-left"><Image src="assets/images/profile.svg" className="photopic" id="userprofile" alt="user" /><span className="prfileusertxt">John</span></div>} id="profiledrp" show={activeDropdown === "profile"} autoClose="outside" onToggle={(isOpen) => setActiveDropdown(isOpen ? "profile" : null)} onMouseEnter={() => handleMouseEnter("profile")} onMouseLeave={handleProfileMouseLeave}>
+                  <div className="dropdown-menu-wrapper profile-menu-wrapper">
                     <NavDropdown.Item as={Link} href="/profile" className="profilesubdropbox">
                       <span className="photopic">
-                        <Image src="assets/images/profile.svg" alt="icon" width={100} height={100} id="profile" />
+                        <Image src="/assets/images/profile.svg" alt="icon" width={100} height={100} id="profile" />
                       </span>
                       <h5>john@mailinator.com<span className="t-gray ms-1">(<span className="t-green"> <FontAwesomeIcon icon={faCheck} /></span><span className="t-green ms-1">Verified</span> )</span><br /><span className="t-gray">username</span></h5>
                     </NavDropdown.Item>
                     <hr />
-                    {/* <NavDropdown.Item as={Link} href="#" onClick={handleShowModal1} id="langlink" ><span className="iconboxbg"><Image src="assets/images/langicon.svg" alt="icon" width={100} height={100} /></span>Language</NavDropdown.Item> */}
-                    <div ref={dropdownRef} onMouseLeave={() => setShowsDropdown(false)}>
-                      <NavDropdown title={<div className="" id="lang"><span className="iconboxbg"><Image src="assets/images/langicon.svg" alt="icon" width={100} height={100} /></span>Language</div>} className="langmenu nav-link me-1 ms-1 submenu-dropdown" id="basic-nav-dropdown" show={showsDropdown} onToggle={handleToggles}>
-                        <h6 className="text-center"><span className="closesubmenu" onClick={submenuClose} ><FontAwesomeIcon icon={faAngleLeft} className="t-gray" /></span>Langauge</h6>
+
+                    <div onClick={(event) => event.stopPropagation()}>
+                      <NavDropdown
+                        title={
+                          <div id="profile-language-label" className="profile-menu-row" style={{ display: "flex", position: "relative", left: "-16px", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", minWidth: 0, padding: 0, gap: "8px", textAlign: "left" }}>
+                            <span className="iconboxbg" style={{ display: "flex", flex: "0 0 20px", width: "20px", height: "20px", alignItems: "center", justifyContent: "center", margin: 0 }}>
+                              <Image src="/assets/images/langicon.svg" alt="icon" width={20} height={20} style={{ width: "20px", height: "20px" }} />
+                            </span>
+                            <span style={{ display: "block", flex: "1 1 auto", width: "100%", margin: 0, textAlign: "left" }}>Language</span>
+                          </div>
+                        }
+                        className="langmenu nav-link me-1 ms-1 submenu-dropdown"
+                        id="profile-language-dropdown"
+                        show={showsDropdown}
+                        autoClose={false}
+                        onToggle={handleToggles}
+                      >
+                        <h6 style={profileSubmenuHeaderStyle}>
+                          <button type="button" className="closesubmenu" style={profileSubmenuBackStyle} aria-label="Back to profile menu" onClick={submenuClose}>
+                            <FontAwesomeIcon icon={faAngleLeft} />
+                          </button>
+                          Language
+                        </h6>
                         <hr />
-                        <NavDropdown.Item as={Link} href="#" className="active">
-                          <span className="langenicon"><Image src="assets/images/en.svg" alt="icon" width={100} height={100} /></span>
-                          English
-                        </NavDropdown.Item>
-                        <NavDropdown.Item as={Link} href="#">
-                          <span className="langenicon"><Image src="assets/images/cn.svg" alt="icon" width={100} height={100} /></span>
-                          Chinese
-                        </NavDropdown.Item>
-                        <NavDropdown.Item as={Link} href="#">
-                          <span className="langenicon"><Image src="assets/images/es.svg" alt="icon" width={100} height={100} /></span>
-                          Spanish
-                        </NavDropdown.Item>
+                        <div style={profileSubmenuItemsStyle}>
+                          {profileLanguages.map((lang) => (
+                            <NavDropdown.Item
+                              as="button"
+                              type="button"
+                              key={lang.code}
+                              className={selectedLang === lang.code ? "active" : ""}
+                              style={profileSubmenuItemStyle}
+                              onClick={() => handleLanguageSelect(lang)}
+                            >
+                              <span className="langenicon"><Image src={lang.icon} alt="icon" width={100} height={100} /></span>
+                              {lang.label}
+                            </NavDropdown.Item>
+                          ))}
+                        </div>
                       </NavDropdown>
                     </div>
-                    <div ref={dropdownsRef} onMouseLeave={() => setShowssDropdown(false)}>
-                      <NavDropdown title={<div className="" id="lang"><span className="iconboxbg"><Image src="assets/images/currency.svg" alt="icon" width={100} height={100} /></span>Currency</div>} className="langmenu nav-link me-1 ms-1 submenu-dropdown" id="basic-nav-dropdown" show={showssDropdown} onToggle={handleToggless}>
-                        <h6 className="text-center"><span className="closesubmenu" onClick={submenusClose} ><FontAwesomeIcon icon={faAngleLeft} className="t-gray" /></span>Currency</h6>
+
+                    <div onClick={(event) => event.stopPropagation()}>
+                      <NavDropdown
+                        title={
+                          <div id="profile-currency-label" className="profile-menu-row" style={{ display: "flex", position: "relative", left: "-16px", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", minWidth: 0, padding: 0, gap: "8px", textAlign: "left" }}>
+                            <span className="iconboxbg" style={{ display: "flex", flex: "0 0 20px", width: "20px", height: "20px", alignItems: "center", justifyContent: "center", margin: 0 }}>
+                              <Image src="/assets/images/currency.svg" alt="icon" width={20} height={20} style={{ width: "20px", height: "20px" }} />
+                            </span>
+                            <span style={{ display: "block", flex: "1 1 auto", width: "100%", margin: 0, textAlign: "left" }}>Currency</span>
+                          </div>
+                        }
+                        className="langmenu nav-link me-1 ms-1 submenu-dropdown"
+                        id="profile-currency-dropdown"
+                        show={showssDropdown}
+                        autoClose={false}
+                        onToggle={handleToggless}
+                      >
+                        <h6 style={profileSubmenuHeaderStyle}>
+                          <button type="button" className="closesubmenu" style={profileSubmenuBackStyle} aria-label="Back to profile menu" onClick={submenusClose}>
+                            <FontAwesomeIcon icon={faAngleLeft} />
+                          </button>
+                          Currency
+                        </h6>
                         <hr />
-                        <div className="supportsearch pt-0 pb-0">
-                          <Form className="siteformbg">
-                            <Form.Group className="form-group mb-0">
-                              <Form.Control className="form-control" placeholder="Search" />
+                        <div className="supportsearch pt-0 pb-0" style={{ boxSizing: "border-box", width: "100%", padding: "8px 10px 6px" }}>
+                          <Form
+                            className="siteformbg"
+                            style={{ width: "100%", margin: 0 }}
+                            onSubmit={(e) => {
+                              e.preventDefault();
+                              const match = profileCurrencies.find(
+                                (currency) => currency.code.toLowerCase() === currencySearch.trim().toLowerCase()
+                              );
+                              if (match) {
+                                handleCurrencySelect(match);
+                              }
+                            }}
+                          >
+                            <Form.Group className="form-group mb-0" style={{ width: "100%", margin: 0 }}>
+                              <Form.Control
+                                className="form-control"
+                                placeholder="Search"
+                                value={currencySearch}
+                                style={{ display: "block", boxSizing: "border-box", width: "100%", maxWidth: "100%" }}
+                                onChange={(e) => setCurrencySearch(e.target.value)}
+                              />
                             </Form.Group>
                           </Form>
                         </div>
-                        <SimpleBar className="currencydropscroll">
-                          <NavDropdown.Item as={Link} href="#" className="active">USD</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">INR</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">TRY</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">EUR</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">ARS</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">CAD</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">CHF</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">NGN</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">USD</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">INR</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">TRY</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">EUR</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">ARS</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">CAD</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">CHF</NavDropdown.Item>
-                          <NavDropdown.Item as={Link} href="#">NGN</NavDropdown.Item>
+                        <SimpleBar className="profile-currency-scroll" style={{ width: "100%", maxHeight: "200px" }}>
+                          <div style={profileSubmenuItemsStyle}>
+                            {profileCurrencies.map((currency) => (
+                              <NavDropdown.Item
+                                as="button"
+                                type="button"
+                                key={currency.code}
+                                className={selectedCurrency === currency.code ? "active" : ""}
+                                style={profileSubmenuItemStyle}
+                                onClick={() => handleCurrencySelect(currency)}
+                              >
+                                {currency.code}
+                              </NavDropdown.Item>
+                            ))}
+                          </div>
                         </SimpleBar>
                       </NavDropdown>
                     </div>
-                    {/* <NavDropdown.Item as={Link} href="#" onClick={handleShowModal2} id="langlink" ><span className="iconboxbg"><Image src="assets/images/currency.svg" alt="icon" width={100} height={100} /></span>Currency</NavDropdown.Item> */}
+
                     <hr />
-                    <div className="dropdown-item" id="logoutlink"><span className="iconboxbg"><Image src="assets/images/logouticon.svg" alt="icon" width={100} height={100} /></span>Sign out</div>
+                    <button type="button" className="dropdown-item profile-menu-row" id="logoutlink" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "7px 8px", textAlign: "left" }}>
+                      <span className="iconboxbg" style={{ display: "flex", flex: "0 0 20px", width: "20px", height: "20px", alignItems: "center", justifyContent: "center", margin: 0 }}>
+                        <Image src="/assets/images/logouticon.svg" alt="icon" width={20} height={20} style={{ width: "20px", height: "20px" }} />
+                      </span>
+                      Sign out
+                    </button>
                   </div>
                 </NavDropdown>
               </Nav>
