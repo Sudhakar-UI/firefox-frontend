@@ -634,7 +634,7 @@ ICON
 	height: auto;
 	border-radius: 5px;
 	text-align: center;
-	margin-right: 11px;
+	margin-right: 12px;
 	display: inline-block;
 	line-height: normal;
 }
@@ -1344,7 +1344,7 @@ a:focus {
 }
 
 .covert-img-c {
-	max-width: 800px;
+	max-width: 690px;
 }
 
 
@@ -1966,6 +1966,7 @@ tr.nodata:hover {
 
 .tableicon>span:first-child {
 	width: 34px;
+	text-align: center;
 }
 
 .tableicon .t-gray {
@@ -6150,7 +6151,7 @@ Responsive
 
 .spin-banner-wrapper {
     position: fixed;
-    bottom: 50px;
+    bottom: 18px !important;
     z-index: 5000;
 }
 
@@ -6557,7 +6558,9 @@ Responsive
 	}
 
 	.covert-img-c {
-		max-width: 100%;
+		width: 100%;
+        max-width: 495px;
+        height: 100%;
 	}
 
 	.maintanance-img {
@@ -7797,4 +7800,8 @@ Responsive
 .tradepagbg .sellshow .sellboxorder .sitescroll {
     height: 456px !important;
     max-height: 499px !important;
+}
+
+.tradepagbg .container {
+    max-width: 100% !important;
 }

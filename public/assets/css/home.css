@@ -6034,12 +6034,12 @@ RIGHT STARTING BORDER
 	.headermenu .sitebtn,
 	.headminborder {
 		width: 100%;
-		max-width: 128px;
+		/* max-width: 128px; */
 		margin-top: 10px !important;
 	}
 
 	.homebannerbg .sitebannercontent {
-		padding-top: 94px;
+		padding-top: 44px;
 	}
 
 	.homebannerbg .row>div {
@@ -8181,7 +8181,7 @@ RIGHT STARTING BORDER
 	}
 
 	.homebannerbg .sitebannercontent {
-		padding-top: 104px;
+		padding-top: 40px;
 		padding-bottom: 20px;
 	}
 
@@ -8654,7 +8654,7 @@ RIGHT STARTING BORDER
 
 @media (max-width: 500px) {
 	.homebannerbg .sitebannercontent {
-		padding-top: 94px;
+		padding-top: 40px;
 	}
 
 	.home-banner-round-img {
@@ -9939,7 +9939,9 @@ body:has(.spin-banner-wrapper-left) .scroll-to-top {
 		padding: 8px;
 		border-color: #dedede;
 	}
-
+	.nightmode .headermenu .headbg .navbar-toggler {
+		border-color: #555;
+	}
 	.headermenu .mobile-header-controls .dropdown-menu {
 		right: 0;
 		left: auto;
@@ -10021,7 +10023,7 @@ body:has(.spin-banner-wrapper-left) .scroll-to-top {
 	.headermenu .mobile-header-controls .langmenu > .dropdown-toggle,
 	.headermenu .mobile-header-controls .modebg {
 		box-sizing: border-box;
-		height: 34px;
+		height: 35px;
 		min-height: 39px;
 		border: 1px solid #dedede;
 		background: #fff;

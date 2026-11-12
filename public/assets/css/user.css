@@ -5814,6 +5814,9 @@ body.tradepagbg {
 .livepricemobile .dropdown .dropdown-menu a:active {
 	background: #fff;
 }
+.nightmode .livepricemobile .dropdown .dropdown-menu a:active {
+    background: #1e1e1e;
+}
 
 .filtersearch {
 	padding: 0px 16px;
@@ -8541,6 +8544,9 @@ body.tradepagbg {
 }
 
 @media (max-width: 767px) {
+	.tradepage .gridparentbox {
+		padding-top: 80px;
+	}
 	.dashboardpage .flexbox-equl-hh .walletbalancebox .tablebox {
 		margin: 10px 0px !important;
 	}
@@ -8794,9 +8800,9 @@ body.tradepagbg {
 		display: block;
 	}
 
-	.orderformbox .tab-content>.tab-pane {
+	/* .orderformbox .tab-content>.tab-pane {
 		display: none;
-	}
+	} */
 
 	.livepricenavbg {
 		padding: 0px;
@@ -10603,6 +10609,9 @@ body.tradepagbg {
 }
 
 @media (max-width:500px) {
+	.tradepage .gridparentbox {
+		padding-top: 60px !important;
+	}
 	.accorddatacell.mercntvew-y {
 		grid-template-columns: repeat(1, 1fr) !important;
 	}
