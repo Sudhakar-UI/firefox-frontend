@@ -111,7 +111,7 @@ p,
 .borderbtn:is(:hover, :focus) {
 	background: #FF6A00 !important;
 	border-color: #FF6A00 !important;
-	color: #fff !important;
+	color: #1a1a1a !important;
 }
 
 .sitebtn:is(:hover, :focus) {
@@ -7415,7 +7415,7 @@ Responsive
 
 	.nightmode .summarymdal-x {
 		max-width: 400px;
-		height: 46vh !important;
+		height: auto !important;
 	}
 
 	.subhead-pass h4 {

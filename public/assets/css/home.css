@@ -10001,7 +10001,7 @@ body:has(.spin-banner-wrapper-left) .scroll-to-top {
 	}
 
 	.headermenu .headbg {
-		position: relative;
+		position: absolute;
 		z-index: 1052;
 	}
 
