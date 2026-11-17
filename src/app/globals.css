@@ -2725,7 +2725,7 @@ pre {
 }
 
 .subhead-pass h4 {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 20px;
 	color: #535353;
 }
@@ -3923,7 +3923,7 @@ pre {
 
 
 .nightmode .subhead-pass h4 {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 20px;
 	color: #fff;
 }
@@ -7419,7 +7419,7 @@ Responsive
 	}
 
 	.subhead-pass h4 {
-		font-size: 14px;
+		font-size: 14px !important;
 	}
 }
 

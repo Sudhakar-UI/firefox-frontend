@@ -1172,6 +1172,10 @@ ul.footcryptobg>li {
 
 	}
 
+	.nightmode .homepagebg .home-banner-illustration .home-banner-graphic-img {
+		--home-banner-graphic-top: 1px;
+	}
+
 }
 
 @media (max-width: 600px) {
@@ -9598,7 +9602,7 @@ RIGHT STARTING BORDER
 
 .scroll-to-top {
 	position: fixed;
-	bottom: 161px;
+	bottom: 138px;
 	/* banner close (minimized) */
 	right: 16px;
 	width: 40px;
@@ -9819,7 +9823,7 @@ body:has(.spin-banner-wrapper-left) .scroll-to-top {
 
 	.homepagebg .home-banner-illustration .home-banner-graphic-img,
 	.homepagebg .home-banner-illustration .home-banner-round-img {
-		z-index: 0;
+		z-index: 1;
 	}
 }
 

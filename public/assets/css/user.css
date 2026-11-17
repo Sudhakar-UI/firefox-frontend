@@ -10609,9 +10609,9 @@ body.tradepagbg {
 }
 
 @media (max-width:500px) {
-	.tradepage .gridparentbox {
+	/* .tradepage .gridparentbox {
 		padding-top: 60px !important;
-	}
+	} */
 	.accorddatacell.mercntvew-y {
 		grid-template-columns: repeat(1, 1fr) !important;
 	}
